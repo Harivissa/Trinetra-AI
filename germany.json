@@ -1,0 +1,149 @@
+{
+  "id": "germany",
+  "display_name": "Germany",
+  "meta": {
+    "flag_emoji": "\ud83c\udde9\ud83c\uddea",
+    "flag_url": "https://flagcdn.com/w160/ge.png",
+    "region": "Western Europe",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "Berlin",
+    "population_m": 84,
+    "system": "Federal Parliamentary Republic",
+    "archetype": "Economic Anchor Reluctant Power",
+    "current_leader": "Olaf Scholz / successor",
+    "summary": "[Expand: full intelligence profile for Germany]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for Germany]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 Germany",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Federal Parliamentary Republic"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Olaf Scholz / successor",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for Germany]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 71,
+    "nuclear_status": "non-nuclear",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for Germany]",
+    "B": "[Expand: B for Germany]",
+    "C": "[Expand: C for Germany]",
+    "D": "[Expand: D for Germany]",
+    "E": "[Expand: E for Germany]",
+    "F": "[Expand: F for Germany]",
+    "G": "[Expand: G for Germany]",
+    "H": "[Expand: H for Germany]",
+    "I": "[Expand: I for Germany]",
+    "J": "[Expand: J for Germany]",
+    "K": "[Expand: K for Germany]",
+    "L": "[Expand: L for Germany]",
+    "M": "[Expand: M for Germany]",
+    "N": "[Expand: N for Germany]",
+    "O": "[Expand: O for Germany]",
+    "P": "[Expand: P for Germany]",
+    "Q": "[Expand: Q for Germany]",
+    "R": "[Expand: R for Germany]",
+    "S": "[Expand: S for Germany]",
+    "T": "[Expand: T for Germany]",
+    "U": "[Expand: U for Germany]",
+    "V": "[Expand: V for Germany]",
+    "W": "[Expand: W for Germany]",
+    "X": "[Expand: X for Germany]",
+    "Y": "[Expand: Y for Germany]",
+    "Z": "[Expand: Z for Germany]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}

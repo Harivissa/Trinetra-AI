@@ -1,0 +1,149 @@
+{
+  "id": "uk",
+  "display_name": "United Kingdom",
+  "meta": {
+    "flag_emoji": "\ud83c\uddec\ud83c\udde7",
+    "flag_url": "https://flagcdn.com/w160/uk.png",
+    "region": "Western Europe",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "London",
+    "population_m": 67,
+    "system": "Constitutional Parliamentary Monarchy",
+    "archetype": "Post-Imperial Atlantic Linchpin",
+    "current_leader": "Rishi Sunak / successor",
+    "summary": "[Expand: full intelligence profile for United Kingdom]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for United Kingdom]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 United Kingdom",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Constitutional Parliamentary Monarchy"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Rishi Sunak / successor",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for United Kingdom]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 70,
+    "nuclear_status": "armed",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for United Kingdom]",
+    "B": "[Expand: B for United Kingdom]",
+    "C": "[Expand: C for United Kingdom]",
+    "D": "[Expand: D for United Kingdom]",
+    "E": "[Expand: E for United Kingdom]",
+    "F": "[Expand: F for United Kingdom]",
+    "G": "[Expand: G for United Kingdom]",
+    "H": "[Expand: H for United Kingdom]",
+    "I": "[Expand: I for United Kingdom]",
+    "J": "[Expand: J for United Kingdom]",
+    "K": "[Expand: K for United Kingdom]",
+    "L": "[Expand: L for United Kingdom]",
+    "M": "[Expand: M for United Kingdom]",
+    "N": "[Expand: N for United Kingdom]",
+    "O": "[Expand: O for United Kingdom]",
+    "P": "[Expand: P for United Kingdom]",
+    "Q": "[Expand: Q for United Kingdom]",
+    "R": "[Expand: R for United Kingdom]",
+    "S": "[Expand: S for United Kingdom]",
+    "T": "[Expand: T for United Kingdom]",
+    "U": "[Expand: U for United Kingdom]",
+    "V": "[Expand: V for United Kingdom]",
+    "W": "[Expand: W for United Kingdom]",
+    "X": "[Expand: X for United Kingdom]",
+    "Y": "[Expand: Y for United Kingdom]",
+    "Z": "[Expand: Z for United Kingdom]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}

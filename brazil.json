@@ -1,0 +1,149 @@
+{
+  "id": "brazil",
+  "display_name": "Brazil",
+  "meta": {
+    "flag_emoji": "\ud83c\udde7\ud83c\uddf7",
+    "flag_url": "https://flagcdn.com/w160/br.png",
+    "region": "South America",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "Bras\u00edlia",
+    "population_m": 215,
+    "system": "Federal Presidential Republic",
+    "archetype": "Sleeping Giant in Strategic Ambivalence",
+    "current_leader": "Luiz In\u00e1cio Lula da Silva",
+    "summary": "[Expand: full intelligence profile for Brazil]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for Brazil]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 Brazil",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Federal Presidential Republic"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Luiz In\u00e1cio Lula da Silva",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for Brazil]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 60,
+    "nuclear_status": "non-nuclear",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for Brazil]",
+    "B": "[Expand: B for Brazil]",
+    "C": "[Expand: C for Brazil]",
+    "D": "[Expand: D for Brazil]",
+    "E": "[Expand: E for Brazil]",
+    "F": "[Expand: F for Brazil]",
+    "G": "[Expand: G for Brazil]",
+    "H": "[Expand: H for Brazil]",
+    "I": "[Expand: I for Brazil]",
+    "J": "[Expand: J for Brazil]",
+    "K": "[Expand: K for Brazil]",
+    "L": "[Expand: L for Brazil]",
+    "M": "[Expand: M for Brazil]",
+    "N": "[Expand: N for Brazil]",
+    "O": "[Expand: O for Brazil]",
+    "P": "[Expand: P for Brazil]",
+    "Q": "[Expand: Q for Brazil]",
+    "R": "[Expand: R for Brazil]",
+    "S": "[Expand: S for Brazil]",
+    "T": "[Expand: T for Brazil]",
+    "U": "[Expand: U for Brazil]",
+    "V": "[Expand: V for Brazil]",
+    "W": "[Expand: W for Brazil]",
+    "X": "[Expand: X for Brazil]",
+    "Y": "[Expand: Y for Brazil]",
+    "Z": "[Expand: Z for Brazil]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}

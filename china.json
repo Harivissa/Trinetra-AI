@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "id": "china",
+    "name": "China",
+    "flag": "🇨🇳",
+    "formal_name": "People's Republic of China",
+    "capital": "Beijing",
+    "population": "1.41 billion",
+    "population_num": 1410000000,
+    "area_km2": 9596960,
+    "gdp_usd_trillion": 18.5,
+    "system": "One-party Communist State (CCP)",
+    "region": "East Asia",
+    "data_year": 2026
+  },
+  "national_profile": {
+    "overview": "China is the world's second-largest economy and a rising great power challenging US hegemony. Under Xi Jinping (2012–), China has centralized power, accelerated military modernization, and explicitly declared 2049 as the target year for 'national rejuvenation' — returning China to its perceived historical preeminence.",
+    "capital_detail": "Beijing — ancient imperial capital. Seat of CCP, PLA headquarters, National People's Congress.",
+    "official_language": "Mandarin (Putonghua)",
+    "government_type": "One-party Leninist state. CCP controls all institutions.",
+    "head_of_state": "Xi Jinping — General Secretary of CCP, President, CMC Chairman. Consolidated all three roles.",
+    "legislature": "National People's Congress (NPC) — rubber-stamp legislature. Real power in Politburo Standing Committee.",
+    "judiciary": "Not independent. Party controls courts.",
+    "election_system": "No competitive elections at national level. Party-controlled selection."
+  },
+  "historical_memory": {
+    "founding_trauma": "Century of Humiliation (1839–1949): Opium Wars, Unequal Treaties, Japanese invasion, Nanjing Massacre (300,000 killed), foreign concessions in Shanghai. The CCP's founding legitimacy rests entirely on ending this humiliation. Every Xi speech references it.",
+    "civilizational_claim": "5,000-year civilization. The Middle Kingdom — center of the world order. CCP narrative: China was the world's leading civilization until Western colonial disruption. Rejuvenation = returning to natural position.",
+    "doctrine_origin": "Mao's 'lean to one side' (Soviet alliance 1949) → Sino-Soviet split 1960 → Nixon-Mao détente 1972 → Deng's 'hide and bide' → Xi's 'striving for achievement' (积极有为). Doctrine has moved from survival to expansion.",
+    "narrative_spine": {
+      "founding_trauma": "Century of Humiliation 1839–1949. 'Never again' is not rhetoric — it is the CCP's entire legitimation narrative.",
+      "identity_claim": "China is the natural center of Asian civilization. The current US-led order is an aberration that China is correcting.",
+      "first_test": "Korean War 1950 — 'volunteers' fought US to standstill. Proved new China could resist Western military power. Still celebrated as PLA's founding myth.",
+      "first_internal_rupture": "Cultural Revolution 1966–1976. Mao's madness. 1.5M dead. Entire generation's education lost. CCP purged itself.",
+      "doctrine_crystallization": "Deng's 1978 reforms. Economic growth = regime survival. 'It doesn't matter if the cat is black or white as long as it catches mice.'",
+      "present_posture": "Xi's China Dream: wealthy, powerful, globally respected China by 2049. Willing to use coercion — economic, military, informational — to achieve it."
+    },
+    "turning_points": [
+      {
+        "year": 1949,
+        "event": "PRC Founded. End of Century of Humiliation.",
+        "strategic_consequence": "CCP legitimacy established on anti-colonial nationalism, not elections. This creates permanent pressure to deliver 'national rejuvenation.'",
+        "doctrine_impact": "critical"
+      },
+      {
+        "year": 1950,
+        "event": "Korean War — China enters against US",
+        "strategic_consequence": "Proved China willing to fight US. Established red lines (foreign forces near Chinese borders). Taiwan Strait crises follow.",
+        "doctrine_impact": "high"
+      },
+      {
+        "year": 1966,
+        "event": "Cultural Revolution begins",
+        "strategic_consequence": "Institutional destruction. Party purges. 10-year development setback. Explains post-Mao CCP's obsessive fear of chaos (wending, stability).",
+        "doctrine_impact": "critical"
+      },
+      {
+        "year": 1978,
+        "event": "Deng Xiaoping — Reform and Opening Up",
+        "strategic_consequence": "GDP growth becomes primary CCP legitimacy mechanism. 'Socialism with Chinese characteristics' = capitalism under party control.",
+        "doctrine_impact": "critical"
+      },
+      {
+        "year": 1989,
+        "event": "Tiananmen Square Massacre",
+        "strategic_consequence": "CCP chose regime survival over liberalization. West imposed sanctions but didn't follow through. CCP concluded: economic engagement prevents Western action. Accelerated economic opening + political closing.",
+        "doctrine_impact": "critical"
+      },
+      {
+        "year": 2001,
+        "event": "WTO accession",
+        "strategic_consequence": "Integration into global economy. Trade surpluses fund military buildup. 'Hide and bide' at peak.",
+        "doctrine_impact": "high"
+      },
+      {
+        "year": 2012,
+        "event": "Xi Jinping takes power",
+        "strategic_consequence": "End of collective leadership. Anti-corruption purge (removes rivals). 'China Dream' announced. Assertiveness replaces 'hide and bide.' Term limits abolished 2018.",
+        "doctrine_impact": "critical"
+      },
+      {
+        "year": 2020,
+        "event": "COVID-19 origin + response; Hong Kong NSL; US-China tech war",
+        "strategic_consequence": "China-West relationship permanently damaged. Tech decoupling accelerates. China's global image damaged but Xi doubles down internally.",
+        "doctrine_impact": "high"
+      }
+    ]
+  },
+  "crises_tragedies": [
+    {
+      "id": "nanjing_massacre_1937",
+      "name": "Nanjing Massacre",
+      "year": 1937,
+      "type": "foreign_atrocity",
+      "background": "Imperial Japanese Army captured Nanjing (then China's capital) in December 1937.",
+      "cause": "Japanese imperial expansion. Racial ideology. Military breakdown of command.",
+      "immediate_consequences": "300,000 Chinese civilians and POWs killed in 6 weeks. Mass rape. Systematic destruction.",
+      "long_term_impact": "Core wound in China-Japan relations. Taught in every Chinese school. Invoked whenever Japan-China tensions rise. Xi uses it to frame Japan as permanent threat.",
+      "live_relevance_2026": "Every China-Japan territorial dispute (Senkaku/Diaoyu) is colored by Nanjing memory. Shapes Chinese public hostility toward Japan.",
+      "sensitivity_flag": "very_high"
+    },
+    {
+      "id": "great_leap_famine",
+      "name": "Great Leap Forward Famine (1959–1961)",
+      "year": 1959,
+      "type": "state_caused_famine",
+      "background": "Mao's forced industrialization and collectivization campaign. Steel production quotas led farmers to abandon fields.",
+      "cause": "Mao's ideological commands overriding agricultural logic. Local officials falsified grain reports. Actual famine hidden from leadership.",
+      "immediate_consequences": "15–55 million deaths (estimates vary widely — Chinese state suppresses research).",
+      "long_term_impact": "CCP suppresses all discussion. No public memorial. Explains post-Mao CCP's singular focus on economic competence over ideology.",
+      "live_relevance_2026": "Suppressed from public discourse. But explains why CCP's primary legitimacy basis shifted from ideology to performance.",
+      "sensitivity_flag": "very_high"
+    },
+    {
+      "id": "tiananmen_1989",
+      "name": "Tiananmen Square Massacre",
+      "year": 1989,
+      "type": "state_violence_against_citizens",
+      "background": "Student-led democracy movement. Mikhail Gorbachev's visit. Global media present.",
+      "cause": "CCP chose regime survival over political opening. Martial law declared. PLA ordered to clear the square.",
+      "immediate_consequences": "Hundreds to thousands killed (exact numbers suppressed). Western sanctions. CCP hardened its resolve to never repeat.",
+      "long_term_impact": "Completely censored in China. The CCP's central trauma — proves that political opening leads to regime collapse. Xi's anti-liberalization obsession traces here.",
+      "live_relevance_2026": "Shapes Xi's refusal of any political reform. Any mention of Tiananmen in China triggers immediate censorship. The word '1989' is banned.",
+      "sensitivity_flag": "extremely_high"
+    },
+    {
+      "id": "xinjiang_repression",
+      "name": "Xinjiang — Uyghur Mass Detention",
+      "year": 2017,
+      "type": "ongoing_ethnic_repression",
+      "background": "Post-2013 Uyghur terrorist attacks in Xinjiang. Xi ordered 'no mercy' campaign.",
+      "cause": "CCP's securitization of Muslim minority. 'Strike Hard' campaign. Mass surveillance infrastructure.",
+      "immediate_consequences": "1M+ Uyghurs in 're-education camps.' Mass surveillance. Mosque demolitions. Birth suppression.",
+      "long_term_impact": "International genocide debates. Xinjiang cotton/products boycotts. Permanent damage to China's Muslim world relations. BRI complications in Muslim-majority states.",
+      "live_relevance_2026": "Active and ongoing. Western sanctions. Supply chain human rights due diligence laws targeting Xinjiang. Complicates China-Pakistan relations (CPEC runs near Xinjiang).",
+      "sensitivity_flag": "extremely_high"
+    }
+  ],
+  "political_intelligence": {
+    "constitution": {
+      "character": "Formally: socialist constitutional state. Reality: CCP supreme over all institutions.",
+      "key_features": ["'Leading role of the CCP' written into preamble", "National People's Congress as nominal supreme organ", "No independent judiciary", "President term limits removed 2018 (Xi permanent)"]
+    },
+    "party_evolution": [
+      {
+        "party": "Chinese Communist Party (CCP)",
+        "founded": 1921,
+        "ideology_now": "Xi Jinping Thought on Socialism with Chinese Characteristics for a New Era",
+        "trajectory": "1921: Revolutionary party. 1949: Ruling party. 1978: Developmental authoritarian. 2012: Nationalist-authoritarian under Xi. 2018: Xi as permanent leader.",
+        "current_status": "Absolute monopoly. 98M members. Controls all state, military, media, judiciary."
+      }
+    ],
+    "leadership_memory": {
+      "current_leader": {
+        "name": "Xi Jinping",
+        "title": "General Secretary, President, CMC Chairman",
+        "in_power_since": 2012,
+        "archetype": "nationalist_consolidator + survival_autocrat",
+        "formative_experiences": [
+          "Cultural Revolution exile — sent to work in rural Shaanxi at 15. Father purged. 7 years of hardship. Explains obsessive need for control and personal loyalty.",
+          "Rapid rise through provincial posts — Fujian, Zhejiang, Shanghai. Technocrat with nationalist ideology.",
+          "Xi witnessed Soviet collapse and concluded: political opening = party death. Gorbachev is a cautionary tale, not a model."
+        ],
+        "decision_patterns": {
+          "under_pressure": "Doubles down. Never publicly retreats. Uses nationalism to deflect.",
+          "in_crisis": "Full personal control. Standing Committee bypassed in crises. COVID response reflects this.",
+          "economic": "Ideological purity over market efficiency when the two conflict. Common Prosperity = redistribution + party control of private sector."
+        },
+        "red_lines": ["Taiwan independence declaration", "Challenge to CCP's monopoly", "External support for Xinjiang/Tibet/HK independence"],
+        "historical_analog": "Mao Zedong (power concentration, ideological campaigns) but with Deng's economic pragmatism when survival demands it"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_trillion": 18.5,
+    "gdp_ppp_usd_trillion": 34.0,
+    "growth_rate_percent": 4.8,
+    "trade_dependency": 36,
+    "energy_dependency": 72,
+    "sanction_vulnerability": 45,
+    "strengths": [
+      "World's largest manufacturer — 28% of global manufacturing output",
+      "Largest exporter globally",
+      "Complete supply chain control in many sectors (EVs, solar, rare earths processing)",
+      "Massive domestic market",
+      "State-directed investment capacity",
+      "Rare earth processing monopoly (60%+ global)"
+    ],
+    "vulnerabilities": [
+      "80% of oil imports through Strait of Malacca — single greatest strategic vulnerability",
+      "Real estate crisis (Evergrande, Country Garden) — $50T+ sector under stress",
+      "Demographic cliff — population aging + declining due to one-child policy legacy",
+      "Semiconductor dependency — cutting-edge chips still reliant on TSMC/Western supply",
+      "US dollar dependency for trade settlement",
+      "Food import exposure (soybeans from Brazil/US)"
+    ],
+    "strategic_dependencies": {
+      "oil": "Imports 70%+ — 80% through Malacca Strait. India's navy sits at the exit.",
+      "semiconductors": "Advanced chips from TSMC, Samsung, ASML blocked by US export controls",
+      "food": "Soybean imports from US/Brazil — potential leverage point"
+    }
+  },
+  "society": {
+    "demography": {
+      "median_age": 39,
+      "urban_percent": 65,
+      "population_trend": "Declining — first population drop in 2022. Will lose 400M people by 2100 (UN projections).",
+      "one_child_legacy": "Aging population, gender imbalance (34M excess men), labor force shrinking"
+    },
+    "social_fault_lines": [
+      {"fault_line": "Ethnic minorities", "current_status": "Uyghurs, Tibetans, Mongolians under intense assimilation pressure", "live_relevance": "critical"},
+      {"fault_line": "Urban-rural inequality", "current_status": "Hukou system restricts rural-to-urban migration rights. Massive wealth gap.", "live_relevance": "medium"},
+      {"fault_line": "Youth disillusionment", "current_status": "Tang Ping (lying flat) movement — youth rejecting work/consumption pressure. Youth unemployment hit 20%+ in 2023.", "live_relevance": "high"}
+    ]
+  },
+  "geography_strategy": {
+    "overview": "China faces the 'Malacca Dilemma' — its oil lifeline passes through a strait India can close. Internally, it is a continental giant seeking maritime access. Taiwan blocks its east coast naval expansion.",
+    "terrain_advantage": "Vast territory. Tibetan plateau as western fortress. No serious land invasion threat.",
+    "chokepoints": [
+      "Taiwan Strait — blocked by Taiwan + US 7th Fleet",
+      "First Island Chain (Japan-Taiwan-Philippines) — constrains PLA Navy",
+      "Strait of Malacca — China's oil import vulnerability (India's leverage)"
+    ],
+    "borders": {
+      "14 land neighbors": "World's most complex border situation. Disputes with India (LAC), Bhutan, Vietnam (historical), Taiwan (existential).",
+      "South_China_Sea": "Claimed 90%+ despite UNCLOS ruling against (2016). Artificial islands built. Active militarization."
+    },
+    "vulnerabilities": [
+      "Malacca Dilemma — 80% oil through one chokepoint India's navy flanks",
+      "Taiwan — unification is core CCP legitimacy claim, reunification by force triggers US intervention",
+      "First Island Chain — constrains naval power projection",
+      "Xinjiang/Tibet — internal security consumes enormous resources"
+    ],
+    "maritime_leverage": false
+  },
+  "military_security": {
+    "overview": "World's largest military by personnel. Rapid modernization. Second-largest defense budget. Goal: match or exceed US military capability by 2035, defeat US intervention in Taiwan Strait by 2027.",
+    "personnel": {"active": 2000000, "reserve": 500000},
+    "nuclear_status": {
+      "is_nuclear": true,
+      "doctrine": "No First Use — but building toward 'launch on warning' capability",
+      "estimated_warheads": 500,
+      "delivery": ["DF-41 ICBM (15,000km range)", "JL-2/3 SLBMs", "H-6 bombers", "DF-21D/DF-26 carrier killers"],
+      "trajectory": "Tripling warhead count. Moving toward 1,500 warheads by 2035 (DoD estimate)."
+    },
+    "power_projection": 80,
+    "key_capabilities": [
+      "Carrier killer missiles (DF-21D, DF-26) designed specifically to deny US carriers entry",
+      "3 aircraft carriers (Liaoning, Shandong, Fujian — catapult launch)",
+      "Anti-satellite weapons (ASAT tested 2007)",
+      "Cyber warfare: APT41, APT10 — world-class offensive cyber",
+      "South China Sea artificial island fortress network"
+    ],
+    "doctrine": "Anti-Access/Area Denial (A2/AD) — prevent US military intervention in Taiwan Strait. Win fast before US can respond. Use missiles, cyber, space to blind US sensors."
+  },
+  "foreign_policy": {
+    "doctrine": "National rejuvenation by 2049. China Dream. Replace US-led order with Sino-centric one — not by destroying the system, but by reshaping it.",
+    "doctrine_timeline": [
+      {"era": "1949–1972", "label": "Revolutionary + Soviet alliance", "description": "Export revolution. Soviet split 1960. Nixon opening 1972."},
+      {"era": "1972–1989", "label": "Anti-Soviet alignment with US", "description": "Pragmatic partnership with US against USSR. Deng's opening."},
+      {"era": "1989–2012", "label": "Hide and Bide (韬光养晦)", "description": "Deng's instruction: accumulate power, don't challenge US yet. Join WTO. Grow."},
+      {"era": "2012–2026", "label": "Strive for Achievement (积极有为)", "description": "Xi ends hide-and-bide. BRI, AIIB, South China Sea assertiveness, Wolf Warrior diplomacy, Taiwan pressure."}
+    ],
+    "alliances": {
+      "formal_allies": ["North Korea (1961 Friendship Treaty)"],
+      "strategic_partners": ["Russia", "Pakistan", "Iran", "Saudi Arabia (transactional)"],
+      "rivals": ["United States", "India", "Japan"],
+      "multilateral": ["SCO", "BRICS", "RCEP", "AIIB", "BRI (150+ countries)"]
+    }
+  },
+  "current_affairs": {
+    "year": 2026,
+    "key_developments": [
+      "Taiwan Strait — PLA exercises intensifying. Xi has told military to be ready for Taiwan operation by 2027.",
+      "US-China tech war deepening — ASML EUV export ban, Nvidia chip restrictions hitting Chinese AI development.",
+      "China-Russia strategic partnership deepening post-Ukraine war. Arms flow from China to Russia under international scrutiny.",
+      "Real estate crisis ongoing — property sector debt restructuring. Growth slowing to 4–5% range.",
+      "South China Sea — Philippines clashes with CCG at Scarborough Shoal and Second Thomas Shoal intensifying.",
+      "China-India — LAC partial disengagement holding but trust gone. India-Quad deepening as direct response.",
+      "BRICS expansion — added Saudi, Iran, UAE, Ethiopia, Egypt. China using BRICS to build dollar-alternative system."
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "China's BRI — geopolitical tool or infrastructure investment?",
+      "Sino-Indian border dispute — historical, legal, and strategic dimensions",
+      "China's territorial assertiveness in South China Sea — UNCLOS vs. nine-dash line",
+      "China's economic model — state capitalism and its global implications",
+      "US-China tech war — semiconductors, AI, and decoupling",
+      "Taiwan question — legal status, historical claim, military threat"
+    ],
+    "interview_themes": [
+      "Is China a revisionist or status quo power?",
+      "What is the 'Malacca Dilemma' and why does it matter for India?",
+      "How does China use BRI as a geopolitical tool?",
+      "What is China's 'century of humiliation' and how does it shape Xi's decisions?",
+      "Will China invade Taiwan, and what would India's position be?"
+    ],
+    "keywords": [
+      "Century of Humiliation", "China Dream", "2049", "BRI", "AIIB", "Wolf Warrior", "Hide and Bide",
+      "A2/AD", "DF-21D", "Carrier Killer", "Malacca Dilemma", "Nine-Dash Line", "UNCLOS", "FONOPS",
+      "Taiwan Strait", "First Island Chain", "Common Prosperity", "Tang Ping", "Dual Circulation",
+      "SCO", "RCEP", "BRICS+", "Xinjiang", "One Country Two Systems"
+    ],
+    "quick_drill": [
+      {"q": "What is China's 'Malacca Dilemma'?", "a": "China imports 80% of its oil through the Strait of Malacca, which India's navy can close. In a China-India conflict, India's greatest asymmetric leverage is this chokepoint — not military strength comparison."},
+      {"q": "What is China's 'Century of Humiliation'?", "a": "1839–1949: Opium Wars, Unequal Treaties, Nanjing Massacre, Japanese occupation. The CCP's entire founding legitimacy rests on ending this. Xi invokes it constantly to justify Taiwan recovery and global assertion."},
+      {"q": "What is A2/AD?", "a": "Anti-Access/Area Denial — China's military strategy to prevent US military from entering the Taiwan Strait. DF-21D 'carrier killer' missiles, cyber, ASAT weapons designed to blind and deny US forces."},
+      {"q": "What changed when Xi took power in 2012?", "a": "End of 'hide and bide.' Xi declared China strong enough to assert itself. BRI launched, South China Sea militarized, Taiwan pressure increased, Wolf Warrior diplomacy. Collective leadership replaced by Xi's personal authority."}
+    ],
+    "essay_theses": [
+      "China is not rising — it is returning. Understanding this distinction is essential to understanding Xi's foreign policy.",
+      "The Taiwan question is not about democracy or sovereignty — it is about the CCP's domestic legitimacy.",
+      "China's BRI is simultaneously genuine infrastructure investment and the most ambitious geopolitical project since the Marshall Plan."
+    ]
+  },
+  "az_memory": {
+    "A": "Ambitions: National rejuvenation by 2049 (centenary of PRC). Displace US as leading global power. Reunify Taiwan. Establish Sino-centric Asian order.",
+    "B": "Borders: 14 land neighbors — most complex border situation globally. South China Sea claimed (contested). Taiwan Strait (flashpoint). LAC with India (active dispute).",
+    "C": "Constitution: Nominal socialist constitution. Real power: CCP. Xi has removed term limits. Politburo Standing Committee of 7 is the actual cabinet.",
+    "D": "Doctrine: Strive for Achievement (Xi era). A2/AD military. BRI economic. Wolf Warrior diplomatic. 2049 as north star.",
+    "E": "Economy: $18.5T GDP. Manufacturing superpower. Rare earth monopoly. Real estate crisis (25% of GDP). Demographic cliff accelerating.",
+    "F": "Fault Lines: Uyghur suppression (Xinjiang). Hong Kong identity. Youth unemployment + Tang Ping. Urban-rural divide. Property crisis middle class wealth destruction.",
+    "G": "Geography: Continental giant seeking maritime break-out. Malacca Dilemma. First Island Chain constraint. Tibetan plateau western anchor.",
+    "H": "History: 5000yr civilization. Century of Humiliation 1839–1949. Mao, Cultural Revolution, Great Leap famine (suppressed). Tiananmen (suppressed). Reform era.",
+    "I": "Identity: Middle Kingdom — natural center of Asian civilization. CCP = continuation of Chinese imperial legitimacy, not revolutionary rupture.",
+    "J": "Judiciary: Not independent. Party controls courts. Executes more people annually than all other countries combined.",
+    "K": "Key Figures: Mao (revolution, famine, chaos), Deng (reform, pragmatism, Tiananmen), Xi (concentration, assertion, China Dream).",
+    "L": "Leverage: Rare earth monopoly. Manufacturing dependency. BRI debt leverage. Economic coercion (Lithuania, Australia, South Korea). Cyber operations.",
+    "M": "Military: 2M active. 500+ warheads (growing). DF-41, carrier killers. 3 aircraft carriers. Goal: defeat US Taiwan Strait intervention by 2027.",
+    "N": "Neighbors: Russia (strategic partner), India (rival), Japan (historical enemy + rival), Vietnam (South China Sea), Taiwan (unification target).",
+    "O": "Organizations: BRICS (expanded to 10), SCO, RCEP, AIIB, BRI (150+ countries). Builds parallel institutions to reduce US-dominated multilateral dependency.",
+    "P": "Politics: CCP monopoly. 98M members. No elections. Xi permanent. Politburo Standing Committee of 7 governs. Anti-corruption purge = loyalty consolidation.",
+    "Q": "Quotient: Very high at converting economic power to geopolitical influence. Lower at winning hearts and minds — Wolf Warrior diplomacy has cost global image points.",
+    "R": "Rivalries: USA (hegemonic contest), India (civilizational + border), Japan (historical + Senkaku), Taiwan (existential unification).",
+    "S": "Society: Aging rapidly. Median age 39. Gender imbalance (34M excess men). Youth disillusionment. Heavy surveillance (Social Credit, 500M+ cameras).",
+    "T": "Technology: EV global leader. Solar manufacturing dominant. AI: competitive but chip-blocked. Huawei 5G. Space program (Chang'e, Tiangong). Semiconductor: lagging.",
+    "U": "Uncertainty: Will Xi invade Taiwan and when? Can Chinese economy avoid Japanese-style stagnation? What happens post-Xi?",
+    "V": "Vulnerabilities: Malacca Dilemma. Semiconductor dependency. Real estate debt. Aging population. Taiwan military miscalculation risk.",
+    "W": "Worldview: Current US-led order is illegitimate — built when China was weak. China must reshape it to reflect current power realities. Not revolutionary, but revisionist.",
+    "X": "X-Factors: Xi health/succession (no designated heir). Taiwan miscalculation triggering US war. Real estate collapse → social instability → CCP legitimacy crisis.",
+    "Y": "Years Ahead: 2027 (Taiwan readiness target), 2035 (world-class military), 2049 (national rejuvenation). Each milestone drives specific military and economic decisions.",
+    "Z": "Zones of Conflict: Taiwan Strait (existential), South China Sea (active coercion), LAC with India (frozen), East China Sea/Senkaku (Japan)."
+  },
+  "flashpoints": [
+    {
+      "id": "taiwan_strait",
+      "name": "Taiwan Strait",
+      "parties": ["China", "Taiwan", "United States"],
+      "status": "escalating",
+      "pressure_score": 88,
+      "momentum_direction": "accelerating",
+      "last_escalation": "2024-08-01",
+      "description": "Xi has reportedly told PLA to be ready for Taiwan operation by 2027. PLA Air Force violates ADIZ daily. Carrier exercises encircle Taiwan periodically. US arms sales + Pelosi visit triggers exercises.",
+      "trigger_risk": ["Taiwan formal independence declaration", "US-Taiwan defense treaty", "Chinese leadership succession instability", "PLA miscalculation during exercise"]
+    },
+    {
+      "id": "south_china_sea",
+      "name": "South China Sea — Philippines",
+      "parties": ["China", "Philippines", "Vietnam", "United States"],
+      "status": "active_low",
+      "pressure_score": 71,
+      "momentum_direction": "accelerating",
+      "last_escalation": "2024-06-17",
+      "description": "China Coast Guard water cannons, laser attacks on Philippine vessels at Second Thomas Shoal. Philippines under Marcos Jr. has hardened stance, invited US military back to bases.",
+      "trigger_risk": ["Philippine vessel sunk or sailors killed", "US military escort of Philippine vessels", "ASEAN solidarity shift"]
+    }
+  ],
+  "perception_model": {
+    "self_image": "The world's natural leading civilization, temporarily displaced by Western colonialism, now returning to its rightful position.",
+    "rival_perceptions": {
+      "United States": {
+        "China_perceives_USA_as": "Declining hegemon trying to prevent China's rise through containment. US alliances (QUAD, AUKUS) are encirclement.",
+        "USA_perceives_China_as": "Strategic competitor, potential adversary. Revisionist power seeking to overturn the rules-based order.",
+        "asymmetry_risk": "high",
+        "misperception_type": "Both see the other as more aggressive and coordinated than they are — mirror imaging."
+      },
+      "India": {
+        "China_perceives_India_as": "US tool for China containment. Manageable regional irritant. Not a peer competitor yet.",
+        "India_perceives_China_as": "Existential long-game threat. Uses Pakistan as proxy. Systematically encircles India.",
+        "asymmetry_risk": "high"
+      }
+    }
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "nationalist performance + economic delivery + CCP monopoly",
+    "secondary_basis": "stability (wending) — contrast with chaos of foreign intervention/weakness",
+    "legitimacy_threats": ["Economic slowdown", "Youth unemployment", "Taiwan military failure", "Corruption perception"],
+    "legitimacy_floor": 60,
+    "current_legitimacy_estimate": 72,
+    "war_legitimacy_threshold": "CCP controls narrative — can manufacture consent for Taiwan operation. But failure in Taiwan would be existential legitimacy crisis."
+  },
+  "strategic_culture_rules": [
+    {
+      "id": "SCR-CHN-01",
+      "rule": "Never allow foreign forces near Chinese borders. Buffer zones are non-negotiable.",
+      "domain": "territorial_security",
+      "consistency": 95,
+      "exceptions": [],
+      "predictive_weight": 0.92,
+      "ml_features": {
+        "triggers": ["foreign_military_border_approach", "alliance_expansion_toward_China"],
+        "predicted_response": "military_response_or_maximum_pressure",
+        "confidence": 0.90
+      }
+    },
+    {
+      "id": "SCR-CHN-02",
+      "rule": "Win quickly or not at all. China cannot sustain prolonged war — Malacca vulnerability and economic exposure.",
+      "domain": "force_use",
+      "consistency": 85,
+      "predictive_weight": 0.80,
+      "ml_features": {
+        "triggers": ["military_operation_initiated", "taiwan_crisis"],
+        "predicted_response": "overwhelming_force_rapid_decision",
+        "confidence": 0.78
+      }
+    },
+    {
+      "id": "SCR-CHN-03",
+      "rule": "Economic coercion before military. Use trade as weapon first.",
+      "domain": "economic",
+      "consistency": 90,
+      "predictive_weight": 0.88,
+      "ml_features": {
+        "triggers": ["bilateral_tension", "diplomatic_dispute", "territorial_friction"],
+        "predicted_response": "economic_sanctions_or_trade_restriction",
+        "confidence": 0.85
+      }
+    }
+  ],
+  "resource_climate": {
+    "water_stress": "high",
+    "water_rivals": ["India — Brahmaputra (China controls upstream)", "Central Asia — shared rivers"],
+    "food_security_score": 74,
+    "climate_vulnerability_index": 58,
+    "strategic_resources": "Controls 60%+ of rare earth processing globally — single most powerful economic leverage point."
+  }
+}

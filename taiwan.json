@@ -1,0 +1,149 @@
+{
+  "id": "taiwan",
+  "display_name": "Taiwan",
+  "meta": {
+    "flag_emoji": "\ud83c\uddf9\ud83c\uddfc",
+    "flag_url": "https://flagcdn.com/w160/ta.png",
+    "region": "East Asia",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "Taipei",
+    "population_m": 24,
+    "system": "Semi-Presidential Republic",
+    "archetype": "Democratic Flashpoint Under Existential Claim",
+    "current_leader": "Lai Ching-te",
+    "summary": "[Expand: full intelligence profile for Taiwan]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for Taiwan]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 Taiwan",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Semi-Presidential Republic"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Lai Ching-te",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for Taiwan]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 69,
+    "nuclear_status": "non-nuclear",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for Taiwan]",
+    "B": "[Expand: B for Taiwan]",
+    "C": "[Expand: C for Taiwan]",
+    "D": "[Expand: D for Taiwan]",
+    "E": "[Expand: E for Taiwan]",
+    "F": "[Expand: F for Taiwan]",
+    "G": "[Expand: G for Taiwan]",
+    "H": "[Expand: H for Taiwan]",
+    "I": "[Expand: I for Taiwan]",
+    "J": "[Expand: J for Taiwan]",
+    "K": "[Expand: K for Taiwan]",
+    "L": "[Expand: L for Taiwan]",
+    "M": "[Expand: M for Taiwan]",
+    "N": "[Expand: N for Taiwan]",
+    "O": "[Expand: O for Taiwan]",
+    "P": "[Expand: P for Taiwan]",
+    "Q": "[Expand: Q for Taiwan]",
+    "R": "[Expand: R for Taiwan]",
+    "S": "[Expand: S for Taiwan]",
+    "T": "[Expand: T for Taiwan]",
+    "U": "[Expand: U for Taiwan]",
+    "V": "[Expand: V for Taiwan]",
+    "W": "[Expand: W for Taiwan]",
+    "X": "[Expand: X for Taiwan]",
+    "Y": "[Expand: Y for Taiwan]",
+    "Z": "[Expand: Z for Taiwan]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}

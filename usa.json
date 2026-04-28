@@ -1,0 +1,149 @@
+{
+  "id": "usa",
+  "display_name": "United States",
+  "meta": {
+    "flag_emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "flag_url": "https://flagcdn.com/w160/us.png",
+    "region": "North America",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "Washington D.C.",
+    "population_m": 335,
+    "system": "Federal Presidential Constitutional Republic",
+    "archetype": "Global Hegemonic Power",
+    "current_leader": "Joe Biden / Kamala Harris era \u2192 2025+",
+    "summary": "[Expand: full intelligence profile for United States]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for United States]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 United States",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Federal Presidential Constitutional Republic"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Joe Biden / Kamala Harris era \u2192 2025+",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for United States]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 78,
+    "nuclear_status": "armed",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for United States]",
+    "B": "[Expand: B for United States]",
+    "C": "[Expand: C for United States]",
+    "D": "[Expand: D for United States]",
+    "E": "[Expand: E for United States]",
+    "F": "[Expand: F for United States]",
+    "G": "[Expand: G for United States]",
+    "H": "[Expand: H for United States]",
+    "I": "[Expand: I for United States]",
+    "J": "[Expand: J for United States]",
+    "K": "[Expand: K for United States]",
+    "L": "[Expand: L for United States]",
+    "M": "[Expand: M for United States]",
+    "N": "[Expand: N for United States]",
+    "O": "[Expand: O for United States]",
+    "P": "[Expand: P for United States]",
+    "Q": "[Expand: Q for United States]",
+    "R": "[Expand: R for United States]",
+    "S": "[Expand: S for United States]",
+    "T": "[Expand: T for United States]",
+    "U": "[Expand: U for United States]",
+    "V": "[Expand: V for United States]",
+    "W": "[Expand: W for United States]",
+    "X": "[Expand: X for United States]",
+    "Y": "[Expand: Y for United States]",
+    "Z": "[Expand: Z for United States]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}

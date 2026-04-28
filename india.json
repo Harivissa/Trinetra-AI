@@ -1,0 +1,567 @@
+{
+  "meta": {
+    "id": "india",
+    "name": "India",
+    "flag": "🇮🇳",
+    "formal_name": "Republic of India",
+    "capital": "New Delhi",
+    "population": "1.44 billion",
+    "population_num": 1440000000,
+    "area_km2": 3287263,
+    "gdp_usd_trillion": 3.9,
+    "system": "Federal Parliamentary Republic",
+    "region": "South Asia",
+    "data_year": 2026
+  },
+  "national_profile": {
+    "overview": "India is the world's largest democracy, a nuclear-armed civilizational state with 5,000 years of continuous history. In 2026 it is the world's most populous nation and fastest-growing major economy, navigating a strategic position between the US-led order and an emerging multipolar world.",
+    "capital_detail": "New Delhi — planned colonial capital, now seat of Parliament, Supreme Court, and all federal ministries.",
+    "official_languages": ["Hindi", "English", "21 other scheduled languages"],
+    "religion_composition": "Hindu 80%, Muslim 14%, Christian 2.3%, Sikh 1.7%, Other 2%",
+    "government_type": "Federal Parliamentary Constitutional Republic",
+    "head_of_state": "President Droupadi Murmu (2022–)",
+    "head_of_government": "Prime Minister Narendra Modi (2014–)",
+    "legislature": "Bicameral Parliament: Lok Sabha (Lower) + Rajya Sabha (Upper)",
+    "judiciary": "Supreme Court — independent, active judicial review",
+    "current_ruling_party": "BJP (Bharatiya Janata Party)",
+    "election_system": "First-past-the-post; universal adult suffrage"
+  },
+  "historical_memory": {
+    "founding_trauma": "Partition of 1947. British withdrawal split the subcontinent into India and Pakistan along religious lines. 14 million displaced. 1–2 million killed in communal violence. The wound created Pakistan as a permanent security fixation and embedded Hindu-Muslim tension into the national political identity.",
+    "civilizational_claim": "5,000-year continuous civilization. Vedic → Mauryan Empire → Gupta Golden Age → Mughal era → British colonial period → Republic. India self-identifies as a civilizational state, not merely a nation-state — a critical distinction that shapes its resistance to external normative pressure.",
+    "doctrine_origin": "Non-Alignment born at Bandung Conference 1955. Nehru's response to Cold War binary. Doctrine hardened by 1971 Soviet treaty (exception proves the rule) and has survived every subsequent US and Chinese pressure to formally align.",
+    "narrative_spine": {
+      "founding_trauma": "Partition 1947 — the wound that created the state and its primary rival simultaneously.",
+      "identity_claim": "Ancient civilization returning to its natural position of global prominence — not rising, but returning.",
+      "first_test": "1962 Sino-Indian War. Military defeat exposed Nehru's idealism. Trust in China broken permanently.",
+      "first_internal_rupture": "Emergency 1975-77. Indira Gandhi suspended democracy. Proved Indian democracy fragile but resilient.",
+      "doctrine_crystallization": "1971 war + 1974 nuclear test. India is sovereign, will not be coerced, and has hard power backing its soft power.",
+      "present_posture": "Assertive Autonomy: growing economic and military power, resistant to binding alignments, using every major power as leverage against every other."
+    },
+    "turning_points": [
+      {
+        "year": 1947,
+        "event": "Independence and Partition",
+        "strategic_consequence": "Pakistan rivalry hardcoded into national DNA. Kashmir dispute created — still unresolved 79 years later.",
+        "doctrine_impact": "critical"
+      },
+      {
+        "year": 1962,
+        "event": "Sino-Indian War — Defeat",
+        "strategic_consequence": "China upgraded from civilizational brother to existential threat. Military modernization becomes priority. Border infrastructure program begins.",
+        "doctrine_impact": "critical"
+      },
+      {
+        "year": 1971,
+        "event": "Bangladesh Liberation War — Victory + Soviet Treaty",
+        "strategic_consequence": "Pakistan split. India demonstrates regional dominance. Nixon's nuclear threat (USS Enterprise) forces Soviet alliance as exception to Non-Alignment.",
+        "doctrine_impact": "high"
+      },
+      {
+        "year": 1974,
+        "event": "Pokhran-I — Smiling Buddha nuclear test",
+        "strategic_consequence": "India exits NPT logic permanently. Nuclear deterrence as sovereignty signal, not aggression. International pariah status for a decade.",
+        "doctrine_impact": "critical"
+      },
+      {
+        "year": 1991,
+        "event": "Economic liberalization — end of License Raj",
+        "strategic_consequence": "GDP growth trajectory changes. US relationship pivots from adversarial to transactional. Strategic autonomy gains economic foundation.",
+        "doctrine_impact": "high"
+      },
+      {
+        "year": 1998,
+        "event": "Pokhran-II — Shakti tests. Declared nuclear weapons state.",
+        "strategic_consequence": "Pakistan responds with own tests. South Asia formally nuclear. India accepts US sanctions but refuses to sign CTBT.",
+        "doctrine_impact": "critical"
+      },
+      {
+        "year": 1999,
+        "event": "Kargil War — Limited nuclear-era conflict",
+        "strategic_consequence": "Proved nuclear-armed neighbors can fight limited wars. India masters escalation control. Pakistan internationally isolated. Doctrine: respond militarily, cap at conventional.",
+        "doctrine_impact": "medium"
+      },
+      {
+        "year": 2016,
+        "event": "Uri Attack + Surgical Strikes",
+        "strategic_consequence": "India crosses long-held threshold of responding with cross-border strikes. New normal: India will respond kinetically to terror attacks traced to Pakistan.",
+        "doctrine_impact": "medium"
+      },
+      {
+        "year": 2020,
+        "event": "Galwan Valley — 20 Indian soldiers killed",
+        "strategic_consequence": "India-China trust permanently broken. Accelerates: Quad membership, arms imports, border infrastructure, economic decoupling from China, global supply chain diversification campaigns.",
+        "doctrine_impact": "critical"
+      }
+    ],
+    "strategic_culture_summary": "India does not initiate. It absorbs pressure, then responds disproportionately. Patience is doctrine, not weakness. Never formally aligns — uses every major power as leverage against every other. Economic growth is treated as a national security imperative, not merely development policy."
+  },
+  "crises_tragedies": [
+    {
+      "id": "partition_1947",
+      "name": "Partition of India",
+      "year": 1947,
+      "type": "civilizational_rupture",
+      "background": "British colonial withdrawal under Mountbatten's accelerated plan. Muslim League demanded separate state. Congress-League negotiations failed.",
+      "cause": "Two-nation theory. Colonial administrative failure. Hindu-Muslim communal violence spiral accelerated by rushed partition timeline.",
+      "immediate_consequences": "14 million displaced — largest mass migration in human history. 1–2 million killed in communal massacres. Punjab and Bengal divided.",
+      "long_term_impact": "Pakistan rivalry permanently embedded. Kashmir dispute irresolvable. Muslim minority politics permanently sensitive. Every India-Pakistan tension traces here.",
+      "live_relevance_2026": "Shapes BJP's electoral logic. Muslim minority status debates. Every India-Pakistan crisis is Partition's continuing aftershock.",
+      "sensitivity_flag": "high"
+    },
+    {
+      "id": "sino_indian_war_1962",
+      "name": "Sino-Indian War — The Humiliation",
+      "year": 1962,
+      "type": "military_defeat",
+      "background": "Nehru's 'Forward Policy' — placing outposts beyond India's defensible positions. Chinese warnings ignored. India believed China would not attack.",
+      "cause": "Border dispute (McMahon Line), Nehru-era misplaced trust, Indian military unpreparedness.",
+      "immediate_consequences": "India routed. China seized Aksai Chin. Indian Army exposed as massively underprepared. Nehru personally devastated — died 18 months later.",
+      "long_term_impact": "China permanently elevated to existential threat. India's entire military doctrine reoriented. Non-Alignment questioned. Soviet arms imports begin.",
+      "live_relevance_2026": "Every Indian government since 1962 has been psychologically shaped by it. Galwan 2020 is 1962's direct echo. Modi's border infrastructure push directly responds to 1962 lessons.",
+      "sensitivity_flag": "medium"
+    },
+    {
+      "id": "emergency_1975",
+      "name": "The Emergency (1975–1977)",
+      "year": 1975,
+      "type": "democratic_rupture",
+      "background": "Allahabad High Court invalidated Indira Gandhi's 1971 election. JP Narayan led mass opposition movement demanding her resignation.",
+      "cause": "Indira Gandhi suspended Constitution. Press censored. Opponents jailed. 21 months of authoritarian rule. Son Sanjay Gandhi ran forced sterilization program.",
+      "immediate_consequences": "Civil liberties suspended. ~150,000 jailed. Forced sterilization of ~8 million. Press muzzled.",
+      "long_term_impact": "Permanent institutional hypersensitivity to executive overreach. Judiciary independence hardened post-1977. BJP uses Emergency as perpetual anti-Congress weapon. Debate still live: could it happen again?",
+      "live_relevance_2026": "Cited in every debate on press freedom, EVM trust, judicial independence, and BJP's democratic credentials.",
+      "sensitivity_flag": "medium"
+    },
+    {
+      "id": "sikh_massacres_1984",
+      "name": "1984 Anti-Sikh Pogroms",
+      "year": 1984,
+      "type": "state_violence",
+      "background": "Operation Blue Star — Indian Army stormed Golden Temple to flush out Jarnail Singh Bhindranwale. Indira Gandhi assassinated by Sikh bodyguards in retaliation.",
+      "cause": "Congress-organized (or Congress-permitted) retaliatory violence against Sikh community across India. Delhi Police stood down for 3 days.",
+      "immediate_consequences": "3,000–8,000 Sikhs killed in Delhi alone. Nationwide violence in Kanpur, Mumbai, others.",
+      "long_term_impact": "Sikh diaspora radicalization. Khalistan movement's international support base crystallized. Canada's large Sikh diaspora becomes geopolitical factor. 40 years later, no senior Congress leader convicted.",
+      "live_relevance_2026": "Nijjar assassination (2023) and India-Canada diplomatic crisis trace directly to 1984 grievances. Remains live fault line.",
+      "sensitivity_flag": "very_high"
+    },
+    {
+      "id": "mumbai_26_11_2008",
+      "name": "Mumbai Terror Attacks — 26/11",
+      "year": 2008,
+      "type": "strategic_shock",
+      "background": "10 LeT operatives from Pakistan landed by sea. Attacked CST railway station, Taj Hotel, Oberoi Hotel, Nariman House. 60-hour siege.",
+      "cause": "Pakistan-based Lashkar-e-Taiba, with alleged ISI support. Designed to derail India-Pakistan peace process.",
+      "immediate_consequences": "166 killed, 300+ wounded. Composite Dialogue with Pakistan suspended. India-Pakistan relations enter deep freeze.",
+      "long_term_impact": "India's counterterrorism doctrine hardened. 'Zero tolerance' for Pakistan-based terrorism becomes domestic political consensus. International opinion tilts toward India on Pakistan terror sponsorship.",
+      "live_relevance_2026": "Every India-Pakistan escalation now calibrated against 26/11 precedent. Domestic political barometer for government response adequacy.",
+      "sensitivity_flag": "high"
+    }
+  ],
+  "political_intelligence": {
+    "constitution": {
+      "adopted": 1950,
+      "character": "Federal, parliamentary, with strong unitary tilt. Dr. B.R. Ambedkar as chief architect. Longest written constitution in the world.",
+      "key_features": ["Fundamental Rights", "Directive Principles of State Policy", "Emergency Provisions (Art 352, 356, 360)", "Independent Judiciary with judicial review", "Universal adult suffrage from day one"],
+      "fault_lines": ["Article 356 (President's Rule) historically abused. Article 370 abrogation in 2019 contested. Citizenship Amendment Act 2019 challenged on secularism."]
+    },
+    "party_evolution": [
+      {
+        "party": "Indian National Congress (INC)",
+        "founded": 1885,
+        "ideology_now": "Centre-left, secularism, welfare",
+        "trajectory": "Founded as anti-colonial movement. Dominant 1947–1984. Economic liberalization 1991. Declining post-2014. Currently in opposition collapse.",
+        "current_status": "Weak opposition — Gandhi family succession paralysis prevents regeneration"
+      },
+      {
+        "party": "Bharatiya Janata Party (BJP)",
+        "founded": 1980,
+        "ideology_now": "Hindu nationalism, economic liberalism, assertive foreign policy",
+        "trajectory": "Jana Sangh roots 1951. Fringe to major via Ram Janmabhoomi movement. Coalition government 1999–2004. Single-party dominance from 2014.",
+        "current_status": "Dominant. Controls Centre + most states. Ideologically transformed mainstream politics."
+      },
+      {
+        "party": "Regional Parties (AAP, SP, TMC, DMK etc.)",
+        "trajectory": "Coalition era (1989–2014) empowered regional parties enormously. Post-2014, BJP's national dominance has reduced their leverage though they remain critical in key states."
+      }
+    ],
+    "leadership_memory": {
+      "current_leader": {
+        "name": "Narendra Modi",
+        "title": "Prime Minister",
+        "in_power_since": 2014,
+        "archetype": "nationalist_consolidator",
+        "formative_experiences": [
+          "RSS pracharak 1971–1985 — full-time ideologue before politician. Ideology is genuine, not instrumental.",
+          "Gujarat riots 2002 — CM during anti-Muslim pogrom. International pariah 2002–2013. Hardened against Western rights pressure.",
+          "Demonetization 2016 — high-risk unilateral move. Poor implementation. Reveals tendency to trust instinct over institutional process."
+        ],
+        "decision_patterns": {
+          "under_pressure": "Doubles down, reframes as nationalism or security imperative",
+          "in_crisis": "Personal control. Minimum cabinet consultation. NSA Doval as de-facto foreign policy executor.",
+          "with_rivals": "Calibrated escalation — responds kinetically but caps at conventional. Galwan: economic decoupling + military buildup, no hot war."
+        },
+        "red_lines": ["Military humiliation by China or Pakistan without response", "Challenge to Hindu nationalist cultural agenda"],
+        "historical_analog": "Indira Gandhi (power centralization) + Vajpayee (foreign policy pragmatism)"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_trillion": 3.9,
+    "gdp_ppp_usd_trillion": 14.5,
+    "growth_rate_percent": 6.5,
+    "growth_score": 88,
+    "trade_dependency": 42,
+    "energy_dependency": 78,
+    "sanction_vulnerability": 35,
+    "forex_reserves_usd_bn": 640,
+    "strengths": [
+      "Fastest-growing major economy 2026",
+      "Large domestic market — 1.4B consumers",
+      "IT/services global hub: $250B+ annual exports",
+      "Young workforce demographic advantage (median age 28)",
+      "Significant remittance inflows ($120B annually)",
+      "Food self-sufficiency in most staples"
+    ],
+    "vulnerabilities": [
+      "80% oil import dependence — energy security exposure",
+      "Manufacturing still underdeveloped vs. China",
+      "Youth unemployment structural problem",
+      "Infrastructure deficits outside urban cores",
+      "Rupee vulnerability to dollar strength"
+    ],
+    "key_sectors": ["IT Services", "Pharmaceuticals", "Agriculture", "Textiles", "Defense manufacturing (growing)"],
+    "strategic_dependencies": {
+      "oil": "Imports 80% — Gulf + Russia post-2022",
+      "semiconductors": "Near 100% import — TATA/Micron fab investment underway",
+      "defense_equipment": "Historically Russia-dependent, diversifying to France/Israel/USA"
+    }
+  },
+  "society": {
+    "demography": {
+      "median_age": 28,
+      "urban_percent": 37,
+      "literacy_rate": 77,
+      "youth_bulge": "60% under 35 — demographic dividend or pressure depending on job creation"
+    },
+    "social_fault_lines": [
+      {
+        "fault_line": "Hindu-Muslim relations",
+        "current_status": "Elevated tension post-CAA 2019, hijab bans, mosque demolitions",
+        "live_relevance": "critical — BJP's electoral base requires maintaining Hindu solidarity; risk of communal violence"
+      },
+      {
+        "fault_line": "Caste system",
+        "current_status": "OBC mobilization is dominant electoral force. SC/ST reservations constitutionally protected. Creamy layer debates.",
+        "live_relevance": "high — caste arithmetic determines every election outcome"
+      },
+      {
+        "fault_line": "Regional disparities",
+        "current_status": "South India (richer, more developed) resents North India political dominance. Delimitation threatens South's parliamentary representation.",
+        "live_relevance": "medium — potential federalism tension by 2026 delimitation exercise"
+      }
+    ],
+    "development_metrics": {
+      "HDI": 0.644,
+      "HDI_rank": 134,
+      "gini": 35.7,
+      "internet_penetration_percent": 65,
+      "mobile_penetration_percent": 87
+    }
+  },
+  "geography_strategy": {
+    "overview": "India occupies the strategic center of the Indian Ocean Region. Himalayan barrier to the north creates natural defense against China but limits land access to Central Asia. Three coastlines make India a natural maritime power.",
+    "terrain_advantage": "Himalayas in north — most defensible border in the world but logistics nightmare at altitude. Peninsular geography = Indian Ocean control.",
+    "chokepoints": [
+      "Strait of Malacca approach — Indian Navy sits astride China's primary oil import route",
+      "Strait of Hormuz — India's own oil import route, also leverage point over Gulf",
+      "Andaman & Nicobar Islands — natural surveillance platform over entire Bay of Bengal and Malacca approach"
+    ],
+    "borders": {
+      "China": "3,488 km — LAC (Line of Actual Control), undefined, disputed. Active flashpoint.",
+      "Pakistan": "3,323 km — LoC in Kashmir + international border. Active conflict zone.",
+      "Bangladesh": "4,156 km — peaceful, but migration and water issues",
+      "Nepal": "1,751 km — open border, growing Chinese influence concern",
+      "Others": "Bhutan, Myanmar, Sri Lanka (maritime)"
+    },
+    "vulnerabilities": [
+      "Two-front war risk: China + Pakistan simultaneously — the nightmare scenario",
+      "Energy import reliance through Gulf — Hormuz vulnerability",
+      "Chicken's neck — Siliguri Corridor: 22km wide strip connecting Northeast India to mainland. Chinese capture = Northeast isolated."
+    ],
+    "strategic_depth": "Limited in northwest (Pakistan border). Enormous in peninsula and eastern coast.",
+    "maritime_leverage": true
+  },
+  "military_security": {
+    "overview": "World's 4th largest military by personnel. Nuclear-armed. Battle-tested on multiple fronts. Transitioning from Soviet-era equipment to indigenization + Western diversification.",
+    "personnel": {
+      "active": 1450000,
+      "reserve": 1155000,
+      "paramilitary": 2000000
+    },
+    "nuclear_status": {
+      "is_nuclear": true,
+      "declared_since": 1998,
+      "doctrine": "No First Use (NFU) — under increasing debate post-2019",
+      "estimated_warheads": 172,
+      "delivery": ["Agni-V ICBM (5500km+)", "Prithvi missiles", "Aircraft", "INS Arihant submarine (SSBN — triad complete)"],
+      "debate": "BJP leaders (Rajnath Singh 2019) questioned NFU publicly. Likely deliberate ambiguity strategy rather than actual doctrine change."
+    },
+    "power_projection": 65,
+    "combat_experience": 60,
+    "logistics_depth": 70,
+    "key_capabilities": [
+      "Indian Air Force: Su-30MKI (262), Rafale (36), Tejas (growing)",
+      "Indian Navy: 2 aircraft carriers (INS Vikrant + Vikramaditya)",
+      "Army: Mountain warfare specialization post-Galwan",
+      "Cyber: NTRO + NCIIPC — growing offensive cyber capability"
+    ],
+    "procurement_evolution": "1947–1990: Soviet primary. 1991–2014: Diversifying. 2014–2026: Russia + France + Israel + USA. Indigenization push: LCA Tejas, TEJAS Mk2, Arjun tank, INS Vikrant.",
+    "doctrine": "Defensive deterrence primary. Limited offensive capability against Pakistan. Primarily deterrence-focused against China."
+  },
+  "foreign_policy": {
+    "doctrine": "Strategic Autonomy — preserve maximum freedom of action. No binding alignments that constrain options.",
+    "doctrine_timeline": [
+      {"era": "1947–1962", "label": "Nehruvian Idealism", "description": "Non-Alignment, UN faith, moral leadership, minimal defense spending. Ended violently by 1962 humiliation."},
+      {"era": "1962–1991", "label": "Realist Awakening", "description": "Post-defeat military buildup. Soviet partnership. Nuclear program. Bangladesh victory. Emergency. IPKF failure."},
+      {"era": "1991–2014", "label": "Multi-alignment emergence", "description": "US + Russia simultaneously. Economic liberalization changes leverage. Look East policy. Nuclear deal 2008."},
+      {"era": "2014–2026", "label": "Assertive Autonomy", "description": "Modi's hard-power backing to strategic autonomy. Galwan accelerated militarization. S-400 defiance of CAATSA. Russia oil imports 2022 despite Western pressure."}
+    ],
+    "alliances": {
+      "formal_allies": [],
+      "strategic_partners": ["United States", "Russia", "France", "Japan", "Israel", "UAE"],
+      "rivals": ["China", "Pakistan"],
+      "multilateral": ["QUAD", "BRICS", "SCO", "G20 (2023 presidency)", "Commonwealth", "Non-Aligned Movement"]
+    },
+    "key_bilateral": {
+      "USA": "Convergent interests on China containment. Defense partnership deepening (LEMOA, COMCASA, BECA). But India refuses to be client state. Tension: Russia arms, S-400.",
+      "Russia": "Longest strategic partnership. S-400 purchase. 60% historical arms dependence. Discounted oil 2022. India will not sacrifice this for Western approval.",
+      "China": "Structural rivalry. Border dispute irresolvable short of Chinese territorial concession. Economic decoupling accelerating post-Galwan. BRICS coexistence is tactical, not trust.",
+      "Pakistan": "Existential rivalry. State-sponsored terrorism as Pakistan's strategic tool. No normalization until cross-border terror addressed."
+    }
+  },
+  "current_affairs": {
+    "year": 2026,
+    "key_developments": [
+      "India-China LAC — buffer zones partially holding post-Galwan. Full disengagement not achieved. Border infrastructure race continues.",
+      "India general election 2024 — BJP returned to power but without full majority; NDA coalition government.",
+      "India-Canada crisis — Nijjar assassination fallout. Diplomatic expulsions. Khalistan diaspora factor.",
+      "India semiconductor push — TATA/Micron fabs coming online. Target: reduce chip import dependency.",
+      "India-Middle East-Europe Corridor (IMEC) — countering China's BRI. Saudi + UAE + Israel + India + Europe connectivity.",
+      "Russia-Ukraine war: India buying discounted Russian oil. Balancing act under Western pressure.",
+      "Delimitation 2026 — parliamentary seat reallocation. South India fears loss of seats. Federal tension rising."
+    ],
+    "strategic_trajectory": "Rising. GDP will overtake Japan/Germany by 2030. Military modernization on track. But domestic social cohesion under pressure from Hindu nationalist agenda. Whether India can sustain strategic autonomy as great power competition intensifies is 2026's central question."
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "India's Non-Alignment and its evolution into Strategic Autonomy",
+      "Sino-Indian border dispute: LAC, McMahon Line, Aksai Chin",
+      "India's nuclear doctrine: No First Use and its evolving debates",
+      "India-Pakistan: partition legacy, Kashmir, water treaties, terrorism",
+      "India's role in Global South — G20, BRICS, development diplomacy",
+      "India's demographic dividend — opportunity or pressure?",
+      "Federalism in India — Centre-State relations, Article 356, NITI Aayog"
+    ],
+    "interview_themes": [
+      "Why does India not join US-led alliances? Is Strategic Autonomy still relevant?",
+      "What changed in India-China relations after Galwan 2020?",
+      "Is India's No First Use nuclear doctrine credible?",
+      "How does India balance Russia partnership with Western pressure?",
+      "What is India's strategy in the Indo-Pacific?",
+      "Why has India-Pakistan normalization failed repeatedly?"
+    ],
+    "keywords": [
+      "Strategic Autonomy", "Non-Alignment 2.0", "Neighbourhood First", "Act East Policy",
+      "QUAD", "BRICS", "SCO", "S-400", "CAATSA", "Galwan", "LAC", "LoC", "LEMOA", "COMCASA", "BECA",
+      "No First Use", "Smiling Buddha", "Pokhran-II", "Agni-V", "INS Arihant",
+      "Siliguri Corridor", "Andaman & Nicobar", "Malacca Strait", "IMEC", "BRI"
+    ],
+    "essay_theses": [
+      "India's strategic autonomy is not indecision — it is the calculated preservation of maximum leverage in a multipolar world.",
+      "The Himalayan border is not merely a territorial dispute; it is the physical manifestation of two civilizations' incompatible self-images.",
+      "India's greatest geopolitical asset is its irreplaceability — too large to isolate, too independent to capture.",
+      "Partition was not the end of a chapter; it was the origin of India's permanent security dilemma."
+    ],
+    "previous_year_questions": [
+      "Discuss the relevance of Non-Aligned Movement in contemporary world politics. (UPSC 2023)",
+      "How has India's foreign policy evolved since the end of the Cold War? (UPSC 2022)",
+      "Critically examine India's nuclear doctrine. (UPSC 2021)"
+    ],
+    "quick_drill": [
+      {"q": "What is Strategic Autonomy?", "a": "India's foreign policy doctrine of refusing formal alliances to preserve freedom of action — buying Russian arms while deepening US defense ties, joining QUAD while staying in BRICS."},
+      {"q": "Why did India sign the Soviet Treaty of 1971?", "a": "Nixon sent USS Enterprise into Bay of Bengal to threaten India during Bangladesh war. India needed nuclear cover. Treaty was an exception to Non-Alignment, not abandonment of it."},
+      {"q": "What is the Siliguri Corridor?", "a": "22km wide strip of land connecting Northeast India to mainland. If China captures it in a war, Northeast India is strategically isolated. India's single greatest geographic vulnerability."},
+      {"q": "What changed after Galwan 2020?", "a": "India-China trust permanently broken. India accelerated: QUAD membership, China app bans, supply chain diversification, border infrastructure, arms imports. Ended era of 'business as usual' with China."},
+      {"q": "What is India's NFU doctrine?", "a": "No First Use — India will not use nuclear weapons first, but promises massive retaliation if attacked. Under debate since Rajnath Singh's 2019 statement questioning it."}
+    ]
+  },
+  "az_memory": {
+    "A": "Ambitions: Return to civilizational greatness — Vishwaguru. Permanent UNSC seat. Become top-3 global economy by 2030. Lead Global South.",
+    "B": "Borders: LAC (China, undefined, contested), LoC (Pakistan, active conflict), Siliguri Corridor (vulnerability), Andaman Islands (strategic asset).",
+    "C": "Constitution: Federal parliamentary republic. 1950. Longest written constitution. Fundamental Rights, DPSP. Article 356 (President's Rule) historically abused.",
+    "D": "Doctrine: Strategic Autonomy. No formal alliances. Absorb first, respond disproportionately. No First Use nuclear (under debate).",
+    "E": "Economy: $3.9T GDP. Fastest growing major economy. IT/pharma strengths. Oil import vulnerability (80%). Manufacturing gap vs. China.",
+    "F": "Fault Lines: Hindu-Muslim tension (BJP's electoral base). Caste arithmetic. South vs. North (delimitation). Youth unemployment.",
+    "G": "Geography: Himalayan barrier (gift + logistics nightmare). Indian Ocean center. Malacca approach leverage. Siliguri vulnerability.",
+    "H": "History: 5000yr civilization. Partition trauma 1947. 1962 humiliation. 1971 triumph. 1974/1998 nuclear. 2020 Galwan reset.",
+    "I": "Identity: Civilizational state, not just nation-state. Ancient, not new. 'Returning' to global prominence, not rising. This distinction matters enormously in how India responds to pressure.",
+    "J": "Judiciary: Supreme Court — historically independent. Active judicial review. PIL system. Post-Emergency independence hardened. Under pressure from executive since 2014.",
+    "K": "Key Figures: Nehru (Non-Alignment architect), Indira Gandhi (centralization + 1971 victory + Emergency), Vajpayee (pragmatic nationalism), Modi (assertive autonomy + Hindu consolidation).",
+    "L": "Leverage: Malacca Strait access (vs. China). Pharmaceutical exports (global generic medicine supplier). IT services ($250B+). Nuclear deterrence. Diaspora soft power.",
+    "M": "Military: 1.45M active. Nuclear triad complete (INS Arihant). Rafale + Su-30MKI. Two aircraft carriers. Mountain warfare corps post-Galwan.",
+    "N": "Neighbors: Pakistan (existential rival), China (strategic rival), Bangladesh (managed), Nepal (growing Chinese influence concern), Sri Lanka (debt-trap watch).",
+    "O": "Organizations: QUAD, BRICS, SCO, G20, NAM, Commonwealth, SAARC (paralyzed by Pakistan). Joins groups that maximize leverage without binding commitments.",
+    "P": "Politics: BJP dominant since 2014. Hindu nationalism mainstreamed. Congress in structural decline. Coalition arithmetic still matters for Rajya Sabha.",
+    "Q": "Quotient: Strategic IQ — high at preserving options, medium at converting leverage into outcomes, low at institution-building in neighborhood.",
+    "R": "Rivalries: China (civilizational + border + economic + Indo-Pacific), Pakistan (partition legacy + terrorism + nuclear standoff). Both irresolvable short of fundamental change.",
+    "S": "Society: 1.44B people. Median age 28. Caste + religion as primary political identity markers. HDI 134th — development gap vs. strategic ambitions.",
+    "T": "Technology: IT/software global leader. Defense indigenization (Tejas, Arjun, Vikrant). Semiconductor gap (dependency). Cyber capability growing (NTRO).",
+    "U": "Uncertainty: Can India sustain strategic autonomy in a bipolar US-China world? Will Hindu nationalism fracture social cohesion? When does China-India border explode?",
+    "V": "Vulnerabilities: Two-front war (China + Pakistan). Oil import dependency. Siliguri Corridor. Youth unemployment. Infrastructure deficit.",
+    "W": "Worldview: Multipolar world is India's natural habitat. Unipolarity (US) or bipolarity (US-China) constrains India's room. India actively promotes multipolarity at UN, BRICS, G20.",
+    "X": "X-Factors: Succession after Modi — no clear heir. Pakistan nuclear threshold unpredictability. Climate change + Himalayan glaciers = water wars with Pakistan/China by 2040.",
+    "Y": "Years Ahead: GDP #3 by 2030 (likely). UNSC permanent seat push. Deepening QUAD. Border management with China = defining strategic challenge of decade.",
+    "Z": "Zones of Conflict: LAC (China), LoC (Pakistan), Kashmir (internal insurgency), Northeast (residual insurgency), Indian Ocean (China naval expansion)."
+  },
+  "flashpoints": [
+    {
+      "id": "lac_eastern_ladakh",
+      "name": "LAC — Eastern Ladakh",
+      "parties": ["India", "China"],
+      "status": "frozen",
+      "pressure_score": 68,
+      "momentum_direction": "steady",
+      "last_escalation": "2020-06-15",
+      "description": "Galwan 2020 — 20 Indian soldiers killed. Partial disengagement achieved. Full resolution requires China to vacate finger positions India considers its territory. Unlikely without Chinese concession.",
+      "trigger_risk": ["PLA patrol encroachment beyond buffer zones", "Indian infrastructure build provocation", "Taiwan crisis spillover", "Domestic political pressure on Modi to act"]
+    },
+    {
+      "id": "kashmir_loc",
+      "name": "Kashmir — LoC",
+      "parties": ["India", "Pakistan"],
+      "status": "active_low",
+      "pressure_score": 72,
+      "momentum_direction": "steady",
+      "last_escalation": "2019-02-27",
+      "description": "Post-Art.370 abrogation (2019) — Pakistani response limited. LoC ceasefire (2021) holding. But LeT/JeM infrastructure intact in Pakistan. Next major terror attack could trigger India kinetic response.",
+      "trigger_risk": ["Large-scale terrorist attack traced to Pakistan", "Pakistani Army political instability", "India-China escalation prompting Pakistan opportunism"]
+    }
+  ],
+  "perception_model": {
+    "self_image": "Ancient civilization returning to its rightful place as a leading global power — not rising, returning.",
+    "rival_perceptions": {
+      "China": {
+        "India_perceives_China_as": "Long-game existential threat. Humiliated India in 1962. Will do so again unless India is strong. Uses Pakistan as proxy. Encircles India via String of Pearls.",
+        "China_perceives_India_as": "Manageable regional irritant. Useful BRICS partner. Not yet a peer competitor. US tool to contain China.",
+        "asymmetry_risk": "high",
+        "misperception_type": "India overestimates its centrality to Chinese strategic planning; China underestimates India's long-term balancing determination."
+      },
+      "Pakistan": {
+        "India_perceives_Pakistan_as": "Permanent spoiler state. Terror sponsor. Existential threat only via China alliance + nuclear weapons. Otherwise manageable.",
+        "Pakistan_perceives_India_as": "Existential threat to Pakistan's survival and identity. Big brother who wants to reverse Partition.",
+        "asymmetry_risk": "medium",
+        "misperception_type": "India underestimates how existential its conventional superiority feels to Pakistan — which is why Pakistan built nuclear weapons and uses terror as equalizer."
+      }
+    }
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "electoral + Hindu nationalist identity",
+    "secondary_basis": "economic performance narrative",
+    "legitimacy_threats": ["Youth unemployment", "Farmer distress", "Minority rights international criticism", "Inflation"],
+    "legitimacy_floor": 55,
+    "current_legitimacy_estimate": 68,
+    "war_legitimacy_threshold": "High — Indian public will support military response to attack but will not support India-initiated war."
+  },
+  "strategic_culture_rules": [
+    {
+      "id": "SCR-IND-01",
+      "rule": "Never formally align. Preserve optionality above all.",
+      "domain": "alliance_behavior",
+      "consistency": 95,
+      "exceptions": ["1971 Soviet treaty — exception under existential nuclear threat from US"],
+      "exception_conditions": ["existential_military_threat", "great_power_isolation"],
+      "predictive_weight": 0.88,
+      "ml_features": {
+        "triggers": ["alliance_pressure", "treaty_offer", "military_bloc_invitation"],
+        "predicted_response": "deflect_or_delay",
+        "confidence": 0.85
+      },
+      "scenario_relevance": ["US-China war", "QUAD formalization", "any_bilateral_crisis"]
+    },
+    {
+      "id": "SCR-IND-02",
+      "rule": "Absorb first strike. Respond asymmetrically. No pre-emption.",
+      "domain": "force_use",
+      "consistency": 88,
+      "exceptions": ["1971 West Pakistan offensive framed as defensive pre-emption"],
+      "exception_conditions": ["clear_casus_belli", "international_legitimacy_established"],
+      "predictive_weight": 0.82,
+      "ml_features": {
+        "triggers": ["border_incursion", "terrorist_attack", "naval_provocation"],
+        "predicted_response": "measured_retaliation_after_delay",
+        "confidence": 0.78
+      },
+      "scenario_relevance": ["Pakistan_strike", "China_LAC_escalation", "Mumbai_style_attack"]
+    },
+    {
+      "id": "SCR-IND-03",
+      "rule": "Economic growth = strategic autonomy. Protect growth above ideological purity.",
+      "domain": "economic",
+      "consistency": 80,
+      "exceptions": [],
+      "exception_conditions": [],
+      "predictive_weight": 0.75,
+      "ml_features": {
+        "triggers": ["sanctions_threat", "trade_disruption", "economic_coercion"],
+        "predicted_response": "negotiate_compliance_at_margin_protect_core",
+        "confidence": 0.72
+      },
+      "scenario_relevance": ["CAATSA_sanctions", "Russia_oil_embargo_pressure", "China_trade_war"]
+    }
+  ],
+  "doctrine_break_conditions": {
+    "non_alignment": {
+      "has_broken_before": true,
+      "break_instance": "1971 Soviet Treaty — signed under US nuclear threat (USS Enterprise)",
+      "break_conditions": ["great_power_direct_military_threat", "no_other_diplomatic_option", "existential_stakes"],
+      "current_break_threshold": "very_high",
+      "most_likely_break_trigger": "Coordinated China-Pakistan military offensive with no third-party support"
+    },
+    "no_first_use_nuclear": {
+      "has_broken_before": false,
+      "break_conditions": ["credible_intelligence_of_imminent_Pakistani_nuclear_use", "state_decapitation_threat"],
+      "current_break_threshold": "extreme",
+      "debate_status": "BJP voices have questioned NFU since 2019 — likely deliberate ambiguity, not real doctrine change"
+    }
+  },
+  "resource_climate": {
+    "water_stress": "high",
+    "water_rivals": ["Pakistan — Indus Waters Treaty under climate strain", "China — controls Brahmaputra upstream (5 dams built, more planned)"],
+    "food_security_score": 71,
+    "climate_vulnerability_index": 68,
+    "climate_conflict_triggers": [
+      "Himalayan glacier retreat → water flow reduction → Indus/Brahmaputra disputes sharpen",
+      "Monsoon failure → food price crisis → domestic instability → diversionary conflict risk"
+    ]
+  },
+  "information_environment": {
+    "media_freedom_index": 46,
+    "state_media_reach": "partial",
+    "propaganda_capacity": "medium",
+    "internet_shutdown_history": ["Kashmir 2019–2021 — longest internet shutdown in any democracy"],
+    "strategic_implication": "Government can shape narrative but competitive media environment limits full consent manufacturing. Social media remains relatively open outside Kashmir."
+  },
+  "diaspora_power": {
+    "size_estimate": "32 million",
+    "key_concentrations": ["USA: 4.5M", "UAE: 3.5M", "UK: 1.8M", "Canada: 1.8M", "Australia: 0.8M"],
+    "remittance_inflow_usd_bn": 120,
+    "political_influence": {
+      "USA": "High — Indian-American political donors, tech sector leadership, growing electoral weight",
+      "UK": "High — Rishi Sunak precedent. Conservative party historical links.",
+      "Canada": "Complex — large Sikh diaspora with Khalistan sympathies creates bilateral friction"
+    },
+    "soft_power_assets": ["Bollywood", "Yoga", "Indian cuisine", "IT industry brand", "Non-violence tradition"],
+    "diaspora_weaponization": "Low — India does not systematically weaponize diaspora unlike China"
+  }
+}

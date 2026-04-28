@@ -1,0 +1,149 @@
+{
+  "id": "south_korea",
+  "display_name": "South Korea",
+  "meta": {
+    "flag_emoji": "\ud83c\uddf0\ud83c\uddf7",
+    "flag_url": "https://flagcdn.com/w160/so.png",
+    "region": "East Asia",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "Seoul",
+    "population_m": 52,
+    "system": "Presidential Republic",
+    "archetype": "Frontline Democracy Under Existential Threat",
+    "current_leader": "Yoon Suk-yeol / successor",
+    "summary": "[Expand: full intelligence profile for South Korea]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for South Korea]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 South Korea",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Presidential Republic"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Yoon Suk-yeol / successor",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for South Korea]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 72,
+    "nuclear_status": "non-nuclear",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for South Korea]",
+    "B": "[Expand: B for South Korea]",
+    "C": "[Expand: C for South Korea]",
+    "D": "[Expand: D for South Korea]",
+    "E": "[Expand: E for South Korea]",
+    "F": "[Expand: F for South Korea]",
+    "G": "[Expand: G for South Korea]",
+    "H": "[Expand: H for South Korea]",
+    "I": "[Expand: I for South Korea]",
+    "J": "[Expand: J for South Korea]",
+    "K": "[Expand: K for South Korea]",
+    "L": "[Expand: L for South Korea]",
+    "M": "[Expand: M for South Korea]",
+    "N": "[Expand: N for South Korea]",
+    "O": "[Expand: O for South Korea]",
+    "P": "[Expand: P for South Korea]",
+    "Q": "[Expand: Q for South Korea]",
+    "R": "[Expand: R for South Korea]",
+    "S": "[Expand: S for South Korea]",
+    "T": "[Expand: T for South Korea]",
+    "U": "[Expand: U for South Korea]",
+    "V": "[Expand: V for South Korea]",
+    "W": "[Expand: W for South Korea]",
+    "X": "[Expand: X for South Korea]",
+    "Y": "[Expand: Y for South Korea]",
+    "Z": "[Expand: Z for South Korea]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}

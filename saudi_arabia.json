@@ -1,0 +1,149 @@
+{
+  "id": "saudi_arabia",
+  "display_name": "Saudi Arabia",
+  "meta": {
+    "flag_emoji": "\ud83c\uddf8\ud83c\udde6",
+    "flag_url": "https://flagcdn.com/w160/sa.png",
+    "region": "Middle East",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "Riyadh",
+    "population_m": 36,
+    "system": "Absolute Monarchy",
+    "archetype": "Petro-State Modernizing Under Royal Consolidation",
+    "current_leader": "Mohammed bin Salman (Crown Prince)",
+    "summary": "[Expand: full intelligence profile for Saudi Arabia]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for Saudi Arabia]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 Saudi Arabia",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Absolute Monarchy"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Mohammed bin Salman (Crown Prince)",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for Saudi Arabia]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 63,
+    "nuclear_status": "non-nuclear",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for Saudi Arabia]",
+    "B": "[Expand: B for Saudi Arabia]",
+    "C": "[Expand: C for Saudi Arabia]",
+    "D": "[Expand: D for Saudi Arabia]",
+    "E": "[Expand: E for Saudi Arabia]",
+    "F": "[Expand: F for Saudi Arabia]",
+    "G": "[Expand: G for Saudi Arabia]",
+    "H": "[Expand: H for Saudi Arabia]",
+    "I": "[Expand: I for Saudi Arabia]",
+    "J": "[Expand: J for Saudi Arabia]",
+    "K": "[Expand: K for Saudi Arabia]",
+    "L": "[Expand: L for Saudi Arabia]",
+    "M": "[Expand: M for Saudi Arabia]",
+    "N": "[Expand: N for Saudi Arabia]",
+    "O": "[Expand: O for Saudi Arabia]",
+    "P": "[Expand: P for Saudi Arabia]",
+    "Q": "[Expand: Q for Saudi Arabia]",
+    "R": "[Expand: R for Saudi Arabia]",
+    "S": "[Expand: S for Saudi Arabia]",
+    "T": "[Expand: T for Saudi Arabia]",
+    "U": "[Expand: U for Saudi Arabia]",
+    "V": "[Expand: V for Saudi Arabia]",
+    "W": "[Expand: W for Saudi Arabia]",
+    "X": "[Expand: X for Saudi Arabia]",
+    "Y": "[Expand: Y for Saudi Arabia]",
+    "Z": "[Expand: Z for Saudi Arabia]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}

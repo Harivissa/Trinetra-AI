@@ -1,0 +1,149 @@
+{
+  "id": "iran",
+  "display_name": "Iran",
+  "meta": {
+    "flag_emoji": "\ud83c\uddee\ud83c\uddf7",
+    "flag_url": "https://flagcdn.com/w160/ir.png",
+    "region": "Middle East",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "Tehran",
+    "population_m": 87,
+    "system": "Islamic Republic (theocratic)",
+    "archetype": "Revolutionary Theocracy with Regional Proxy Empire",
+    "current_leader": "Ali Khamenei (Supreme Leader)",
+    "summary": "[Expand: full intelligence profile for Iran]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for Iran]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 Iran",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Islamic Republic (theocratic)"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Ali Khamenei (Supreme Leader)",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for Iran]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 60,
+    "nuclear_status": "threshold",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for Iran]",
+    "B": "[Expand: B for Iran]",
+    "C": "[Expand: C for Iran]",
+    "D": "[Expand: D for Iran]",
+    "E": "[Expand: E for Iran]",
+    "F": "[Expand: F for Iran]",
+    "G": "[Expand: G for Iran]",
+    "H": "[Expand: H for Iran]",
+    "I": "[Expand: I for Iran]",
+    "J": "[Expand: J for Iran]",
+    "K": "[Expand: K for Iran]",
+    "L": "[Expand: L for Iran]",
+    "M": "[Expand: M for Iran]",
+    "N": "[Expand: N for Iran]",
+    "O": "[Expand: O for Iran]",
+    "P": "[Expand: P for Iran]",
+    "Q": "[Expand: Q for Iran]",
+    "R": "[Expand: R for Iran]",
+    "S": "[Expand: S for Iran]",
+    "T": "[Expand: T for Iran]",
+    "U": "[Expand: U for Iran]",
+    "V": "[Expand: V for Iran]",
+    "W": "[Expand: W for Iran]",
+    "X": "[Expand: X for Iran]",
+    "Y": "[Expand: Y for Iran]",
+    "Z": "[Expand: Z for Iran]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}

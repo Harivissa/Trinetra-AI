@@ -1,0 +1,149 @@
+{
+  "id": "ukraine",
+  "display_name": "Ukraine",
+  "meta": {
+    "flag_emoji": "\ud83c\uddfa\ud83c\udde6",
+    "flag_url": "https://flagcdn.com/w160/uk.png",
+    "region": "Eastern Europe",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "Kyiv",
+    "population_m": 44,
+    "system": "Presidential-Parliamentary Republic (wartime)",
+    "archetype": "Democracy Forged in Existential War",
+    "current_leader": "Volodymyr Zelensky",
+    "summary": "[Expand: full intelligence profile for Ukraine]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for Ukraine]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 Ukraine",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Presidential-Parliamentary Republic (wartime)"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Volodymyr Zelensky",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for Ukraine]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 55,
+    "nuclear_status": "non-nuclear",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for Ukraine]",
+    "B": "[Expand: B for Ukraine]",
+    "C": "[Expand: C for Ukraine]",
+    "D": "[Expand: D for Ukraine]",
+    "E": "[Expand: E for Ukraine]",
+    "F": "[Expand: F for Ukraine]",
+    "G": "[Expand: G for Ukraine]",
+    "H": "[Expand: H for Ukraine]",
+    "I": "[Expand: I for Ukraine]",
+    "J": "[Expand: J for Ukraine]",
+    "K": "[Expand: K for Ukraine]",
+    "L": "[Expand: L for Ukraine]",
+    "M": "[Expand: M for Ukraine]",
+    "N": "[Expand: N for Ukraine]",
+    "O": "[Expand: O for Ukraine]",
+    "P": "[Expand: P for Ukraine]",
+    "Q": "[Expand: Q for Ukraine]",
+    "R": "[Expand: R for Ukraine]",
+    "S": "[Expand: S for Ukraine]",
+    "T": "[Expand: T for Ukraine]",
+    "U": "[Expand: U for Ukraine]",
+    "V": "[Expand: V for Ukraine]",
+    "W": "[Expand: W for Ukraine]",
+    "X": "[Expand: X for Ukraine]",
+    "Y": "[Expand: Y for Ukraine]",
+    "Z": "[Expand: Z for Ukraine]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}

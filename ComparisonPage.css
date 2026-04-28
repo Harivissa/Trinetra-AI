@@ -1,0 +1,51 @@
+.comparison-page { max-width: 1300px; margin: 0 auto; }
+.comp-header { margin-bottom: 28px; }
+
+.selector-row {
+  display: flex; align-items: flex-end; gap: 16px;
+  background: var(--bg-card); border: 1px solid var(--border-mid);
+  border-radius: 4px; padding: 20px 24px;
+  margin-bottom: 28px; flex-wrap: wrap;
+}
+.selector-block { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 180px; }
+.selector-label { font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-dim); letter-spacing: 0.1em; text-transform: uppercase; }
+.country-select {
+  background: var(--bg-elevated); border: 1px solid var(--border-mid);
+  color: var(--text-primary); font-family: var(--font-ui); font-size: 0.9rem;
+  padding: 10px 14px; border-radius: 2px; cursor: pointer; outline: none;
+  transition: border-color var(--transition);
+}
+.country-select:focus { border-color: var(--saffron); }
+.vs-divider {
+  font-family: var(--font-display); font-size: 1.2rem;
+  color: var(--saffron); padding-bottom: 8px; flex-shrink: 0;
+}
+.analyze-btn { padding: 10px 28px; align-self: flex-end; }
+.analyze-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.result {}
+.result-header {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--bg-elevated); border: 1px solid var(--border-mid);
+  border-radius: 4px; padding: 20px 28px; margin-bottom: 16px; flex-wrap: wrap; gap: 16px;
+}
+.country-pill { display: flex; align-items: center; gap: 10px; }
+.pill-flag { font-size: 2.2rem; }
+.pill-name { font-family: var(--font-display); font-size: 1.2rem; color: var(--text-accent); letter-spacing: 0.08em; }
+.rel-class { font-family: var(--font-mono); font-size: 0.78rem; color: var(--saffron); letter-spacing: 0.06em; text-align: center; }
+
+.reality-banner {
+  border: 1px solid; border-radius: 4px;
+  background: var(--bg-card); padding: 16px 24px; margin-bottom: 20px;
+}
+
+.result-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.result-card { background: var(--bg-card); border: 1px solid var(--border-dim); border-radius: 4px; padding: 20px; }
+
+.scenario-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+
+@media (max-width: 768px) {
+  .result-grid { grid-template-columns: 1fr; }
+  .result-header { flex-direction: column; align-items: flex-start; }
+  .selector-row { flex-direction: column; }
+}

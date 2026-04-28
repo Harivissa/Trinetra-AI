@@ -1,0 +1,149 @@
+{
+  "id": "israel",
+  "display_name": "Israel",
+  "meta": {
+    "flag_emoji": "\ud83c\uddee\ud83c\uddf1",
+    "flag_url": "https://flagcdn.com/w160/is.png",
+    "region": "Middle East",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "Jerusalem (disputed)",
+    "population_m": 10,
+    "system": "Parliamentary Democracy",
+    "archetype": "Garrison State of Unmatched Regional Capability",
+    "current_leader": "Benjamin Netanyahu",
+    "summary": "[Expand: full intelligence profile for Israel]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for Israel]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 Israel",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Parliamentary Democracy"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Benjamin Netanyahu",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for Israel]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 75,
+    "nuclear_status": "threshold",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for Israel]",
+    "B": "[Expand: B for Israel]",
+    "C": "[Expand: C for Israel]",
+    "D": "[Expand: D for Israel]",
+    "E": "[Expand: E for Israel]",
+    "F": "[Expand: F for Israel]",
+    "G": "[Expand: G for Israel]",
+    "H": "[Expand: H for Israel]",
+    "I": "[Expand: I for Israel]",
+    "J": "[Expand: J for Israel]",
+    "K": "[Expand: K for Israel]",
+    "L": "[Expand: L for Israel]",
+    "M": "[Expand: M for Israel]",
+    "N": "[Expand: N for Israel]",
+    "O": "[Expand: O for Israel]",
+    "P": "[Expand: P for Israel]",
+    "Q": "[Expand: Q for Israel]",
+    "R": "[Expand: R for Israel]",
+    "S": "[Expand: S for Israel]",
+    "T": "[Expand: T for Israel]",
+    "U": "[Expand: U for Israel]",
+    "V": "[Expand: V for Israel]",
+    "W": "[Expand: W for Israel]",
+    "X": "[Expand: X for Israel]",
+    "Y": "[Expand: Y for Israel]",
+    "Z": "[Expand: Z for Israel]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}

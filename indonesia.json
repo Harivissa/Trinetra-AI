@@ -1,0 +1,149 @@
+{
+  "id": "indonesia",
+  "display_name": "Indonesia",
+  "meta": {
+    "flag_emoji": "\ud83c\uddee\ud83c\udde9",
+    "flag_url": "https://flagcdn.com/w160/in.png",
+    "region": "Southeast Asia",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "Jakarta \u2192 Nusantara",
+    "population_m": 277,
+    "system": "Presidential Republic",
+    "archetype": "Archipelago Giant Awakening",
+    "current_leader": "Prabowo Subianto",
+    "summary": "[Expand: full intelligence profile for Indonesia]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for Indonesia]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 Indonesia",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Presidential Republic"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Prabowo Subianto",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for Indonesia]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 62,
+    "nuclear_status": "non-nuclear",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for Indonesia]",
+    "B": "[Expand: B for Indonesia]",
+    "C": "[Expand: C for Indonesia]",
+    "D": "[Expand: D for Indonesia]",
+    "E": "[Expand: E for Indonesia]",
+    "F": "[Expand: F for Indonesia]",
+    "G": "[Expand: G for Indonesia]",
+    "H": "[Expand: H for Indonesia]",
+    "I": "[Expand: I for Indonesia]",
+    "J": "[Expand: J for Indonesia]",
+    "K": "[Expand: K for Indonesia]",
+    "L": "[Expand: L for Indonesia]",
+    "M": "[Expand: M for Indonesia]",
+    "N": "[Expand: N for Indonesia]",
+    "O": "[Expand: O for Indonesia]",
+    "P": "[Expand: P for Indonesia]",
+    "Q": "[Expand: Q for Indonesia]",
+    "R": "[Expand: R for Indonesia]",
+    "S": "[Expand: S for Indonesia]",
+    "T": "[Expand: T for Indonesia]",
+    "U": "[Expand: U for Indonesia]",
+    "V": "[Expand: V for Indonesia]",
+    "W": "[Expand: W for Indonesia]",
+    "X": "[Expand: X for Indonesia]",
+    "Y": "[Expand: Y for Indonesia]",
+    "Z": "[Expand: Z for Indonesia]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}

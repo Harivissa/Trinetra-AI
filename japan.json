@@ -1,0 +1,149 @@
+{
+  "id": "japan",
+  "display_name": "Japan",
+  "meta": {
+    "flag_emoji": "\ud83c\uddef\ud83c\uddf5",
+    "flag_url": "https://flagcdn.com/w160/ja.png",
+    "region": "East Asia",
+    "data_status": "stub_2026",
+    "last_updated": "2026-04"
+  },
+  "national_profile": {
+    "capital": "Tokyo",
+    "population_m": 124,
+    "system": "Constitutional Parliamentary Monarchy",
+    "archetype": "Pacifist Technology Giant in Rearmament",
+    "current_leader": "Kishida / successor",
+    "summary": "[Expand: full intelligence profile for Japan]"
+  },
+  "historical_memory": {
+    "founding_trauma": "[Expand: founding trauma for Japan]",
+    "civilizational_claim": "[Expand]",
+    "turning_points": [],
+    "strategic_culture_summary": "[Expand]"
+  },
+  "crises_tragedies": [
+    {
+      "id": "placeholder",
+      "name": "Major crisis \u2014 Japan",
+      "year": 2000,
+      "type": "placeholder",
+      "background": "[Expand]",
+      "cause": "[Expand]",
+      "immediate_consequences": "[Expand]",
+      "long_term_impact": "[Expand]",
+      "live_relevance_2026": "[Expand]",
+      "live_relevance_score": 5,
+      "sensitivity_flag": "medium",
+      "upsc_relevance": "medium"
+    }
+  ],
+  "political_intel": {
+    "constitution": {
+      "type": "Constitutional Parliamentary Monarchy"
+    },
+    "party_evolution": {},
+    "leadership_memory": {
+      "current": {
+        "name": "Kishida / successor",
+        "archetype": "placeholder"
+      }
+    }
+  },
+  "economy": {
+    "gdp_usd_tn": 0,
+    "growth_rate_pct": 0,
+    "resilience_score": 55,
+    "trade_dependency_score": 50,
+    "strengths": [
+      "[Expand]"
+    ],
+    "vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "society": {
+    "stability_score": 60,
+    "pressure_points": [
+      "[Expand]"
+    ]
+  },
+  "geography_strategy": {
+    "terrain_summary": "[Expand: geography for Japan]",
+    "chokepoints": [],
+    "strategic_advantages": [
+      "[Expand]"
+    ],
+    "strategic_vulnerabilities": [
+      "[Expand]"
+    ]
+  },
+  "military_foreign": {
+    "effectiveness_score": 74,
+    "nuclear_status": "non-nuclear",
+    "nuclear_doctrine": "[Expand]",
+    "active_personnel": 0,
+    "defense_budget_usd_bn": 0,
+    "foreign_policy_doctrine": "[Expand]"
+  },
+  "current_affairs": {
+    "period": "2025-2026",
+    "headline_events": [
+      "[Expand: current 2025-26 events]"
+    ]
+  },
+  "upsc_layer": {
+    "mains_themes": [
+      "[Expand]"
+    ],
+    "interview_flashpoints": [
+      "[Expand]"
+    ],
+    "essay_theses": [
+      "[Expand]"
+    ],
+    "keywords": [
+      "[Expand]"
+    ]
+  },
+  "az_memory": {
+    "A": "[Expand: A for Japan]",
+    "B": "[Expand: B for Japan]",
+    "C": "[Expand: C for Japan]",
+    "D": "[Expand: D for Japan]",
+    "E": "[Expand: E for Japan]",
+    "F": "[Expand: F for Japan]",
+    "G": "[Expand: G for Japan]",
+    "H": "[Expand: H for Japan]",
+    "I": "[Expand: I for Japan]",
+    "J": "[Expand: J for Japan]",
+    "K": "[Expand: K for Japan]",
+    "L": "[Expand: L for Japan]",
+    "M": "[Expand: M for Japan]",
+    "N": "[Expand: N for Japan]",
+    "O": "[Expand: O for Japan]",
+    "P": "[Expand: P for Japan]",
+    "Q": "[Expand: Q for Japan]",
+    "R": "[Expand: R for Japan]",
+    "S": "[Expand: S for Japan]",
+    "T": "[Expand: T for Japan]",
+    "U": "[Expand: U for Japan]",
+    "V": "[Expand: V for Japan]",
+    "W": "[Expand: W for Japan]",
+    "X": "[Expand: X for Japan]",
+    "Y": "[Expand: Y for Japan]",
+    "Z": "[Expand: Z for Japan]"
+  },
+  "flashpoints": [],
+  "relationships": {},
+  "strategic_culture": {
+    "rules": [],
+    "strategic_patience_index": 50,
+    "escalation_threshold": "medium"
+  },
+  "legitimacy_architecture": {
+    "primary_basis": "[Expand]",
+    "current_estimate": 60
+  },
+  "doctrine_break_conditions": {}
+}
