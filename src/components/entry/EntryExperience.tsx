@@ -110,9 +110,10 @@ export default function EntryExperience({ onComplete, isReplay = false }: EntryE
       {/* 1. Cinematic Background Video */}
       <video
         ref={videoRef}
-        playsInline
+        src="/trinetra-hero.mp4"
         autoPlay
         muted
+        playsInline
         preload="auto"
         onLoadedData={() => setVideoLoaded(true)}
         onCanPlay={() => setVideoLoaded(true)}

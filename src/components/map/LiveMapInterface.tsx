@@ -3,6 +3,7 @@ import RealGeospatialMap from "./RealGeospatialMap";
 import Interactive3DGlobe from "./Interactive3DGlobe";
 import GlobalSituationPanel from "./GlobalSituationPanel";
 import MapMetricsStrip from "./MapMetricsStrip";
+import MapErrorBoundary from "./MapErrorBoundary";
 import { type MapEvent } from "../../data/liveMapData";
 
 interface Props {
@@ -34,20 +35,22 @@ export default function LiveMapInterface({
       {/* Central Viewport: Real Geospatial Map (Left) + Situation Panel (Right) */}
       <div className="flex flex-col lg:flex-row gap-4 sm:gap-5 w-full items-stretch">
         {/* Real Interactive Map Canvas */}
-        {is3DMode ? (
-          <Interactive3DGlobe
-            selectedEventId={selectedEventId}
-            onSelectEvent={handleSelectEvent}
-            onToggle2DMap={() => setIs3DMode(false)}
-          />
-        ) : (
-          <RealGeospatialMap
-            selectedEventId={selectedEventId}
-            onSelectEvent={handleSelectEvent}
-            onToggle3DGlobe={toggle3DGlobe}
-            is3DMode={is3DMode}
-          />
-        )}
+        <MapErrorBoundary fallbackTitle="Geospatial Tactical Map">
+          {is3DMode ? (
+            <Interactive3DGlobe
+              selectedEventId={selectedEventId}
+              onSelectEvent={handleSelectEvent}
+              onToggle2DMap={() => setIs3DMode(false)}
+            />
+          ) : (
+            <RealGeospatialMap
+              selectedEventId={selectedEventId}
+              onSelectEvent={handleSelectEvent}
+              onToggle3DGlobe={toggle3DGlobe}
+              is3DMode={is3DMode}
+            />
+          )}
+        </MapErrorBoundary>
 
         {/* Global Situation Overview Panel */}
         <GlobalSituationPanel

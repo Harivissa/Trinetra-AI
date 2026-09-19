@@ -81,6 +81,37 @@ export default function RealGeospatialMap({
     data: any;
   } | null>(null);
 
+  const isInitialMountRef = useRef(true);
+
+  // Safe flyTo helper that prevents Leaflet NaN/zero-size canvas projection errors
+  const safeFlyTo = useCallback(
+    (
+      coords: [number, number] | undefined,
+      zoom: number,
+      options?: L.ZoomPanOptions & { duration?: number }
+    ) => {
+      const map = mapInstanceRef.current;
+      if (!map || !coords || !Array.isArray(coords) || isNaN(coords[0]) || isNaN(coords[1])) {
+        return;
+      }
+      try {
+        const size = map.getSize();
+        if (!size || size.x <= 0 || size.y <= 0) {
+          map.setView(coords, zoom);
+          return;
+        }
+        map.flyTo(coords, zoom, options);
+      } catch {
+        try {
+          map.setView(coords, zoom);
+        } catch {
+          // ignore
+        }
+      }
+    },
+    []
+  );
+
   // Basemap tile definitions (legitimate, high-quality, free public tiles)
   const BASEMAP_URLS = {
     satellite: {
@@ -115,7 +146,12 @@ export default function RealGeospatialMap({
       maxZoom: 18,
       zoomControl: false,
       attributionControl: false,
-      worldCopyJump: true,
+    });
+
+    map.whenReady(() => {
+      requestAnimationFrame(() => {
+        map.invalidateSize();
+      });
     });
 
     // Add initial base tile layer
@@ -348,6 +384,8 @@ export default function RealGeospatialMap({
     // B. Maritime Chokepoints (Matching Reference Image Anchor Badge)
     if (showChokepoints) {
       MAP_CHOKEPOINTS.forEach((cp) => {
+        if (!cp.coordinates || isNaN(cp.coordinates[0]) || isNaN(cp.coordinates[1])) return;
+
         const icon = L.divIcon({
           className: "custom-chokepoint-marker",
           html: `
@@ -366,7 +404,7 @@ export default function RealGeospatialMap({
         const marker = L.marker(cp.coordinates, { icon });
         marker.on("click", () => {
           setInspectedEntity({ type: "chokepoint", data: cp });
-          mapInstanceRef.current?.flyTo(cp.coordinates, 6, { duration: 1.2 });
+          safeFlyTo(cp.coordinates, 6, { duration: 1.2 });
         });
         marker.addTo(markersLayerRef.current!);
       });
@@ -375,6 +413,8 @@ export default function RealGeospatialMap({
     // C. Active Conflict & Tension Events (Pulsing Radar Rings matching Reference Image)
     if (showEvents) {
       MAP_ACTIVE_EVENTS.forEach((ev) => {
+        if (!ev.coordinates || isNaN(ev.coordinates[0]) || isNaN(ev.coordinates[1])) return;
+
         const isCritical = ev.severity === "CRITICAL";
         const isSelected = selectedEventId === ev.id;
 
@@ -403,7 +443,7 @@ export default function RealGeospatialMap({
         marker.on("click", () => {
           onSelectEvent(ev);
           setInspectedEntity({ type: "event", data: ev });
-          mapInstanceRef.current?.flyTo(ev.coordinates, 5.5, { duration: 1.2 });
+          safeFlyTo(ev.coordinates, 5.5, { duration: 1.2 });
         });
         marker.addTo(markersLayerRef.current!);
       });
@@ -412,6 +452,8 @@ export default function RealGeospatialMap({
     // D. Sovereigns Markers
     if (showSovereigns) {
       MAP_SOVEREIGNS.forEach((sov) => {
+        if (!sov.coordinates || isNaN(sov.coordinates[0]) || isNaN(sov.coordinates[1])) return;
+
         const icon = L.divIcon({
           className: "custom-sov-marker",
           html: `
@@ -426,22 +468,33 @@ export default function RealGeospatialMap({
         const marker = L.marker(sov.coordinates, { icon });
         marker.on("click", () => {
           setInspectedEntity({ type: "sovereign", data: sov });
-          mapInstanceRef.current?.flyTo(sov.coordinates, 5, { duration: 1.2 });
+          safeFlyTo(sov.coordinates, 5, { duration: 1.2 });
         });
         marker.addTo(markersLayerRef.current!);
       });
     }
-  }, [showRoutes, showChokepoints, showEvents, showSovereigns, selectedEventId]);
+  }, [showRoutes, showChokepoints, showEvents, showSovereigns, selectedEventId, safeFlyTo]);
 
   // 6. Fly to selected event when parent prop changes
   useEffect(() => {
     if (!selectedEventId || !mapInstanceRef.current) return;
     const ev = MAP_ACTIVE_EVENTS.find((e) => e.id === selectedEventId);
-    if (ev) {
-      setInspectedEntity({ type: "event", data: ev });
-      mapInstanceRef.current.flyTo(ev.coordinates, 5.5, { duration: 1.5 });
+    if (!ev || !ev.coordinates || isNaN(ev.coordinates[0]) || isNaN(ev.coordinates[1])) return;
+
+    setInspectedEntity({ type: "event", data: ev });
+
+    if (isInitialMountRef.current) {
+      isInitialMountRef.current = false;
+      try {
+        mapInstanceRef.current.setView(ev.coordinates, 4.5);
+      } catch {
+        // ignore
+      }
+      return;
     }
-  }, [selectedEventId]);
+
+    safeFlyTo(ev.coordinates, 5.5, { duration: 1.5 });
+  }, [selectedEventId, safeFlyTo]);
 
   // Map Navigation Handlers
   const handleZoomIn = () => mapInstanceRef.current?.zoomIn();
@@ -686,7 +739,7 @@ export default function RealGeospatialMap({
                   key={r.name}
                   type="button"
                   onClick={() => {
-                    mapInstanceRef.current?.flyTo(r.coords, r.zoom, { duration: 1.5 });
+                    safeFlyTo(r.coords, r.zoom, { duration: 1.5 });
                     setActiveTool("none");
                   }}
                   className="w-full text-left p-2 rounded bg-black/40 hover:bg-white/10 flex items-center justify-between text-neutral-200"
@@ -759,7 +812,9 @@ export default function RealGeospatialMap({
                     key={idx}
                     type="button"
                     onClick={() => {
-                      mapInstanceRef.current?.flyTo(item.coordinates, 5, { duration: 1.2 });
+                      if (item.coordinates && !isNaN(item.coordinates[0]) && !isNaN(item.coordinates[1])) {
+                        safeFlyTo(item.coordinates, 5, { duration: 1.2 });
+                      }
                       if (item.type === "event") onSelectEvent(item.raw);
                       setInspectedEntity({ type: item.type, data: item.raw });
                       setActiveTool("none");
