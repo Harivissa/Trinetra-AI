@@ -23,7 +23,7 @@ export default function FloatingQuickAction({ countries = [] }: Props) {
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchTerm.trim()) {
-      navigate(`/search?q=${encodeURIComponent(searchTerm.trim())}`);
+      navigate(`/countries`);
       setIsOpen(false);
     }
   };

@@ -74,14 +74,14 @@ export default function MapMetricsStrip({
         </div>
       </div>
 
-      {/* Button on Right (Matching Reference Image "Open Global Analysis ->") */}
+      {/* Button on Right (Matching Reference Image "Open Rivalry Matrix ->") */}
       <div className="w-full md:w-auto shrink-0 flex justify-end">
         <Link
-          to="/analyze"
+          to="/compare"
           id="btn-open-global-analysis"
           className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-[#FF7A00]/80 bg-[#FF7A00]/10 hover:bg-[#FF7A00] text-[#FF7A00] hover:text-black font-semibold text-sm transition-all duration-200 group shadow-lg shadow-orange-500/10"
         >
-          <span>Open Global Analysis</span>
+          <span>Open Rivalry Matrix</span>
           <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform" />
         </Link>
       </div>

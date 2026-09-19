@@ -45,8 +45,8 @@ export default function SystemFlow() {
       icon: Users,
       definition: "Heads of state, military commanders, and diplomats whose decisions steer sovereign policy.",
       realWorldExample: "Narendra Modi (IND), Xi Jinping (CHN), Joe Biden (USA), Vladimir Putin (RUS) profiles in entity registry.",
-      linkTo: "/search?q=leader",
-      linkText: "Search Leadership",
+      linkTo: "/countries",
+      linkText: "View Leaders & Profiles",
       connectedTo: ["COUNTRIES", "ORGANIZATIONS", "DIPLOMACY"],
     },
     {
@@ -100,8 +100,8 @@ export default function SystemFlow() {
       icon: FileCheck2,
       definition: "Bilateral peace protocols, border agreements, free-trade negotiations, and strategic communications.",
       realWorldExample: "1993/1996 India-China Border Peace Protocols, US-India iCET technology framework.",
-      linkTo: "/network",
-      linkText: "Inspect Treaties",
+      linkTo: "/groups",
+      linkText: "Inspect Treaties & Alliances",
       connectedTo: ["COUNTRIES", "ORGANIZATIONS", "PEOPLE"],
     },
     {
@@ -112,7 +112,7 @@ export default function SystemFlow() {
       definition: "Core national survival imperatives: territorial integrity, trade passage, energy security, and regional hegemony.",
       realWorldExample: "India's strategic autonomy, China's Malacca Dilemma mitigation, US freedom of navigation.",
       linkTo: "/compare",
-      linkText: "Analyze Imperatives",
+      linkText: "Compare Imperatives",
       connectedTo: ["COUNTRIES", "ECONOMIES", "MILITARY"],
     },
   ];

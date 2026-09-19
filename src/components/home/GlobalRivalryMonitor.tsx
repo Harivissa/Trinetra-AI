@@ -187,7 +187,7 @@ export default function GlobalRivalryMonitor() {
                     Bilateral Vector Telemetry
                   </span>
                   <span className="inline-flex items-center gap-1.5 text-[#FF8811] text-xs font-semibold group-hover:translate-x-1 transition-transform">
-                    <span>Analyze Rivalry</span>
+                    <span>View Rivalry</span>
                     <ArrowRight className="size-3" />
                   </span>
                 </div>

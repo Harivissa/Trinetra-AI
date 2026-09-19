@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Shield, Globe2, Share2, Play, Eye, Compass, ArrowRight } from "lucide-react";
+import { Shield, Globe2, Layers, Play, Eye, Compass, ArrowRight } from "lucide-react";
 
 interface HeroGlobeProps {
   countryCount: number;
@@ -149,11 +149,11 @@ export default function HeroGlobe({
             </Link>
 
             <Link
-              to="/network"
+              to="/groups"
               className="px-4 py-3 rounded border border-white/15 bg-black/60 text-neutral-200 hover:text-white hover:border-trinetra-saffron/60 text-xs font-mono tracking-wider transition-all flex items-center gap-2"
             >
-              <Share2 className="size-4 text-neutral-400" />
-              <span>Network Graph</span>
+              <Layers className="size-4 text-neutral-400" />
+              <span>Multilateral Blocs</span>
             </Link>
           </div>
         </div>

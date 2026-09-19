@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Shield, ExternalLink } from "lucide-react";
+import DeveloperCredit from "../common/DeveloperCredit";
 
 export default function Footer() {
   return (
@@ -37,11 +38,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/network" className="hover:text-trinetra-saffron transition-colors">
-                  Strategic Network Graph
-                </Link>
-              </li>
-              <li>
                 <Link to="/groups" className="hover:text-trinetra-saffron transition-colors">
                   Multilateral Alliances
                 </Link>
@@ -60,16 +56,6 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/about" className="hover:text-trinetra-saffron transition-colors">
-                  Architecture & Evidence
-                </Link>
-              </li>
-              <li>
-                <Link to="/search" className="hover:text-trinetra-saffron transition-colors">
-                  Semantic Search Engine
-                </Link>
-              </li>
-              <li>
                 <Link to="/contact" className="hover:text-trinetra-saffron transition-colors">
                   Operations & Briefings
                 </Link>
@@ -86,6 +72,11 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+        </div>
+
+        {/* Developer Attribution Credit */}
+        <div className="py-8 border-t border-trinetra-border/40">
+          <DeveloperCredit />
         </div>
 
         <div className="border-t border-trinetra-border/60 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-600">

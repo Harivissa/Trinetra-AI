@@ -4,31 +4,23 @@ import {
   Compass,
   Globe2,
   Shield,
-  Share2,
   Layers,
-  Search,
-  BookOpen,
   Play,
   Menu,
   X,
   MapPin,
-  Sparkles,
 } from "lucide-react";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Exact navigation incorporating all authoritative existing modules + screenshot layout
+  // Clean navigation incorporating primary intelligence modules
   const navLinks = [
     { to: "/", label: "Home", icon: Compass },
     { to: "/live-map", label: "Live Map", icon: MapPin },
     { to: "/countries", label: "Countries", icon: Globe2 },
     { to: "/compare", label: "Rivalries", icon: Shield },
     { to: "/groups", label: "Groups", icon: Layers },
-    { to: "/network", label: "Network", icon: Share2 },
-    { to: "/analyze", label: "Analyze", icon: Sparkles },
-    { to: "/about", label: "Methodology", icon: BookOpen },
-    { to: "/search", label: "Search", icon: Search },
   ];
 
   const handleReplayIntro = () => {
@@ -87,11 +79,12 @@ export default function Header() {
           {/* Replay Intro Trigger */}
           <button
             onClick={handleReplayIntro}
-            className="p-1.5 rounded border border-neutral-800 text-neutral-400 hover:text-white hover:border-neutral-700 transition-colors"
-            title="Replay Cinematic Entry Experience"
-            aria-label="Replay Cinematic Entry Experience"
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded border border-neutral-800 text-neutral-400 hover:text-[#FF7A00] hover:border-[#FF7A00]/50 transition-colors text-xs font-mono cursor-pointer"
+            title="Play Cinematic Hero Entry Experience"
+            aria-label="Play Cinematic Hero Entry Experience"
           >
-            <Play className="size-3.5 fill-current" />
+            <Play className="size-3 fill-current text-[#FF7A00]" />
+            <span className="hidden xl:inline">Hero Entry</span>
           </button>
         </div>
 

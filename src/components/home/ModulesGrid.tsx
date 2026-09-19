@@ -2,10 +2,8 @@ import { Link } from "react-router-dom";
 import {
   Globe2,
   Shield,
-  Share2,
   Layers,
   Anchor,
-  Search,
   ArrowRight,
 } from "lucide-react";
 
@@ -37,18 +35,6 @@ export default function ModulesGrid() {
     },
     {
       code: "MOD // 03",
-      title: "Strategic Network Graph",
-      icon: Share2,
-      category: "SYSTEMIC TOPOLOGY",
-      description:
-        "Interactive relationship graph mapping formal sovereign defense alliances, strategic partnerships, and adversarial rivalries across international systems.",
-      metrics: ["Alliance & Rivalry Ties", "Node Degree Centrality", "Alliance Clustering"],
-      linkTo: "/network",
-      linkText: "View Network",
-      accent: "text-emerald-400",
-    },
-    {
-      code: "MOD // 04",
       title: "Multilateral Coalitions & Blocs",
       icon: Layers,
       category: "INSTITUTIONAL ARCHITECTURE",
@@ -60,7 +46,7 @@ export default function ModulesGrid() {
       accent: "text-blue-400",
     },
     {
-      code: "MOD // 05",
+      code: "MOD // 04",
       title: "Maritime Chokepoint Registry",
       icon: Anchor,
       category: "CRITICAL VULNERABILITY",
@@ -70,18 +56,6 @@ export default function ModulesGrid() {
       linkTo: "/compare?a=IND&b=CHN",
       linkText: "Review Bottlenecks",
       accent: "text-cyan-400",
-    },
-    {
-      code: "MOD // 06",
-      title: "Semantic Intelligence Search",
-      icon: Search,
-      category: "NEURAL RETRIEVAL",
-      description:
-        "High-performance natural language search engine cross-referencing sovereign actors, heads of state, treaties, commodities, and intelligence reports across Trinetra's unified repository.",
-      metrics: ["Entity Disambiguation", "Keyword & Vector Search", "Cross-Domain Indexing"],
-      linkTo: "/search",
-      linkText: "Search Platform",
-      accent: "text-purple-400",
     },
   ];
 

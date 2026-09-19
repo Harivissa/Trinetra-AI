@@ -1,27 +1,37 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import LiveMap from "./pages/LiveMap";
 import RivalryAnalysis from "./pages/RivalryAnalysis";
 import CountryIntelligence from "./pages/CountryIntelligence";
 import CountriesGrid from "./pages/CountriesGrid";
-import About from "./pages/About";
 import Modules from "./pages/Modules";
 import NetworkView from "./pages/NetworkView";
 import Contact from "./pages/Contact";
-import SearchPage from "./pages/Search";
 import Groups from "./pages/Groups";
 import EntryExperience from "./components/entry/EntryExperience";
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(() => {
+    if (typeof window !== "undefined") {
+      const search = window.location.search;
+      if (search.includes("intro") || search.includes("replay")) {
+        return true;
+      }
+    }
     try {
       return localStorage.getItem("trinetra_intro_completed") !== "true";
     } catch {
       return true;
     }
   });
-  const [isReplay, setIsReplay] = useState(false);
+  const [isReplay, setIsReplay] = useState(() => {
+    if (typeof window !== "undefined") {
+      const search = window.location.search;
+      return search.includes("intro") || search.includes("replay");
+    }
+    return false;
+  });
 
   useEffect(() => {
     const handleReplay = () => {
@@ -52,11 +62,11 @@ export default function App() {
         <Route path="/rivalries" element={<RivalryAnalysis />} />
         <Route path="/countries" element={<CountriesGrid />} />
         <Route path="/country" element={<CountryIntelligence />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/methodology" element={<About />} />
+        <Route path="/about" element={<Navigate to="/" replace />} />
+        <Route path="/methodology" element={<Navigate to="/" replace />} />
         <Route path="/modules" element={<Modules />} />
         <Route path="/network" element={<NetworkView />} />
-        <Route path="/search" element={<SearchPage />} />
+        <Route path="/search" element={<Navigate to="/" replace />} />
         <Route path="/groups" element={<Groups />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
