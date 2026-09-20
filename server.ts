@@ -57,6 +57,19 @@ async function startServer() {
     }
   });
 
+  app.get("/api/entities/:id", (req, res) => {
+    try {
+      const entity = repository.getEntity(req.params.id);
+      if (!entity) {
+        return res.status(404).json({ error: `Entity '${req.params.id}' not found` });
+      }
+      return res.json(entity);
+    } catch (err) {
+      console.error("Failed to retrieve entity:", err);
+      return res.status(500).json({ error: "Failed to retrieve entity" });
+    }
+  });
+
   app.get("/api/countries/:country_id", (req, res) => {
     const countryId = req.params.country_id;
     const country = repository.getCountry(countryId);

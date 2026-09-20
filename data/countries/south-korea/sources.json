@@ -1,0 +1,50 @@
+{
+  "country_id": "KOR",
+  "sources": [
+    {
+      "id": "SRC_KOR_MND_2024",
+      "title": "Defense White Paper 2024",
+      "author": "ROK Ministry of National Defense (MND)",
+      "year": 2024,
+      "type": "Official Government Report",
+      "focus": "Troop levels, Three-Axis system, North Korean military posture, USFK deployment"
+    },
+    {
+      "id": "SRC_WB_WDI_KOR",
+      "title": "World Development Indicators: Military Expenditure & Arms Exports",
+      "author": "World Bank / SIPRI",
+      "year": 2024,
+      "type": "Multilateral Statistical Dataset",
+      "focus": "Military spending % of GDP (2.56%), Arms exports ($964M constant USD)"
+    },
+    {
+      "id": "SRC_CRS_KOR_2024",
+      "title": "South Korea: Background and U.S. Relations (CRS Report R43478)",
+      "author": "Congressional Research Service",
+      "year": 2024,
+      "type": "Government Research Analysis",
+      "focus": "US-ROK Alliance, Washington Declaration, trade relations, semiconductor policy"
+    },
+    {
+      "id": "SRC_IISS_MB_KOR",
+      "title": "The Military Balance: Chapter 6 - Asia",
+      "author": "International Institute for Strategic Studies (IISS)",
+      "year": 2024,
+      "type": "Strategic Assessment",
+      "focus": "Conventional order of battle, Hyunmoo missile arsenals, naval modernization"
+    },
+    {
+      "id": "SRC_BOK_STAT",
+      "title": "Economic Statistics System (ECOS)",
+      "author": "Bank of Korea",
+      "year": 2024,
+      "type": "Central Bank Statistical Database",
+      "focus": "GDP growth, trade balance, semiconductor exports, foreign exchange reserves"
+    }
+  ],
+  "_meta": {
+    "data_quality": "verified",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

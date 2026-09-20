@@ -79,12 +79,12 @@ export default function Header() {
           {/* Replay Intro Trigger */}
           <button
             onClick={handleReplayIntro}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded border border-neutral-800 text-neutral-400 hover:text-[#FF7A00] hover:border-[#FF7A00]/50 transition-colors text-xs font-mono cursor-pointer"
-            title="Play Cinematic Hero Entry Experience"
-            aria-label="Play Cinematic Hero Entry Experience"
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded border border-neutral-700 bg-neutral-900/60 text-neutral-300 hover:text-[#FF7A00] hover:border-[#FF7A00]/50 transition-colors text-xs font-mono cursor-pointer"
+            title="Play Cinematic Hero Entry Video"
+            aria-label="Play Cinematic Hero Entry Video"
           >
             <Play className="size-3 fill-current text-[#FF7A00]" />
-            <span className="hidden xl:inline">Hero Entry</span>
+            <span>Hero Video</span>
           </button>
         </div>
 

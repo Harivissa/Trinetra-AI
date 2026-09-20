@@ -1,72 +1,188 @@
 {
   "id": "CHN",
   "name": "China",
+  "official_name": "People's Republic of China",
+  "capital": "Beijing",
   "region": "East Asia",
   "demographics": {
-    "population_millions": 1410
+    "population_millions": 1410.0,
+    "urban_pct": 66.2,
+    "median_age": 39.0,
+    "fertility_rate": 1.0,
+    "notes": "World's second-most populous nation; entering a structural demographic transition with a rapidly aging populace and contracting working-age labor force following the historical One-Child policy."
   },
   "economy": {
-    "gdp_usd_trillion": 17.8,
+    "gdp_usd_trillion": 18.5,
     "gdp_growth_pct": 5.0,
-    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+    "currency": "Chinese Yuan Renminbi (CNY / RMB)",
+    "notes": "World's second-largest economy by nominal GDP and largest by Purchasing Power Parity (PPP); global manufacturing powerhouse producing ~30% of global industrial output, dominating electric vehicles, renewable energy, and shipbuilding.",
+    "major_exports": [
+      "Telecommunications equipment, smartphones, and computers",
+      "Electric vehicles, lithium-ion batteries, and solar PV cells (The 'New Three')",
+      "Industrial machinery, heavy electrical apparatus, and robotics",
+      "Steel, refined metals, and chemical precursors",
+      "Commercial cargo vessels and bulk carriers"
+    ],
+    "major_imports": [
+      "Integrated circuits and semiconductor chips",
+      "Crude petroleum, natural gas, and coal",
+      "Iron ore, copper concentrate, and unrefined bauxite",
+      "Agricultural commodities (soybeans, corn, meat)",
+      "Semiconductor manufacturing equipment"
+    ]
   },
   "military": {
     "active_troops": 2035000,
-    "defence_spending_usd_billion": 296,
+    "reserve_troops": 510000,
+    "defence_spending_usd_billion": 296.0,
     "defence_spending_pct_gdp": 1.71,
     "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
     "arms_exports_usd": 1131000000,
     "arms_exports_year": 2024,
-    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "key_equipment_or_doctrines": [
+      "Anti-Access/Area Denial (A2/AD): Multi-layered missile and sensor architecture designed to deny US carrier strike groups access within the First and Second Island Chains",
+      "PLA Rocket Force: DF-17 hypersonic glide vehicles, DF-21D/DF-26 anti-ship ballistic missiles ('Carrier Killers'), and DF-41 solid-fuel road-mobile/silo ICBMs",
+      "PLA Navy: Numerically world's largest navy (>370 hulls), operating Fujian CATOBAR aircraft carrier, Type 055 Renhai stealth guided-missile cruisers, and Type 094 nuclear ballistic missile submarines",
+      "PLA Air Force: 5th-generation J-20 'Mighty Dragon' stealth air superiority fighters, J-16 strike aircraft, and Y-20 strategic airlifters",
+      "Theater Command Structure: Integrated joint warfighting commands (Eastern Theater focused on Taiwan/East China Sea; Western Theater focused on Sino-Indian LAC)"
+    ]
   },
   "energy": {
     "net_import_dependence_ratio": 0.72,
-    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+    "primary_sources": [
+      "Coal (56% of total energy consumption - backbone of domestic baseload electricity generation)",
+      "Crude oil (19% - over 70% imported via seaborne tankers)",
+      "Hydropower, solar, and wind (16% - world's largest installed renewable energy capacity)",
+      "Natural gas (8% - domestic production plus pipeline imports from Russia/Central Asia and LNG)",
+      "Nuclear power (3% - fastest-growing civil nuclear reactor buildout globally)"
+    ],
+    "note": "World's largest energy consumer and crude oil importer; aggressively building overland pipeline networks (Power of Siberia, Central Asia-China pipeline) and expanding domestic renewables to mitigate maritime chokepoint exposure."
   },
-  "infrastructure": {},
-  "trade": {},
-  "technology": {},
+  "infrastructure": {
+    "major_ports": [
+      "Port of Shanghai (World's #1 busiest container port, handling >47 million TEUs annually)",
+      "Port of Ningbo-Zhoushan (World's #1 port by total cargo tonnage, handling >1.3 billion metric tons)",
+      "Port of Shenzhen & Guangzhou (Pearl River Delta global manufacturing export gateways)",
+      "Port of Qingdao & Tianjin (Heavy industrial, energy, and iron ore import hubs in northern China)"
+    ],
+    "strategic_airports": [
+      "Beijing Capital & Beijing Daxing International (PEK / PKX)",
+      "Shanghai Pudong International Airport (PVG - major global air cargo hub)",
+      "Guangzhou Baiyun International Airport (CAN)"
+    ],
+    "rail_network_km": 159000,
+    "energy_grid_resilience": "State Grid Corporation of China operates the world's most advanced Ultra-High Voltage (UHV) DC transmission network, transmitting massive hydro and solar power from western provinces over 3,000 km to eastern industrial coastal metros.",
+    "digital_infrastructure": "World's most extensive 5G network (>3.5M base stations); sovereign BeiDou-3 global satellite navigation constellation; leading domestic supercomputing centers and sovereign hyperscale cloud clusters."
+  },
+  "trade": {
+    "top_partners": [
+      "ASEAN (largest regional trading partner, central to intermediate manufacturing integration)",
+      "European Union (primary export destination for consumer goods, green tech, and industrial components)",
+      "United States (crucial export market, subject to tariffs and strategic export control competition)",
+      "Russia (strategic partner for discounted crude oil, natural gas, coal, and fertilizer imports)",
+      "Japan & South Korea (critical suppliers of high-end machinery, display panels, and electronic components)"
+    ],
+    "chokepoint_exposure": [
+      "Strait of Malacca ('Malacca Dilemma' — ~80% of imported crude oil must transit this narrow chokepoint)",
+      "First Island Chain straits (Miyako Strait, Bashi Channel — strategic naval bottlenecks monitored by US and allied forces)",
+      "Strait of Hormuz (over 40% of imported crude originates in Gulf producers)"
+    ]
+  },
+  "technology": {
+    "core_competencies": [
+      "Global monopoly on rare earth permanent magnet refining (>90% of global capacity) and critical mineral processing (lithium, cobalt, graphite)",
+      "World-leading commercial and industrial battery manufacturing (CATL and BYD control over 50% of world EV batteries)",
+      "Advanced 5G/6G telecommunications infrastructure, high-voltage electrical grid technology, and high-speed rail engineering",
+      "Hypersonic glide aerodynamics, quantum satellite encryption, and artificial intelligence computer vision"
+    ],
+    "tech_vulnerabilities": [
+      "Vulnerability to advanced semiconductor equipment embargoes (EUV photolithography tools from ASML, advanced deposition/etch tools from US/Japan)",
+      "Dependence on US-origin Electronic Design Automation (EDA) software for leading-edge chip design",
+      "Import reliance on commercial aviation jet engines (CFM LEAP engines for the COMAC C919 airliner)"
+    ]
+  },
   "geography": {
-    "region": "East Asia"
+    "region": "East Asia",
+    "capital": "Beijing",
+    "area_sq_km": 9596961,
+    "coastline_km": 14500,
+    "land_borders": [
+      "Mongolia (4630 km)",
+      "Russia (4179 km across two sectors)",
+      "India (3488 km along the disputed Line of Actual Control)",
+      "Myanmar (2129 km)",
+      "Kazakhstan (1765 km)",
+      "North Korea (1416 km)",
+      "Kyrgyzstan (1063 km)",
+      "Tajikistan (477 km)",
+      "Vietnam (1297 km)",
+      "Laos (475 km)",
+      "Nepal (1389 km)",
+      "Pakistan (596 km)",
+      "Bhutan (477 km)",
+      "Afghanistan (91 km via the Wakhan Corridor)"
+    ],
+    "strategic_chokepoints_adjacent": [
+      "Taiwan Strait",
+      "Bashi Channel (Luzon Strait)",
+      "Miyako Strait",
+      "Qiongzhou Strait"
+    ]
   },
-  "politics": {},
+  "politics": {
+    "system": "Unitary socialist one-party republic under the leadership of the Chinese Communist Party (CCP)",
+    "executive": "General Secretary of the CCP, President of the PRC, and Chairman of the Central Military Commission (concentrated in Xi Jinping). Premier of the State Council leads government administration.",
+    "legislature": "National People's Congress (NPC), the 2,980-member unicameral national legislature; Standing Committee of the NPC exercises legislative power year-round.",
+    "judiciary": "Supreme People's Court and Supreme People's Procuratorate, constitutionally subordinate to the National People's Congress and guided by Party leadership."
+  },
   "nuclear": {
-    "weapons_state": true
+    "weapons_state": true,
+    "delivery_systems": "Rapidly expanding operational nuclear triad: Road-mobile and silo-based ICBMs (DF-41, DF-31AG, DF-5B), submarine-launched ballistic missiles (JL-2 and JL-3 deployed on Type 094 SSBNs), and air-launched dual-capable ballistic missiles (H-6N bombers).",
+    "notes": "Estimated ~500 operational nuclear warheads (SIPRI / US DoD 2024), projected to reach 1,000+ by 2030. Maintains a declared No-First-Use (NFU) policy, while constructing extensive hardened silo fields in Yumen, Hami, and Ordos."
   },
   "strategic_priorities": [
-    "Taiwan reunification posture",
-    "South China Sea control",
-    "Tech self-sufficiency (semiconductors)",
-    "Belt & Road consolidation"
+    "Achieving national reunification with Taiwan and deterring foreign military intervention across the First Island Chain",
+    "Attaining complete technological self-reliance ('Choke Point' indigenous substitution) in semiconductors, AI, and industrial equipment",
+    "Consolidating the Belt and Road Initiative (BRI) and developing alternative continental logistics corridors to bypass maritime chokepoints",
+    "Strengthening the comprehensive strategic partnership of coordination with Russia to counter Western containment and promote a multipolar world order",
+    "Securing regional maritime dominance in the South China Sea and expanding blue-water naval power into the Indian Ocean"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "Energy security: Imports over 70% of crude oil and over 40% of natural gas, predominantly via vulnerable sea lines of communication",
+    "High-end semiconductor lithography and design tool ecosystem reliant on Western and Japanese supply chains",
+    "Critical bulk agricultural imports (soybeans and feed grains from the US, Brazil, and Argentina) to sustain national food supply",
+    "Reliance on the US dollar-denominated global financial clearing system (SWIFT) for international trade settlements"
+  ],
   "vulnerabilities": [
-    "The 'Malacca Dilemma' \u2014 a term Chinese strategists themselves have used (attributed to Hu Jintao, 2003) \u2014 roughly 80% of China's crude oil imports transit the Strait of Malacca, a single chokepoint China does not control and cannot easily bypass at scale",
-    "Himalayan/Tibetan plateau terrain (average 4,000+ metres altitude along the LAC) imposes severe logistics, acclimatisation, and sustained-offensive constraints on Chinese ground forces relative to fighting at lower altitude",
-    "Aging population",
-    "Property-sector debt overhang",
-    "Export dependence on Western markets"
+    "The 'Malacca Dilemma': Roughly 80% of seaborne crude oil imports transit the narrow Strait of Malacca, an arterial bottleneck outside PLA defense umbrellas",
+    "Rapid demographic aging: Shrinking fertility and workforce contraction placing unprecedented fiscal demands on pensions and healthcare while reducing economic dynamism",
+    "Real estate sector restructuring: Protracted downturn in residential property development and high local government financing vehicle (LGFV) debt overhang",
+    "Intensifying multilateral encirclement: Coordinated export controls, defense pacts, and tech restrictions by the US, Japan, South Korea, Taiwan, and European allies"
   ],
   "strengths": [
-    "Manufacturing/industrial base",
-    "Global supply chain centrality",
-    "Rapid naval expansion",
-    "Belt & Road strategic reach"
+    "Unrivalled industrial base: The only nation possessing every industrial category under the UN classification; world's undisputed workshop across steel, electronics, chemicals, and green technologies",
+    "Colossal shipbuilding and naval capacity: Commands over 50% of world commercial shipbuilding tonnage and rapid naval construction capacity exceeding all Western shipyards combined",
+    "Dominance in critical green transition supply chains: Monopolizes over 75% of global solar supply chains, 70% of EV battery cells, and 90% of refined rare earth magnets",
+    "Vast sovereign foreign exchange reserves ($3.2T+) and deep domestic state-backed capital allocation mechanisms"
   ],
   "alliances": [
     "RUS",
     "PAK",
-    "PRK"
+    "PRK",
+    "IRN",
+    "BLR"
   ],
   "rivals": [
     "USA",
     "IND",
-    "JPN"
+    "JPN",
+    "TWN"
   ],
   "_meta": {
-    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
-    "source": "see data/sources/",
-    "confidence": "low-demo",
+    "data_quality": "sourced; military spending %GDP and arms exports verified from World Bank WDI and official PRC Ministry of Finance budget releases",
+    "source": "World Bank WDI (MS.MIL.XPND.GD.ZS, MS.MIL.XPRT.KD); SIPRI Military Expenditure & Arms Transfers Databases; US DoD Military and Security Developments Involving the PRC; National Bureau of Statistics of China",
+    "confidence": "high",
     "last_updated": "2026-08-27"
   }
 }

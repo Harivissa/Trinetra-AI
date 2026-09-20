@@ -353,7 +353,7 @@ export default function AnalysisResults({ analysis }: Props) {
         {/* TAB: OVERVIEW */}
         {tab === "Overview" && (
           <>
-            <Section title="Structural differences" note="Factual comparison only. No composite score or winner logic.">
+            <Section title="Where each country has more influence" note="Factual comparison only. Explaining where each country has relative strength without picking a winner.">
               <DataSeparationBlock
                 entityAName={a.name}
                 entityBName={b.name}
@@ -381,7 +381,7 @@ export default function AnalysisResults({ analysis }: Props) {
               />
             </Section>
 
-            <Section title="Strategic position" note={analysis.geopolitical?.note || "Position statements require source-backed context."}>
+            <Section title="Current strategic position" note={analysis.geopolitical?.note || "Position statements require source-backed context."}>
               <div className="grid gap-7 md:grid-cols-2">
                 <div className="border border-trinetra-border p-5 rounded">
                   <p className="eyebrow mb-3">{a.id} · POSITION</p>
@@ -404,7 +404,7 @@ export default function AnalysisResults({ analysis }: Props) {
               </div>
             </Section>
 
-            <Section title="Leverage and constraints">
+            <Section title="What limits each country's options" note="Identified vulnerabilities, resource dependencies, and operational limits.">
               <div className="grid gap-7 md:grid-cols-2">
                 <div className="border border-trinetra-border p-5 rounded">
                   <p className="eyebrow mb-3 text-trinetra-saffron">{a.name} · VULNERABILITIES & LIMITS</p>
@@ -417,14 +417,14 @@ export default function AnalysisResults({ analysis }: Props) {
               </div>
             </Section>
 
-            <Section title="External actor assessment" note="Third-party alignment assessments. Not deterministic predictions.">
+            <Section title="How other countries are connected to this relationship" note="Third-party alignment assessments. Not deterministic predictions.">
               <BulletList
                 items={analysis.geopolitical?.external_actors?.map((actor) => `${actor.country} · ${actor.role}: ${actor.reason}`)}
                 empty={availability.external_actor_records ? "No third-party assessment records available for this pair." : "External actor dataset not available for this pair."}
               />
             </Section>
 
-            <Section title="Trinetra assessment" note="Factual synthesis derived from verified repository records.">
+            <Section title="Trinetra assessment" note="Clear synthesis derived from verified repository records.">
               <div className="border-l-2 border-trinetra-saffron bg-black/20 p-5 rounded-r text-sm leading-7 text-neutral-300">
                 {analysis.ai_summary || "The current evidence set provides direct comparative metrics across economic scale, defence allocation, and geographic posture. No synthetic winner or predictive outcome is fabricated."}
               </div>
@@ -1046,7 +1046,7 @@ export default function AnalysisResults({ analysis }: Props) {
 
         {/* TAB: TRADE & DEPENDENCIES */}
         {(tab === "Trade" || tab === "Dependencies") && (
-          <Section title="Trade dependencies and structural vulnerabilities" note="Bilateral critical dependencies, import concentration, and supply chain single points of failure.">
+          <Section title="Trade dependencies and supply chains" note="Both countries depend on each other economically, but the type of dependence is different. Explores critical imports, trade concentration, and supply chain single points of failure.">
             <DataSeparationBlock
               entityAName={a.name}
               entityBName={b.name}

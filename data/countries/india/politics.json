@@ -1,66 +1,62 @@
 {
   "country_id": "IND",
   "political_system": {
-    "type": "Federal parliamentary constitutional republic",
-    "executive": "President is ceremonial head of state; Prime Minister (leader of the majority party/coalition in the Lok Sabha) is head of government and holds executive power in practice.",
-    "legislature": "Bicameral Parliament — Lok Sabha (directly elected lower house, 543 seats) and Rajya Sabha (indirectly elected upper house representing states).",
-    "judiciary": "Independent judiciary headed by the Supreme Court, with a system of High Courts and subordinate courts; known for judicial review powers.",
-    "structure": "Federal, with power divided between the Union government and 28 states plus union territories.",
-    "election_system": "First-past-the-post for Lok Sabha and most state assembly elections; the Election Commission of India administers elections.",
+    "type": "Federal parliamentary constitutional democratic republic",
+    "executive": "Prime Minister is Head of Government exercising executive power, leading the Council of Ministers accountable to the Lok Sabha; President of India serves as Head of State with constitutional reserve powers.",
+    "legislature": "Bicameral Parliament (Sansad): Lok Sabha (543 directly elected members from single-member constituencies) and Rajya Sabha (245 members representing the states and union territories).",
+    "judiciary": "Unified, independent federal judiciary headed by the Supreme Court of India with extensive judicial review authority, fundamental rights enforcement, and appointment authority via the collegium system.",
+    "structure": "Quasi-federal union comprising 28 states and 8 union territories, with defined central, state, and concurrent legislative competencies.",
+    "election_system": "Universal adult suffrage administered by the autonomous Election Commission of India (ECI); first-past-the-post plurality voting in the world's largest democratic electoral exercises.",
     "confidence": "high"
   },
   "current_government": {
     "ruling_coalition": "National Democratic Alliance (NDA), led by the Bharatiya Janata Party (BJP)",
-    "prime_minister": "Narendra Modi, serving a third consecutive term following the 2024 general election",
-    "context": "The 2024 election was the first time since 2014 that the BJP did not win an outright majority on its own (240 of 543 seats), making Modi's third term dependent on coalition partners — notably the Telugu Desam Party (TDP) under N. Chandrababu Naidu and Janata Dal (United) under Nitish Kumar. The NDA overall holds 293 seats.",
-    "main_opposition": "INDIA bloc, an opposition alliance led by the Indian National Congress under Rahul Gandhi, which won over 230 seats in 2024 — a stronger-than-expected result.",
-    "source": "Congress.gov CRS reports (IF10298); Wikipedia 2024 Indian general election",
+    "prime_minister": "Narendra Modi (serving historic third consecutive term)",
+    "president": "Droupadi Murmu",
+    "external_affairs_minister": "Dr. S. Jaishankar",
+    "context": "Following the 2024 general elections, the BJP governs as the anchor of the NDA coalition, pursuing national infrastructure development, high-tech manufacturing, defense self-reliance (Atmanirbhar Bharat), and expansive digital public infrastructure rollout.",
+    "main_opposition": "Indian National Developmental Inclusive Alliance (INDIA bloc), led by the Indian National Congress (INC)",
     "confidence": "high",
-    "as_of": "2026-08-22"
+    "as_of": "2026-08-27"
   },
   "major_parties": [
     {
       "name": "Bharatiya Janata Party (BJP)",
-      "ideology": "Hindu nationalist, right-of-centre",
-      "status": "Largest party in the Lok Sabha, leads the NDA coalition government"
+      "ideology": "Cultural nationalism (Hindutva), economic modernization, robust defense posture, social welfare delivery via digital cash transfers",
+      "status": "Lead party of the governing NDA coalition"
     },
     {
       "name": "Indian National Congress (INC)",
-      "ideology": "Centre-left, historically the dominant post-independence party",
-      "status": "Leads the opposition INDIA bloc"
+      "ideology": "Center-left secularism, constitutional rights, redistributive social justice, welfare guarantees",
+      "status": "Principal opposition party in Parliament"
     },
     {
-      "name": "Dravida Munnetra Kazhagam (DMK)",
-      "ideology": "Social democratic, Tamil regional party",
-      "status": "Governs Tamil Nadu; part of the INDIA opposition bloc"
-    },
-    {
-      "name": "Telugu Desam Party (TDP)",
-      "ideology": "Regional, Andhra Pradesh-based",
-      "status": "Key NDA coalition partner; leader N. Chandrababu Naidu is Andhra Pradesh Chief Minister"
-    },
-    {
-      "name": "Janata Dal (United) (JDU)",
-      "ideology": "Secularist, social democratic, Bihar-based",
-      "status": "NDA coalition partner; leader Nitish Kumar is Bihar Chief Minister"
+      "name": "Regional Parties (TDP, JD(U), DMK, TMC, AAP)",
+      "ideology": "Regional federalism, linguistic representation, state-specific development priorities",
+      "status": "Critical coalition anchors in both government and opposition"
     }
   ],
   "political_movements_and_dynamics": [
     {
-      "name": "Hindu nationalism / Hindutva",
-      "description": "A long-running ideological movement emphasizing Hindu cultural and political identity, most closely associated with the BJP and its ideological affiliates (RSS and related organisations). The 2024 Ram Mandir consecration in Ayodhya was a landmark moment for this movement.",
-      "current_relevance": "Remains a central feature of BJP messaging, though the 2024 election result suggested economic issues (unemployment, prices) mattered more to voters than religious mobilisation, per CSDS pre-poll survey data."
+      "name": "Viksit Bharat 2047 (Developed India)",
+      "description": "Grand national vision aiming to transform India into a high-income, fully developed nation by the centenary of its independence in 2047, focusing on capital expenditure, semiconductor hubs, and energy transition.",
+      "current_relevance": "Directs tens of billions in public capital investment into railways, expressways, ports, and aerospace R&D."
     },
     {
-      "name": "Federal-state political dynamics",
-      "description": "Regional parties (DMK, TDP, JDU, and others) hold significant leverage in a coalition-dependent Parliament, giving state-level political concerns more national weight than during the BJP's single-party-majority years (2014-2024).",
-      "current_relevance": "Coalition partners' regional priorities now shape national policy and budget allocations more directly than in the previous decade."
+      "name": "Atmanirbhar Bharat (Self-Reliant India)",
+      "description": "Strategic industrial policy utilizing Production-Linked Incentive (PLI) schemes to localize manufacturing of mobile phones, electronics, defense hardware, and solar modules, curbing import dependency.",
+      "current_relevance": "Subsidizes domestic defense manufacturing and incentivizes multinational supply chain moves from China to India."
+    },
+    {
+      "name": "Digital Public Infrastructure (India Stack)",
+      "description": "State-backed open-source digital architecture comprising Aadhaar (biometrics), UPI (instant payments), and DigiLocker, driving financial inclusion and eliminating leakages in direct benefit transfers.",
+      "current_relevance": "Enables unprecedented efficiency in welfare delivery while catalyzing one of the world's most vibrant fintech startup ecosystems."
     }
   ],
   "_meta": {
     "data_quality": "sourced",
-    "source": "Congress.gov CRS IF10298 (2026); Wikipedia (BJP, 2024 Indian general election); SPF.org analysis; CSDS-Lokniti pre-poll survey (The Hindu)",
+    "source": "Constitution of India; Election Commission of India; Lok Sabha Secretariat; Congressional Research Service (CRS Report R45831)",
     "confidence": "high",
-    "last_updated": "2026-08-22"
+    "last_updated": "2026-08-27"
   }
 }

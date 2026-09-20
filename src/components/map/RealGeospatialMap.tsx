@@ -53,6 +53,7 @@ export default function RealGeospatialMap({
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
   const tileLayerRef = useRef<L.TileLayer | null>(null);
+  const referenceLayerRef = useRef<L.TileLayer | null>(null);
   const geoJsonLayerRef = useRef<L.GeoJSON | null>(null);
   const markersLayerRef = useRef<L.LayerGroup | null>(null);
   const routesLayerRef = useRef<L.LayerGroup | null>(null);
@@ -121,10 +122,10 @@ export default function RealGeospatialMap({
       maxZoom: 19,
     },
     dark: {
-      url: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-      attribution: "CARTO, OpenStreetMap",
+      url: "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+      attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
       label: "Dark Tactical",
-      maxZoom: 19,
+      maxZoom: 16,
     },
     terrain: {
       url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}",
@@ -133,6 +134,9 @@ export default function RealGeospatialMap({
       maxZoom: 18,
     },
   };
+
+  const REFERENCE_LAYER_URL =
+    "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}";
 
   // 1. Initialize Leaflet Map
   useEffect(() => {
@@ -159,9 +163,14 @@ export default function RealGeospatialMap({
     const tiles = L.tileLayer(currentBase.url, {
       attribution: currentBase.attribution,
       maxZoom: currentBase.maxZoom,
-      subdomains: "abcd",
     }).addTo(map);
     tileLayerRef.current = tiles;
+
+    if (basemap === "dark") {
+      referenceLayerRef.current = L.tileLayer(REFERENCE_LAYER_URL, {
+        maxZoom: 16,
+      }).addTo(map);
+    }
 
     // Layer groups for dynamic controls
     markersLayerRef.current = L.layerGroup().addTo(map);
@@ -295,12 +304,21 @@ export default function RealGeospatialMap({
     if (!mapInstanceRef.current || !tileLayerRef.current) return;
     const currentBase = BASEMAP_URLS[basemap];
     mapInstanceRef.current.removeLayer(tileLayerRef.current);
+    if (referenceLayerRef.current) {
+      mapInstanceRef.current.removeLayer(referenceLayerRef.current);
+      referenceLayerRef.current = null;
+    }
     const newTiles = L.tileLayer(currentBase.url, {
       attribution: currentBase.attribution,
       maxZoom: currentBase.maxZoom,
-      subdomains: "abcd",
     }).addTo(mapInstanceRef.current);
     tileLayerRef.current = newTiles;
+
+    if (basemap === "dark") {
+      referenceLayerRef.current = L.tileLayer(REFERENCE_LAYER_URL, {
+        maxZoom: 16,
+      }).addTo(mapInstanceRef.current);
+    }
     // Keep markers on top
     if (routesLayerRef.current) {
       routesLayerRef.current.eachLayer((l: any) => l.bringToFront?.());

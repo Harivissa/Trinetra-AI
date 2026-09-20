@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from "react";
-import { ArrowRight, Volume2, VolumeX, Eye, Shield, Globe, Radio } from "lucide-react";
+import { ArrowRight, Volume2, VolumeX } from "lucide-react";
 
 interface EntryExperienceProps {
   onComplete: () => void;
@@ -13,31 +13,8 @@ export default function EntryExperience({ onComplete, isReplay = false }: EntryE
   const [videoFailed, setVideoFailed] = useState(false);
   const [isEntering, setIsEntering] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
-  const [hasSoundTrack, setHasSoundTrack] = useState(false);
-  const [videoEnded, setVideoEnded] = useState(false);
-  const [progress, setProgress] = useState(0);
 
-  // Check if first visit or forced replay
-  useEffect(() => {
-    if (!isReplay) {
-      try {
-        const forceIntro =
-          typeof window !== "undefined" &&
-          (window.location.search.includes("intro") || window.location.search.includes("replay"));
-        if (forceIntro) return;
-
-        const seen = localStorage.getItem("trinetra_intro_completed");
-        if (seen === "true") {
-          onComplete();
-          return;
-        }
-      } catch {
-        // Ignore localStorage error
-      }
-    }
-  }, [isReplay, onComplete]);
-
-  // Attempt video playback
+  // Attempt video playback immediately on mount and when ready
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -45,19 +22,26 @@ export default function EntryExperience({ onComplete, isReplay = false }: EntryE
     video.muted = true;
     video.defaultMuted = true;
 
-    const playPromise = video.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
+    if (video.readyState >= 2) {
+      setVideoLoaded(true);
+    }
+
+    const tryPlay = () => {
+      video.play().catch(() => {
         video.muted = true;
         video.play().catch(() => {
-          setVideoFailed(true);
+          // Keep video element ready for user interaction
         });
       });
-    }
-  }, []);
+    };
 
-  // Tactical Canvas Simulation (runs smoothly when video is loading or missing)
+    tryPlay();
+  }, [isReplay]);
+
+  // Tactical Canvas Simulation (runs smoothly only when video is loading or fails)
   useEffect(() => {
+    if (videoLoaded && !videoFailed) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
@@ -186,12 +170,6 @@ export default function EntryExperience({ onComplete, isReplay = false }: EntryE
         ctx.fillText(n.label, nx + 7, ny + 3);
       });
 
-      // Simulation progress updater if video is not supplying time
-      if (!videoLoaded) {
-        simProgress = Math.min(100, simProgress + 0.18);
-        setProgress(simProgress);
-      }
-
       animId = requestAnimationFrame(render);
     };
 
@@ -228,17 +206,6 @@ export default function EntryExperience({ onComplete, isReplay = false }: EntryE
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [handleEnter]);
 
-  const handleTimeUpdate = () => {
-    const video = videoRef.current;
-    if (video && video.duration) {
-      setProgress((video.currentTime / video.duration) * 100);
-    }
-  };
-
-  const handleVideoEnded = () => {
-    setVideoEnded(true);
-  };
-
   const toggleSound = (e: React.MouseEvent) => {
     e.stopPropagation();
     const video = videoRef.current;
@@ -246,157 +213,82 @@ export default function EntryExperience({ onComplete, isReplay = false }: EntryE
     const nextMuted = !video.muted;
     video.muted = nextMuted;
     setIsMuted(nextMuted);
-    if (!nextMuted) setHasSoundTrack(true);
   };
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex flex-col justify-between bg-[#050608] text-neutral-100 overflow-hidden select-none transition-opacity duration-500 ease-out ${
+      onClick={handleEnter}
+      className={`fixed inset-0 z-50 flex flex-col justify-between bg-[#050608] overflow-hidden select-none cursor-pointer transition-opacity duration-500 ease-out ${
         isEntering ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
-      role="region"
-      aria-label="Trinetra Cinematic Intelligence Entry"
+      role="button"
+      tabIndex={0}
+      aria-label="Enter console"
     >
-      {/* 1. Tactical Radar Simulation Canvas (Always active in background) */}
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 size-full pointer-events-none"
-      />
+      {/* ── LAYER 0: VIDEO BACKGROUND ── */}
+      {/* Fallback Simulation Canvas (Only active if video is loading or unavailable) */}
+      {(!videoLoaded || videoFailed) && (
+        <canvas
+          ref={canvasRef}
+          className="absolute inset-0 size-full pointer-events-none z-0"
+        />
+      )}
 
-      {/* 2. Cinematic Video (Fades in over canvas when video file is present) */}
+      {/* Clean Cinematic Video (Rendered untouched at 100% opacity, completely unobstructed) */}
       <video
         ref={videoRef}
         src="/trinetra-hero.mp4"
         autoPlay
         muted
+        loop
         playsInline
         preload="auto"
-        onLoadedData={() => setVideoLoaded(true)}
-        onCanPlay={() => setVideoLoaded(true)}
-        onTimeUpdate={handleTimeUpdate}
-        onEnded={handleVideoEnded}
+        onLoadedData={() => {
+          setVideoLoaded(true);
+          videoRef.current?.play().catch(() => {});
+        }}
+        onCanPlay={() => {
+          setVideoLoaded(true);
+          videoRef.current?.play().catch(() => {});
+        }}
+        onPlay={() => setVideoLoaded(true)}
         onError={() => setVideoFailed(true)}
-        className={`absolute inset-0 size-full object-cover transition-opacity duration-1000 ${
-          videoLoaded && !videoFailed ? "opacity-90" : "opacity-0 pointer-events-none"
+        className={`absolute inset-0 size-full object-cover z-0 transition-opacity duration-700 ${
+          videoLoaded && !videoFailed ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
         <source src="/trinetra-hero.mp4" type="video/mp4" />
       </video>
 
-      {/* Atmospheric Vignette & Contrast Overlay */}
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#050608] via-transparent to-[#050608]/75" />
-      <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_140px_rgba(0,0,0,0.9)]" />
-
-      {/* 3. Top Command Bar HUD */}
-      <header className="relative z-20 flex items-center justify-between px-6 py-6 sm:px-10 sm:py-8">
-        <div className="flex items-center gap-3">
-          <div className="size-8 rounded border border-trinetra-saffron/70 bg-trinetra-saffron/10 flex items-center justify-center text-trinetra-saffron font-bold text-sm tracking-wider">
-            त्र
-          </div>
-          <div>
-            <div className="font-display text-lg font-semibold tracking-widest text-neutral-100 flex items-center gap-2">
-              TRINETRA <span className="text-trinetra-saffron text-xs font-mono font-normal tracking-wider">OS // 1.0</span>
-            </div>
-            <div className="font-mono text-[9px] uppercase tracking-[0.25em] text-neutral-400">
-              Strategic Geopolitical Intelligence Platform
-            </div>
-          </div>
-        </div>
-
-        {/* Top Right Controls: Status indicator, Audio Toggle & Skip */}
-        <div className="flex items-center gap-3">
-          {videoLoaded && !videoFailed ? (
-            <button
-              onClick={toggleSound}
-              className="p-2 rounded border border-white/10 bg-black/40 hover:bg-black/70 hover:border-trinetra-saffron/60 text-neutral-400 hover:text-white transition-all text-xs flex items-center gap-1.5 backdrop-blur cursor-pointer"
-              title={isMuted ? "Unmute Audio Briefing" : "Mute Audio"}
-            >
-              {isMuted ? <VolumeX className="size-3.5" /> : <Volume2 className="size-3.5 text-trinetra-saffron" />}
-              <span className="hidden sm:inline font-mono text-[10px] tracking-wider uppercase">
-                {isMuted ? "Audio Off" : "Audio Active"}
-              </span>
-            </button>
-          ) : (
-            <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded border border-white/10 bg-black/40 text-neutral-400 font-mono text-[10px] tracking-wider">
-              <span className="size-2 rounded-full bg-[#FF7A00] animate-ping" />
-              <span>TACTICAL TELEMETRY STREAM</span>
-            </div>
-          )}
-
+      {/* ── MINIMAL FLOATING ICON CONTROLS (NO TEXT OVERLAY) ── */}
+      <div className="relative z-20 flex items-center justify-end p-5 sm:p-7 gap-3 pointer-events-auto">
+        {videoLoaded && !videoFailed && (
           <button
-            onClick={handleEnter}
-            className="px-3.5 py-1.5 rounded border border-white/15 bg-black/50 hover:border-trinetra-saffron/60 text-neutral-300 hover:text-white text-xs font-mono tracking-wider transition-all backdrop-blur flex items-center gap-1.5 cursor-pointer"
+            onClick={toggleSound}
+            className="p-3 rounded-full bg-black/40 hover:bg-black/80 border border-white/20 text-neutral-300 hover:text-white transition-all backdrop-blur-md cursor-pointer shadow-lg hover:scale-105 active:scale-95"
+            title={isMuted ? "Unmute audio" : "Mute audio"}
+            aria-label={isMuted ? "Unmute audio" : "Mute audio"}
           >
-            <span>Skip to Console</span>
-            <ArrowRight className="size-3 text-trinetra-saffron" />
+            {isMuted ? (
+              <VolumeX className="size-4 text-neutral-400" />
+            ) : (
+              <Volume2 className="size-4 text-trinetra-saffron animate-pulse" />
+            )}
           </button>
-        </div>
-      </header>
+        )}
 
-      {/* 4. Center Reticle & Conceptual Statement */}
-      <main className="relative z-20 mx-auto max-w-4xl px-6 text-center my-auto">
-        <div className="inline-flex items-center gap-2 font-mono text-[10px] tracking-[0.3em] text-trinetra-saffron border border-trinetra-saffron/30 px-3.5 py-1.5 rounded bg-black/70 backdrop-blur mb-6 uppercase">
-          <Eye className="size-3.5 animate-pulse text-trinetra-saffron" />
-          Autonomous Strategic Command Initialization
-        </div>
-
-        <h1 className="font-display text-5xl sm:text-7xl font-light text-neutral-50 tracking-tight mb-4 leading-none">
-          TRINETRA
-        </h1>
-
-        <p className="font-mono text-xs sm:text-sm tracking-[0.3em] uppercase text-neutral-400 max-w-2xl mx-auto mb-6">
-          Observe <span className="text-trinetra-saffron">•</span> Connect <span className="text-trinetra-saffron">•</span> Anticipate
-        </p>
-
-        <p className="text-sm sm:text-base text-neutral-300 max-w-xl mx-auto mb-8 leading-relaxed font-light">
-          Synthesizing multi-domain sovereign actors, strategic alliances, trade chokepoints, and bilateral rivalry resilience into a unified intelligence environment.
-        </p>
-
-        {/* Primary Command Center Call To Action */}
-        <div className="flex flex-col items-center justify-center gap-3">
-          <button
-            onClick={handleEnter}
-            className="px-8 py-3.5 rounded-lg bg-trinetra-saffron hover:bg-[#ff8c1a] text-black font-semibold text-xs sm:text-sm tracking-wider uppercase transition-all flex items-center justify-center gap-2.5 shadow-xl shadow-trinetra-saffron/20 group cursor-pointer active:scale-95"
-          >
-            <span>Enter Trinetra Platform</span>
-            <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-          </button>
-          <div className="font-mono text-[10px] text-neutral-500 tracking-widest uppercase flex items-center gap-1.5">
-            <span>Press</span>
-            <kbd className="px-1.5 py-0.5 rounded bg-neutral-900 border border-neutral-700 text-neutral-300">Enter ↵</kbd>
-            <span>or click to access intelligence console</span>
-          </div>
-        </div>
-      </main>
-
-      {/* 5. Bottom Telemetry & Progress Ribbon */}
-      <footer className="relative z-20 px-6 py-5 sm:px-10 sm:py-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/10 bg-[#050608]/80 backdrop-blur">
-        <div className="flex items-center gap-6 font-mono text-[11px] text-neutral-400">
-          <div className="flex items-center gap-2">
-            <span className="size-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-neutral-300">INTELLIGENCE GRID: ONLINE</span>
-          </div>
-          <div className="hidden md:inline text-neutral-400">
-            SOVEREIGN PROFILES: 22 LOADED
-          </div>
-          <div className="hidden lg:inline text-neutral-400">
-            CHOKEPOINT SENSORS: ACTIVE
-          </div>
-        </div>
-
-        {/* Progress indicator */}
-        <div className="w-full sm:w-64 flex items-center gap-3">
-          <div className="flex-1 h-1.5 bg-neutral-800 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-trinetra-saffron transition-all duration-300 ease-out"
-              style={{ width: `${Math.min(100, Math.max(progress, 8))}%` }}
-            />
-          </div>
-          <span className="font-mono text-[10px] text-neutral-400 tracking-wider w-12 text-right">
-            {videoEnded || progress >= 99 ? "READY" : `${Math.round(progress)}%`}
-          </span>
-        </div>
-      </footer>
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            handleEnter();
+          }}
+          className="p-3 rounded-full bg-black/40 hover:bg-black/80 border border-white/20 text-neutral-300 hover:text-white transition-all backdrop-blur-md cursor-pointer shadow-lg hover:scale-105 active:scale-95"
+          title="Enter platform"
+          aria-label="Enter platform"
+        >
+          <ArrowRight className="size-4 text-trinetra-saffron" />
+        </button>
+      </div>
     </div>
   );
 }

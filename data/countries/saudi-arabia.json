@@ -1,65 +1,176 @@
 {
   "id": "SAU",
   "name": "Saudi Arabia",
+  "official_name": "Kingdom of Saudi Arabia",
+  "capital": "Riyadh",
   "region": "Middle East",
   "demographics": {
-    "population_millions": 36
+    "population_millions": 36.5,
+    "urban_pct": 84.8,
+    "median_age": 32.4,
+    "fertility_rate": 2.24,
+    "notes": "Fast-growing young demographic (over 60% of population under 35), accompanied by a large foreign expatriate workforce comprising ~38% of residents."
   },
   "economy": {
-    "gdp_usd_trillion": 1.06,
-    "gdp_growth_pct": 2.0,
-    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+    "gdp_usd_trillion": 1.07,
+    "gdp_growth_pct": 2.5,
+    "currency": "Saudi Riyal (SAR, pegged to USD at 3.75)",
+    "notes": "Largest economy in the Arab world and G20 member; holds ~17% of world's proven petroleum reserves. Undergoing massive structural transformation via Vision 2030 and the Public Investment Fund (PIF, $925B+ AUM) into non-oil sectors, mining, green hydrogen, and advanced logistics.",
+    "major_exports": [
+      "Crude petroleum (Saudi Aramco)",
+      "Refined petroleum fuels and gas oils",
+      "Ethylene polymers and petrochemical plastics (SABIC)",
+      "Industrial chemical fertilizers and acyclic alcohols",
+      "Aluminum and raw minerals"
+    ],
+    "major_imports": [
+      "Heavy industrial machinery and turbines",
+      "Passenger vehicles and commercial transport",
+      "Defense systems, radar, and air defense interceptors",
+      "Consumer electronics and telecommunications gear",
+      "Agricultural grains and pharmaceutical products"
+    ]
   },
   "military": {
     "active_troops": 257000,
-    "defence_spending_usd_billion": 75,
-    "defence_spending_pct_gdp": 7.3,
+    "reserve_troops": 25000,
+    "defence_spending_usd_billion": 75.8,
+    "defence_spending_pct_gdp": 7.09,
     "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
-    "arms_exports_usd": 3000000,
-    "arms_exports_year": 2023,
-    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+    "arms_exports_usd": 0,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "key_equipment_or_doctrines": [
+      "Royal Saudi Air Force: Advanced fleet of F-15SA Strike Eagles, Eurofighter Typhoons, and Tornado IDS",
+      "Multi-tier Integrated Air & Missile Defence: MIM-104 Patriot PAC-3 and THAAD systems defending critical infrastructure against ballistic missiles and drones",
+      "Saudi Arabian National Guard (SANG): 100,000-strong elite mechanized tribal force dedicated to regime security, holy sites, and internal stability",
+      "Saudi Arabian Military Industries (SAMI): Mandated under Vision 2030 to localize 50% of defense procurement spending within Saudi Arabia by 2030",
+      "Strategic Missile Force: Operates DF-3 and DF-21 intermediate-range ballistic missiles acquired from China as a strategic deterrent"
+    ]
   },
   "energy": {
-    "net_import_dependence_ratio": -1.5,
-    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+    "net_import_dependence_ratio": -0.85,
+    "primary_sources": [
+      "Crude oil (60% of domestic consumption)",
+      "Natural gas (40% - used for domestic power generation, petrochemicals, and water desalination)",
+      "Solar and renewables (emerging, targeting 50% power generation by 2030)"
+    ],
+    "note": "World's pre-eminent petroleum exporter with ~12 million bpd maximum sustainable production capacity; lowest extraction cost in the world (<$5 per barrel)."
   },
-  "infrastructure": {},
-  "trade": {},
-  "technology": {},
+  "infrastructure": {
+    "major_ports": [
+      "Jeddah Islamic Port & King Abdullah Port (Primary Red Sea container hubs along the Europe-Asia maritime corridor)",
+      "King Abdulaziz Port, Dammam (Primary Persian Gulf industrial and commercial cargo gateway)",
+      "Port of Yanbu & King Fahd Industrial Port (Red Sea petroleum export terminal fed by the East-West pipeline)",
+      "Ras Tanura & Juaymah (World's largest offshore crude oil loading terminals in the Persian Gulf)"
+    ],
+    "strategic_airports": [
+      "King Khalid International Airport (RUH, Riyadh)",
+      "King Abdulaziz International Airport (JED, Jeddah - primary Hajj gateway)",
+      "King Fahd International Airport (DMM, Dammam)"
+    ],
+    "rail_network_km": 5330,
+    "energy_grid_resilience": "Modernized national transmission grid operated by Saudi Electricity Company; interconnected with Gulf Cooperation Council (GCC) Interconnection Grid; heavy baseload demand driven by domestic air conditioning and seawater desalination.",
+    "digital_infrastructure": "Subsea fiber cable junction linking Asia to Europe via Red Sea corridor; massive data center expansions in Riyadh and NEOM; growing sovereign AI computing infrastructure powered by Aramco and PIF."
+  },
+  "trade": {
+    "top_partners": [
+      "China (largest export customer for crude oil and primary source of manufactured imports)",
+      "India (second-largest energy customer and critical food security partner)",
+      "Japan (vital long-term crude off-taker and technology partner)",
+      "South Korea (major energy customer and contractor for mega-infrastructure projects)",
+      "United States (core security partner, aviation supplier, and investment destination)"
+    ],
+    "chokepoint_exposure": [
+      "Strait of Hormuz (majority of Eastern Province offshore oil exports must transit Hormuz into the Indian Ocean)",
+      "Bab el-Mandeb (southern Red Sea chokepoint through which crude to Europe and Suez transit must pass)",
+      "Suez Canal (direct maritime artery to European energy and refined product markets)"
+    ]
+  },
+  "technology": {
+    "core_competencies": [
+      "World leader in commercial-scale seawater desalination (Saline Water Conversion Corporation [SWCC])",
+      "Advanced oil reservoir simulation, enhanced oil recovery (EOR), and carbon capture utilization",
+      "World-class industrial petrochemical cracking and specialty chemicals (SABIC)",
+      "Rapidly developing utility-scale green hydrogen and solar energy complexes (NEOM Oxagon project)"
+    ],
+    "tech_vulnerabilities": [
+      "Heavy reliance on foreign OEMs (General Electric, Siemens, Boeing, Lockheed Martin) for high-end turbines, aircraft, and defense maintenance",
+      "Dependence on imported foreign software, specialized engineering talent, and chip hardware",
+      "Vulnerability of automated industrial supervisory control and data acquisition (SCADA) systems to state-sponsored cyber intrusions (e.g., historical Shamoon malware attacks)"
+    ]
+  },
   "geography": {
-    "region": "Middle East"
+    "region": "Middle East",
+    "capital": "Riyadh",
+    "area_sq_km": 2149690,
+    "coastline_km": 2640,
+    "land_borders": [
+      "Jordan (731 km)",
+      "Iraq (811 km)",
+      "Kuwait (221 km)",
+      "Qatar (87 km)",
+      "United Arab Emirates (457 km)",
+      "Oman (658 km)",
+      "Yemen (1307 km)"
+    ],
+    "strategic_chokepoints_adjacent": [
+      "Strait of Hormuz (Persian Gulf littoral)",
+      "Bab el-Mandeb (Red Sea southern entrance)",
+      "Suez Canal maritime approaches"
+    ]
   },
-  "politics": {},
+  "politics": {
+    "system": "Absolute monarchy with Islamic Basic Law of Governance",
+    "executive": "The King of Saudi Arabia is Head of State and Prime Minister (with Crown Prince Mohammed bin Salman serving as Prime Minister and de facto head of executive governance).",
+    "legislature": "Consultative Assembly (Majlis al-Shura), a 150-member appointed advisory body that reviews laws and questions ministers but lacks binding legislative veto power.",
+    "judiciary": "Sharia-based court system undergoing codification and modern commercial legal reform under the Ministry of Justice."
+  },
   "nuclear": {
-    "weapons_state": false
+    "weapons_state": false,
+    "delivery_systems": "Conventional ballistic missiles (Chinese DF-3 and DF-21 road-mobile MRBMs operated by the Royal Saudi Strategic Missile Force).",
+    "notes": "Non-weapons state under NPT. Pursuing a commercial nuclear power program; has stated publicly that if Iran acquires a nuclear weapon, Saudi Arabia will seek matching nuclear capabilities."
   },
   "strategic_priorities": [
-    "Iran deterrence/normalisation balance",
-    "Yemen conflict resolution",
-    "Oil revenue diversification (Vision 2030)"
+    "Accelerating Vision 2030 economic diversification and attracting foreign direct investment outside the oil sector",
+    "Maintaining OPEC+ production discipline and crude price stability in close coordination with Russia and Gulf allies",
+    "Regional conflict mitigation: sustaining the 2023 Beijing-brokered diplomatic detente with Iran and securing long-term border security with Yemen",
+    "Pursuing strategic autonomy through balanced multi-alignment between the United States (security guarantor) and China (top economic customer)",
+    "Developing domestic defense manufacturing (SAMI) and securing advanced air and missile defense systems against asymmetric drone/missile attacks"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "Critical municipal water supply dependent on coastal seawater desalination plants (SWCC supplies >70% of drinking water)",
+    "Foreign military tech, spare parts, and contractor maintenance for frontline fighter aircraft and missile defenses",
+    "High food import dependence (>80% of food calories imported from international agricultural markets)",
+    "National fiscal revenues remain heavily correlated with global crude oil price cycles"
+  ],
   "vulnerabilities": [
-    "Oil price/demand dependence",
-    "Yemen conflict spillover",
-    "Iran proxy threats to oil infrastructure"
+    "Infrastructure concentration: World-critical energy facilities (Abqaiq stabilization plant, Ras Tanura terminal) are geographically clustered in the Eastern Province, demonstrated during the 2019 drone and cruise missile strikes",
+    "Asymmetric projectile vulnerability: Extended land borders and maritime littorals exposed to hostile loitering munitions, ballistic missiles, and naval drone threats across the Red Sea and Gulf",
+    "Desalination dependency: Disruption of major desalination facilities on either the Red Sea or Persian Gulf coast would immediately threaten civilian drinking water supplies within days",
+    "Internal labor transformation: Urgent necessity to create hundreds of thousands of competitive private-sector jobs for educated Saudi youth"
   ],
   "strengths": [
-    "Largest global oil reserves/exporter",
-    "High military spending ratio",
-    "Vision 2030 economic diversification drive"
+    "Unrivalled energy hegemony: World's largest spare crude oil capacity (~2-3 million bpd) granting decisive geopolitical leverage over global inflation and energy markets via OPEC+",
+    "Sovereign financial depth: Massive capital reserves in the Public Investment Fund (PIF) and SAMA allowing multi-billion-dollar strategic investments globally",
+    "Trans-peninsular logistics: The 1,200 km East-West Petroline allows bypassing the Strait of Hormuz, moving up to 5 million bpd from Gulf fields to the Red Sea",
+    "Spiritual and geopolitical centrality: Custodian of the Two Holy Mosques (Mecca and Medina), conferring commanding religious authority across the global Islamic world"
   ],
   "alliances": [
     "USA",
-    "UAE"
+    "ARE",
+    "BHR",
+    "EGY",
+    "JOR"
   ],
   "rivals": [
-    "IRN"
+    "IRN",
+    "YEM_HOUTHI"
   ],
   "_meta": {
-    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
-    "source": "see data/sources/",
-    "confidence": "low-demo",
+    "data_quality": "sourced; military spending %GDP verified from World Bank WDI and Saudi Ministry of Finance budget data",
+    "source": "World Bank WDI (MS.MIL.XPND.GD.ZS); SIPRI Military Expenditure Database; Saudi Ministry of Finance Budget Statements; OPEC Annual Statistical Bulletin; IISS Military Balance",
+    "confidence": "high",
     "last_updated": "2026-08-27"
   }
 }

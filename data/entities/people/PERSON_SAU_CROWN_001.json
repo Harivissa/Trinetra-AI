@@ -1,0 +1,19 @@
+{
+  "id": "PERSON_SAU_CROWN_001",
+  "entity_type": "person",
+  "name": "Mohammed bin Salman Al Saud (MBS)",
+  "country": "SAU",
+  "position": "Crown Prince and Prime Minister of Saudi Arabia",
+  "political_party": "House of Saud (Royal Family)",
+  "ideology": "Saudi cultural nationalism, modernization, economic diversification (Vision 2030), pragmatic non-alignment",
+  "period_active": "Crown Prince since June 2017; appointed Prime Minister September 2022",
+  "previous_positions": ["Minister of Defense (2015-2022)", "Deputy Crown Prince (2015-2017)"],
+  "foreign_policy_position": "Multi-aligned strategic autonomy; leader of OPEC+ oil diplomacy alongside Russia; restoration of ties with Iran under Chinese mediation; conditioning Israeli normalization on Palestinian statehood; pursuing civilian nuclear cooperation and defense pact with the United States.",
+  "current_status": "In office as Prime Minister and designated heir to the throne, leading supreme executive and economic decision-making across all sectors.",
+  "record_type": "FACT",
+  "confidence": "high",
+  "_meta": {
+    "sources": ["SRC_CRS_SAU_2024", "SRC_WB_WDI_SAU"],
+    "last_updated": "2026-08-27"
+  }
+}

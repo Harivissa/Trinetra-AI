@@ -12,6 +12,30 @@ import { api } from "../services/api";
 import { playLoadingAudio } from "../lib/audio";
 import type { CountryIndexEntry, Country, RivalryAnalysis as RivalryAnalysisType } from "../types";
 import { SOVEREIGN_PHOTO_DOSSIERS } from "../data/geopoliticalMedia";
+import ThreeLayerCard from "../components/country/ThreeLayerCard";
+import { getCountrySimpleQuestions } from "../data/countrySimpleQuestions";
+import CountryOverviewVisual from "../components/country/CountryOverviewVisual";
+import CountryGeospatialMap from "../components/country/CountryGeospatialMap";
+import StrategicCapabilitiesVisual from "../components/country/StrategicCapabilitiesVisual";
+import StrategicStrengthsVisual from "../components/country/StrategicStrengthsVisual";
+import DependencyFlowsVisual from "../components/country/DependencyFlowsVisual";
+import RelationshipNetworkVisual from "../components/country/RelationshipNetworkVisual";
+import GeographicStrategyVisual from "../components/country/GeographicStrategyVisual";
+import ChokepointsIdentificationVisual from "../components/country/ChokepointsIdentificationVisual";
+import EnhancedTimelineVisual from "../components/country/EnhancedTimelineVisual";
+import { getCountryDeepProfile } from "../data/countryDeepProfileData";
+import { LeadershipPanel } from "../components/country/LeadershipPanel";
+import { NationalProfileVisual } from "../components/country/NationalProfileVisual";
+import { GeopoliticalPositionVisual } from "../components/country/GeopoliticalPositionVisual";
+import { EconomicPowerVisual } from "../components/country/EconomicPowerVisual";
+import { MilitarySecurityVisual } from "../components/country/MilitarySecurityVisual";
+import { StrategicDomainsVisual } from "../components/country/StrategicDomainsVisual";
+import { TradeNetworkVisual } from "../components/country/TradeNetworkVisual";
+import { StrategicCompetitionVisual } from "../components/country/StrategicCompetitionVisual";
+import { StrategicPrioritiesVisual } from "../components/country/StrategicPrioritiesVisual";
+import { ConstraintsVulnerabilitiesVisual } from "../components/country/ConstraintsVulnerabilitiesVisual";
+import { StrategicSynthesisVisual } from "../components/country/StrategicSynthesisVisual";
+import { SourcesEvidencePanel } from "../components/country/SourcesEvidencePanel";
 
 function List({ items }: { items?: string[] }) {
   if (!items || items.length === 0) {
@@ -53,6 +77,7 @@ export default function CountryIntelligence() {
   const [pendingError, setPendingError] = useState<string | null>(null);
   const [engineDone, setEngineDone] = useState(false);
   const [fetchDone, setFetchDone] = useState(false);
+  const [allQuestionsExpanded, setAllQuestionsExpanded] = useState(false);
   const compareSectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -179,6 +204,44 @@ export default function CountryIntelligence() {
 
         {country && (
           <div>
+            {/* 22-Section Intelligence Dossier Index Jump Bar */}
+            <div className="mb-6 overflow-x-auto pb-2 scrollbar-none flex items-center gap-1.5 text-xs font-mono border-b border-neutral-800/80">
+              <span className="text-neutral-400 shrink-0 px-2 py-1 text-[11px] uppercase tracking-wider font-semibold">
+                Dossier Sections:
+              </span>
+              {[
+                { id: "sec-status", label: "02 Status" },
+                { id: "sec-leadership", label: "03 Leadership" },
+                { id: "sec-indicators", label: "04 Indicators" },
+                { id: "sec-questions", label: "05 9-Questions" },
+                { id: "sec-position", label: "06 Position" },
+                { id: "sec-capabilities", label: "07 Capabilities" },
+                { id: "sec-economy", label: "08 Economy" },
+                { id: "sec-military", label: "09 Military" },
+                { id: "sec-domains", label: "10 Nuclear/Space/Cyber" },
+                { id: "sec-dependencies", label: "11 Dependencies" },
+                { id: "sec-trade", label: "12 Trade" },
+                { id: "sec-diplomacy", label: "13 Foreign Relations" },
+                { id: "sec-competition", label: "14 Competition" },
+                { id: "sec-geography", label: "15 Geography" },
+                { id: "sec-chokepoints", label: "16 Chokepoints" },
+                { id: "sec-priorities", label: "17 Priorities" },
+                { id: "sec-strengths", label: "18 Strengths" },
+                { id: "sec-constraints", label: "19 Constraints" },
+                { id: "sec-history", label: "20 History" },
+                { id: "sec-synthesis", label: "21 Synthesis" },
+                { id: "sec-sources", label: "22 Sources" },
+              ].map((s) => (
+                <a
+                  key={s.id}
+                  href={`#${s.id}`}
+                  className="px-2.5 py-1 rounded-md bg-neutral-900 border border-neutral-800 text-neutral-400 hover:text-white hover:border-trinetra-saffron hover:bg-neutral-850 transition-colors whitespace-nowrap text-[11px]"
+                >
+                  {s.label}
+                </a>
+              ))}
+            </div>
+
             {/* Editorial Sovereign Dossier Hero Banner with Real Photo Asset */}
             {(() => {
               const photoInfo = SOVEREIGN_PHOTO_DOSSIERS[country.id] || {
@@ -263,167 +326,204 @@ export default function CountryIntelligence() {
               );
             })()}
 
-            <div className="mb-6">
-              <ProfileSection title="At a Glance">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  <div className="border border-trinetra-border rounded-lg p-4 bg-black/20">
-                    <Users size={20} className="text-trinetra-saffron mb-2" />
-                    <div className="text-neutral-500 text-xs uppercase">Population</div>
-                    <div className="text-neutral-100 font-display text-lg">{country.demographics?.population_millions ? `${country.demographics.population_millions}M` : "N/A"}</div>
-                  </div>
-                  <div className="border border-trinetra-border rounded-lg p-4 bg-black/20">
-                    <DollarSign size={20} className="text-trinetra-saffron mb-2" />
-                    <div className="text-neutral-500 text-xs uppercase">GDP</div>
-                    <div className="text-neutral-100 font-display text-lg">{country.economy?.gdp_usd_trillion ? `$${country.economy.gdp_usd_trillion}T` : "N/A"}</div>
-                  </div>
-                  <div className="border border-trinetra-border rounded-lg p-4 bg-black/20">
-                    <TrendingUp size={20} className="text-trinetra-saffron mb-2" />
-                    <div className="text-neutral-500 text-xs uppercase">Growth</div>
-                    <div className="text-neutral-100 font-display text-lg">{country.economy?.gdp_growth_pct !== undefined ? `${country.economy.gdp_growth_pct}%` : "N/A"}</div>
-                  </div>
-                  <div className="border border-trinetra-border rounded-lg p-4 bg-black/20">
-                    <Radiation size={20} className={country.nuclear?.weapons_state ? "text-trinetra-saffron mb-2" : "text-neutral-600 mb-2"} />
-                    <div className="text-neutral-500 text-xs uppercase">Nuclear</div>
-                    <div className="text-neutral-100 font-display text-lg">{country.nuclear?.weapons_state ? "Yes" : "No"}</div>
-                  </div>
-                </div>
-              </ProfileSection>
+            {/* 02. CURRENT COUNTRY STATUS — Factual sovereign metrics, demographic scale, economic weight, defense & governance */}
+            <div id="sec-status">
+              <CountryOverviewVisual country={country} />
             </div>
 
-            {availableModules.length === 0 && (
-              <div className="text-xs text-neutral-600 border border-trinetra-border rounded p-4 mb-6">
-                Deep-dive intelligence (history timeline, political system, foreign policy doctrine) has not
-                been researched and populated for {country.name} yet — only the base profile below is available.
-              </div>
-            )}
+            {(() => {
+              const deepProfile = getCountryDeepProfile(country.id, country.name, country);
+              const simpleQuestions = getCountrySimpleQuestions(country.id, country.name, country);
 
-            {/* Wide dashboard grid — sections spread across the screen in
-                columns instead of one long narrow column. */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {history && (
-                <div className="lg:col-span-2">
-                  <ProfileSection title="Historical Timeline">
-                    <Timeline events={history.events} />
-                  </ProfileSection>
-                </div>
-              )}
+              return (
+                <>
+                  {/* 03. WHO RUNS THE COUNTRY? — Executive leadership, constitutional flow, legislature, judiciary */}
+                  <div id="sec-leadership">
+                    <LeadershipPanel
+                      leadership={deepProfile.leadership}
+                      countryName={country.name}
+                    />
+                  </div>
 
-              {politics && (
-                <div className="lg:col-span-2">
-                  <ProfileSection title="Political System">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="text-sm space-y-2">
-                        <p><span className="text-neutral-500">System: </span>{politics.political_system.type}</p>
-                        <p><span className="text-neutral-500">Executive: </span>{politics.political_system.executive}</p>
-                        <p><span className="text-neutral-500">Legislature: </span>{politics.political_system.legislature}</p>
-                        {politics.current_government && (
-                          <div className="text-sm space-y-2 mt-4 border-t border-trinetra-border pt-4">
-                            <p><span className="text-neutral-500">Ruling coalition: </span>{politics.current_government.ruling_coalition}</p>
-                            <p><span className="text-neutral-500">Head of government: </span>{politics.current_government.prime_minister || politics.current_government.head_of_government}</p>
-                            <p><span className="text-neutral-500">Main opposition: </span>{politics.current_government.main_opposition}</p>
-                            <p className="text-xs text-neutral-600">As of {politics.current_government.as_of}</p>
-                          </div>
-                        )}
-                      </div>
-                      {politics.major_parties && (
-                        <div>
-                          <div className="text-neutral-500 text-sm mb-2">Major parties</div>
-                          {politics.major_parties.map((p: any) => (
-                            <div key={p.name} className="text-sm mb-2">
-                              <span className="text-neutral-200 font-semibold">{p.name}</span>
-                              <span className="text-neutral-500"> — {p.ideology}. {p.status}</span>
+                  {/* 04. CURRENT NATIONAL PROFILE — 12-category indicator matrix */}
+                  <div id="sec-indicators">
+                    <NationalProfileVisual
+                      profile={deepProfile.nationalProfile}
+                      countryName={country.name}
+                    />
+                  </div>
+
+                  {/* 05. THE 9 CORE QUESTIONS — TRINETRA simple-language intelligence layer (Three-Layer Information Architecture) */}
+                  <div id="sec-questions">
+                    <section className="mb-12" aria-label="Core Geopolitical Questions">
+                      <div className="border border-neutral-800 rounded-2xl bg-[#080a0d] p-5 sm:p-7 shadow-2xl">
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-neutral-800 pb-5 mb-6">
+                          <div>
+                            <div className="flex items-center gap-2 mb-1.5">
+                              <span className="px-2.5 py-0.5 rounded bg-trinetra-saffron/10 border border-trinetra-saffron/30 text-trinetra-saffron font-mono text-[11px] font-bold uppercase tracking-wider">
+                                05 // Simple Answers First
+                              </span>
+                              <span className="text-neutral-400 text-xs font-mono">
+                                Three-Layer Information Architecture
+                              </span>
                             </div>
+                            <h2 className="font-display text-2xl sm:text-3xl text-white font-medium">
+                              The 9 Core Questions: {country.name}
+                            </h2>
+                            <p className="text-xs sm:text-sm text-neutral-400 max-w-3xl mt-1 leading-relaxed">
+                              {simpleQuestions.tagline}. Designed with TRINETRA&apos;s core principle: simple plain language first, geopolitical significance second, and verified deep facts underneath.
+                            </p>
+                          </div>
+
+                          <div className="flex items-center gap-2 shrink-0">
+                            <button
+                              onClick={() => setAllQuestionsExpanded(!allQuestionsExpanded)}
+                              className="text-xs font-mono px-3 py-1.5 rounded-lg border border-neutral-700 bg-neutral-900 text-neutral-300 hover:text-white hover:border-neutral-500 transition-colors cursor-pointer"
+                            >
+                              {allQuestionsExpanded ? "Collapse Details" : "Expand Details"}
+                            </button>
+                          </div>
+                        </div>
+
+                        {/* The 9 Question Cards */}
+                        <div className="grid grid-cols-1 gap-4">
+                          {simpleQuestions.questions.map((q, idx) => (
+                            <ThreeLayerCard
+                              key={q.questionId}
+                              answer={q}
+                              index={idx}
+                              initiallyExpanded={allQuestionsExpanded}
+                            />
                           ))}
                         </div>
-                      )}
-                    </div>
-                  </ProfileSection>
-                </div>
-              )}
-
-              {foreignPolicy && (
-                <ProfileSection title="Foreign Policy Doctrine">
-                  <p className="text-sm text-neutral-300 mb-4">{foreignPolicy.doctrine}</p>
-                  <div className="text-neutral-500 text-sm mb-2">Strategic priorities</div>
-                  <List items={foreignPolicy.strategic_priorities} />
-                </ProfileSection>
-              )}
-
-              <ProfileSection title="Military — How Strong Is Its Army">
-                <div className="text-sm space-y-2">
-                  <p>Active soldiers: <span className="text-neutral-200">{country.military?.active_troops?.toLocaleString() ?? "Not available"}</span></p>
-                  <p>Yearly defence budget: <span className="text-neutral-200">{country.military?.defence_spending_usd_billion ? `$${country.military.defence_spending_usd_billion} billion` : "Not available"}</span></p>
-                  <p>Share of the economy spent on defence: <span className="text-neutral-200">{country.military?.defence_spending_pct_gdp ? `${country.military.defence_spending_pct_gdp}%` : "Not available"}</span></p>
-                </div>
-              </ProfileSection>
-
-              <ProfileSection title="Energy — Where It Gets Its Power">
-                <div className="text-sm space-y-2">
-                  <p>
-                    {country.energy?.net_import_dependence_ratio !== undefined ? (
-                      country.energy.net_import_dependence_ratio > 0
-                        ? "This country buys more energy from abroad than it produces — meaning it depends on other countries for fuel."
-                        : "This country produces more energy than it uses — it's a net energy exporter."
-                    ) : "No energy data yet."}
-                  </p>
-                  {country.energy?.note && <p className="text-neutral-500">{country.energy.note}</p>}
-                </div>
-              </ProfileSection>
-
-              {country.politics && Object.keys(country.politics).length > 0 && (
-                <ProfileSection title="Politics — Who Runs the Country">
-                  <div className="text-sm space-y-2">
-                    {Object.entries(country.politics).map(([k, v]) => (
-                      <p key={k}><span className="text-neutral-500 capitalize">{k.replace(/_/g, " ")}: </span>{String(v)}</p>
-                    ))}
+                      </div>
+                    </section>
                   </div>
-                </ProfileSection>
-              )}
 
-              <ProfileSection title="What This Country Is Good At (Strengths)">
-                <List items={country.strengths} />
-              </ProfileSection>
-
-              <ProfileSection title="Where This Country Is Weak (Vulnerabilities)">
-                <List items={country.vulnerabilities} />
-              </ProfileSection>
-
-              <ProfileSection title="What It Depends On (Dependencies)">
-                <List items={country.dependencies} />
-              </ProfileSection>
-
-              <ProfileSection title="Its Main Goals (Strategic Priorities)">
-                <List items={country.strategic_priorities} />
-              </ProfileSection>
-
-              <div className="lg:col-span-2">
-                <ProfileSection title="Friends and Rivals">
-                  <div className="grid grid-cols-2 gap-6">
-                    <div>
-                      <div className="text-neutral-500 text-sm mb-2">Allied with</div>
-                      <List items={country.alliances} />
-                    </div>
-                    <div>
-                      <div className="text-neutral-500 text-sm mb-2">Rivals with</div>
-                      <List items={country.rivals} />
-                    </div>
+                  {/* 06. GEOPOLITICAL POSITION — Where does this country fit into the world? */}
+                  <div id="sec-position">
+                    <GeopoliticalPositionVisual
+                      position={deepProfile.geopoliticalPosition}
+                      countryName={country.name}
+                    />
                   </div>
-                </ProfileSection>
-              </div>
 
-              {country._meta && (
-                <div className="lg:col-span-2">
-                  <ProfileSection title="How Reliable Is This Data">
-                    <div className="text-xs text-neutral-500 space-y-1">
-                      {country._meta.data_quality && <p>Data quality: {country._meta.data_quality}</p>}
-                      {country._meta.source && <p>Sources: {country._meta.source}</p>}
-                      {country._meta.confidence && <p>Confidence: {country._meta.confidence}</p>}
-                      {country._meta.last_updated && <p>Last updated: {country._meta.last_updated}</p>}
-                    </div>
-                  </ProfileSection>
-                </div>
-              )}
-            </div>
+                  {/* 07. NATIONAL CAPABILITIES — Deep assessment across all 14 dimensions */}
+                  <div id="sec-capabilities">
+                    <StrategicCapabilitiesVisual country={country} />
+                  </div>
+
+                  {/* 08. ECONOMY & INDUSTRIAL POWER — GDP structure (services/industry/agriculture), critical industries */}
+                  <div id="sec-economy">
+                    <EconomicPowerVisual
+                      economy={deepProfile.economyStructure}
+                      countryName={country.name}
+                    />
+                  </div>
+
+                  {/* 09. MILITARY & SECURITY — Order of battle, service branches, platforms, defense industry */}
+                  <div id="sec-military">
+                    <MilitarySecurityVisual
+                      military={deepProfile.militarySecurity}
+                      countryName={country.name}
+                    />
+                  </div>
+
+                  {/* 10. NUCLEAR / SPACE / CYBER — Specialized strategic domains */}
+                  <div id="sec-domains">
+                    <StrategicDomainsVisual
+                      nuclear={deepProfile.nuclear}
+                      space={deepProfile.space}
+                      cyber={deepProfile.cyber}
+                      countryName={country.name}
+                    />
+                  </div>
+
+                  {/* 11. ENERGY & CRITICAL DEPENDENCIES — What keeps this country running */}
+                  <div id="sec-dependencies">
+                    <DependencyFlowsVisual country={country} />
+                  </div>
+
+                  {/* 12. TRADE & GLOBAL ECONOMIC CONNECTIONS — Bilateral flows, top partners, commodities */}
+                  <div id="sec-trade">
+                    <TradeNetworkVisual
+                      trade={deepProfile.tradeFlows}
+                      countryName={country.name}
+                    />
+                  </div>
+
+                  {/* 13. FOREIGN RELATIONS — Allies, partners, international standing */}
+                  <div id="sec-diplomacy">
+                    <RelationshipNetworkVisual country={country} />
+                  </div>
+
+                  {/* 14. STRATEGIC COMPETITION — Rivals, flashpoints, active friction domains */}
+                  <div id="sec-competition">
+                    <StrategicCompetitionVisual
+                      competitions={deepProfile.competitions}
+                      countryName={country.name}
+                    />
+                  </div>
+
+                  {/* 15. GEOGRAPHY & TERRITORIAL STRATEGY — Interactive GIS map, terrain, and buffer zones */}
+                  <div id="sec-geography">
+                    <CountryGeospatialMap country={country} />
+                    <GeographicStrategyVisual country={country} />
+                  </div>
+
+                  {/* 16. MARITIME GEOPOLITICS & CHOKEPOINTS — Oceans, seas, straits, naval access */}
+                  <div id="sec-chokepoints">
+                    <ChokepointsIdentificationVisual country={country} />
+                  </div>
+
+                  {/* 17. STRATEGIC PRIORITIES — Grand strategic objectives by domain */}
+                  <div id="sec-priorities">
+                    <StrategicPrioritiesVisual
+                      priorities={deepProfile.priorities}
+                      countryName={country.name}
+                    />
+                  </div>
+
+                  {/* 18. STRENGTHS — What makes this country powerful or resilient */}
+                  <div id="sec-strengths">
+                    <StrategicStrengthsVisual country={country} />
+                  </div>
+
+                  {/* 19. CONSTRAINTS & VULNERABILITIES — Objective structural bottlenecks & limits */}
+                  <div id="sec-constraints">
+                    <ConstraintsVulnerabilitiesVisual
+                      constraints={deepProfile.constraints}
+                      countryName={country.name}
+                    />
+                  </div>
+
+                  {/* 20. HISTORICAL TIMELINE — Key historical events shaping current strategic posture */}
+                  <div id="sec-history">
+                    <EnhancedTimelineVisual
+                      events={history?.events || []}
+                      countryName={country.name}
+                    />
+                  </div>
+
+                  {/* 21. STRATEGIC SYNTHESIS — The one-screen intelligence executive summary */}
+                  <div id="sec-synthesis">
+                    <StrategicSynthesisVisual
+                      synthesis={deepProfile.synthesis}
+                      countryName={country.name}
+                    />
+                  </div>
+
+                  {/* 22. SOURCES / EVIDENCE / DATA QUALITY — The trust layer proving every claim */}
+                  <div id="sec-sources">
+                    <SourcesEvidencePanel
+                      sources={deepProfile.sourcesRegistry}
+                      countryName={country.name}
+                      lastUpdated={deepProfile.lastUpdated}
+                    />
+                  </div>
+                </>
+              );
+            })()}
           </div>
         )}
       </main>

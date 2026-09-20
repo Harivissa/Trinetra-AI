@@ -1,0 +1,17 @@
+{
+  "id": "KOR",
+  "entity_type": "country",
+  "name": "South Korea",
+  "official_name": "Republic of Korea",
+  "linked_profile": "data/countries/south-korea.json",
+  "linked_modules": ["history", "politics", "foreign_policy", "sources"],
+  "key_people": ["PERSON_KOR_PRES_001"],
+  "key_organisations_member_of": ["ORG_OECD", "ORG_G20", "ORG_APEC", "ORG_CPTPP_APPLICANT"],
+  "governance_note": "Unitary presidential constitutional republic with divided government (conservative executive presidency, progressive legislative majority in National Assembly).",
+  "_meta": {
+    "data_quality": "sourced",
+    "confidence": "high",
+    "last_updated": "2026-08-27",
+    "sources": ["SRC_CRS_KOR_2024"]
+  }
+}

@@ -1,26 +1,37 @@
 {
   "country_id": "IND",
-  "doctrine": "Strategic autonomy — India seeks to avoid binding alliance commitments, instead building multiple parallel partnerships (US/Quad, Russia, France, Gulf states) that give it flexibility rather than dependence on any single power bloc.",
+  "doctrine": "Strategic Autonomy & Multi-Alignment (Vishwa Mitra) — India positions itself as a 'Vishwa Mitra' (Global Friend) and leading voice of the Global South, refusing formal military alliances in favor of issue-based coalitions. New Delhi combines deep strategic and defense convergence with the United States in the Indo-Pacific while sustaining vital defense and energy ties with Russia.",
   "strategic_priorities": [
-    "Manage the two-front border tension with China and Pakistan without being drawn into simultaneous conflict on both",
-    "Diversify energy suppliers to reduce exposure to any single source or route",
-    "Build domestic defence manufacturing capacity (referred to domestically as 'Atmanirbhar Bharat' / self-reliant India) to reduce arms-import dependence",
-    "Deepen Indo-Pacific partnerships (Quad with US, Japan, Australia) as a counterweight to Chinese regional influence",
-    "Maintain independent ties with Russia despite Western pressure, given Russia's role as a long-standing defence supplier and discounted energy source"
+    "Deter Chinese territorial revisionism along the Line of Actual Control and counter encirclement in the Indian Ocean ('String of Pearls')",
+    "Assert role as the primary 'Net Security Provider' in the Indian Ocean Region (IOR) and protect maritime trade chokepoints from Hormuz to Malacca",
+    "Deepen operational and defense industrial co-production with the United States and Quad partners (iCET, GE jet engine technology transfer, MQ-9B UAVs)",
+    "Preserve strategic defense legacy and discounted hydrocarbon access with Russia despite Western sanctions pressure",
+    "Promote Global South leadership, reform of multilateral institutions (permanent UN Security Council seat), and alternative payment arrangements"
   ],
   "priority_regions": [
-    "South Asia (Pakistan, Bangladesh, Sri Lanka, Nepal — 'neighbourhood first' policy)",
-    "Indo-Pacific (Quad partners, ASEAN, South China Sea-adjacent states)",
-    "Middle East/Gulf (energy suppliers and large Indian expatriate population)"
+    "Indian Ocean Littoral & South Asia ('Neighborhood First' policy — Sri Lanka, Bangladesh, Maldives, Nepal, Bhutan, Mauritius, Seychelles)",
+    "Indo-Pacific (Quad partners: USA, Japan, Australia; ASEAN maritime neighbors: Vietnam, Philippines, Indonesia)",
+    "Middle East / West Asia (I2U2 grouping, India-Middle East-Europe Economic Corridor [IMEC], UAE, Saudi Arabia, Israel)",
+    "Eurasia & Global South (Russia, Central Asian republics, African Union partnership)"
   ],
   "cooperation_and_competition": {
-    "cooperates_closely_with": ["USA", "France", "Russia", "Japan", "Australia", "Gulf states (UAE, Saudi Arabia)"],
-    "competes_or_disputes_with": ["China (border, Indian Ocean influence)", "Pakistan (Kashmir, cross-border terrorism)"],
-    "notes": "India avoids treating any relationship as purely one-dimensional — for example, it maintains a close US partnership while also sustaining a decades-long Russia relationship that the US does not always welcome."
+    "cooperates_closely_with": [
+      "United States (Major Defense Partner, Quad member, high-tech cooperation through iCET, bilateral military exercises [Malabar, Yudh Abhyas])",
+      "Russia ('Special and Privileged Strategic Partnership', major arms supplier, nuclear power collaborator at Kudankulam, discounted crude)",
+      "France (foremost European strategic partner, supplier of Rafale fighters, Scorpene submarines, joint space surveillance)",
+      "Japan & Australia (Quad anchors, reciprocal military logistics pacts, supply chain resilience initiatives)",
+      "Israel (close defense, counter-terrorism, agricultural technology, and surveillance systems partner)",
+      "United Arab Emirates & Saudi Arabia (crucial energy suppliers, trade partners, and destinations for 9M+ Indian diaspora)"
+    ],
+    "competes_or_disputes_with": [
+      "China (direct territorial disputes along the 3,488 km Himalayan border, competition for maritime dominance in the Indian Ocean, trade deficits)",
+      "Pakistan (historical rivalry over Jammu & Kashmir, cross-border terrorism concerns, opposition to CPEC transit through disputed territory)"
+    ],
+    "notes": "India's foreign policy has transitioned from defensive non-alignment to confident multi-alignment. New Delhi leverages its massive market, democratic credentials, and geographic position to maximize national interest across competing global blocs, maintaining that independent decision-making is an essential sovereign prerogative."
   },
   "_meta": {
-    "data_quality": "sourced/analytical synthesis based on India's publicly stated policy positions and widely reported strategic behaviour",
-    "confidence": "moderate-high",
-    "last_updated": "2026-08-22"
+    "data_quality": "sourced/analytical synthesis based on Ministry of External Affairs Annual Reports, National Security Council formulations, and speeches by Dr. S. Jaishankar",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
   }
 }

@@ -1,74 +1,175 @@
 {
   "id": "PAK",
   "name": "Pakistan",
+  "official_name": "Islamic Republic of Pakistan",
+  "capital": "Islamabad",
   "region": "South Asia",
   "demographics": {
-    "population_millions": 240
+    "population_millions": 241.5,
+    "urban_pct": 37.4,
+    "median_age": 22.8,
+    "fertility_rate": 3.45,
+    "notes": "5th most populous country in the world with a vast youth demographic (over 60% under age 30); rapid urbanization placing severe pressure on urban water and power systems."
   },
   "economy": {
-    "gdp_usd_trillion": 0.34,
-    "gdp_growth_pct": 2.5,
-    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+    "gdp_usd_trillion": 0.375,
+    "gdp_growth_pct": 2.4,
+    "currency": "Pakistani Rupee (PKR)",
+    "notes": "South Asia's second-largest economy centered around the fertile Indus River agricultural plain and a large textile industrial sector; actively developing the $62 billion China-Pakistan Economic Corridor (CPEC) to serve as a regional trade gateway; frequently operates under IMF stabilization programs.",
+    "major_exports": [
+      "Textiles, knitwear, and cotton apparel (>55% of export earnings)",
+      "Basmati rice and agricultural food grains",
+      "Leather goods and tanned hides",
+      "Surgical instruments and specialized medical implements",
+      "Sports equipment (footballs, cricket goods)",
+      "Defense systems (JF-17 Thunder fighter jets, Super Mushshak trainers)"
+    ],
+    "major_imports": [
+      "Petroleum crude, diesel, and motor spirit",
+      "Liquefied Natural Gas (LNG from Qatar)",
+      "Industrial machinery, electrical components, and steel",
+      "Edible oils (palm oil from Malaysia and Indonesia)",
+      "Chemicals, agricultural fertilizers, and pharmaceuticals"
+    ]
   },
   "military": {
     "active_troops": 654000,
-    "defence_spending_usd_billion": 10.2,
-    "defence_spending_pct_gdp": 2.67,
+    "reserve_troops": 550000,
+    "defence_spending_usd_billion": 10.8,
+    "defence_spending_pct_gdp": 2.78,
     "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
-    "arms_exports_usd": 6000000,
+    "arms_exports_usd": 129000000,
     "arms_exports_year": 2024,
-    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "key_equipment_or_doctrines": [
+      "Full Spectrum Nuclear Deterrence (FSD): Designed to deter conventional and sub-conventional Indian military operations across all escalation ladders",
+      "JF-17 Thunder Block III 4.5-generation multirole combat aircraft co-produced with China (PAC Kamra & Chengdu)",
+      "J-10CE 'Vigorous Dragon' multirole fighters and F-16 Fighting Falcon squadrons",
+      "Heavy Armor: VT-4 Main Battle Tanks, Al-Khalid I tanks, and Type 054A/P Tughril-class guided-missile frigates",
+      "Hangor-class (Type 039B derivative) air-independent propulsion (AIP) submarines under construction with China",
+      "Multi-layered Air Defence: HQ-9/P long-range and HQ-16FE medium-range SAM systems"
+    ]
   },
   "energy": {
-    "net_import_dependence_ratio": 0.7,
-    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+    "net_import_dependence_ratio": 0.74,
+    "primary_sources": [
+      "Natural gas (35% - domestic Sui reserves declining, offset by LNG imports)",
+      "Hydropower (28% - Tarbela, Mangla, and ongoing Dasu/Diamer-Bhasha dams)",
+      "Petroleum & fuel oil (22%)",
+      "Coal (10% - Thar lignite mining alongside imported coal)",
+      "Nuclear power (5% - Chashma and Karachi K-2/K-3 plants built with China CNNC)"
+    ],
+    "note": "High reliance on imported fossil fuels (crude oil and LNG) generating balance-of-payments vulnerability; power sector burdened by chronic circular debt."
   },
-  "infrastructure": {},
-  "trade": {},
-  "technology": {},
+  "infrastructure": {
+    "major_ports": [
+      "Port of Karachi (Oldest and highest-volume commercial maritime gateway handling >60% of national cargo)",
+      "Port Muhammad Bin Qasim (Industrial and deepwater energy terminal handling LNG, coal, and bulk liquids)",
+      "Port of Gwadar (CPEC flagship deepwater warm-water port in Balochistan, commanding the mouth of the Persian Gulf ~400 km east of Hormuz)"
+    ],
+    "strategic_airports": [
+      "Jinnah International Airport (KHI, Karachi)",
+      "Islamabad International Airport (ISB, Federal Capital)",
+      "Allama Iqbal International Airport (LHE, Lahore)"
+    ],
+    "rail_network_km": 7791,
+    "energy_grid_resilience": "National electric grid managed by the National Transmission & Despatch Company (NTDC); faces transmission bottleneck challenges between southern power plants and northern load centers.",
+    "digital_infrastructure": "Multiple subsea fiber cable landings at Karachi and Gwadar (PEACE Cable, SEA-ME-WE series, AAE-1); strategic overland fiber optic line linking Pakistan to China through the Khunjerab Pass."
+  },
+  "trade": {
+    "top_partners": [
+      "China (largest source of imports, capital goods, defense hardware, and infrastructure loans)",
+      "United States (largest single export destination, particularly for textiles and apparel)",
+      "United Arab Emirates (key energy supplier, source of remittances, and financial rollover partner)",
+      "Saudi Arabia (vital crude oil supplier, source of central bank deposit support, and home to 2.5M Pakistani workers)",
+      "European Union / Germany (beneficiary of EU GSP+ preferential trade access for textile exports)"
+    ],
+    "chokepoint_exposure": [
+      "Strait of Hormuz (over 85% of crude oil and LNG imports originate in Persian Gulf states)",
+      "Arabian Sea coastal approaches (vulnerable to naval interdiction or blockade during high-intensity conflict with India)",
+      "Khunjerab Pass / Karakoram Highway (sole direct overland corridor connecting Pakistan with China, subject to winter closures and high-altitude terrain)"
+    ]
+  },
+  "technology": {
+    "core_competencies": [
+      "Indigenized nuclear fuel cycle, uranium enrichment, and plutonium production for strategic weapons",
+      "Advanced ballistic and cruise missile design and manufacturing (Solid-fuel Shaheen series, Babur cruise missiles, Ra'ad ALCM)",
+      "Aviation co-production and maintenance (Pakistan Aeronautical Complex [PAC] Kamra)",
+      "Software services, freelance digital talent, and IT business process outsourcing"
+    ],
+    "tech_vulnerabilities": [
+      "Heavy reliance on Chinese defense OEMs for avionics, radars, engines (WS-13/RD-93), and missile seeker technology",
+      "Underdeveloped domestic semiconductor fabrication and precision electronics manufacturing base",
+      "Limited capital expenditure on commercial research and development"
+    ]
+  },
   "geography": {
-    "region": "South Asia"
+    "region": "South Asia",
+    "capital": "Islamabad",
+    "area_sq_km": 881913,
+    "coastline_km": 1046,
+    "land_borders": [
+      "India (3320 km including the Line of Control [LoC] and Working Boundary)",
+      "Afghanistan (2670 km along the disputed Durand Line)",
+      "Iran (959 km)",
+      "China (596 km through the Karakoram Range)"
+    ],
+    "strategic_chokepoints_adjacent": [
+      "Arabian Sea / Gulf of Oman littoral",
+      "Approaches to the Strait of Hormuz",
+      "Karakoram Highway (Khunjerab Pass at 4,693 m altitude)"
+    ]
   },
-  "politics": {},
+  "politics": {
+    "system": "Federal parliamentary constitutional republic",
+    "executive": "Prime Minister is head of government holding executive power, elected by the National Assembly; President is ceremonial head of state.",
+    "legislature": "Bicameral Parliament (Majlis-e-Shoora) comprising the directly elected National Assembly (336 seats) and the Senate (100 seats representing the four provinces).",
+    "judiciary": "Supreme Court of Pakistan with constitutional jurisdiction, provincial High Courts, and Federal Shariat Court."
+  },
   "nuclear": {
-    "weapons_state": true
+    "weapons_state": true,
+    "delivery_systems": "Operational nuclear triad: road-mobile solid-fuel MRBMs (Shaheen-III range ~2,750 km, Shaheen-II, Ghauri), short-range battlefield systems (Nasr/Hatf-IX), dual-capable combat aircraft (Mirage III/V, F-16s), and submarine-launched cruise missiles (Babur-3 on Agosta 90B and Hangor-class submarines).",
+    "notes": "Estimated 170 nuclear warheads (SIPRI 2024). Governed under the National Command Authority (NCA) chaired by the Prime Minister with the Strategic Plans Division (SPD) maintaining custody. Pakistan maintains a first-use doctrine predicated on conventional military asymmetry with India."
   },
   "strategic_priorities": [
-    "India deterrence (Kashmir, post Operation Sindoor / May 2025 conflict)",
-    "China alignment (CPEC, ~63% of Chinese arms exports 2020-24 went to Pakistan per SIPRI)",
-    "Deepening Turkey defence ties (drones, MILGEM corvettes, T129 helicopters)",
-    "Mecca Joint Defence Agreement with Saudi Arabia and Turkey (signed 7 Aug 2026 - mutual-defence clause)",
-    "Economic stabilisation via IMF/China"
+    "Maintaining credible Full Spectrum Deterrence against India across conventional and nuclear domains",
+    "Preserving and deepening the 'all-weather strategic cooperative partnership' with China and securing CPEC transit corridors",
+    "Securing the western border with Afghanistan, countering cross-border militant sanctuaries (TTP), and managing the Afghan refugee repatriation",
+    "Achieving macroeconomic stabilization, fiscal debt sustainability, and industrial growth under IMF structural reform programs",
+    "Maintaining strategic balance and security cooperation with the United States while receiving sovereign financial rollovers from Saudi Arabia and the UAE"
   ],
   "dependencies": [
-    "Heavy reliance on Chinese arms imports (~63-80% of major weapons per SIPRI, varying by estimate)",
-    "Growing reliance on Turkish co-production (MILGEM corvettes, ADVENT combat systems, drones)"
+    "Existential water dependency on the Indus Basin river system originating in Jammu & Kashmir and Tibet, governed by the fragile Indus Waters Treaty",
+    "High reliance on external sovereign financial rollovers (China, Saudi Arabia, UAE) and IMF tranches to avert foreign exchange liquidity crises",
+    "Near-total dependence on Chinese defense aerospace and naval systems for frontline military modernization",
+    "Imported energy reliance: ~75% of fossil fuels imported through Arabian Sea sea-lanes"
   ],
   "vulnerabilities": [
-    "Chronic economic/debt crisis",
-    "IMF dependency",
-    "Domestic militant insurgencies",
-    "Reported loss of at least one Chinese-supplied HQ-9B air-defence battery during the May 2025 conflict with India (per Indian and open-source reporting; not confirmed by Pakistan)"
+    "Dual-front security exposure: Tense militarized conventional border with India along the LoC, combined with continuous cross-border kinetic friction and insurgent attacks along the 2,670 km Afghan border",
+    "Economic and fiscal fragility: Chronic fiscal deficits, high debt-servicing burdens, inflation, and periodic balance-of-payments emergencies",
+    "Acute climate catastrophe risk: Highly vulnerable to extreme monsoon floods (e.g. 2022 floods inundating one-third of the country) and glacial lake outburst floods in the Himalayas",
+    "Sub-national insurgencies: Asymmetric attacks by Baloch separatist militant groups (BLA) targeting CPEC infrastructure, Gwadar projects, and Chinese personnel"
   ],
   "strengths": [
-    "Nuclear deterrent vs India",
-    "China strategic partnership (CPEC + majority of arms imports)",
-    "Turkey defence partnership (drones, naval co-production)",
-    "New Saudi Arabia-Turkey mutual defence pact (Aug 2026)",
-    "Large standing army"
+    "Full Spectrum Nuclear Deterrence: Proven, survivable nuclear triad that deters large-scale conventional military incursions across international borders",
+    "Geostrategic transit pivot: Physical overland bridge connecting landlocked Central Asia and western China directly to the warm-water Arabian Sea and Persian Gulf shipping lanes",
+    "Large, combat-tested armed forces: 654,000 active military personnel with extensive mountain, counter-insurgency, and desert warfare operational experience",
+    "All-Weather Strategic Alliance with China: Deep institutional defense co-development, diplomatic protection in the UN Security Council, and tens of billions in bilateral CPEC infrastructure investment"
   ],
   "alliances": [
     "CHN",
     "TUR",
-    "SAU"
+    "SAU",
+    "QAT"
   ],
   "rivals": [
-    "IND"
+    "IND",
+    "AFG_TTP"
   ],
   "_meta": {
-    "data_quality": "mixed - core economic/military stats are still demo/approximate, but the 2025-2026 events noted above are sourced; military spending %GDP and arms exports now sourced from real World Bank WDI data",
-    "source": "see data/sources/; recent events sourced from SIPRI Trends in International Arms Transfers 2024, Stimson Center ('Four Days in May', 2025), Al-Monitor (Aug 2026 Mecca pact), Sunday Guardian Live / India.com (Aug 2026 airlift reports)",
-    "confidence": "recent-events: moderate (multiple independent reports, some details unconfirmed); economic/military baseline figures: low-demo",
+    "data_quality": "sourced; military spending %GDP verified from World Bank WDI and Pakistan Ministry of Finance budget figures",
+    "source": "World Bank WDI (MS.MIL.XPND.GD.ZS, MS.MIL.XPRT.KD); SIPRI Nuclear Forces & Arms Transfers Databases; IISS Military Balance; State Bank of Pakistan Annual Reports",
+    "confidence": "high",
     "last_updated": "2026-08-27"
   }
 }

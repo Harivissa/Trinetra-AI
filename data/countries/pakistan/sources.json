@@ -1,0 +1,50 @@
+{
+  "country_id": "PAK",
+  "sources": [
+    {
+      "id": "SRC_WB_WDI_PAK",
+      "title": "World Development Indicators: Military Expenditure & Economic Profile",
+      "author": "World Bank / SIPRI",
+      "year": 2024,
+      "type": "Multilateral Statistical Dataset",
+      "focus": "Military spending % of GDP (2.78%), arms export data ($129M), GDP growth"
+    },
+    {
+      "id": "SRC_SIPRI_NUC_PAK",
+      "title": "SIPRI Yearbook 2024: World Nuclear Forces",
+      "author": "Stockholm International Peace Research Institute (SIPRI)",
+      "year": 2024,
+      "type": "Strategic Research Monograph",
+      "focus": "Estimated warhead stockpile (~170 warheads), delivery systems, fissile material production"
+    },
+    {
+      "id": "SRC_CRS_PAK_2024",
+      "title": "Pakistan: Political Developments and U.S. Relations (CRS Report R44983)",
+      "author": "Congressional Research Service",
+      "year": 2024,
+      "type": "Government Policy Analysis",
+      "focus": "Civil-military dynamics, CPEC Phase II, economic reforms, regional counter-terrorism"
+    },
+    {
+      "id": "SRC_SBP_ANNUAL",
+      "title": "State of Pakistan's Economy: Annual Report",
+      "author": "State Bank of Pakistan (SBP)",
+      "year": 2024,
+      "type": "Central Bank Statistical Publication",
+      "focus": "External debt repayment schedules, remittances from Gulf, trade deficit, foreign exchange reserves"
+    },
+    {
+      "id": "SRC_IISS_MB_PAK",
+      "title": "The Military Balance: Chapter 6 - Asia",
+      "author": "International Institute for Strategic Studies (IISS)",
+      "year": 2024,
+      "type": "Strategic Assessment",
+      "focus": "Order of battle, JF-17 Block III deliveries, Hangor-class submarines, air defense posture"
+    }
+  ],
+  "_meta": {
+    "data_quality": "verified",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

@@ -4,7 +4,7 @@
   "name": "United States",
   "official_name": "United States of America",
   "linked_profile": "data/countries/usa.json",
-  "linked_modules": [],
+  "linked_modules": ["history", "politics", "foreign_policy", "sources"],
   "key_people": ["PERSON_USA_PRES_001"],
   "key_organisations_member_of": ["ORG_QUAD", "ORG_NATO", "ORG_G20", "ORG_UN_SECURITY_COUNCIL"],
   "_meta": {

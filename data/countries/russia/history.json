@@ -1,0 +1,99 @@
+{
+  "country_id": "RUS",
+  "events": [
+    {
+      "year": 1945,
+      "title": "Victory in the Great Patriotic War (WWII)",
+      "what_happened": "Soviet forces captured Berlin, forcing Nazi Germany's unconditional surrender on May 8-9, 1945, following the loss of an estimated 27 million Soviet military and civilian lives.",
+      "why_it_happened": "Decisive Eastern Front land campaigns (Stalingrad, Kursk, Operation Bagration) dismantling the German Wehrmacht.",
+      "key_actors": ["Joseph Stalin", "Georgy Zhukov", "Red Army"],
+      "consequences": "Emerged as a global military superpower; established Soviet hegemony over Eastern Europe and permanent seat with veto power on the UN Security Council.",
+      "long_term_significance": "Foundational civil religion of modern Russian statehood, military prestige, and defensive patriotism.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1949,
+      "title": "First Soviet Atomic Bomb Test (RDS-1)",
+      "what_happened": "The Soviet Union detonated its first atomic bomb (RDS-1 / 'First Lightning') at the Semipalatinsk test site in Kazakhstan on August 29, 1949.",
+      "why_it_happened": "Urgent drive to break the United States' nuclear monopoly established in 1945.",
+      "key_actors": ["Igor Kurchatov", "Lavrentiy Beria", "Joseph Stalin"],
+      "consequences": "Ended the US atomic monopoly years earlier than Western intelligence anticipated; began the nuclear arms race and Mutually Assured Destruction (MAD).",
+      "long_term_significance": "Established Russia's enduring status as a nuclear superpower.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1991,
+      "title": "Dissolution of the Soviet Union",
+      "what_happened": "Leaders of Russia (Boris Yeltsin), Ukraine (Leonid Kravchuk), and Belarus (Stanislav Shushkevich) signed the Belovezha Accords on December 8, 1991, declaring the USSR dissolved; Mikhail Gorbachev resigned on December 25, 1991.",
+      "why_it_happened": "Economic collapse, loss of political control under Glasnost and Perestroika, national independence movements in the republics, and an aborted hardliner coup in August 1991.",
+      "key_actors": ["Boris Yeltsin", "Mikhail Gorbachev", "Leonid Kravchuk"],
+      "consequences": "Created 15 independent post-Soviet states; Russian Federation inherited the USSR's nuclear arsenal, UN Security Council seat, and state debts; left 25 million ethnic Russians outside the Russian Federation.",
+      "long_term_significance": "Described by Vladimir Putin as the 'greatest geopolitical catastrophe of the 20th century'; genesis of post-Soviet revanchism.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1999,
+      "title": "Rise of Vladimir Putin & Second Chechen War",
+      "what_happened": "Following Chechen militant incursions into Dagestan and deadly apartment bombings in Russian cities, Prime Minister Vladimir Putin launched the Second Chechen War, re-establishing federal control over Grozny; Boris Yeltsin resigned on New Year's Eve, transferring presidential powers to Putin.",
+      "why_it_happened": "Threat of territorial disintegration in the North Caucasus and popular demand for order and state restoration.",
+      "key_actors": ["Vladimir Putin", "Boris Yeltsin", "Akhmad Kadyrov"],
+      "consequences": "Ended chaotic regional secessionism; consolidated Putin's domestic popularity, leading to his presidential election victory in March 2000.",
+      "long_term_significance": "Initiated a quarter-century of centralized state power and the rebuilding of the Russian security apparatus (Siloviki).",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2007,
+      "title": "Munich Security Conference Speech",
+      "what_happened": "President Vladimir Putin delivered a landmark speech at the Munich Security Conference, directly condemning US unipolar dominance, the expansion of NATO eastward, and the deployment of missile defense systems in Europe.",
+      "why_it_happened": "Russian frustration over successive rounds of NATO enlargement (1999 and 2004), the US withdrawal from the ABM Treaty, and Western-backed 'Color Revolutions' in Georgia and Ukraine.",
+      "key_actors": ["Vladimir Putin", "Robert Gates", "Angela Merkel"],
+      "consequences": "Marked the definitive end of post-Cold War Russian-Western cooperation and foreshadowed subsequent military interventions.",
+      "long_term_significance": "Formal ideological declaration of Russia's insistence on a multipolar world and a sphere of privileged interests.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2008,
+      "title": "Russo-Georgian War",
+      "what_happened": "Following Georgian military shelling of Tskhinvali in South Ossetia, Russian forces launched a rapid five-day counter-offensive, routing Georgian forces, securing South Ossetia and Abkhazia, and recognizing both territories as independent states.",
+      "why_it_happened": "NATO's April 2008 Bucharest Summit declaration that Georgia and Ukraine 'will become members of NATO.'",
+      "key_actors": ["Dmitry Medvedev", "Vladimir Putin", "Mikheil Saakashvili", "Nicolas Sarkozy"],
+      "consequences": "Permanently halted Georgia's accession to NATO by creating frozen territorial conflicts; exposed Russian military communication and precision-strike deficiencies, prompting major 2008-2012 military reforms.",
+      "long_term_significance": "First time post-Soviet Russian armed forces were deployed beyond Russian borders to alter territorial boundaries.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2014,
+      "title": "Annexation of Crimea & War in the Donbas",
+      "what_happened": "Following the Euromaidan revolution that ousted Ukrainian President Viktor Yanukovych, Russian special forces ('little green men') seized control of the Crimean peninsula; Russia formally annexed Crimea on March 18, 2014, and backed armed separatist uprisings in Donetsk and Luhansk.",
+      "why_it_happened": "Determination to secure the Sevastopol Black Sea Fleet naval base and prevent Ukraine from joining the Western political and security sphere.",
+      "key_actors": ["Vladimir Putin", "Sergei Shoigu", "Viktor Yanukovych", "Petro Poroshenko"],
+      "consequences": "Triggered Western sanctions, suspension of Russia from the G8, signing of the Minsk Accords, and initiated an eight-year simmering conflict in the Donbas.",
+      "long_term_significance": "Decisive rupture between Russia and the West; accelerated Russia's economic and strategic pivot toward China.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2022,
+      "title": "Full-Scale Military Invasion of Ukraine",
+      "what_happened": "On February 24, 2022, Russia launched a full-scale military invasion of Ukraine, demanding the 'demilitarization and denazification' of Ukraine and legal guarantees against NATO expansion. In September 2022, Russia formally declared the annexation of Donetsk, Luhansk, Zaporizhzhia, and Kherson oblasts.",
+      "why_it_happened": "Strategic calculation that Ukraine was becoming a de facto NATO military outpost, threatening Russian security and imperial continuity.",
+      "key_actors": ["Vladimir Putin", "Volodymyr Zelenskyy", "Joe Biden", "Valery Gerasimov"],
+      "consequences": "Largest European land war since WWII; massive Western sanctions and asset freezes; complete severance of European pipeline energy dependence; Finland and Sweden joined NATO; Russia mobilized its economy onto a wartime footing and cemented a comprehensive strategic partnership with China, North Korea, and Iran.",
+      "long_term_significance": "Shattered the post-Cold War European security architecture, cementing a prolonged systemic confrontation between Russia and the Western alliance.",
+      "type": "FACT",
+      "confidence": "high"
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "confidence": "high",
+    "last_updated": "2026-08-27",
+    "source": "State Archive of the Russian Federation; Kremlin Official Transcripts; Congressional Research Service"
+  }
+}

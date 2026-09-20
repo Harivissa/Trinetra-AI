@@ -1,0 +1,67 @@
+{
+  "country_id": "PAK",
+  "political_system": {
+    "type": "Federal parliamentary constitutional republic with influential military establishment",
+    "executive": "Prime Minister is head of government holding executive power, commanding the majority of the National Assembly; President is ceremonial head of state.",
+    "legislature": "Bicameral Parliament (Majlis-e-Shoora) comprising the National Assembly (336 seats elected via first-past-the-post and reserved seats) and Senate (100 seats representing the four provinces equally).",
+    "judiciary": "Supreme Court of Pakistan, provincial High Courts, and Federal Shariat Court; judicial assertiveness has historically played a prominent role in political dismissals and constitutional disputes.",
+    "structure": "Federal republic comprising four provinces (Punjab, Sindh, Khyber Pakhtunkhwa, Balochistan), the Islamabad Capital Territory, and the autonomous administrative territories of Azad Jammu & Kashmir and Gilgit-Baltistan.",
+    "election_system": "First-past-the-post for National Assembly general seats; proportional representation for reserved seats for women and non-Muslims; administered by the Election Commission of Pakistan (ECP).",
+    "confidence": "high"
+  },
+  "current_government": {
+    "ruling_coalition": "Pakistan Democratic Movement (PDM) alliance, led by Pakistan Muslim League-Nawaz (PML-N) and Pakistan People's Party (PPP)",
+    "prime_minister": "Shehbaz Sharif",
+    "president": "Asif Ali Zardari",
+    "army_chief": "Field Marshal / General Asim Munir (Chief of Army Staff - COAS)",
+    "context": "Formed following the contentious February 2024 general elections; operates under close civil-military coordination formalized via the Special Investment Facilitation Council (SIFC) to manage economic stabilization, privatization, and external sovereign investment.",
+    "main_opposition": "Sunni Ittehad Council / Pakistan Tehreek-e-Insaf (PTI) affiliated independents backing imprisoned former PM Imran Khan",
+    "confidence": "high",
+    "as_of": "2026-08-27"
+  },
+  "major_parties": [
+    {
+      "name": "Pakistan Muslim League-Nawaz (PML-N)",
+      "ideology": "Centre-right, fiscal conservatism, infrastructure modernization, industrial business interests",
+      "status": "Leads the governing federal coalition"
+    },
+    {
+      "name": "Pakistan People's Party (PPP)",
+      "ideology": "Centre-left, social democracy, constitutional federalism, strong base in Sindh province",
+      "status": "Key coalition partner holding the Presidency"
+    },
+    {
+      "name": "Pakistan Tehreek-e-Insaf (PTI)",
+      "ideology": "Populism, anti-establishment welfare nationalism, sovereign foreign policy autonomy",
+      "status": "Largest opposition voting bloc; base in Khyber Pakhtunkhwa and urban Punjab"
+    },
+    {
+      "name": "Muttahida Qaumi Movement-Pakistan (MQM-P)",
+      "ideology": "Secular regionalism representing Urdu-speaking Muhajir urban communities in Karachi and Hyderabad",
+      "status": "Coalition partner in federal government"
+    }
+  ],
+  "political_movements_and_dynamics": [
+    {
+      "name": "Civil-Military Governance and SIFC",
+      "description": "The Special Investment Facilitation Council (SIFC), composed of civilian ministers and the Army Chief, institutionalizes a joint framework to bypass bureaucratic hurdles, attract sovereign wealth from Gulf states, and assure foreign investors of long-term policy continuity.",
+      "current_relevance": "Drives privatization of state-owned enterprises, mineral extraction deals (Reko Diq copper-gold project), and agriculture modernization."
+    },
+    {
+      "name": "IMF Stabilization vs. Domestic Cost-of-Living",
+      "description": "Balancing stringent IMF Extended Fund Facility conditions (energy tariff hikes, widening the tax net, currency market flexibility) against intense public pressure regarding inflation, utility costs, and youth unemployment.",
+      "current_relevance": "Dictates national macroeconomic policy, fiscal budgets, and external balance-of-payments survival."
+    },
+    {
+      "name": "Internal Security in Balochistan and Khyber Pakhtunkhwa",
+      "description": "Counter-insurgency operations against Baloch separatists (Baloch Liberation Army [BLA] targeting CPEC and Chinese nationals) and Islamist militants (Tehrik-i-Taliban Pakistan [TTP] staging cross-border attacks from eastern Afghanistan).",
+      "current_relevance": "Crucial for safeguarding Chinese investments, deepwater port connectivity at Gwadar, and domestic political stability."
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "source": "Parliament of Pakistan; Election Commission of Pakistan; Congressional Research Service (CRS Report R44983); State Bank of Pakistan",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

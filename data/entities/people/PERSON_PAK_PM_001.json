@@ -1,0 +1,19 @@
+{
+  "id": "PERSON_PAK_PM_001",
+  "entity_type": "person",
+  "name": "Shehbaz Sharif",
+  "country": "PAK",
+  "position": "Prime Minister of Pakistan",
+  "political_party": "Pakistan Muslim League-Nawaz (PML-N)",
+  "ideology": "Centre-right, infrastructure development, private sector growth, pragmatic foreign diplomacy",
+  "period_active": "Prime Minister since March 2024 (previously PM April 2022 - August 2023)",
+  "previous_positions": ["Chief Minister of Punjab (three terms: 1997-1999, 2008-2013, 2013-2018)"],
+  "foreign_policy_position": "Champion of the China-Pakistan Economic Corridor (CPEC); deepening strategic ties with Beijing while actively resetting relations with Washington; securing sovereign investment and deposits from Saudi Arabia and UAE; advocating peaceful bilateral resolution of the Jammu & Kashmir dispute.",
+  "current_status": "In office, heading a multi-party coalition government focused on IMF macro-stabilization, inflation reduction, and privatization.",
+  "record_type": "FACT",
+  "confidence": "high",
+  "_meta": {
+    "sources": ["SRC_CRS_PAK_2024", "SRC_WB_WDI_PAK"],
+    "last_updated": "2026-08-27"
+  }
+}

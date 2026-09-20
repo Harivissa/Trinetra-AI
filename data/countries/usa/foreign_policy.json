@@ -1,0 +1,38 @@
+{
+  "country_id": "USA",
+  "doctrine": "Peace Through Strength & Strategic Competition — The United States combines decisive military deterrence, targeted technological denial, and transactional bilateralism to prevent hostile regional hegemony across Eurasia, deter revisionist aggression by China and Russia, and protect American homeland security and economic dominance.",
+  "strategic_priorities": [
+    "Deter Chinese military invasion or coercion of Taiwan and maintain free navigation throughout the Indo-Pacific sea lanes",
+    "Deny peer adversaries access to frontier artificial intelligence, advanced semiconductors, and quantum computing through coordinated export controls",
+    "Restructure allied burden-sharing across NATO, demanding accelerated European conventional defense capabilities to anchor European deterrence against Russia",
+    "Safeguard US energy dominance and independence, exporting oil and LNG to reduce allied dependence on authoritarian petrostates",
+    "Preserve the global supremacy of the US Dollar, defending against de-dollarization initiatives championed by BRICS+ coalitions"
+  ],
+  "priority_regions": [
+    "Indo-Pacific (Taiwan Strait, East and South China Seas, Korean Peninsula — primary theater of peer superpower competition)",
+    "Europe & North Atlantic (NATO eastern flank, Baltic Sea, Arctic — containing Russian territorial revanchism)",
+    "Middle East (Persian Gulf, Strait of Hormuz, Red Sea — securing maritime commerce, protecting Israel, countering Iranian proxies)",
+    "Western Hemisphere (US-Mexico border, Caribbean basin, Panama Canal — homeland defense, countering fentanyl and irregular migration networks)"
+  ],
+  "cooperation_and_competition": {
+    "cooperates_closely_with": [
+      "Five Eyes Intelligence Alliance (United Kingdom, Canada, Australia, New Zealand — deepest signals and defense intelligence sharing)",
+      "Indo-Pacific Democratic Partners (Japan, South Korea, Australia, Philippines, Taiwan — frontline defense interoperability)",
+      "NATO Allies (Germany, Poland, France, UK, Nordic states — collective defense under Article 5)",
+      "Israel ('Special Relationship', major non-NATO ally, joint missile defense development like Arrow/David's Sling)",
+      "India (Quad strategic dialogue, joint defense industrial initiatives [iCET], counter-balancing China)"
+    ],
+    "competes_or_disputes_with": [
+      "China (comprehensive peer superpower competition spanning military, economic, technological, ideological, and regional domains)",
+      "Russia (direct adversarial confrontation following the 2022 invasion of Ukraine, hybrid warfare, nuclear posturing)",
+      "Iran (confrontation over nuclear enrichment, ballistic missiles, and regional proxy attacks in the Levant and Red Sea)",
+      "North Korea (nuclear weapons stockpile, ICBM testing capable of striking the US homeland, military collaboration with Moscow)"
+    ],
+    "notes": "US foreign policy combines enduring structural interests (freedom of navigation, alliance deterrence, technological primacy) with oscillating executive styles between liberal internationalism and transactional nationalist unilateralism ('America First'). Regardless of administration, bipartisan consensus remains firmly unified on containing Chinese technological and military dominance."
+  },
+  "_meta": {
+    "data_quality": "sourced/analytical synthesis based on National Security Strategy (NSS), National Defense Strategy (NDS), and Congressional Research Service reports",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "PAK",
+  "entity_type": "country",
+  "name": "Pakistan",
+  "official_name": "Islamic Republic of Pakistan",
+  "linked_profile": "data/countries/pakistan.json",
+  "linked_modules": ["history", "politics", "foreign_policy", "sources"],
+  "key_people": ["PERSON_PAK_PM_001"],
+  "key_organisations_member_of": ["ORG_SCO", "ORG_OIC", "ORG_SAARC", "ORG_COMMONWEALTH"],
+  "governance_note": "Federal parliamentary republic featuring civil-military coordination under the Special Investment Facilitation Council (SIFC), with a governing coalition led by Prime Minister Shehbaz Sharif.",
+  "_meta": {
+    "data_quality": "sourced",
+    "confidence": "high",
+    "last_updated": "2026-08-27",
+    "sources": ["SRC_CRS_PAK_2024"]
+  }
+}

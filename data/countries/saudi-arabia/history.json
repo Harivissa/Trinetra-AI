@@ -1,0 +1,110 @@
+{
+  "country_id": "SAU",
+  "events": [
+    {
+      "year": 1932,
+      "title": "Unification of the Kingdom of Saudi Arabia",
+      "what_happened": "Abdulaziz Ibn Saud formally unified the kingdoms of Hejaz and Nejd, proclaiming the unified Kingdom of Saudi Arabia on September 23, 1932.",
+      "why_it_happened": "Three decades of military campaigns by the House of Saud, allied with the religious movement of Muhammad ibn Abd al-Wahhab, consolidating control over the Arabian Peninsula.",
+      "key_actors": ["King Abdulaziz Ibn Saud", "Ikhwan tribal forces", "House of Saud"],
+      "consequences": "Created the modern centralized Saudi state and established the succession lineage among Abdulaziz's sons.",
+      "long_term_significance": "Founding moment of the modern Saudi nation-state and protectorate of Islam's two holiest sites.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1938,
+      "title": "Discovery of Commercial Petroleum at Dammam No. 7",
+      "what_happened": "Standard Oil of California (Socal) geologists struck commercial oil in commercial quantities at Well No. 7 in Dammam, known as the 'Prosperity Well.'",
+      "why_it_happened": "Kingdom sought revenue alternatives to pilgrim fees following the Great Depression; granted concession to American petroleum geologists.",
+      "key_actors": ["King Abdulaziz", "Standard Oil of California (SoCal)", "CASOC / Aramco"],
+      "consequences": "Transformed an impoverished desert kingdom into the world's premier petroleum exporter; laid foundation for the Arabian American Oil Company (Aramco).",
+      "long_term_significance": "Established the structural foundation of modern global energy markets and Saudi sovereign wealth.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1945,
+      "title": "USS Quincy Historic Summit",
+      "what_happened": "King Abdulaziz met US President Franklin D. Roosevelt aboard the USS Quincy in the Great Bitter Lake of the Suez Canal on February 14, 1945.",
+      "why_it_happened": "The United States sought secure post-WWII energy access, while the Kingdom required security guarantees against regional and imperial threats.",
+      "key_actors": ["King Abdulaziz Ibn Saud", "Franklin D. Roosevelt"],
+      "consequences": "Forged the foundational 'oil-for-security' bilateral compact that anchored US-Saudi relations throughout the Cold War.",
+      "long_term_significance": "Created the enduring security umbrella protecting the Arabian Peninsula from external invasion.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1973,
+      "title": "OPEC Oil Embargo and Sovereign Financial Surge",
+      "what_happened": "Following the outbreak of the Yom Kippur War, King Faisal led Arab members of OPEC in an oil export embargo against the US and Western nations supporting Israel, quadrupling world crude prices.",
+      "why_it_happened": "Geopolitical leverage to force Western diplomatic re-evaluation of the Arab-Israeli conflict.",
+      "key_actors": ["King Faisal bin Abdulaziz", "OPEC oil ministers", "Richard Nixon"],
+      "consequences": "Catapulted Saudi Arabia into unmatched financial power; enabled massive modernization, infrastructure, and international sovereign diplomacy.",
+      "long_term_significance": "Demonstrated the structural power of Saudi oil production as a strategic geopolitical weapon.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1979,
+      "title": "Siege of the Grand Mosque and Iranian Revolution",
+      "what_happened": "Armed Islamist zealots led by Juhayman al-Otaybi seized the Grand Mosque in Mecca for two weeks, coinciding with the Islamic Revolution in Iran overthrowing the Shah.",
+      "why_it_happened": "Backlash against rapid Westernization and religious puritanism, alongside revolutionary Shiite resurgence across the Gulf.",
+      "key_actors": ["Juhayman al-Otaybi", "King Khalid", "Prince Nayef", "French GIGN advisory unit"],
+      "consequences": "Saudi leadership empowered the conservative religious establishment, enforcing strict societal controls; ignited decades of Saudi-Iranian proxy competition.",
+      "long_term_significance": "Defined four decades of domestic religious conservatism and regional sectarian cold war with Tehran.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1990,
+      "title": "Gulf War and Operation Desert Shield",
+      "what_happened": "Following Saddam Hussein's invasion of Kuwait on August 2, 1990, King Fahd permitted 500,000 US and coalition troops to base on Saudi territory to deter an Iraqi thrust into the Eastern Province.",
+      "why_it_happened": "Immediate existential military threat to Saudi oilfields posed by Iraq's million-man army massed on the northern border.",
+      "key_actors": ["King Fahd", "George H.W. Bush", "Norman Schwarzkopf", "Saddam Hussein"],
+      "consequences": "Liberation of Kuwait via Operation Desert Storm; long-term stationing of US forces in the Kingdom sparked domestic extremist backlash (Al-Qaeda).",
+      "long_term_significance": "Re-affirmed US willingness to deploy massive military force to defend the Arabian oilfields.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2016,
+      "title": "Launch of Vision 2030 Transformation",
+      "what_happened": "Deputy Crown Prince Mohammed bin Salman unveiled Saudi Vision 2030, a comprehensive economic and social blueprint to end the Kingdom's 'addiction to oil.'",
+      "why_it_happened": "Crude oil price collapse from $115 to under $30 in 2014-2015 highlighted fiscal vulnerability of sole reliance on oil exports.",
+      "key_actors": ["Crown Prince Mohammed bin Salman (MBS)", "King Salman", "Public Investment Fund (PIF)"],
+      "consequences": "Reformed social codes (women driving, entertainment sector opening, religious police powers curbed), Aramco IPO on Tadawul, multi-billion-dollar sovereign investments in high tech, NEOM, and renewable energy.",
+      "long_term_significance": "Most radical domestic social, cultural, and economic modernization in the Kingdom's modern history.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2019,
+      "title": "Abqaiq-Khurais Drone and Cruise Missile Strikes",
+      "what_happened": "On September 14, 2019, a coordinated volley of 25 drones and low-flying cruise missiles struck Saudi Aramco's processing facilities at Abqaiq and Khurais, knocking out 5.7 million bpd (over 50% of Saudi oil production).",
+      "why_it_happened": "Regional escalation attributed to Iranian-aligned networks during peak US 'maximum pressure' campaign.",
+      "key_actors": ["Saudi Aramco emergency crews", "Iranian military networks / Houthis", "US CENTCOM"],
+      "consequences": "Aramco restored production within weeks through remarkable engineering resilience, but the lack of direct US military retaliation spurred Saudi Arabia to diversify diplomatic hedges and initiate direct talks with Iran.",
+      "long_term_significance": "Exposed the vulnerability of centralized energy infrastructure to precision low-cost aerial swarms, catalyzing the 2023 Beijing-brokered detente with Iran.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2023,
+      "title": "Beijing-Brokered Diplomatic Detente with Iran",
+      "what_happened": "On March 10, 2023, Saudi Arabia and Iran announced the restoration of diplomatic relations and reopening of embassies under Chinese mediation in Beijing.",
+      "why_it_happened": "Desire by Riyadh for regional stability to protect Vision 2030 investments from drone and missile strikes; China's interest in securing stable energy flows and diplomatic prestige.",
+      "key_actors": ["Mohammed bin Salman", "Wang Yi", "Ali Shamkhani", "Musaad bin Mohammed Al-Aiban"],
+      "consequences": "De-escalated direct Gulf tensions, maintained truce in Yemen, and demonstrated China's emergence as an influential diplomatic mediator in the Middle East.",
+      "long_term_significance": "Marked a decisive shift from zero-sum confrontation to multi-aligned pragmatic hedging in Saudi foreign policy.",
+      "type": "FACT",
+      "confidence": "high"
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "confidence": "high",
+    "last_updated": "2026-08-27",
+    "source": "Royal Saudi Historical Archives; OPEC History; Congressional Research Service"
+  }
+}

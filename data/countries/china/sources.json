@@ -1,0 +1,50 @@
+{
+  "country_id": "CHN",
+  "sources": [
+    {
+      "id": "SRC_WB_WDI_CHN",
+      "title": "World Development Indicators: Military Expenditure & Arms Exports",
+      "author": "World Bank / SIPRI",
+      "year": 2024,
+      "type": "Multilateral Statistical Dataset",
+      "focus": "Official military expenditure % of GDP (1.71%), arms exports ($1.131B), GDP figures"
+    },
+    {
+      "id": "SRC_DOD_CMPR_2024",
+      "title": "Military and Security Developments Involving the People's Republic of China",
+      "author": "US Department of Defense (Pentagon)",
+      "year": 2024,
+      "type": "Congressional Mandated Threat Assessment",
+      "focus": "PLA Navy hull count (>370), Rocket Force missile inventories, nuclear warhead stockpile projections, A2/AD systems"
+    },
+    {
+      "id": "SRC_SIPRI_MILEX_CHN",
+      "title": "SIPRI Military Expenditure Database",
+      "author": "Stockholm International Peace Research Institute (SIPRI)",
+      "year": 2024,
+      "type": "Independent Defense Economics Database",
+      "focus": "Estimated actual defense spending (~$296B-$310B nominal; >$700B PPP-adjusted)"
+    },
+    {
+      "id": "SRC_CRS_CHN_2024",
+      "title": "China's Political and Military Rise (CRS Report R45898)",
+      "author": "Congressional Research Service",
+      "year": 2024,
+      "type": "Government Policy Analysis",
+      "focus": "CCP leadership structure, Taiwan scenario capabilities, US-China strategic competition"
+    },
+    {
+      "id": "SRC_NBS_PRC",
+      "title": "Statistical Communiqué on National Economic and Social Development",
+      "author": "National Bureau of Statistics of China (NBS)",
+      "year": 2024,
+      "type": "Official National Statistical Bureau",
+      "focus": "GDP growth rates, demographic metrics, electric vehicle and renewable energy production volumes"
+    }
+  ],
+  "_meta": {
+    "data_quality": "verified",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

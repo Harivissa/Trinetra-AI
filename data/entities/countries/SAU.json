@@ -1,0 +1,17 @@
+{
+  "id": "SAU",
+  "entity_type": "country",
+  "name": "Saudi Arabia",
+  "official_name": "Kingdom of Saudi Arabia",
+  "linked_profile": "data/countries/saudi-arabia.json",
+  "linked_modules": ["history", "politics", "foreign_policy", "sources"],
+  "key_people": ["PERSON_SAU_CROWN_001"],
+  "key_organisations_member_of": ["ORG_OPEC", "ORG_GCC", "ORG_G20", "ORG_OIC", "ORG_ARAB_LEAGUE", "ORG_BRICS_INVITED"],
+  "governance_note": "Absolute monarchy governed by Islamic Basic Law, led by King Salman and de facto ruler Crown Prince Mohammed bin Salman directing the Vision 2030 modernization agenda.",
+  "_meta": {
+    "data_quality": "sourced",
+    "confidence": "high",
+    "last_updated": "2026-08-27",
+    "sources": ["SRC_CRS_SAU_2024"]
+  }
+}

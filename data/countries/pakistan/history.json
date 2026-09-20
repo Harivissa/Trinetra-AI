@@ -1,0 +1,99 @@
+{
+  "country_id": "PAK",
+  "events": [
+    {
+      "year": 1947,
+      "title": "Creation of the Islamic Republic of Pakistan",
+      "what_happened": "Pakistan was created on August 14, 1947, as an independent homeland for the Muslims of British India under the leadership of Muhammad Ali Jinnah, comprising West Pakistan and East Pakistan separated by 1,600 km of Indian territory.",
+      "why_it_happened": "Decades of political mobilization by the All-India Muslim League advocating the Two-Nation Theory, culminating in the British partition of the subcontinent.",
+      "key_actors": ["Muhammad Ali Jinnah (Quaid-e-Azam)", "Liaquat Ali Khan", "Lord Mountbatten", "All-India Muslim League"],
+      "consequences": "Traumatic mass migration, communal violence claiming hundreds of thousands of lives, and the disputed accession of the princely state of Jammu & Kashmir.",
+      "long_term_significance": "Founding of the Pakistani state and inception of the enduring Indo-Pakistani rivalry.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1948,
+      "title": "First Indo-Pakistani War over Kashmir",
+      "what_happened": "Tribal lashkars backed by Pakistani forces entered Kashmir, prompting Maharaja Hari Singh to sign the Instrument of Accession with India; fighting ended with a UN-mandated ceasefire line on January 1, 1949.",
+      "why_it_happened": "Contested sovereignty over Jammu & Kashmir following partition.",
+      "key_actors": ["Muhammad Ali Jinnah", "Jawaharlal Nehru", "Maharaja Hari Singh", "UN Commission for India and Pakistan (UNCIP)"],
+      "consequences": "Division of Kashmir into Indian-administered and Pakistani-administered sectors (Azad Kashmir and Gilgit-Baltistan) along what later became the Line of Control (LoC).",
+      "long_term_significance": "Established Kashmir as the central territorial dispute of South Asian geopolitics.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1960,
+      "title": "Signing of the Indus Waters Treaty",
+      "what_happened": "President Ayub Khan and Indian Prime Minister Jawaharlal Nehru signed the Indus Waters Treaty in Karachi under World Bank auspices, allocating the western rivers (Indus, Jhelum, Chenab) to Pakistan and eastern rivers (Ravi, Beas, Sutlej) to India.",
+      "why_it_happened": "Need for water security and transparent allocation of shared transboundary rivers vital to agricultural survival.",
+      "key_actors": ["Ayub Khan", "Jawaharlal Nehru", "World Bank"],
+      "consequences": "Provided unprecedented hydrological stability that survived subsequent wars for over six decades.",
+      "long_term_significance": "Cornerstone of Pakistani agricultural and economic survival, recently strained following tensions in Kashmir.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1965,
+      "title": "Second Indo-Pakistani War",
+      "what_happened": "Pakistan launched Operation Gibraltar to instigate an uprising in Indian-administered Kashmir, leading to full-scale warfare across the international border in Punjab before a Soviet-brokered ceasefire was reached at Tashkent.",
+      "why_it_happened": "Pakistani calculation that Indian military reorganization following the 1962 Sino-Indian War created a closing window of opportunity.",
+      "key_actors": ["Ayub Khan", "Lal Bahadur Shastri", "Alexei Kosygin"],
+      "consequences": "Military stalemate; US imposed arms embargoes on both nations, leading Pakistan to initiate a major strategic pivot toward China.",
+      "long_term_significance": "Catalyzed Pakistan's strategic turn toward Beijing for defense procurement and diplomatic support.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1971,
+      "title": "Bangladesh Liberation War and Separation of East Pakistan",
+      "what_happened": "Following the 1970 elections and military crackdown in East Pakistan (Operation Searchlight), India intervened militarily; Pakistani forces in the east surrendered on December 16, 1971, leading to the creation of independent Bangladesh.",
+      "why_it_happened": "Political disenfranchisement, economic disparity, and military repression of the Bengali majority in East Pakistan.",
+      "key_actors": ["General Yahya Khan", "Zulfikar Ali Bhutto", "Sheikh Mujibur Rahman", "Indira Gandhi"],
+      "consequences": "Loss of more than half of Pakistan's population; over 90,000 prisoners of war; signing of the 1972 Simla Agreement converting the ceasefire line into the Line of Control (LoC).",
+      "long_term_significance": "Profound strategic trauma that reshaped Pakistani national security doctrine and accelerated the drive to develop nuclear weapons.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1998,
+      "title": "Chagai-I Nuclear Weapons Tests",
+      "what_happened": "On May 28 and 30, 1998, Pakistan conducted six underground nuclear detonations in the Ras Koh Hills of Chagai District, Balochistan, declaring itself a nuclear weapons state.",
+      "why_it_happened": "Direct response to India's Pokhran-II nuclear tests earlier that month to restore strategic deterrence.",
+      "key_actors": ["Nawaz Sharif (Prime Minister)", "Dr. Abdul Qadeer Khan", "Pakistan Atomic Energy Commission (PAEC)"],
+      "consequences": "International sanctions; formal nuclearization of South Asia; established nuclear parity to deter conventional Indian invasion.",
+      "long_term_significance": "Established the nuclear umbrella that forms the ultimate bedrock of Pakistani national defense.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1999,
+      "title": "Kargil Conflict and Coup of 1999",
+      "what_happened": "Pakistani troops and Northern Light Infantry covertly crossed the LoC into high-altitude bunkers in Kargil; Indian forces counterattacked and reclaimed the heights. In October 1999, Army Chief General Pervez Musharraf overthrew Prime Minister Nawaz Sharif in a bloodless military coup.",
+      "why_it_happened": "Attempt to alter the status quo along the LoC and internationalize the Kashmir dispute; civil-military breakdown over the conflict's withdrawal.",
+      "key_actors": ["Pervez Musharraf", "Nawaz Sharif", "Atal Bihari Vajpayee", "Bill Clinton"],
+      "consequences": "Demonstrated that nuclear-armed adversaries could fight limited conventional conflicts; established nine years of military rule under Musharraf.",
+      "long_term_significance": "Reinforced the domestic political primacy of the military establishment in foreign and security policy.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2015,
+      "title": "Launch of China-Pakistan Economic Corridor (CPEC)",
+      "what_happened": "Chinese President Xi Jinping visited Islamabad, formally launching the $46 billion (later expanded to $62B+) China-Pakistan Economic Corridor, funding power plants, highways, and the deepwater port of Gwadar.",
+      "why_it_happened": "China's Belt and Road Initiative sought a direct warm-water Indian Ocean trade corridor bypassing the Strait of Malacca; Pakistan faced acute electrical power shortages and infrastructure deficits.",
+      "key_actors": ["Xi Jinping", "Nawaz Sharif", "China Communications Construction Company (CCCC)"],
+      "consequences": "Added over 10,000 MW of power to Pakistan's national grid; built the Karakoram Highway Phase II; transformed Gwadar into a strategic deepwater commercial node.",
+      "long_term_significance": "Cemented China as Pakistan's indispensable economic and strategic partner.",
+      "type": "FACT",
+      "confidence": "high"
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "confidence": "high",
+    "last_updated": "2026-08-27",
+    "source": "Pakistan National Archives; Simla Agreement texts; Congressional Research Service"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "country_id": "USA",
+  "events": [
+    {
+      "year": 1944,
+      "title": "Bretton Woods Conference",
+      "what_happened": "Delegates from 44 Allied nations met in Bretton Woods, New Hampshire, establishing the International Monetary Fund (IMF), the World Bank (IBRD), and pegging global currencies to the US dollar backed by gold at $35/ounce.",
+      "why_it_happened": "Desire to avoid the competitive devaluations and trade protectionism that exacerbated the Great Depression and contributed to World War II.",
+      "key_actors": ["John Maynard Keynes", "Harry Dexter White", "Franklin D. Roosevelt administration"],
+      "consequences": "Crowned the US dollar as the pre-eminent world reserve currency and established US leadership over post-war global finance.",
+      "long_term_significance": "Created the structural architecture of the modern global economic order and US financial primacy.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1947,
+      "title": "Marshall Plan and Truman Doctrine",
+      "what_happened": "President Harry S. Truman pledged US economic and military support to nations threatened by Soviet communism (Truman Doctrine), followed by the $13 billion European Recovery Program (Marshall Plan).",
+      "why_it_happened": "Severe post-war economic collapse across Europe and the perceived danger of communist takeovers in Greece, Turkey, Italy, and France.",
+      "key_actors": ["Harry S. Truman", "George C. Marshall"],
+      "consequences": "Rebuilt Western European industrial capacity; cemented the Western democratic alliance; initiated the formal strategy of containment.",
+      "long_term_significance": "Established the doctrine of containment that guided US national security strategy throughout the Cold War.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1949,
+      "title": "Establishment of NATO",
+      "what_happened": "The United States, Canada, and 10 Western European nations signed the North Atlantic Treaty in Washington on April 4, 1949, committing to collective defense under Article 5.",
+      "why_it_happened": "The 1948 Soviet Berlin Blockade and Czechoslovak communist coup convinced Western nations of the need for an integrated military alliance backed by US nuclear deterrence.",
+      "key_actors": ["Harry S. Truman", "Dean Acheson", "Ernest Bevin"],
+      "consequences": "Permanently tied US conventional and nuclear forces to the defense of Western Europe; broke the traditional US policy against peacetime European entangling alliances.",
+      "long_term_significance": "Foundational bedrock of Euro-Atlantic collective security and the primary vehicle of Western military cohesion.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1962,
+      "title": "Cuban Missile Crisis",
+      "what_happened": "US aerial reconnaissance discovered Soviet nuclear missile launch sites in Cuba; President John F. Kennedy instituted a naval quarantine; after 13 days of brinkmanship, Soviet Premier Nikita Khrushchev agreed to remove the missiles in exchange for a US public pledge not to invade Cuba and a secret pledge to withdraw US Jupiter missiles from Turkey.",
+      "why_it_happened": "Soviet deployment of medium- and intermediate-range nuclear missiles 90 miles off the US coast to offset US strategic nuclear superiority and deter US invasion of Cuba.",
+      "key_actors": ["John F. Kennedy", "Nikita Khrushchev", "Robert F. Kennedy", "Robert McNamara"],
+      "consequences": "Avoided global thermonuclear war; established the Moscow-Washington direct hotline; spurred subsequent arms control negotiations (1963 Partial Nuclear Test Ban Treaty).",
+      "long_term_significance": "Closest the world has ever come to full-scale nuclear exchange; established the rules of mutual nuclear deterrence.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1971,
+      "title": "Nixon Shock and the Petrodollar System",
+      "what_happened": "President Richard Nixon unilaterally suspended the convertibility of the US dollar into gold, ending the Bretton Woods fixed-rate system. In 1974, the US negotiated a historic agreement with Saudi Arabia to price all global oil sales exclusively in US dollars in exchange for US defense guarantees.",
+      "why_it_happened": "Massive run on US gold reserves caused by Vietnam War spending and domestic inflation; need to ensure sustained global demand for non-gold backed fiat dollars.",
+      "key_actors": ["Richard Nixon", "Paul Volcker", "King Faisal of Saudi Arabia", "William Simon"],
+      "consequences": "Inaugurated the modern era of floating fiat currencies; ensured perpetual international demand for US dollars to settle global energy transactions (the 'petrodollar').",
+      "long_term_significance": "Preserved the US dollar's status as the global reserve currency without gold backing, cementing the 'Exorbitant Privilege.'",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1991,
+      "title": "Collapse of the Soviet Union and Unipolarity",
+      "what_happened": "The formal dissolution of the Soviet Union in December 1991 left the United States as the world's sole unchallenged superpower, commanding unmatched economic, technological, and military primacy.",
+      "why_it_happened": "Decades of US containment, the Reagan defense buildup, Soviet economic stagnation, and the reform failures of Mikhail Gorbachev (Glasnost and Perestroika).",
+      "key_actors": ["George H.W. Bush", "Mikhail Gorbachev", "Boris Yeltsin"],
+      "consequences": "End of the Cold War; expansion of NATO into Eastern Europe; global spread of liberal democracy and market capitalism.",
+      "long_term_significance": "Created three decades of the 'Unipolar Moment' and the rules-based international liberal order.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2001,
+      "title": "September 11 Attacks and Global War on Terror",
+      "what_happened": "Al-Qaeda hijackers crashed four commercial airliners into the World Trade Center towers, the Pentagon, and a field in Shanksville, Pennsylvania, killing 2,977 people. The US responded by invoking NATO Article 5, invading Afghanistan, and later invading Iraq in 2003.",
+      "why_it_happened": "Transnational Islamist terrorism directed against US homeland security, military presence in the Middle East, and support for Israel.",
+      "key_actors": ["George W. Bush", "Osama bin Laden", "Dick Cheney", "Donald Rumsfeld"],
+      "consequences": "Creation of the Department of Homeland Security; passage of the Patriot Act; two decades of counter-insurgency warfare in Iraq and Afghanistan costing trillions of dollars and diverting attention from rising peer competitors.",
+      "long_term_significance": "Reshaped US domestic security apparatus and contributed to long-term public weariness with overseas military interventions.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2022,
+      "title": "CHIPS and Science Act & Strategic Tech Decoupling",
+      "what_happened": "President Joe Biden signed the $280 billion CHIPS and Science Act into law and instituted sweeping October 7, 2022 export controls restricting the transfer of advanced semiconductor chips, EDA software, and American talent to China's semiconductor manufacturing sector.",
+      "why_it_happened": "Recognition that Chinese military modernization and AI development depended on imported US chip designs and lithography tooling; vulnerability of US critical supply chains to Taiwan Strait conflict.",
+      "key_actors": ["Joe Biden", "Gina Raimondo", "Jake Sullivan", "US Congress"],
+      "consequences": "Mobilized hundreds of billions in domestic fab construction (TSMC in Arizona, Intel in Ohio, Samsung in Texas); institutionalized tech containment as the central axis of US-China strategic competition.",
+      "long_term_significance": "Marked the definitive end of post-Cold War globalization and the beginning of active geopolitical decoupling in critical technologies.",
+      "type": "FACT",
+      "confidence": "high"
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "confidence": "high",
+    "last_updated": "2026-08-27",
+    "source": "US Department of State Office of the Historian; Library of Congress; Congressional Research Service"
+  }
+}

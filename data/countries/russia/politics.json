@@ -1,0 +1,66 @@
+{
+  "country_id": "RUS",
+  "political_system": {
+    "type": "Federal semi-presidential republic under strong executive dominance (Super-Presidential system)",
+    "executive": "President of the Russian Federation is Head of State and Supreme Commander-in-Chief of the Armed Forces; commands supreme authority over foreign, security, and defense policy; appoints the Prime Minister and government ministers; constitutional amendments passed in 2020 allow the incumbent to serve until 2036.",
+    "legislature": "Bicameral Federal Assembly: State Duma (450 seats elected via mixed system) and Federation Council (upper house composed of representatives from each of the 89 federal subjects).",
+    "judiciary": "Centralized civil law system headed by the Constitutional Court and Supreme Court; politically subservient to executive governance in national security and political matters.",
+    "structure": "Asymmetric federalism comprising 89 federal subjects (including annexed Ukrainian regions), including republics, krais, oblasts, autonomous okrugs, and federal cities (Moscow, St. Petersburg, Sevastopol).",
+    "election_system": "Direct universal presidential election every 6 years; mixed-member majoritarian system for State Duma (half single-member districts, half proportional representation with a 5% threshold).",
+    "confidence": "high"
+  },
+  "current_government": {
+    "president": "Vladimir Vladimirovich Putin (re-elected to fifth presidential term in March 2024)",
+    "prime_minister": "Mikhail Mishustin",
+    "security_council_secretary": "Sergei Shoigu",
+    "defense_minister": "Andrey Belousov (technocratic economist appointed to oversee defense industrial production and budget efficiency)",
+    "context": "Complete consolidation of state, media, judicial, and security apparatus (Siloviki) behind the wartime national security strategy; systematic suppression of political opposition and anti-war dissent.",
+    "confidence": "high",
+    "as_of": "2026-08-27"
+  },
+  "major_parties": [
+    {
+      "name": "United Russia (Yedinaya Rossiya)",
+      "ideology": "Putinism, conservative statism, Russian civilizational nationalism, social stability, strong military",
+      "status": "Ruling party holding constitutional supermajority in the State Duma"
+    },
+    {
+      "name": "Communist Party of the Russian Federation (CPRF)",
+      "ideology": "Socialism, Soviet patriotism, state ownership of natural resources, social welfare",
+      "status": "Systemic opposition party, largely supporting executive foreign policy"
+    },
+    {
+      "name": "Liberal Democratic Party of Russia (LDPR)",
+      "ideology": "Ultranationalism, aggressive anti-Western rhetoric, revanchism",
+      "status": "Systemic opposition party fully supporting the war effort"
+    },
+    {
+      "name": "A Just Russia — For Truth (SRZP)",
+      "ideology": "Social democratic rhetoric, militarist patriotism, state interventionism",
+      "status": "Systemic opposition party aligned with executive military strategy"
+    }
+  ],
+  "political_movements_and_dynamics": [
+    {
+      "name": "Wartime Keynesianism & Industrial Mobilization",
+      "description": "Massive state expenditures directed into the military-industrial complex (defense spending exceeding 7% of GDP) driving industrial output, high wages for manufacturing and military enlistees, and regional wealth redistribution.",
+      "current_relevance": "Maintains economic stability and domestic public acquiescence despite high inflation, labor shortages, and international sanctions."
+    },
+    {
+      "name": "Eurasian Civilizational Sovereignty",
+      "description": "Official state ideology defining Russia not as a peripheral part of Europe, but as a unique, self-contained 'state-civilization' anchored in traditional values, Orthodox spirituality, and anti-colonial solidarity with the Global South.",
+      "current_relevance": "Provides the ideological justification for decoupling from Western norms, international human rights treaties, and Western cultural institutions."
+    },
+    {
+      "name": "Siloviki Consolidation & Successional Continuity",
+      "description": "Dominance of intelligence and security officials (FSB, SVR, GRU) throughout state ministries, state-owned corporations, and regional governorships.",
+      "current_relevance": "Ensures unquestioned loyalty to supreme command, ruthless internal surveillance, and resilience against external regime-change attempts."
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "source": "Constitution of the Russian Federation; Central Election Commission of the Russian Federation; Congressional Research Service (CRS Report R46761)",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

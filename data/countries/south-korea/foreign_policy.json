@@ -1,0 +1,37 @@
+{
+  "country_id": "KOR",
+  "doctrine": "Global Pivotal State (GPS) — South Korea seeks to expand its diplomatic, security, and economic footprint beyond the Korean Peninsula, positioning itself as a core contributor to freedom, peace, and prosperity through deep integration with like-minded democracies, rules-based maritime order, and resilient high-tech supply chains.",
+  "strategic_priorities": [
+    "Deter North Korean aggression via the fortified US-ROK Alliance, the Washington Declaration Nuclear Consultative Group (NCG), and the indigenous conventional Three-Axis pre-emption system",
+    "Institutionalize comprehensive trilateral security and economic coordination with the United States and Japan (Camp David framework)",
+    "Secure critical semiconductor, electric vehicle battery, and high-tech supply chains under the US CHIPS 4 alliance while managing complex economic ties with China",
+    "Expand sovereign defense industrial footprint as a top-4 global arms exporter, providing rapid-delivery conventional arms (tanks, artillery, fighter jets) to NATO and Indo-Pacific partners",
+    "Safeguard open sea lanes of communication (SLOCs) through the Taiwan Strait, South China Sea, and Malacca Strait, through which virtually all Korean energy and trade transits"
+  ],
+  "priority_regions": [
+    "Indo-Pacific (United States, Japan, Australia, ASEAN maritime states, India)",
+    "Euro-Atlantic / NATO (Poland, Romania, Nordic states — major defense export and security cooperation partners)",
+    "Middle East / Gulf (Saudi Arabia, UAE — critical crude oil and gas partners, civil nuclear energy [Barakah nuclear plant], defense systems)",
+    "Central Asia and Global South (critical mineral supply chain partnerships for lithium, nickel, and rare earths)"
+  ],
+  "cooperation_and_competition": {
+    "cooperates_closely_with": [
+      "United States (sole formal treaty ally, host of 28,500 US troops, extended nuclear deterrence partner)",
+      "Japan (vital trilateral security partner, intelligence-sharing GSOMIA, regional maritime security)",
+      "Poland & NATO Eastern Flank (strategic defense industry alliance with tens of billions in arms contracts)",
+      "Australia (fellow Indo-Pacific democracy, critical mineral supplier, AS9 Huntsman artillery partner)",
+      "United Arab Emirates & Saudi Arabia (major energy suppliers and defense co-development partners)"
+    ],
+    "competes_or_disputes_with": [
+      "North Korea (existential military threat, continuous nuclear testing, ballistic missile launches, artillery buildup)",
+      "China (economic coercion risks [THAAD fallout], maritime boundary disputes in the Yellow Sea/Socotra Rock [Ieodo], critical mineral export restrictions)",
+      "Russia (sharp deterioration following Moscow's comprehensive military partnership and munitions trade with Pyongyang)"
+    ],
+    "notes": "South Korea faces a perennial structural dilemma: the United States is its irreplaceable security guarantor, while China remains its largest single trading partner. Under the Yoon administration, Seoul has leaned decisively toward the US alliance and democratic coalition building, while seeking stable, mutually respectful relations with Beijing."
+  },
+  "_meta": {
+    "data_quality": "sourced/analytical synthesis based on ROK Ministry of Foreign Affairs, Indo-Pacific Strategy document, and presidential foreign policy addresses",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "country_id": "PAK",
+  "doctrine": "Geo-Economics & Full Spectrum Deterrence — Pakistan seeks to transition from purely geostrategic security rent-seeking to a connectivity-driven geo-economic transit hub bridging Central Asia, China, and the Middle East, while maintaining an unyielding Full Spectrum Nuclear Deterrent against conventional military pre-emption from India.",
+  "strategic_priorities": [
+    "Deter Indian conventional and sub-conventional military pre-emption across the Line of Control through modern air, naval, and nuclear forces",
+    "Consolidate Phase II of the China-Pakistan Economic Corridor (CPEC), expanding industrial parks, agricultural cooperation, and the deepwater port of Gwadar",
+    "Neutralize cross-border insurgent sanctuaries in Afghanistan (TTP) and secure border fencing along the Durand Line",
+    "Secure sovereign debt rollovers and multi-billion-dollar foreign direct investments from traditional Gulf allies (Saudi Arabia, UAE, Qatar)",
+    "Maintain balanced pragmatic ties with the United States in counter-terrorism, climate resilience, and bilateral trade while deepening strategic integration with China"
+  ],
+  "priority_regions": [
+    "South Asia (India, Bangladesh, Sri Lanka, Maldives — managing regional balance and multilateral SAARC revitalization)",
+    "East Asia (China — all-weather strategic cooperative partnership and core defense technology supplier)",
+    "Middle East & Gulf (Saudi Arabia, UAE, Qatar, Iran — energy supplies, expatriate remittances, Islamic solidarity)",
+    "Central Asia & Afghanistan (CASA-1000 power project, TAPI gas pipeline, Trans-Afghan Railway trade connectivity)"
+  ],
+  "cooperation_and_competition": {
+    "cooperates_closely_with": [
+      "China ('All-Weather Strategic Cooperative Partner', primary defense technology provider, CPEC financier)",
+      "Turkey (comprehensive military partnership, naval corvettes [MILGEM / Babur class], joint aviation and drone programs)",
+      "Saudi Arabia & UAE (vital financial lifelines, central bank deposit support, deferred oil facilities, home to millions of diaspora workers)",
+      "Qatar (long-term liquefied natural gas supplier and sovereign investor)",
+      "United States (crucial export market, counter-terrorism dialogue, and key interlocutor within the IMF and multilateral lenders)"
+    ],
+    "competes_or_disputes_with": [
+      "India (core historical adversary over Kashmir, water distribution, border militarization, and competing regional alliances)",
+      "Taliban Administration in Afghanistan (frictions over the Durand Line border fencing and sheltering of anti-Pakistan TTP militants)",
+      "Regional insurgent factions (Baloch Liberation Army [BLA], Islamic State Khorasan Province [ISKP])"
+    ],
+    "notes": "Pakistan's strategic environment is shaped by its geographical location between nuclear-armed India, war-torn Afghanistan, energy-rich Iran, and rising superpower China. Islamabad strives to avoid being drawn into bloc rivalries between Washington and Beijing, emphasizing trade transit and bilateral defense diplomacy."
+  },
+  "_meta": {
+    "data_quality": "sourced/analytical synthesis based on Pakistan Ministry of Foreign Affairs, National Security Policy (NSP) documents, and defense white papers",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

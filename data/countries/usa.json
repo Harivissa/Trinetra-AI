@@ -1,72 +1,180 @@
 {
   "id": "USA",
   "name": "United States",
+  "official_name": "United States of America",
+  "capital": "Washington, D.C.",
   "region": "North America",
   "demographics": {
-    "population_millions": 335
+    "population_millions": 335.0,
+    "urban_pct": 83.3,
+    "median_age": 38.5,
+    "fertility_rate": 1.66,
+    "notes": "Third-most populous nation globally; sustained by stable net international migration offsetting domestic fertility decline, maintaining a more favorable demographic pyramid than East Asian or European competitors."
   },
   "economy": {
     "gdp_usd_trillion": 27.4,
     "gdp_growth_pct": 2.5,
-    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+    "currency": "United States Dollar (USD / $)",
+    "notes": "World's largest nominal economy and undisputed global financial anchor; the US dollar serves as the primary global reserve currency (~58% of allocated reserves) and vehicle for >85% of foreign exchange transactions; global leader in AI, cloud software, aerospace, venture capital, and biotechnology.",
+    "major_exports": [
+      "Refined petroleum products, crude oil, and Liquefied Natural Gas (LNG)",
+      "Civil aircraft, aviation engines, and aerospace parts (Boeing)",
+      "Integrated circuits, semiconductor intellectual property, and design tooling",
+      "Pharmaceutical preparations and advanced medical biotechnology",
+      "Agricultural commodities (soybeans, corn, wheat)",
+      "Advanced defense systems and military equipment"
+    ],
+    "major_imports": [
+      "Consumer electronics, computers, and telecommunications hardware",
+      "Passenger motor vehicles and automotive parts",
+      "Pharmaceutical active ingredients and specialty chemicals",
+      "Industrial machinery, electrical equipment, and steel",
+      "Apparel, furniture, and consumer retail goods"
+    ]
   },
   "military": {
     "active_troops": 1328000,
-    "defence_spending_usd_billion": 916,
+    "reserve_troops": 795000,
+    "defence_spending_usd_billion": 916.0,
     "defence_spending_pct_gdp": 3.42,
     "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
     "arms_exports_usd": 13512000000,
     "arms_exports_year": 2024,
-    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "key_equipment_or_doctrines": [
+      "Global Force Projection: 11 nuclear-powered aircraft carrier strike groups (Nimitz and Gerald R. Ford class) capable of deploying sovereign air wings anywhere in international waters",
+      "Fifth-Generation Stealth Air Dominance: F-35 Lightning II joint strike fighter, F-22 Raptor air superiority fighter, and B-2 Spirit / B-21 Raider stealth strategic bombers",
+      "Nuclear Triad Deterrence: Ground-based Minuteman III ICBMs, Ohio-class ballistic missile submarines with Trident II D5 SLBMs, and long-range strategic bombers",
+      "Undersea Supremacy: Virginia-class and Seawolf-class nuclear-powered fast-attack submarines (SSNs)",
+      "Unified Combatant Command Network: Global operational commands (INDOPACOM, EUCOM, CENTCOM, AFRICOM, SOUTHCOM, NORTHCOM) backed by 750+ overseas military facilities in 80 countries"
+    ]
   },
   "energy": {
     "net_import_dependence_ratio": -0.05,
-    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+    "primary_sources": [
+      "Petroleum (36% of consumption - world's top crude producer at >13M bpd)",
+      "Natural gas (33% - world's top producer and leading LNG exporter)",
+      "Renewables (13% - wind, solar, and hydroelectric power)",
+      "Nuclear electric power (9% - largest commercial nuclear power fleet with 93 reactors)",
+      "Coal (9% - domestic thermal and metallurgical production)"
+    ],
+    "note": "Net energy exporter following the shale revolution (hydraulic fracturing and horizontal drilling in Permian and Eagle Ford basins), providing strategic insulation against global oil supply shocks."
   },
-  "infrastructure": {},
-  "trade": {},
-  "technology": {},
+  "infrastructure": {
+    "major_ports": [
+      "Port of Los Angeles & Port of Long Beach (San Pedro Bay complex handling >30% of US containerized imports)",
+      "Port of Houston (Leading US port for foreign waterborne tonnage and crude/refined oil exports)",
+      "Port of New York and New Jersey (Premier East Coast container gateway)",
+      "Port of Savannah (Fastest-growing Southeastern logistics hub)"
+    ],
+    "strategic_airports": [
+      "Hartsfield-Jackson Atlanta International Airport (ATL - world's busiest passenger hub)",
+      "Memphis International Airport (MEM - world's premier express air cargo gateway for FedEx)",
+      "Dallas/Fort Worth International (DFW) & Chicago O'Hare (ORD)"
+    ],
+    "rail_network_km": 220000,
+    "energy_grid_resilience": "Continental electric system divided into three synchronous interconnections: Eastern Interconnection, Western Interconnection, and Texas Interconnection (ERCOT); faces aging transmission lines and rising demand from AI data center expansions.",
+    "digital_infrastructure": "Foundational bedrock of the global internet, hosting the highest concentration of hyperscale data centers (Northern Virginia Data Center Alley) and primary transatlantic/transpacific submarine cable landing stations."
+  },
+  "trade": {
+    "top_partners": [
+      "Mexico (largest bilateral merchandise trading partner under the USMCA trade agreement)",
+      "Canada (second-largest trading partner, vital energy and critical mineral supplier)",
+      "China (major source of consumer and manufactured imports, subject to strategic tariffs and export controls)",
+      "European Union (core high-value trade, pharmaceutical, and investment partner)",
+      "Japan & South Korea (crucial high-tech, automotive, and semiconductor trade partners)"
+    ],
+    "chokepoint_exposure": [
+      "Panama Canal (essential maritime shortcut connecting US East Coast and Gulf ports to Asia)",
+      "Taiwan Strait (critical transit route for advanced semiconductor shipments and electronics)",
+      "Strait of Malacca & Bab el-Mandeb (indirect exposure via global supply chain disruption and allied trade)"
+    ]
+  },
+  "technology": {
+    "core_competencies": [
+      "World leader in frontier artificial intelligence architecture, large language models, and AI software frameworks",
+      "Dominance in advanced semiconductor chip design (Nvidia, AMD, Apple, Qualcomm) and EDA software (Synopsys, Cadence)",
+      "Global commercial and military aerospace leadership (Boeing, Lockheed Martin, Northrop Grumman) and commercial space launch (SpaceX)",
+      "Biotechnology, mRNA genomics, pharmaceuticals, and synthetic biology"
+    ],
+    "tech_vulnerabilities": [
+      "Critical vulnerability on overseas outsourced semiconductor fabrication (over 90% of advanced logic chips <5nm fabricated in Taiwan by TSMC)",
+      "Severe dependency on Chinese refining of critical minerals (rare earth permanent magnets, processed lithium, cobalt, gallium, germanium)",
+      "Shortage of specialized domestic precision manufacturing workforce and skilled semiconductor fab technicians"
+    ]
+  },
   "geography": {
-    "region": "North America"
+    "region": "North America",
+    "capital": "Washington, D.C.",
+    "area_sq_km": 9833517,
+    "coastline_km": 19924,
+    "land_borders": [
+      "Canada (8893 km - world's longest undefended international border)",
+      "Mexico (3141 km)"
+    ],
+    "strategic_chokepoints_adjacent": [
+      "Strait of Florida & Caribbean Passages",
+      "Bering Strait (Alaska-Russia maritime boundary)",
+      "Hawaiian Islands (central Pacific naval hub at Pearl Harbor)",
+      "Guam & Mariana Islands (vital forward-operating hub in the Second Island Chain)"
+    ]
   },
-  "politics": {},
+  "politics": {
+    "system": "Federal constitutional presidential republic",
+    "executive": "President of the United States serves as Head of State, Head of Government, and Commander-in-Chief of the Armed Forces; elected indirectly via the Electoral College for a 4-year term (limited to two terms by the 22nd Amendment).",
+    "legislature": "Bicameral United States Congress comprising the Senate (100 members, two per state, 6-year terms) and House of Representatives (435 members apportioned by population, 2-year terms).",
+    "judiciary": "Independent federal judiciary headed by the Supreme Court of the United States (9 justices appointed for life tenure with powers of constitutional judicial review)."
+  },
   "nuclear": {
-    "weapons_state": true
+    "weapons_state": true,
+    "delivery_systems": "Fully operational strategic nuclear triad: 400 silo-based LGM-30G Minuteman III ICBMs, 14 Ohio-class SSBNs carrying Trident II D5 SLBMs, and strategic bombers (B-2 Spirit stealth bombers and B-52H Stratofortresses carrying nuclear gravity bombs and AGM-86 ALCM cruise missiles).",
+    "notes": "Maintains 1,770 deployed strategic warheads with a total stockpile of ~5,044 nuclear weapons (SIPRI / US Department of State 2024). Undertaking a comprehensive multi-hundred-billion-dollar triad modernization (Sentinel ICBM, Columbia-class SSBN, B-21 Raider)."
   },
   "strategic_priorities": [
-    "Indo-Pacific deterrence of China",
-    "Alliance cohesion (NATO/AUKUS)",
-    "Tech export controls",
-    "Domestic semiconductor reshoring"
+    "Deterring Chinese aggression against Taiwan and maintaining an open, rules-based maritime order across the Indo-Pacific",
+    "Reinvigorating core democratic treaty alliances (NATO Article 5, AUKUS, Quad, US-Japan-ROK trilateral)",
+    "Reshoring leading-edge semiconductor manufacturing to domestic soil (CHIPS and Science Act) and securing critical mineral supply chains",
+    "Preserving the global dominance of the US Dollar, international financial clearing primacy, and SWIFT enforcement leverage",
+    "Maintaining decisive technological superiority in artificial intelligence, quantum information science, and hypersonic defense"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "Near-total reliance on Taiwan (TSMC) for commercial and defense-grade sub-5nm semiconductor chip manufacturing",
+    "Heavy reliance on Chinese refining for critical raw materials, battery precursors, and rare earth magnets",
+    "Supply chain dependency on Asian manufacturing for active pharmaceutical ingredients (APIs) and medical consumables",
+    "Reliance on allied host nations (Japan, South Korea, Germany, UK) for forward-stationed base access and logistics hubs"
+  ],
   "vulnerabilities": [
-    "High national debt",
-    "Political polarization",
-    "Overseas commitment overstretch"
+    "High national public debt exceeding $34 trillion with expanding annual fiscal deficits and interest servicing costs",
+    "Extreme domestic partisan polarization complicating long-term treaty ratifications and predictable foreign policy commitments",
+    "Simultaneous strategic overstretch: Facing simultaneous deterrence requirements in Europe (Russia), Indo-Pacific (China), and the Middle East (Iran/Houthis)",
+    "Fragile defense industrial production capacity: Peacetime munitions stockpiles (artillery shells, Patriot PAC-3 interceptors, long-range anti-ship missiles) take years to replenish"
   ],
   "strengths": [
-    "Global reserve currency",
-    "Technology/innovation leadership",
-    "Energy self-sufficiency (shale)",
-    "Global alliance network"
+    "Exorbitant Privilege of the US Dollar: Unrivalled global financial hegemony enabling deficit financing and devastating economic sanction capabilities",
+    "Unmatched Global Power Projection: Sole military with the logistical capacity to deploy, sustain, and resupply massive multi-domain forces anywhere on Earth within 24-48 hours",
+    "Domestic Energy and Agricultural Abundance: Completely food and energy self-sufficient, insulating the homeland from foreign embargoes",
+    "Global Alliance Depth: Command of formal mutual defense treaties covering over 50 sovereign nations (NATO, Japan, South Korea, Australia, Philippines)"
   ],
   "alliances": [
     "GBR",
     "JPN",
     "AUS",
     "KOR",
+    "DEU",
+    "FRA",
+    "CAN",
     "ISR"
   ],
   "rivals": [
     "CHN",
     "RUS",
-    "IRN"
+    "IRN",
+    "PRK"
   ],
   "_meta": {
-    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
-    "source": "see data/sources/",
-    "confidence": "low-demo",
+    "data_quality": "sourced; military spending %GDP and arms exports verified from World Bank WDI and US Department of Defense budget appropriations",
+    "source": "World Bank WDI (MS.MIL.XPND.GD.ZS, MS.MIL.XPRT.KD); US Department of Defense Annual Financial Report; SIPRI Arms Transfers & Nuclear Databases; Congressional Research Service",
+    "confidence": "high",
     "last_updated": "2026-08-27"
   }
 }

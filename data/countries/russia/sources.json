@@ -1,0 +1,50 @@
+{
+  "country_id": "RUS",
+  "sources": [
+    {
+      "id": "SRC_WB_WDI_RUS",
+      "title": "World Development Indicators: Military Expenditure & Arms Exports",
+      "author": "World Bank / SIPRI",
+      "year": 2024,
+      "type": "Multilateral Statistical Dataset",
+      "focus": "Official military expenditure % of GDP (7.05%), arms exports ($1.339B constant USD), GDP figures"
+    },
+    {
+      "id": "SRC_SIPRI_NUC_RUS",
+      "title": "SIPRI Yearbook 2024: Russian Nuclear Forces",
+      "author": "Stockholm International Peace Research Institute (SIPRI)",
+      "year": 2024,
+      "type": "Strategic Arms Assessment",
+      "focus": "Operational strategic warheads (~1,710), total stockpile (~5,580), RS-28 Sarmat, Borei-A SSBN deployments"
+    },
+    {
+      "id": "SRC_CRS_RUS_WAR",
+      "title": "Russia's War in Ukraine: Military and Economic Implications (CRS Report R47054)",
+      "author": "Congressional Research Service",
+      "year": 2024,
+      "type": "Government Policy Analysis",
+      "focus": "Sanctions resilience, wartime industrial mobilization, China-Russia trade flows"
+    },
+    {
+      "id": "SRC_IISS_MB_RUS",
+      "title": "The Military Balance: Chapter 4 - Russia and Eurasia",
+      "author": "International Institute for Strategic Studies (IISS)",
+      "year": 2024,
+      "type": "Strategic Assessment",
+      "focus": "Order of battle, equipment attrition rates, munitions production, Aerospace Forces (VKS) posture"
+    },
+    {
+      "id": "SRC_CBR_ANNUAL",
+      "title": "Annual Report & Monetary Policy Guidelines",
+      "author": "Central Bank of the Russian Federation (Bank of Russia)",
+      "year": 2024,
+      "type": "Central Bank Financial Report",
+      "focus": "Foreign currency reserves diversification, trade settlements in Rubles and Yuan, interest rate environment"
+    }
+  ],
+  "_meta": {
+    "data_quality": "verified",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

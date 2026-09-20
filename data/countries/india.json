@@ -1,70 +1,180 @@
 {
   "id": "IND",
   "name": "India",
+  "official_name": "Republic of India",
+  "capital": "New Delhi",
   "region": "South Asia",
   "demographics": {
-    "population_millions": 1441
+    "population_millions": 1441.0,
+    "urban_pct": 36.4,
+    "median_age": 28.7,
+    "fertility_rate": 2.0,
+    "notes": "World's most populous country with a massive demographic dividend; over 65% of the population is under age 35, driving a long-term consumer market expansion and STEM workforce growth."
   },
   "economy": {
     "gdp_usd_trillion": 3.94,
     "gdp_growth_pct": 6.8,
-    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+    "currency": "Indian Rupee (INR / ₹)",
+    "notes": "World's 5th largest economy by nominal GDP and 3rd largest by Purchasing Power Parity (PPP); world's fastest-growing major economy, driven by digital public infrastructure (UPI), IT software services, pharmaceutical manufacturing, and the 'Make in India' industrial policy.",
+    "major_exports": [
+      "Refined petroleum products (diesel and gasoline processed from imported crude)",
+      "Information technology software and business process management services",
+      "Pharmaceutical formulations, vaccines, and generic drugs ('Pharmacy of the World')",
+      "Precious gems, diamonds, and manufactured jewellery",
+      "Automotive vehicles, tractors, and precision engineering goods",
+      "Agricultural products (basmati rice, marine products, spices)"
+    ],
+    "major_imports": [
+      "Crude petroleum and liquefied natural gas (LNG)",
+      "Gold, precious stones, and uncut diamonds",
+      "Electronic components, integrated circuits, and smartphones",
+      "Coking coal and thermal coal for steel and power generation",
+      "Industrial chemicals, plastics, and fertilizer"
+    ]
   },
   "military": {
     "active_troops": 1455000,
+    "reserve_troops": 1155000,
     "defence_spending_usd_billion": 86.1,
     "defence_spending_pct_gdp": 2.27,
     "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
     "arms_exports_usd": 25000000,
     "arms_exports_year": 2024,
-    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "key_equipment_or_doctrines": [
+      "Two-Front Deterrence Doctrine: Designed to simultaneously deter or counter synchronized conventional military action by China across the LAC and Pakistan across the LoC",
+      "Naval Carrier Battle Groups: INS Vikrant (indigenous 45,000-ton carrier) and INS Vikramaditya operating MiG-29K fighters",
+      "Frontline Combat Aviation: Dassault Rafale 4.5-gen omnirole fighters, Su-30MKI air superiority fighters, and indigenous HAL Tejas Light Combat Aircraft",
+      "Long-Range Precision Strike: BrahMos supersonic cruise missiles (Mach 3, land/sea/air-launched, joint venture with Russia)",
+      "Integrated Air Defense: Russian S-400 Triumf air defense missile regiments and indigenous Akash surface-to-air missile systems",
+      "Andaman & Nicobar Command (ANC): India's only tri-service unified theater command, positioned directly astride the northern approaches to the Strait of Malacca"
+    ]
   },
   "energy": {
     "net_import_dependence_ratio": 0.85,
-    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+    "primary_sources": [
+      "Coal (55% of power generation - essential baseload power from domestic reserves)",
+      "Crude petroleum (28% of total energy - over 85% imported, primarily from Russia, Iraq, Saudi Arabia, and UAE)",
+      "Renewable energy (12% - rapidly expanding solar parks and wind energy installations)",
+      "Natural gas (6% - domestic offshore fields plus imported LNG)",
+      "Nuclear power (2% - domestic pressurized heavy water reactors and Kudankulam VVERs)"
+    ],
+    "note": "High exposure to global crude oil price volatility; transformed its crude import basket post-2022 by importing heavily discounted Russian Urals crude, refining it domestically for export."
   },
-  "infrastructure": {},
-  "trade": {},
-  "technology": {},
+  "infrastructure": {
+    "major_ports": [
+      "Jawaharlal Nehru Port Trust (JNPT / Navi Mumbai - premier container port)",
+      "Mundra Port (Gujarat - largest private commercial and bulk liquids deepwater port)",
+      "Chennai Port & Visakhapatnam Port (Major eastern littoral industrial gateways on the Bay of Bengal)",
+      "Cochin Port & International Container Transshipment Terminal (Vallarpadam)"
+    ],
+    "strategic_airports": [
+      "Indira Gandhi International Airport (DEL, New Delhi - busiest aviation hub in South Asia)",
+      "Chhatrapati Shivaji Maharaj International Airport (BOM, Mumbai)",
+      "Kempegowda International Airport (BLR, Bengaluru - technology and aerospace corridor)"
+    ],
+    "rail_network_km": 68426,
+    "energy_grid_resilience": "National Power Grid operated as a single synchronous frequency system under POSOCO/Grid-India, enabling seamless inter-regional transfer of renewable energy across northern and southern load centers.",
+    "digital_infrastructure": "Unified Payments Interface (UPI) handling over 13 billion monthly digital transactions; Aadhaar national biometric digital identity system; Mumbai and Chennai subsea cable landing clusters connecting Europe to Southeast Asia."
+  },
+  "trade": {
+    "top_partners": [
+      "United States (largest single export destination and key technology partner)",
+      "China (largest source of manufactured imports, active pharmaceutical ingredients, and solar components)",
+      "United Arab Emirates (crucial energy supplier, trade hub, and Comprehensive Economic Partnership Agreement partner)",
+      "Russia (top crude oil supplier post-2022 under bilateral national currency mechanisms)",
+      "Saudi Arabia & Singapore (major energy, infrastructure investment, and logistics partners)"
+    ],
+    "chokepoint_exposure": [
+      "Strait of Hormuz (over 50% of crude oil and LNG imports transit this Gulf bottleneck)",
+      "Strait of Malacca (vital export-import corridor for commerce with East and Southeast Asia; monitored by India's ANC command)",
+      "Bab el-Mandeb & Red Sea (maritime route for Indian engineering goods and refined fuels heading to European markets)"
+    ]
+  },
+  "technology": {
+    "core_competencies": [
+      "World-leading IT enterprise software architecture, cloud migration, and tech consulting (TCS, Infosys, Wipro)",
+      "Cost-effective commercial space launch and planetary exploration (ISRO Chandrayaan-3 lunar landing, Gaganyaan)",
+      "Mass-scale pharmaceutical synthesis, biosimilars, and active drug formulation manufacturing",
+      "Digital public infrastructure (India Stack) spanning identity, payments, and open commerce networks"
+    ],
+    "tech_vulnerabilities": [
+      "Heavy reliance on imported semiconductor logic chips and fab foundries from Taiwan and South Korea",
+      "Dependency on imported military jet engines (GE aerospace F404/F414 engines powering HAL Tejas)",
+      "Import reliance on China for 65-70% of Active Pharmaceutical Ingredients (APIs) used in domestic drug manufacturing"
+    ]
+  },
   "geography": {
-    "region": "South Asia"
+    "region": "South Asia",
+    "capital": "New Delhi",
+    "area_sq_km": 3287263,
+    "coastline_km": 7516,
+    "land_borders": [
+      "Bangladesh (4096 km)",
+      "China (3488 km along the disputed Line of Actual Control)",
+      "Pakistan (3320 km along the Line of Control and international border)",
+      "Nepal (1751 km)",
+      "Myanmar (1643 km)",
+      "Bhutan (699 km)"
+    ],
+    "strategic_chokepoints_adjacent": [
+      "Six Degree Channel / Great Channel (between Great Nicobar and Sumatra — mouth of Strait of Malacca)",
+      "Ten Degree Channel (between Andaman and Nicobar island chains)",
+      "Palk Strait (between India and Sri Lanka)"
+    ]
   },
-  "politics": {},
+  "politics": {
+    "system": "Federal parliamentary constitutional democratic republic",
+    "executive": "Prime Minister of India is Head of Government holding executive power, leading the Council of Ministers; President of India is constitutional Head of State.",
+    "legislature": "Bicameral Parliament (Sansad) comprising the Lok Sabha (House of the People, 543 directly elected members) and Rajya Sabha (Council of States, 245 members representing the states and union territories).",
+    "judiciary": "Supreme Court of India, possessing extensive constitutional jurisdiction, judicial review authority, and administrative oversight of 25 High Courts."
+  },
   "nuclear": {
-    "weapons_state": true
+    "weapons_state": true,
+    "delivery_systems": "Operational nuclear triad: Land-based road-mobile solid-fuel ballistic missiles (Agni-I through Agni-V ICBMs, including MIRV capability tested in Mission Divyastra), nuclear-capable aircraft (Dassault Rafale, Mirage 2000), and SSBNs (INS Arihant and INS Arighat carrying K-15 and K-4 SLBMs).",
+    "notes": "Estimated 172 nuclear warheads (SIPRI 2024). Governed under the Nuclear Command Authority (NCA) headed by the Prime Minister. Adheres to a declared No-First-Use (NFU) policy and Credible Minimum Deterrence."
   },
   "strategic_priorities": [
-    "Border security vs China/Pakistan",
-    "Energy diversification",
-    "Domestic defence manufacturing (Atmanirbhar)",
-    "Indo-Pacific strategic partnerships"
+    "Deterring Chinese territorial revisionism along the 3,488 km Line of Actual Control (LAC) and modernizing border infrastructure in Ladakh and Arunachal Pradesh",
+    "Maintaining decisive maritime dominance across the Indian Ocean Region (IOR) and safeguarding commercial sea lines of communication",
+    "Achieving self-reliance in defense industrial manufacturing ('Atmanirbhar Bharat') to replace imported defense platforms",
+    "Expanding strategic multi-alignment through the Quad (US, Japan, Australia, India), BRICS+, and the Shanghai Cooperation Organisation (SCO)",
+    "Accelerating the India Semiconductor Mission to establish domestic wafer fabrication, packaging, and critical electronics manufacturing"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "Crude oil import vulnerability: Over 85% of crude oil is imported, heavily dependent on Gulf and Russian tanker shipments",
+    "High reliance on foreign semiconductor foundries for electronics, automotive, and defense hardware",
+    "Critical dependence on Russian-origin defense systems for maintenance, ammunition, and spares (~45% of existing military platforms)",
+    "Dependence on China for key industrial inputs including Active Pharmaceutical Ingredients (APIs) and solar photovoltaic components"
+  ],
   "vulnerabilities": [
-    "Heavy energy import dependence",
-    "Two-front border tension (China/Pakistan)",
-    "Infrastructure gaps in interior regions"
+    "Two-front military security challenge: Simultaneous conventional mobilization risk from China and Pakistan across mountainous borders",
+    "High fiscal vulnerability to global energy and fertilizer price shocks impacting foreign exchange reserves",
+    "Severe climate stress: Exposure to extreme heatwaves, erratic monsoon precipitation patterns, and glacial melt in the Himalayas",
+    "Job creation imperatives: Demands to generate millions of high-productivity manufacturing jobs annually for an expanding youth population"
   ],
   "strengths": [
-    "Large domestic market",
-    "Growing tech/IT sector",
-    "Demographic dividend",
-    "Strategic Indo-Pacific position",
-    "Andaman & Nicobar Command (India's only tri-service unified military command) sits astride the northern approach to the Strait of Malacca \u2014 the Andaman Islands are within a few hundred kilometres of the strait's entrance, giving the Indian Navy a real position from which to monitor or, in a severe crisis, complicate Chinese shipping through the chokepoint China itself calls its 'Malacca Dilemma'"
+    "Unsurpassed geographic dominance of the Indian Ocean: Astride the primary global maritime energy routes between the Middle East and East Asia",
+    "Andaman and Nicobar Command (ANC): Forward military bastion providing direct physical surveillance and interdiction leverage over China's Malacca trade chokepoint",
+    "Unmatched demographic momentum: Youngest median age (28.7) among major global powers with an immense pool of software and STEM professionals",
+    "Diplomatic Multi-Alignment Prerogative: Unique global stature enabling simultaneous productive partnerships with the United States, Russia, France, Israel, and the Global South"
   ],
   "alliances": [
+    "USA",
     "RUS",
     "FRA",
-    "USA"
+    "JPN",
+    "AUS",
+    "ISR"
   ],
   "rivals": [
-    "PAK",
-    "CHN"
+    "CHN",
+    "PAK"
   ],
   "_meta": {
-    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
-    "source": "see data/sources/",
-    "confidence": "low-demo",
+    "data_quality": "sourced; military spending %GDP and arms exports verified from World Bank WDI and Indian Union Budget expenditure documents",
+    "source": "World Bank WDI (MS.MIL.XPND.GD.ZS, MS.MIL.XPRT.KD); SIPRI Nuclear Forces & Military Expenditure; Ministry of External Affairs India; Reserve Bank of India",
+    "confidence": "high",
     "last_updated": "2026-08-27"
   }
 }

@@ -1,0 +1,56 @@
+{
+  "country_id": "CHN",
+  "political_system": {
+    "type": "Unitary socialist one-party state",
+    "executive": "General Secretary of the Chinese Communist Party (CCP) is the supreme leader; also serves as President of the PRC (Head of State) and Chairman of the Central Military Commission (commanding the PLA). The Premier of the State Council heads the civil government administration.",
+    "legislature": "National People's Congress (NPC), unicameral national parliament of ~2,980 deputies; Standing Committee of the NPC (NPCSC) enacts laws between plenary sessions.",
+    "judiciary": "Supreme People's Court and Supreme People's Procuratorate; guided constitutionally by the leadership of the Communist Party with no Western-style separation of powers.",
+    "structure": "Unitary system with 23 provinces (including claimed Taiwan), 5 autonomous regions (Xinjiang, Tibet, Inner Mongolia, Guangxi, Ningxia), 4 direct-administered municipalities (Beijing, Shanghai, Tianjin, Chongqing), and 2 Special Administrative Regions (Hong Kong, Macau).",
+    "election_system": "Hierarchical indirect elections: local people's congresses directly elected at county/district level, which elect higher congresses up to the NPC; all candidates vetted by the CCP.",
+    "confidence": "high"
+  },
+  "current_government": {
+    "ruling_party": "Chinese Communist Party (CCP) - over 98 million members",
+    "general_secretary_and_president": "Xi Jinping (serving historic third term as General Secretary and President)",
+    "premier": "Li Qiang",
+    "politburo_standing_committee": "7-member supreme decision-making body comprising Xi Jinping, Li Qiang, Zhao Leji, Wang Huning, Cai Qi, Ding Xuexiang, and Li Xi.",
+    "context": "Comprehensive ideological consolidation under 'Xi Jinping Thought on Socialism with Chinese Characteristics for a New Era'; constitutional term limits on the state presidency were abolished in 2018.",
+    "confidence": "high",
+    "as_of": "2026-08-27"
+  },
+  "major_parties": [
+    {
+      "name": "Chinese Communist Party (CCP)",
+      "ideology": "Socialism with Chinese characteristics, Marxist-Leninist organizational discipline, national rejuvenation, state capitalism, technological sovereignty",
+      "status": "Sole constitutional ruling party holding complete monopoly on political power"
+    },
+    {
+      "name": "Eight Democratic Parties (United Front)",
+      "ideology": "Subordinate consultative bodies under the guidance of the CCP representing intellectuals, business, and overseas Chinese",
+      "status": "Consultative advisory participants in the Chinese People's Political Consultative Conference (CPPCC)"
+    }
+  ],
+  "political_movements_and_dynamics": [
+    {
+      "name": "Dual Circulation & High-Quality Development",
+      "description": "Economic policy doctrine prioritizing domestic consumption, internal supply-chain resilience ('Internal Circulation'), and indigenization of critical technologies, while remaining connected to foreign export markets ('External Circulation').",
+      "current_relevance": "Directs state capital into semiconductor fabs, domestic operating systems, battery technology, and industrial machine tools."
+    },
+    {
+      "name": "Anti-Corruption & Party Discipline",
+      "description": "Continuous, decade-long disciplinary campaign led by the Central Commission for Discipline Inspection (CCDI), targeting both high-ranking officials ('tigers') and low-level cadres ('flies').",
+      "current_relevance": "Ensures ideological loyalty, eliminates factional opposition, and maintains strict central enforcement over provincial cadres and military commands."
+    },
+    {
+      "name": "Taiwan Rejuvenation Timeline",
+      "description": "Official doctrine holding that the 'complete reunification of the motherland' is an essential requirement for realizing the 'Great Rejuvenation of the Chinese Nation' by 2049.",
+      "current_relevance": "Guides military modernization timelines, amphibious assault training, grey-zone naval blockades, and legal combat readiness."
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "source": "Constitution of the People's Republic of China; 20th CCP National Congress Reports; Congressional Research Service (CRS Report R45898)",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

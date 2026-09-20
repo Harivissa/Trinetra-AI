@@ -1,0 +1,99 @@
+{
+  "country_id": "CHN",
+  "events": [
+    {
+      "year": 1949,
+      "title": "Proclamation of the People's Republic of China",
+      "what_happened": "Following the Chinese Communist Party's victory over the Nationalist (Kuomintang) forces in the Chinese Civil War, Mao Zedong proclaimed the founding of the People's Republic of China in Tiananmen Square on October 1, 1949; Chiang Kai-shek's government retreated to Taiwan.",
+      "why_it_happened": "Decades of revolutionary struggle, anti-Japanese resistance during WWII, and peasant mobilization by the CCP.",
+      "key_actors": ["Mao Zedong", "Zhou Enlai", "Chiang Kai-shek", "Chinese Communist Party"],
+      "consequences": "Unified mainland China under centralized socialist rule; began the unresolved Taiwan Strait cross-strait division.",
+      "long_term_significance": "Founding of the modern Chinese party-state and genesis of the Taiwan dispute.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1950,
+      "title": "Intervention in the Korean War (War to Resist US Aggression and Aid Korea)",
+      "what_happened": "China deployed hundreds of thousands of Chinese People's Volunteers across the Yalu River, pushing UN forces back from the Chinese border and fighting to an armistice along the 38th parallel in 1953.",
+      "why_it_happened": "Chinese strategic concern that US forces advancing to the Yalu River posed an existential threat to China's industrial northeast (Manchuria).",
+      "key_actors": ["Mao Zedong", "Peng Dehuai", "Douglas MacArthur"],
+      "consequences": "Sustained massive casualties but established China as a formidable regional military power capable of fighting the US to a standstill.",
+      "long_term_significance": "Cemented the Sino-North Korean alliance and entrenched hostility with the United States for two decades.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1962,
+      "title": "Sino-Indian Border War",
+      "what_happened": "China launched coordinated military offensives in the Aksai Chin and across the McMahon Line in Arunachal Pradesh (NEFA), routing Indian forces before declaring a unilateral ceasefire and withdrawal behind the Line of Actual Control.",
+      "why_it_happened": "Border disputes following China's 1950 annexation of Tibet, the Dalai Lama's 1959 flight to India, and India's 'Forward Policy.'",
+      "key_actors": ["Mao Zedong", "Jawaharlal Nehru", "Zhou Enlai"],
+      "consequences": "Consolidated Chinese control over Aksai Chin (securing the Xinjiang-Tibet highway); institutionalized permanent Indian threat perception of Beijing.",
+      "long_term_significance": "Established the unresolved Line of Actual Control (LAC) that remains the central flashpoint in Sino-Indian relations.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1971,
+      "title": "UN Representation and Kissinger Secret Mission",
+      "what_happened": "Henry Kissinger made a secret diplomatic mission to Beijing in July 1971, paving the way for UN General Assembly Resolution 2758 recognizing the PRC as the sole representative of China, and President Richard Nixon's historic 1972 visit.",
+      "why_it_happened": "Mutual strategic interest in counterbalancing the Soviet Union following the Sino-Soviet split and 1969 border clashes on the Ussuri River.",
+      "key_actors": ["Richard Nixon", "Henry Kissinger", "Mao Zedong", "Zhou Enlai"],
+      "consequences": "PRC assumed the permanent seat on the UN Security Council; set stage for 1979 US-China diplomatic normalization under the Shanghai Communiqué.",
+      "long_term_significance": "Fundamentally reoriented Cold War global balance of power against the Soviet Union.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1978,
+      "title": "Third Plenum and Launch of Reform and Opening Up (Gaige Kaifang)",
+      "what_happened": "At the Third Plenum of the 11th Central Committee, Deng Xiaoping consolidated leadership and launched market-oriented economic reforms, decollectivizing agriculture, encouraging private enterprise, and establishing Special Economic Zones (Shenzhen).",
+      "why_it_happened": "Economic devastation and social paralysis following the Cultural Revolution (1966-1976); necessity to modernize agriculture, industry, science, and defense ('Four Modernizations').",
+      "key_actors": ["Deng Xiaoping", "Chen Yun", "Hu Yaobang"],
+      "consequences": "Sparked four decades of historic economic expansion, lifting over 800 million citizens out of poverty and integrating China into world trade.",
+      "long_term_significance": "Transformed China into the world's premier industrial and manufacturing superpower.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2001,
+      "title": "Accession to the World Trade Organization (WTO)",
+      "what_happened": "China formally acceded to the World Trade Organization on December 11, 2001, following 15 years of negotiations, agreeing to tariff reductions and intellectual property commitments in exchange for permanent normal trade relations.",
+      "why_it_happened": "Chinese leadership sought foreign capital and global export markets to accelerate industrial modernization.",
+      "key_actors": ["Jiang Zemin", "Zhu Rongji", "Bill Clinton"],
+      "consequences": "Massive influx of multinational manufacturing into China; China's share of global trade expanded from ~4% in 2000 to over 14% within two decades.",
+      "long_term_significance": "Turned China into the indispensable center of global supply chains and manufacturing.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2013,
+      "title": "Launch of the Belt and Road Initiative (BRI)",
+      "what_happened": "President Xi Jinping unveiled the Silk Road Economic Belt in Kazakhstan and the 21st Century Maritime Silk Road in Indonesia, launching a global infrastructure and connectivity initiative backed by over $1 trillion in investments.",
+      "why_it_happened": "Desire to export domestic industrial overcapacity, secure international energy transit routes bypassing maritime chokepoints, and cultivate diplomatic alignment across the Global South.",
+      "key_actors": ["Xi Jinping", "China Development Bank", "Silk Road Fund"],
+      "consequences": "Financed deepwater ports (Gwadar, Piraeus, Hambantota), cross-continental railways, and pipelines across more than 140 countries.",
+      "long_term_significance": "Reconfigured global infrastructure corridors and solidified China's geoeconomic leadership.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2020,
+      "title": "Galwan Valley Standoff and Lac Militarization",
+      "what_happened": "Violent hand-to-hand fighting erupted in eastern Ladakh between PLA and Indian troops on June 15, 2020, causing fatalities on both sides (the first combat deaths on the border in 45 years).",
+      "why_it_happened": "Disputes over infrastructure construction near the LAC (India's Darbuk-Shyok-DBO road) and overlapping patrol claims.",
+      "key_actors": ["PLA Western Theater Command", "Indian Army 14 Corps", "Xi Jinping", "Narendra Modi"],
+      "consequences": "Triggered massive, permanent deployments of forward airbases, radar, surface-to-air missiles, and armored divisions on both sides of the Himalayas.",
+      "long_term_significance": "Hardened Indian strategic alignment with the US Quad and shifted Sino-Indian relations into protracted military standoff.",
+      "type": "FACT",
+      "confidence": "high"
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "confidence": "high",
+    "last_updated": "2026-08-27",
+    "source": "Official Party History Documents; UN Treaty Series; Congressional Research Service"
+  }
+}

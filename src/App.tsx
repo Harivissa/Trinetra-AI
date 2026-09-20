@@ -13,25 +13,15 @@ import EntryExperience from "./components/entry/EntryExperience";
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(() => {
-    if (typeof window !== "undefined") {
-      const search = window.location.search;
-      if (search.includes("intro") || search.includes("replay")) {
-        return true;
-      }
-    }
     try {
-      return localStorage.getItem("trinetra_intro_completed") !== "true";
+      // Clear old legacy flag so video plays on entry
+      localStorage.removeItem("trinetra_intro_completed");
     } catch {
-      return true;
+      // Ignore
     }
+    return true;
   });
-  const [isReplay, setIsReplay] = useState(() => {
-    if (typeof window !== "undefined") {
-      const search = window.location.search;
-      return search.includes("intro") || search.includes("replay");
-    }
-    return false;
-  });
+  const [isReplay, setIsReplay] = useState(false);
 
   useEffect(() => {
     const handleReplay = () => {

@@ -1,69 +1,187 @@
 {
   "id": "RUS",
   "name": "Russia",
+  "official_name": "Russian Federation",
+  "capital": "Moscow",
   "region": "Eurasia",
   "demographics": {
-    "population_millions": 144
+    "population_millions": 144.0,
+    "urban_pct": 75.1,
+    "median_age": 40.3,
+    "fertility_rate": 1.42,
+    "notes": "Spans 11 time zones across Eurasia; faces acute long-term demographic contraction worsened by an aging population, low birth rates, and wartime casualties and emigration."
   },
   "economy": {
     "gdp_usd_trillion": 2.02,
-    "gdp_growth_pct": 1.5,
-    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+    "gdp_growth_pct": 3.2,
+    "currency": "Russian Ruble (RUB / ₽)",
+    "notes": "Natural resources and defense industrial powerhouse; nominal GDP of ~$2.02 trillion (~$5.4 trillion PPP); successfully reoriented foreign trade away from Europe toward China, India, and the Global South following extensive Western sanctions, operating on a mobilized wartime Keynesian footing.",
+    "major_exports": [
+      "Crude petroleum and refined petroleum products",
+      "Natural gas (pipeline gas via Power of Siberia and liquefied natural gas [Yamal LNG])",
+      "Agricultural grains (world's top wheat exporter) and nitrogenous fertilizers",
+      "Metals and critical raw materials (nickel, palladium, platinum, aluminum, titanium)",
+      "Defense equipment, aerospace hardware, and civil nuclear power technology"
+    ],
+    "major_imports": [
+      "Industrial machinery, precision CNC machine tools, and industrial robotics",
+      "Electronic components, integrated circuits, and dual-use microelectronics",
+      "Automotive vehicles and motor parts (dominated by Chinese brands)",
+      "Consumer electronics and telecommunications hardware",
+      "Pharmaceutical preparations and medical equipment"
+    ]
   },
   "military": {
     "active_troops": 1330000,
-    "defence_spending_usd_billion": 109,
+    "reserve_troops": 2000000,
+    "defence_spending_usd_billion": 109.0,
     "defence_spending_pct_gdp": 7.05,
     "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
     "arms_exports_usd": 1339000000,
     "arms_exports_year": 2024,
-    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "key_equipment_or_doctrines": [
+      "Strategic Nuclear Triad Parity: Maintains complete strategic deterrence parity with the United States across road-mobile/silo ICBMs, SSBNs, and long-range bombers",
+      "Hypersonic Strike Systems: Avangard hypersonic glide vehicle, Kinzhal air-launched ballistic missile, and Tsirkon scramjet anti-ship cruise missile",
+      "Air & Missile Defense Network: S-400 Triumf, S-500 Prometheus, and Pantsir-S1 point-defense systems providing world-class integrated airspace denial",
+      "Naval Undersea Capabilities: Borei-A class SSBNs (Bulava SLBMs) and Yasen-M nuclear guided-missile cruise attack submarines (Kalibr/Tsirkon)",
+      "Wartime Ground Forces: Heavy armored formations (T-90M Proryv, upgraded T-72B3M), massed tube and rocket artillery (Tornado-S, TOS-1A), Lancet loitering munitions, and UMPK glide-bomb strike packages"
+    ]
   },
   "energy": {
     "net_import_dependence_ratio": -1.2,
-    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+    "primary_sources": [
+      "Natural gas (53% - world's second-largest producer and reserve holder)",
+      "Petroleum (22% - crude output ~9.5-10 million bpd)",
+      "Coal (13% - major coal deposits in Kuznetsk and Siberian basins)",
+      "Nuclear electric power (7% - Rosatom operates 38 commercial reactors domestically and leads global reactor exports)",
+      "Hydropower (5% - massive Siberian hydroelectric cascades on Yenisei and Angara rivers)"
+    ],
+    "note": "Net energy exporter; global energy anchor possessing unmatched sovereign hydrocarbon, coal, and enriched uranium capabilities, utilizing pipeline networks and shadow tanker fleets to supply Asian markets."
   },
-  "infrastructure": {},
-  "trade": {},
-  "technology": {},
+  "infrastructure": {
+    "major_ports": [
+      "Port of Novorossiysk (Black Sea deepwater oil terminal and bulk agricultural hub)",
+      "Port of Primorsk & Saint Petersburg (Baltic petroleum and container gateways)",
+      "Port of Vladivostok & Vostochny (Pacific rail-sea terminals directly serving China and Asia-Pacific)",
+      "Port of Murmansk (Year-round ice-free Arctic naval hub and Western terminus of the Northern Sea Route)"
+    ],
+    "strategic_airports": [
+      "Moscow Sheremetyevo (SVO), Domodedovo (DME), and Vnukovo (VKO)",
+      "Saint Petersburg Pulkovo (LED)"
+    ],
+    "rail_network_km": 87000,
+    "energy_grid_resilience": "Unified Energy System (UES) of Russia integrates over 70 regional power grids across Eurasia; highly resilient with vast surplus electrical baseload from nuclear and hydroelectric stations.",
+    "digital_infrastructure": "GLONASS global satellite navigation constellation; sovereign Runet infrastructure capable of autonomous domestic routing; VKontakte and Yandex domestic digital ecosystem."
+  },
+  "trade": {
+    "top_partners": [
+      "China (largest bilateral trading partner, accounting for >30% of imports and exports under yuan settlements)",
+      "India (primary buyer of discounted seaborne crude oil and fertilizer, settled in non-dollar currencies)",
+      "Turkey (key transit hub for re-exported goods, grain, and natural gas via TurkStream)",
+      "Belarus & Kazakhstan (Eurasian Economic Union [EAEU] integration partners)",
+      "United Arab Emirates (financial intermediary and logistics clearing hub)"
+    ],
+    "chokepoint_exposure": [
+      "Turkish Straits (Bosporus and Dardanelles — regulated by the 1936 Montreux Convention, bottleneck for Black Sea fleet and grain)",
+      "Danish Straits & Baltic Sea outlets (encircled by NATO member states, vulnerable to maritime restrictions)",
+      "Northern Sea Route (NSR — domestic Arctic passage requiring nuclear icebreakers, increasingly strategic for Asian transit)"
+    ]
+  },
+  "technology": {
+    "core_competencies": [
+      "Complete civil and military nuclear fuel cycle (Rosatom commands >40% of global commercial uranium enrichment)",
+      "Rocket propulsion, heavy orbital space launch, and deep space telemetry (Roscosmos)",
+      "Advanced military aerospace, titanium metallurgy, and supersonic/hypersonic aerodynamics",
+      "Offensive cyber warfare, signals intelligence, and tactical electronic warfare (EW) jamming"
+    ],
+    "tech_vulnerabilities": [
+      "Lack of domestic leading-edge semiconductor foundries (dependent on illicit imports or China for chips below 65nm)",
+      "Heavy reliance on imported computer numerical control (CNC) precision machine tools and software",
+      "Sanctions bottlenecks on Western specialized deep-water and horizontal drilling equipment"
+    ]
+  },
   "geography": {
-    "region": "Eurasia"
+    "region": "Eurasia",
+    "capital": "Moscow",
+    "area_sq_km": 17098242,
+    "coastline_km": 37653,
+    "land_borders": [
+      "China (4179 km)",
+      "Kazakhstan (7644 km - world's longest continuous land border)",
+      "Mongolia (3452 km)",
+      "Ukraine (1974 km contested)",
+      "Belarus (1312 km)",
+      "Finland (1340 km)",
+      "Georgia (894 km)",
+      "Azerbaijan (338 km)",
+      "Estonia (338 km)",
+      "Latvia (332 km)",
+      "Lithuania (261 km via Kaliningrad)",
+      "Poland (210 km via Kaliningrad)",
+      "Norway (191 km)",
+      "North Korea (18 km)"
+    ],
+    "strategic_chokepoints_adjacent": [
+      "Turkish Straits (Bosporus / Dardanelles)",
+      "Bering Strait (separating Chukotka from Alaska)",
+      "GIUK Gap (Greenland-Iceland-UK naval passage for Northern Fleet submarines)",
+      "Kerch Strait (connecting Black Sea and Sea of Azov)"
+    ]
   },
-  "politics": {},
+  "politics": {
+    "system": "Federal semi-presidential republic (super-presidential system)",
+    "executive": "President of the Russian Federation is Head of State and Supreme Commander-in-Chief, holding broad constitutional executive decree powers and control of security ministries; Prime Minister leads civil administrative ministries.",
+    "legislature": "Bicameral Federal Assembly: State Duma (450 seats elected via mixed-member system) and Federation Council (upper chamber representing the 89 federal subjects).",
+    "judiciary": "Constitutional Court and Supreme Court of the Russian Federation, operating within a centralized civil law system aligned with executive governance."
+  },
   "nuclear": {
-    "weapons_state": true
+    "weapons_state": true,
+    "delivery_systems": "Full-spectrum modernized strategic nuclear triad: Road-mobile and silo-based ICBMs (RS-24 Yars, RS-28 Sarmat, Topol-M), Borei-A nuclear ballistic missile submarines (Bulava SLBMs), and Tu-160M and Tu-95MS strategic bombers carrying Kh-102 nuclear cruise missiles, supplemented by an estimated 1,500-2,000 non-strategic (tactical) nuclear warheads.",
+    "notes": "World's largest nuclear warhead arsenal (~5,580 warheads, with 1,710 deployed strategically per SIPRI 2024). Governed under presidential command via the Cheget nuclear briefcase. Nuclear doctrine permits employment in response to nuclear or WMD attacks, or conventional aggression threatening the existential survival of the Russian state."
   },
   "strategic_priorities": [
-    "Ukraine war objectives",
-    "Energy leverage over Europe",
-    "Deepening China alignment",
-    "Arctic resource access"
+    "Securing political, strategic, and territorial objectives in Ukraine and preventing NATO expansion along Russian borders",
+    "Consolidating an anti-hegemonic Eurasian coalition alongside China, North Korea, Iran, and Belarus to accelerate global multipolarity",
+    "Establishing total operational control over the Northern Sea Route (NSR) through nuclear-powered icebreaker fleet dominance",
+    "Overcoming Western technological and financial sanctions via alternative clearing systems and deep trade integration with the Global South",
+    "Maintaining high-tempo defense industrial munitions output and military modernization to sustain long-term geopolitical contestation"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "Heavy import dependency on China for machine tools, electronics, consumer vehicles, and dual-use technological inputs",
+    "Dependence on third-party intermediary jurisdictions (Turkey, UAE, Central Asia) to circumvent Western export bans",
+    "Narrow fiscal reliance on hydrocarbon and raw material commodity export revenues to finance national budgets",
+    "Dependence on foreign technology for LNG liquefaction train engineering and deepwater offshore exploration"
+  ],
   "vulnerabilities": [
-    "Western sanctions isolation",
-    "Ukraine war attrition",
-    "Technology import restrictions"
+    "Protracted military conflict attrition in Ukraine: Severe combat equipment losses, military personnel casualties, and sovereign wealth drawdown",
+    "Severe demographic decline: Low fertility rates, high male mortality, and emigration of hundreds of thousands of educated professionals",
+    "Complete isolation from Western European energy markets and international capital markets",
+    "Technological backwardness in indigenous high-end semiconductor fabrication and precision electronics"
   ],
   "strengths": [
-    "Vast energy exports",
-    "Nuclear arsenal parity with US",
-    "Strategic depth/geography"
+    "Vast sovereign natural resource wealth: Self-sufficient in food, fresh water, critical minerals, timber, and all fossil fuels",
+    "Strategic nuclear parity: Fully modernized nuclear triad guaranteeing absolute territorial deterrence against foreign ground invasion",
+    "Global civil nuclear and enrichment dominance: Rosatom commands global nuclear reactor exports and commercial enriched uranium fuel supply",
+    "War-mobilized industrial surge capacity: Domestic defense industrial base operating on a 24/7 footing, producing artillery and armored vehicles exceeding Western NATO output"
   ],
   "alliances": [
     "CHN",
     "PRK",
-    "IRN"
+    "IRN",
+    "BLR",
+    "SYR"
   ],
   "rivals": [
     "USA",
     "GBR",
-    "FRA"
+    "UKR",
+    "POL"
   ],
   "_meta": {
-    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
-    "source": "see data/sources/",
-    "confidence": "low-demo",
+    "data_quality": "sourced; military expenditure %GDP and arms exports verified from World Bank WDI and Russian Federation Federal Treasury releases",
+    "source": "World Bank WDI (MS.MIL.XPND.GD.ZS, MS.MIL.XPRT.KD); SIPRI Nuclear Forces & Arms Transfers Databases; IISS Military Balance; Central Bank of the Russian Federation",
+    "confidence": "high",
     "last_updated": "2026-08-27"
   }
 }

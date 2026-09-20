@@ -117,9 +117,9 @@ export const SOVEREIGN_PHOTO_DOSSIERS: Record<string, { image: string; capital: 
     flag: "🇫🇷",
   },
   KOR: {
-    image: "https://images.unsplash.com/photo-1538485399081-7c897a1e6fce?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&w=1600&q=80",
     capital: "Seoul",
-    strategicFocus: "Kill Chain Pre-emption, Extended Deterrence, High-Tech Export",
+    strategicFocus: "Kill Chain Pre-emption, Extended Deterrence, Semiconductor Hegemony",
     flag: "🇰🇷",
   },
   TUR: {
@@ -129,7 +129,7 @@ export const SOVEREIGN_PHOTO_DOSSIERS: Record<string, { image: string; capital: 
     flag: "🇹🇷",
   },
   SAU: {
-    image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1578895101408-1a36b834405b?auto=format&fit=crop&w=1600&q=80",
     capital: "Riyadh",
     strategicFocus: "Vision 2030, OPEC+ Production Discipline, Regional De-escalation",
     flag: "🇸🇦",
@@ -147,7 +147,7 @@ export const SOVEREIGN_PHOTO_DOSSIERS: Record<string, { image: string; capital: 
     flag: "🇮🇱",
   },
   PAK: {
-    image: "https://images.unsplash.com/photo-1567606409415-9e7b7b8a1f16?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=1600&q=80",
     capital: "Islamabad",
     strategicFocus: "Full Spectrum Nuclear Deterrence, CPEC Gateway, Strategic Depth",
     flag: "🇵🇰",

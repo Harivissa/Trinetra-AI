@@ -1,0 +1,99 @@
+{
+  "country_id": "KOR",
+  "events": [
+    {
+      "year": 1948,
+      "title": "Establishment of the Republic of Korea",
+      "what_happened": "Following the liberation from Japanese colonial rule in 1945 and the division of the Korean Peninsula along the 38th parallel, the Republic of Korea was formally established in Seoul on August 15, 1948, under President Syngman Rhee.",
+      "why_it_happened": "Failure of US-Soviet joint trusteeship negotiations to unite the peninsula led to UN-supervised elections in the south.",
+      "key_actors": ["Syngman Rhee", "United Nations Temporary Commission on Korea (UNTCOK)", "United States Military Government"],
+      "consequences": "Solidified the political division of the peninsula, setting the stage for the establishment of the Democratic People's Republic of Korea (DPRK) in the north.",
+      "long_term_significance": "Founding of modern South Korean constitutional republic and institutional alliance with the West.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1950,
+      "title": "Outbreak of the Korean War",
+      "what_happened": "North Korean forces launched an unprovoked surprise invasion across the 38th parallel on June 25, 1950, capturing Seoul within three days and pushing defending forces to the Pusan Perimeter.",
+      "why_it_happened": "Kim Il Sung's ambition to forcibly unify the peninsula under communist rule, backed by Soviet material support and Chinese assurances.",
+      "key_actors": ["Syngman Rhee", "Douglas MacArthur", "Harry S. Truman", "Kim Il Sung", "Mao Zedong"],
+      "consequences": "United Nations Security Council Resolution 82/83 authorized a US-led multilateral coalition; Battle of Incheon turned the tide; Chinese intervention led to brutal stalemate along the 38th parallel.",
+      "long_term_significance": "Devastated the entire peninsula, claiming ~3 million lives; entrenched perpetual military confrontation across the DMZ.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1953,
+      "title": "Korean Armistice Agreement and US-ROK Mutual Defense Treaty",
+      "what_happened": "An armistice was signed on July 27, 1953, establishing the 250 km Military Demarcation Line and Demilitarized Zone (DMZ). Months later on October 1, 1953, the US and ROK signed the Mutual Defense Treaty.",
+      "why_it_happened": "Exhaustion of active combat capabilities and stalemate along the 38th parallel; South Korea sought binding US security guarantees before agreeing to cease hostilities.",
+      "key_actors": ["United Nations Command", "Korean People's Army", "Chinese People's Volunteers", "John Foster Dulles", "Syngman Rhee"],
+      "consequences": "Ended active combat without a formal peace treaty (technically remaining in a state of war); permanently stationed US troops in South Korea.",
+      "long_term_significance": "Cornerstone of South Korean national security architecture and foundation for long-term deterrence.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1961,
+      "title": "Military Coup and the Miracle on the Han River",
+      "what_happened": "General Park Chung-hee seized power in a military coup on May 16, 1961, initiating state-directed export-oriented industrialization through large family-owned conglomerates (Chaebol).",
+      "why_it_happened": "Chronic economic stagnation, corruption, and political instability following the April 1960 Student Revolution.",
+      "key_actors": ["Park Chung-hee", "Economic Planning Board (EPB)", "Chaebol founders (Hyundai, Samsung, POSCO)"],
+      "consequences": "Transformed South Korea from an agrarian, war-torn economy with GDP per capita below Ghana into an advanced global industrial powerhouse.",
+      "long_term_significance": "Created South Korea's heavy industrial, shipbuilding, steel, petrochemical, and automotive base that underpins its modern strategic power.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1987,
+      "title": "June Democratic Struggle and Sixth Republic",
+      "what_happened": "Nationwide pro-democracy protests forced military ruler Chun Doo-hwan to concede direct presidential elections (June 29 Declaration), adopting the current Sixth Republic Constitution.",
+      "why_it_happened": "Decades of public dissatisfaction with authoritarian rule, sparked by the torture death of student activist Bak Jong-cheol and cancellation of constitutional reform.",
+      "key_actors": ["Roh Tae-woo", "Kim Young-sam", "Kim Dae-jung", "Civil society and student movements"],
+      "consequences": "Established stable, competitive multiparty democracy with peaceful transfers of executive power; institutionalized civil liberties.",
+      "long_term_significance": "Cemented South Korea as one of East Asia's most resilient constitutional democracies.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1997,
+      "title": "Asian Financial Crisis and High-Tech Pivot",
+      "what_happened": "A liquidity crisis drained foreign exchange reserves, forcing South Korea to accept a $58 billion IMF bailout and undertake deep corporate restructuring, followed by massive national investment in broadband and semiconductors.",
+      "why_it_happened": "Excessive corporate debt-to-equity ratios, non-performing chaebol loans, and regional contagion from Southeast Asian currency collapses.",
+      "key_actors": ["Kim Dae-jung", "International Monetary Fund", "Ministry of Finance"],
+      "consequences": "Breakup of weaker chaebols (Daewoo), introduction of strict financial governance, and massive state-backed capital allocation into digital networks and memory chips.",
+      "long_term_significance": "Established South Korea's contemporary technology dominance in semiconductors, telecommunications, and digital media.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2010,
+      "title": "Sinking of ROKS Cheonan and Bombardment of Yeonpyeong",
+      "what_happened": "In March 2010, a North Korean torpedo sank the corvette ROKS Cheonan, killing 46 sailors. In November 2010, North Korea shelled Yeonpyeong Island, killing 4 South Koreans and injuring 19.",
+      "why_it_happened": "North Korean rejection of the Northern Limit Line (NLL) maritime border and asymmetric provocation doctrine.",
+      "key_actors": ["Lee Myung-bak", "ROK Navy and Marine Corps", "North Korean Military Command"],
+      "consequences": "South Korea adopted an aggressive forward defense policy allowing local commanders immediate retaliatory fire; spurred development of the Three-Axis pre-emptive defense doctrine.",
+      "long_term_significance": "Ended inter-Korean appeasement strategies and led directly to the development of the Kill Chain and KAMD systems.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2023,
+      "title": "Washington Declaration and Camp David Trilateral Summit",
+      "what_happened": "President Yoon Suk Yeol and US President Joe Biden signed the Washington Declaration establishing the US-ROK Nuclear Consultative Group (NCG) and regular deployments of US SSBN nuclear ballistic submarines. Later at Camp David, the US, ROK, and Japan established a historic trilateral security pact.",
+      "why_it_happened": "Rapid expansion of North Korea's tactical nuclear arsenal and ICBM capabilities; South Korean public debate over acquiring sovereign nuclear weapons.",
+      "key_actors": ["Yoon Suk Yeol", "Joe Biden", "Fumio Kishida"],
+      "consequences": "Institutionalized real-time missile warning data sharing between Seoul, Tokyo, and Washington; integrated conventional-nuclear planning mechanisms.",
+      "long_term_significance": "Deepest integration of South Korean strategic deterrence with US nuclear forces since the Cold War.",
+      "type": "FACT",
+      "confidence": "high"
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "confidence": "high",
+    "last_updated": "2026-08-27",
+    "source": "ROK Ministry of National Defense White Paper; US Department of State; Historical archives"
+  }
+}

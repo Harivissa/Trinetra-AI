@@ -1,0 +1,66 @@
+{
+  "country_id": "KOR",
+  "political_system": {
+    "type": "Unitary presidential constitutional republic",
+    "executive": "President of the Republic of Korea serves as head of state, head of government, and Commander-in-Chief of the Armed Forces. Direct popular election for a single 5-year term with no re-election permitted.",
+    "legislature": "Unicameral National Assembly (Gukhoe) with 300 seats (254 single-member constituencies and 46 proportional representation seats) serving 4-year terms.",
+    "judiciary": "Independent judicial branch headed by the Supreme Court (general civil, criminal, and administrative matters) and the Constitutional Court (constitutional review, impeachment trials, party bans).",
+    "structure": "Unitary system with 17 first-tier administrative divisions (special city Seoul, metropolitan cities, provinces, and special self-governing provinces).",
+    "election_system": "Direct popular vote for president; mixed-member majoritarian system for the National Assembly administered by the National Election Commission (NEC).",
+    "confidence": "high"
+  },
+  "current_government": {
+    "ruling_party": "People Power Party (PPP)",
+    "president": "Yoon Suk Yeol",
+    "prime_minister": "Han Duck-soo",
+    "context": "South Korea operates under a divided government ('yeoso-yadae') where the conservative People Power Party holds the executive presidency, but the liberal opposition Democratic Party of Korea (DPK) controls the majority in the 22nd National Assembly following the April 2024 legislative elections.",
+    "main_opposition": "Democratic Party of Korea (DPK), led by Lee Jae-myung",
+    "confidence": "high",
+    "as_of": "2026-08-27"
+  },
+  "major_parties": [
+    {
+      "name": "People Power Party (PPP)",
+      "ideology": "Fiscal conservatism, economic liberalism, robust US-ROK alliance, hardline deterrence against North Korea, market deregulation",
+      "status": "Ruling presidential party"
+    },
+    {
+      "name": "Democratic Party of Korea (DPK)",
+      "ideology": "Social liberalism, progressive welfare expansion, inter-Korean engagement (Sunshine Policy tradition), pragmatic balancing with China",
+      "status": "Majority party in the National Assembly"
+    },
+    {
+      "name": "Rebuilding Korea Party",
+      "ideology": "Progressive anti-corruption, judicial reform, constitutional revision",
+      "status": "Third-largest legislative bloc"
+    },
+    {
+      "name": "Reform Party",
+      "ideology": "Classical liberalism, generational politics, tech-focused reform",
+      "status": "Minor legislative party"
+    }
+  ],
+  "political_movements_and_dynamics": [
+    {
+      "name": "Polarized Divided Governance (Yeoso-Yadae)",
+      "description": "Opposition control of the National Assembly limits executive legislative initiatives, resulting in extensive use of presidential vetoes and high legislative contestation over domestic economic reform and judicial appointments.",
+      "current_relevance": "Forces the executive to rely heavily on foreign policy, defense executive orders, and administrative rulemaking where presidential discretion is highest."
+    },
+    {
+      "name": "Sovereign Nuclear Weapons Debate",
+      "description": "Rising public opinion polling (often exceeding 60-70%) supporting the acquisition of an independent South Korean nuclear deterrent or redeployment of US tactical nuclear weapons in response to North Korean ICBM and tactical nuclear advancements.",
+      "current_relevance": "Addressed bilaterally through the Washington Declaration and US-ROK Nuclear Consultative Group (NCG) to maintain extended deterrence while complying with non-proliferation commitments."
+    },
+    {
+      "name": "Demographic Crisis Policy Consensus",
+      "description": "Unprecedented bipartisan urgency to address the 0.72 fertility rate through family tax incentives, affordable housing, childcare subsidies, and defense automation initiatives (drone battalions, robotic combat vehicles).",
+      "current_relevance": "Shapes long-term labor policy, military force structure reductions, and industrial robotics subsidies."
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "source": "National Assembly of the Republic of Korea; National Election Commission; Congressional Research Service (CRS Report R43478); Korean Institute for Defense Analyses (KIDA)",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

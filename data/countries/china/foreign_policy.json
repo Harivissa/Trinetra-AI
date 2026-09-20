@@ -1,0 +1,39 @@
+{
+  "country_id": "CHN",
+  "doctrine": "Community of Common Destiny & Major Country Diplomacy — China asserts its role as a leading global power offering alternative global governance (Global Development Initiative, Global Security Initiative, Global Civilization Initiative) to Western institutional hegemony, emphasizing state sovereignty, non-interference in internal affairs, multi-polarity, and the primacy of the UN Charter.",
+  "strategic_priorities": [
+    "Deter Taiwanese formal independence and prepare military, economic, and cyber capabilities for potential cross-strait reunification",
+    "Secure maritime control within the First Island Chain and construct an insurmountable A2/AD envelope deterring US naval power in the Western Pacific",
+    "Mitigate the 'Malacca Dilemma' by diversifying land-based energy pipelines (Russia, Central Asia) and developing Indian Ocean maritime outlets (Pakistan, Myanmar)",
+    "Deepen the comprehensive strategic partnership of coordination with Russia, consolidating northern border security and locking in low-cost energy flows",
+    "Establish technological autarky to survive potential Western sanctions, decoupling, and semiconductor export controls"
+  ],
+  "priority_regions": [
+    "East Asia & Western Pacific (Taiwan Strait, South China Sea, East China Sea, Korean Peninsula)",
+    "Central Asia & Russia (Eurasian heartland, SCO members, land corridors to Europe)",
+    "Southeast Asia / ASEAN (primary trading partner, maritime littorals, intermediate production networks)",
+    "Global South (Middle East, Africa, Latin America — resources, voting blocs in UN forums, BRI infrastructure)"
+  ],
+  "cooperation_and_competition": {
+    "cooperates_closely_with": [
+      "Russia ('No-limits' comprehensive strategic partnership, military exercises, mutual UN veto alignment, energy pipeline integration)",
+      "Pakistan ('All-weather strategic cooperative partner', CPEC flagship, military co-production)",
+      "North Korea (sole formal mutual defense treaty partner under the 1961 Treaty of Friendship)",
+      "Iran (25-year comprehensive strategic cooperation agreement, primary purchaser of Iranian oil)",
+      "Global South / BRICS+ nations (alternative financial clearing mechanisms, infrastructure lending, commodity trade)"
+    ],
+    "competes_or_disputes_with": [
+      "United States (core structural geopolitical, military, technological, and ideological superpower rivalry across the Indo-Pacific)",
+      "India (disputed 3,488 km Himalayan LAC, competition for Indian Ocean naval influence, border infrastructure race)",
+      "Japan (Senkaku / Diaoyu Islands sovereignty dispute, East China Sea gas fields, Tokyo's expanding defense perimeter)",
+      "Taiwan (existential sovereignty dispute; Beijing asserts Taiwan is an inalienable province)",
+      "South China Sea claimant states (Philippines, Vietnam — overlapping EEZ and maritime feature claims)"
+    ],
+    "notes": "China's foreign policy has evolved under Xi Jinping from Deng Xiaoping's low-profile posture ('hide capabilities and bide time') into assertive major-country diplomacy ('dare to fight and dare to win'). Beijing leverages its colossal trading footprint and lending power to insulate itself against Western sanctions while promoting a multipolar international architecture."
+  },
+  "_meta": {
+    "data_quality": "sourced/analytical synthesis based on PRC Ministry of Foreign Affairs, Defense White Papers, and Chinese Communist Party Central Committee foreign affairs resolutions",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

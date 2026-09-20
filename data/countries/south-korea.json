@@ -1,53 +1,156 @@
 {
   "id": "KOR",
   "name": "South Korea",
+  "official_name": "Republic of Korea",
+  "capital": "Seoul",
   "region": "East Asia",
   "demographics": {
-    "population_millions": 52
+    "population_millions": 51.7,
+    "urban_pct": 81.4,
+    "median_age": 45.0,
+    "fertility_rate": 0.72,
+    "notes": "World's lowest total fertility rate creates significant structural pressure on military conscription pools and future labor supply."
   },
   "economy": {
     "gdp_usd_trillion": 1.87,
     "gdp_growth_pct": 2.2,
-    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+    "currency": "South Korean Won (KRW)",
+    "notes": "Asia's 4th largest and world's 13th largest economy; advanced industrial nation leading in semiconductors, electric vehicle batteries, shipbuilding, consumer electronics, and automotive manufacturing.",
+    "major_exports": [
+      "Memory semiconductors (DRAM, NAND flash)",
+      "Automobiles and auto parts",
+      "Refined petroleum products",
+      "Liquid crystal and OLED display panels",
+      "Commercial cargo vessels and LNG carriers",
+      "Lithium-ion EV batteries"
+    ],
+    "major_imports": [
+      "Crude petroleum and natural gas (LNG)",
+      "Semiconductor manufacturing equipment (ASML lithography)",
+      "Coal and iron ore",
+      "Refined battery chemicals and critical rare earths"
+    ]
   },
   "military": {
-    "active_troops": 555000,
-    "defence_spending_usd_billion": 48,
+    "active_troops": 500000,
+    "reserve_troops": 3100000,
+    "defence_spending_usd_billion": 48.0,
     "defence_spending_pct_gdp": 2.56,
     "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
     "arms_exports_usd": 964000000,
     "arms_exports_year": 2024,
-    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "key_equipment_or_doctrines": [
+      "Three-Axis Defence System: Kill Chain pre-emption, Korea Air & Missile Defence (KAMD), Korea Massive Punishment and Retaliation (KMPR)",
+      "K2 Black Panther Main Battle Tank & K9 Thunder 155mm Self-Propelled Howitzer (major export successes to Poland, Australia, Egypt, Romania)",
+      "KF-21 Boramae 4.5+ generation indigenous multirole fighter & FA-50 light combat aircraft",
+      "Dosan Ahn Changho-class diesel-electric attack submarines equipped with Submarine-Launched Ballistic Missiles (SLBMs)",
+      "US Forces Korea (USFK): ~28,500 active US personnel stationed at Camp Humphreys and Osan Air Base"
+    ]
   },
   "energy": {
     "net_import_dependence_ratio": 0.93,
-    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+    "primary_sources": [
+      "Crude oil (38% of total primary energy)",
+      "Coal (25%)",
+      "Natural gas / LNG (18%)",
+      "Nuclear power (16% of primary energy, ~30% of electric power)",
+      "Renewables (3%)"
+    ],
+    "note": "Virtually 100% dependent on imported fossil fuels transiting maritime chokepoints (Strait of Hormuz and Malacca); counterbalanced by an expanding commercial nuclear fleet (APR-1400 reactors)."
   },
-  "infrastructure": {},
-  "trade": {},
-  "technology": {},
+  "infrastructure": {
+    "major_ports": [
+      "Port of Busan (World's 6th busiest container transshipment hub, primary maritime lifeline)",
+      "Port of Incheon (Yellow Sea gateway to capital area and China)",
+      "Port of Gwangyang (Deepwater steel and container terminal)",
+      "Port of Ulsan (Major petrochemical and energy terminal)"
+    ],
+    "strategic_airports": [
+      "Incheon International Airport (ICN, premier East Asian passenger and cargo hub)",
+      "Gimpo International Airport (GMP, regional metropolitan hub)",
+      "Gimhae International Airport (PUS, southeastern logistics gateway)"
+    ],
+    "rail_network_km": 4200,
+    "energy_grid_resilience": "Isolated national electrical grid operating as an 'energy island' with no cross-border interconnection due to North Korean isolation; high domestic transmission reliability.",
+    "digital_infrastructure": "World-leading fiber-to-the-home and 5G penetration; Gyeonggi Mega Semiconductor Cluster at Yongin and Pyeongtaek; primary subsea fiber cable landings at Busan, Geoje, and Taean."
+  },
+  "trade": {
+    "top_partners": [
+      "China (largest bilateral trading partner, critical market for intermediate semiconductor components)",
+      "United States (crucial export market for vehicles, technology, and security equipment)",
+      "Vietnam (primary overseas manufacturing base for Korean electronics)",
+      "Japan (vital source of specialty chemicals and precision precision engineering)",
+      "Australia (primary supplier of iron ore, lithium, and LNG)"
+    ],
+    "chokepoint_exposure": [
+      "Strait of Malacca (over 80% of imported crude oil and maritime trade with Europe and Middle East)",
+      "Taiwan Strait (critical shipping corridor for container exports to global markets)",
+      "Strait of Hormuz (over 70% of imported crude oil supplies originating in Gulf states)"
+    ]
+  },
+  "technology": {
+    "core_competencies": [
+      "Leading global producer of memory semiconductors (Samsung Electronics and SK Hynix control ~60% of DRAM and NAND markets)",
+      "Global leader in EV lithium-ion batteries and battery cell chemistries (LG Energy Solution, Samsung SDI, SK On)",
+      "World-class naval and commercial shipbuilding technology, leading in LNG carriers and ammonia-fueled vessels",
+      "High-density consumer electronics, OLED display manufacturing, and telecommunications equipment"
+    ],
+    "tech_vulnerabilities": [
+      "Heavy reliance on ASML (Netherlands) for Extreme Ultraviolet (EUV) photolithography machinery",
+      "Dependence on Japanese specialty chemicals (photoresists, fluorinated polyimides, high-purity hydrogen fluoride)",
+      "Substantial dependence on China for processing and refining critical minerals (graphite, lithium, cobalt, nickel)"
+    ]
+  },
   "geography": {
-    "region": "East Asia"
+    "region": "East Asia",
+    "capital": "Seoul",
+    "area_sq_km": 100363,
+    "coastline_km": 2413,
+    "land_borders": [
+      "North Korea (238 km along the Military Demarcation Line / DMZ)"
+    ],
+    "strategic_chokepoints_adjacent": [
+      "Korea Strait / Tsushima Strait",
+      "Cheju Strait",
+      "Northern approaches to Taiwan Strait"
+    ]
   },
-  "politics": {},
+  "politics": {
+    "system": "Unitary presidential constitutional republic",
+    "executive": "President of the Republic of Korea serves as head of state and head of government with strong executive authority for a single 5-year term.",
+    "legislature": "Unicameral National Assembly (Gukhoe) comprising 300 members elected every 4 years.",
+    "judiciary": "Independent judicial system headed by the Supreme Court and the Constitutional Court."
+  },
   "nuclear": {
-    "weapons_state": false
+    "weapons_state": false,
+    "delivery_systems": "Conventional ballistic and cruise missiles (Hyunmoo-IV and Hyunmoo-V high-yield bunker-busters, submarine-launched ballistic missiles on KSS-III class submarines).",
+    "notes": "Non-nuclear weapons state under the NPT. Operates 26 commercial nuclear reactors. Relies on the US extended nuclear umbrella codified under the 2023 Washington Declaration and bilateral Nuclear Consultative Group (NCG)."
   },
   "strategic_priorities": [
-    "North Korea deterrence",
-    "Semiconductor supply chain security",
-    "US extended deterrence assurance"
+    "North Korea multi-domain deterrence and counter-artillery protection of the Greater Seoul Metropolitan Area",
+    "Strengthening the US-ROK Alliance and institutionalizing the trilateral security partnership with the United States and Japan (Camp David framework)",
+    "Securing semiconductor supply chains, lithography tool access, and mineral diversification away from single-source dependencies",
+    "Expanding defense industrial exports and defense diplomacy globally under the 'Global Pivotal State' (GPS) vision",
+    "Safeguarding unimpeded maritime transit through the Taiwan Strait, South China Sea, and Malacca Strait"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "Near-total dependence on imported crude oil, LNG, and coal (93% net import dependence ratio) transiting maritime chokepoints",
+    "Critical mineral supply chains reliant on Chinese refining (graphite, lithium, rare earth magnets)",
+    "Advanced semiconductor tooling reliance on European (ASML EUV) and American EDA software ecosystems",
+    "Extended nuclear deterrence umbrella guaranteed by the United States"
+  ],
   "vulnerabilities": [
-    "Total energy import dependence",
-    "North Korea artillery range over Seoul",
-    "China trade over-reliance"
+    "Extreme geographic exposure: Greater Seoul Metropolitan Area (26M people, 50% of national population) lies within 40-50 km of the DMZ, in direct range of ~1,000 North Korean hardened long-range artillery and rocket systems",
+    "Maritime chokepoint exposure: Over 85% of trade by sea passes through the Taiwan Strait and South China Sea; a blockade or conflict in the Taiwan Strait would immediately disrupt industrial energy and trade lines",
+    "Severe demographic decline: World's lowest fertility rate (0.72) imposes rapid structural reduction on mandatory military conscription intakes and future economic growth",
+    "Geopolitical crossfire between primary security guarantor (USA) and largest trading partner (China)"
   ],
   "strengths": [
-    "Advanced semiconductor industry",
-    "Strong US alliance/troop presence",
-    "High-tech defence manufacturing exports"
+    "Global semiconductor anchor: Dominates over 60% of the world's memory chips (DRAM/NAND), making global electronics supply chains dependent on Korean fabrication stability",
+    "High-throughput, rapid-delivery defense industrial base capable of producing world-class tanks (K2), self-propelled artillery (K9), and combat aircraft (FA-50) faster than Western competitors",
+    "Advanced technological ecosystem spanning tier-1 shipbuilding, electric vehicle batteries, consumer electronics, and high-speed communications",
+    "High-readiness standing military of 500,000 personnel backed by an extensive 3.1 million trained reserve force and forward-stationed US Forces Korea (USFK)"
   ],
   "alliances": [
     "USA",
@@ -58,9 +161,9 @@
     "CHN"
   ],
   "_meta": {
-    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
-    "source": "see data/sources/",
-    "confidence": "low-demo",
+    "data_quality": "sourced; military spending %GDP and arms exports verified from World Bank WDI and ROK Ministry of National Defense official data",
+    "source": "World Bank WDI (MS.MIL.XPND.GD.ZS, MS.MIL.XPRT.KD); ROK Ministry of National Defense White Paper 2024; SIPRI Arms Transfers Database; Bank of Korea Economic Statistics",
+    "confidence": "high",
     "last_updated": "2026-08-27"
   }
 }

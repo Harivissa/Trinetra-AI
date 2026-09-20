@@ -1,0 +1,56 @@
+{
+  "country_id": "USA",
+  "political_system": {
+    "type": "Federal constitutional presidential republic",
+    "executive": "President of the United States is Head of State, Head of Government, and Commander-in-Chief of the Armed Forces; holds vast executive authority subject to congressional appropriations and constitutional checks; elected indirectly via the 538-member Electoral College for a 4-year term.",
+    "legislature": "Bicameral United States Congress: Senate (100 members, two per state elected for 6-year terms; confirms judicial and executive nominations, ratifies treaties) and House of Representatives (435 members apportioned by population elected every 2 years; originates revenue bills).",
+    "judiciary": "Independent federal judiciary headed by the 9-member Supreme Court of the United States; holds life tenure and ultimate authority of constitutional judicial review.",
+    "structure": "Federal union of 50 sovereign states, one federal district (Washington, D.C.), and 5 major inhabited territories (Puerto Rico, Guam, US Virgin Islands, Northern Mariana Islands, American Samoa).",
+    "election_system": "State-administered elections; predominantly single-member plurality (first-past-the-post) with primary elections selecting party nominees; electoral college system determines executive presidency.",
+    "confidence": "high"
+  },
+  "current_government": {
+    "president": "Donald J. Trump (47th President of the United States)",
+    "vice_president": "J.D. Vance",
+    "ruling_coalition": "Republican Party (GOP) controlling executive presidency and working legislative majorities in Congress following the November 2024 general election",
+    "context": "Second non-consecutive administration centered on an 'America First' policy agenda, emphasizing tariff-driven trade protectionism, aggressive southern border enforcement, domestic industrial reshoring, deregulation of domestic energy extraction, and transactional re-evaluation of overseas security alliances.",
+    "main_opposition": "Democratic Party, led by congressional leadership",
+    "confidence": "high",
+    "as_of": "2026-08-27"
+  },
+  "major_parties": [
+    {
+      "name": "Republican Party (GOP)",
+      "ideology": "American populism, conservative nationalism, protectionist tariffs, domestic fossil fuel energy dominance, skepticism of multilateral climate agreements, strong military deterrence",
+      "status": "Governing presidential and congressional party"
+    },
+    {
+      "name": "Democratic Party",
+      "ideology": "Modern liberalism, progressive social welfare, multilateral treaty alliances (NATO, climate pacts), clean energy subsidies (IRA), defense of democratic institutions",
+      "status": "Main opposition party"
+    }
+  ],
+  "political_movements_and_dynamics": [
+    {
+      "name": "Transactional Alliance Burden-Sharing",
+      "description": "Intense executive focus on demanding that NATO allies, Japan, and South Korea meet or exceed 2-3% of GDP defense spending benchmarks, threatening reduction of US military presence for non-compliant partners.",
+      "current_relevance": "Drives unprecedented defense budget increases across European NATO members and accelerates allied sovereign defense procurement."
+    },
+    {
+      "name": "Aggressive Tariff Protectionism",
+      "description": "Deployment of across-the-board universal baseline tariffs (10-20%) on foreign imports and targeted 60%+ tariffs on Chinese manufacturing to force industrial reshoring and reduce the trade deficit.",
+      "current_relevance": "Restructures international supply chains, strains traditional trade relations with allies, and fuels international trade retaliation."
+    },
+    {
+      "name": "Fiscal Debt & Legislative Impasse",
+      "description": "Rising mandatory entitlement spending and debt interest servicing costs approaching $1 trillion annually, driving persistent statutory debt ceiling battles and budget brinkmanship in Congress.",
+      "current_relevance": "Creates uncertainty regarding long-term defense appropriation ceilings and foreign security assistance packages."
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "source": "United States Constitution; Congressional Research Service (CRS Report R46763); Federal Election Commission; Library of Congress",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

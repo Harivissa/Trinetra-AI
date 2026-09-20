@@ -1,0 +1,50 @@
+{
+  "country_id": "SAU",
+  "political_system": {
+    "type": "Unitary Islamic absolute monarchy",
+    "executive": "King of Saudi Arabia is Head of State; Crown Prince Mohammed bin Salman serves as Prime Minister and holds de facto command over daily executive governance, economic planning, defense modernization, and judicial reform.",
+    "legislature": "Consultative Assembly (Majlis al-Shura), an appointed advisory legislature of 150 members (including 30 female members) that evaluates draft laws, treaties, and annual ministry reports.",
+    "judiciary": "Judicial system rooted in Islamic jurisprudence (Sharia) overseen by the Supreme Judicial Council; undergoing comprehensive statutory codification (Civil Transactions Law, Penal Code for Discretionary Sanctions).",
+    "structure": "Unitary state divided into 13 administrative provinces (Emirates), each governed by an appointed Prince/Governor reporting to the Minister of Interior.",
+    "election_system": "No national partisan political elections; periodic non-partisan elections for half of the seats on municipal consultative councils.",
+    "confidence": "high"
+  },
+  "current_government": {
+    "monarch": "King Salman bin Abdulaziz Al Saud (Custodian of the Two Holy Mosques)",
+    "prime_minister": "Crown Prince Mohammed bin Salman (MBS)",
+    "context": "Unprecedented consolidation of executive, defense, and economic power under Crown Prince Mohammed bin Salman, who leads the Council of Ministers, the Council of Economic and Development Affairs (CEDA), the Council of Political and Security Affairs (CPSA), and chairs the Public Investment Fund (PIF).",
+    "cabinet": "Mix of technocrats and royal family members leading streamlined ministries focused on the deliverables of Vision 2030.",
+    "confidence": "high",
+    "as_of": "2026-08-27"
+  },
+  "major_parties": [
+    {
+      "name": "House of Saud (Royal Family)",
+      "ideology": "Monarchical continuity, Islamic stewardship, state sovereignty, rapid national modernization",
+      "status": "Sovereign ruling house (political parties are formally prohibited under the Basic Law)"
+    }
+  ],
+  "political_movements_and_dynamics": [
+    {
+      "name": "Vision 2030 Post-Oil Modernization",
+      "description": "Comprehensive state-driven overhaul replacing traditional tribal-clerical patronage with performance-driven technocratic governance, aggressive private sector expansion, female workforce participation, and entertainment/tourism industries.",
+      "current_relevance": "Unifies national policy across all ministries, directing hundreds of billions in capital via the Public Investment Fund (PIF) into giga-projects like NEOM, Red Sea Global, and Qiddiya."
+    },
+    {
+      "name": "Pragmatic Religious Recalibration",
+      "description": "Deliberate curbing of the ultra-conservative clerical establishment (e.g. dismantling the powers of the Committee for the Promotion of Virtue and the Prevention of Vice / religious police), promoting 'moderate Islam' and Saudi cultural nationalism.",
+      "current_relevance": "Massively expands social freedoms for the youth and women, attracting international business and tourism while removing clerical resistance to rapid economic reforms."
+    },
+    {
+      "name": "Fiscal Sustainability & Non-Oil Revenues",
+      "description": "Implementation of a 15% Value Added Tax (VAT), domestic fuel and utility subsidy reductions, and aggressive expansion of non-oil state revenues to break reliance on cyclic oil prices.",
+      "current_relevance": "Requires balancing fiscal discipline against public expectations of economic prosperity and private sector job growth for Saudi nationals (Saudization)."
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "source": "Kingdom of Saudi Arabia Basic Law of Governance; Congressional Research Service (CRS Report RL33533); Saudi Ministry of Media; Vision 2030 Official Progress Reports",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

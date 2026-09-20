@@ -1,0 +1,50 @@
+{
+  "country_id": "SAU",
+  "sources": [
+    {
+      "id": "SRC_WB_WDI_SAU",
+      "title": "World Development Indicators: Military Expenditure & Economic Data",
+      "author": "World Bank / SIPRI",
+      "year": 2024,
+      "type": "Multilateral Statistical Dataset",
+      "focus": "Military spending % of GDP (7.09%), defense budget trends, GDP figures"
+    },
+    {
+      "id": "SRC_OPEC_ASB_SAU",
+      "title": "Annual Statistical Bulletin 2024",
+      "author": "Organization of the Petroleum Exporting Countries (OPEC)",
+      "year": 2024,
+      "type": "Energy Industry Report",
+      "focus": "Proven oil reserves, daily production rates, refinery capacity, export destinations"
+    },
+    {
+      "id": "SRC_CRS_SAU_2024",
+      "title": "Saudi Arabia: Background and U.S. Relations (CRS Report RL33533)",
+      "author": "Congressional Research Service",
+      "year": 2024,
+      "type": "Government Policy Analysis",
+      "focus": "Vision 2030, US arms sales, regional security dynamics, Beijing detente with Iran"
+    },
+    {
+      "id": "SRC_IISS_MB_SAU",
+      "title": "The Military Balance: Chapter 7 - Middle East and North Africa",
+      "author": "International Institute for Strategic Studies (IISS)",
+      "year": 2024,
+      "type": "Strategic Assessment",
+      "focus": "Armed forces inventory, Royal Saudi Air Force squadrons, missile defense capabilities"
+    },
+    {
+      "id": "SRC_ARAMCO_ANNUAL",
+      "title": "Annual Report & Financial Statements",
+      "author": "Saudi Arabian Oil Company (Saudi Aramco)",
+      "year": 2024,
+      "type": "Corporate Financial Filing",
+      "focus": "Hydrocarbon extraction costs, upstream/downstream assets, capital expenditure"
+    }
+  ],
+  "_meta": {
+    "data_quality": "verified",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

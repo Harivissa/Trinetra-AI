@@ -1,0 +1,38 @@
+{
+  "country_id": "SAU",
+  "doctrine": "Strategic Multi-Alignment & Zero-Problems Regional Stability — Saudi Arabia operates as an independent regional heavyweight and global energy anchor, balancing relations among global powers (USA, China, Russia) while creating regional stability and de-escalation necessary to guarantee the execution of Vision 2030.",
+  "strategic_priorities": [
+    "Safeguard global energy markets and OPEC+ production discipline in strategic coordination with Russia and Gulf producers",
+    "Preserve regional stability and protect mega-investments through tactical diplomatic rapprochement with Iran and border stabilization with Yemen",
+    "Leverage sovereign balance between the United States (irreplaceable defense guarantor and advanced technology partner) and China (top crude oil customer, critical infrastructure contractor, and AI collaborator)",
+    "Condition potential normalization with Israel on irreversible, credible pathways toward an independent Palestinian state",
+    "Localize defense industrial production to 50% through Saudi Arabian Military Industries (SAMI) while acquiring advanced multi-tier missile and drone defenses"
+  ],
+  "priority_regions": [
+    "Middle East & Gulf (Gulf Cooperation Council [GCC], Yemen, Iraq, Jordan, Egypt)",
+    "Indo-Pacific & East Asia (China, India, Japan, South Korea — primary destinations for Saudi crude exports and trade partnerships)",
+    "North America (United States — defense supply chains, intelligence sharing, investment destination)",
+    "Red Sea & Horn of Africa (Sudan, Somalia, Djibouti — securing the Red Sea maritime lifeline against piracy and asymmetric threats)"
+  ],
+  "cooperation_and_competition": {
+    "cooperates_closely_with": [
+      "United States (core security partner, arms supplier, intelligence collaborator, bilateral nuclear talks)",
+      "China (largest trade partner, primary oil purchaser, mediator of Iran deal, technological infrastructure contractor)",
+      "Russia (co-leader of the OPEC+ oil production alliance managing global crude supply and price stability)",
+      "United Arab Emirates & GCC (shared Gulf security and economic integration, despite friendly economic competition)",
+      "Egypt & Jordan (foundational Arab security and geopolitical allies across the Red Sea corridor)",
+      "India & South Korea (vital long-term energy off-takers and industrial infrastructure partners)"
+    ],
+    "competes_or_disputes_with": [
+      "Iran / Axis of Resistance (enduring ideological, sectarian, and regional influence rivalry, despite the 2023 diplomatic detente)",
+      "Houthi Movement in Yemen (persistent threat to southern borders and Red Sea maritime commerce)",
+      "Regional extremist networks (Muslim Brotherhood ideological challenge to monarchical legitimacy, Al-Qaeda / ISIS remnants)"
+    ],
+    "notes": "Saudi Arabia has transformed its diplomatic posture from an era of ideological containment into a transaction-driven foreign policy. Riyadh uses its immense sovereign capital and oil swing capacity to refuse binary choices between Washington and Beijing, extracting maximum strategic advantages from both."
+  },
+  "_meta": {
+    "data_quality": "sourced/analytical synthesis based on Saudi Ministry of Foreign Affairs, speeches of Crown Prince Mohammed bin Salman, and international diplomatic agreements",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}

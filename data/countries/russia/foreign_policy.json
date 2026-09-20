@@ -1,0 +1,38 @@
+{
+  "country_id": "RUS",
+  "doctrine": "Anti-Hegemonic Revisionism & Eurasian Great Power Status — Russia seeks the complete dismantling of the US-led unipolar international order, asserting itself as an independent sovereign pole in a polycentric world order with an acknowledged sphere of privileged interest across the post-Soviet space.",
+  "strategic_priorities": [
+    "Achieve strategic victory and territorial consolidation in Ukraine, preventing NATO infrastructure on Ukrainian soil",
+    "Consolidate the anti-Western Eurasian axis with China, North Korea (formal mutual defense treaty signed in 2024), and Iran",
+    "Dominate the Arctic littoral and commercialize the Northern Sea Route (NSR) as an alternative maritime trade artery immune to Western naval blockade",
+    "Undermine Western sanctions and dollar dominance by expanding non-dollar trade settlements within BRICS+ and bilateral national currencies",
+    "Sustain deep security partnerships across the Global South (Africa, Sahel region via Africa Corps, Middle East) to erode Western influence"
+  ],
+  "priority_regions": [
+    "Near Abroad / Post-Soviet Space (Belarus [Union State], Ukraine, South Caucasus, Central Asian republics)",
+    "Indo-Pacific & East Asia (China — core strategic partner; North Korea — military technology exchange; India — energy and arms off-taker)",
+    "Arctic Ocean Basin (Northern Fleet defense bastion, offshore hydrocarbons, Northern Sea Route)",
+    "Middle East & Africa (Syria military bases at Tartus/Hmeimim, Sahel alliances with Niger/Mali/Burkina Faso, OPEC+ partnership with Saudi Arabia)"
+  ],
+  "cooperation_and_competition": {
+    "cooperates_closely_with": [
+      "China ('No-Limits' comprehensive strategic partnership, primary hydrocarbon customer, supplier of dual-use industrial components)",
+      "Belarus (Union State integration, hosting Russian tactical nuclear weapons, joint military grouping)",
+      "North Korea (Comprehensive Strategic Partnership Treaty with mutual defense clause, munitions supplier in exchange for aerospace/missile tech)",
+      "Iran (strategic military cooperation, Shahed drone production localization, North-South Transport Corridor)",
+      "India ('Special and Privileged Strategic Partnership', massive crude oil trade, defense platform support)",
+      "Saudi Arabia (OPEC+ energy coordination to maintain global crude prices)"
+    ],
+    "competes_or_disputes_with": [
+      "United States & NATO (existential strategic adversary; direct military proxy confrontation in Ukraine, intelligence competition, nuclear signaling)",
+      "European Union (complete economic divorce, energy decoupling, asset confiscation disputes)",
+      "Ukraine (active state of high-intensity territorial war)"
+    ],
+    "notes": "Russia has decisively severed its three-century-old European orientation initiated by Peter the Great, irreversibly pivoting its diplomatic, economic, and military apparatus toward Eurasia and the Global South. Moscow uses its permanent UN Security Council veto, nuclear parity, and energy abundance to construct an alternative multilateral framework."
+  },
+  "_meta": {
+    "data_quality": "sourced/analytical synthesis based on Russian Federation Foreign Policy Concept (March 2023), speeches of Vladimir Putin, and Russian Security Council doctrines",
+    "confidence": "high",
+    "last_updated": "2026-08-27"
+  }
+}
