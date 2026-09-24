@@ -80,11 +80,29 @@ export default function CountryGeospatialMap({
   const routesLayerRef = useRef<L.LayerGroup | null>(null);
 
   const [basemap, setBasemap] = useState<BasemapType>("dark");
-  const [showSites, setShowSites] = useState(true);
-  const [showChokepoints, setShowChokepoints] = useState(true);
-  const [showRoutes, setShowRoutes] = useState(true);
+  const [activeLayers, setActiveLayers] = useState<{
+    geography: boolean;
+    security: boolean;
+    trade: boolean;
+    energy: boolean;
+    maritime: boolean;
+    relationships: boolean;
+    events: boolean;
+  }>({
+    geography: true,
+    security: true,
+    trade: true,
+    energy: true,
+    maritime: true,
+    relationships: true,
+    events: true,
+  });
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [selectedFeature, setSelectedFeature] = useState<SelectedFeatureInfo | null>(null);
+
+  const toggleLayer = (layer: keyof typeof activeLayers) => {
+    setActiveLayers((prev) => ({ ...prev, [layer]: !prev[layer] }));
+  };
 
   const geo = getCountryGeoProfile(country.id, country.name, country);
   const detailedChokepoints = getCountryChokepointsDetailed(country.id, country.name, country);
@@ -174,79 +192,91 @@ export default function CountryGeospatialMap({
     markersGroup.clearLayers();
     routesGroup.clearLayers();
 
-    // 1. Capital Marker (Pulsing Saffron Beacon)
-    const capitalIcon = L.divIcon({
-      className: "custom-capital-marker",
-      html: `
-        <div class="relative flex items-center justify-center cursor-pointer">
-          <div class="absolute -inset-2 rounded-full bg-amber-500/40 animate-ping"></div>
-          <div class="relative size-6 rounded-full bg-amber-500 border-2 border-white flex items-center justify-center shadow-lg">
-            <div class="size-2 rounded-full bg-black"></div>
-          </div>
-          <div class="absolute left-7 top-1/2 -translate-y-1/2 px-2 py-0.5 rounded bg-black/90 border border-amber-500/50 text-amber-300 font-mono text-[10px] font-bold whitespace-nowrap shadow-md pointer-events-none">
-            ★ ${geo.capital.toUpperCase()}
-          </div>
-        </div>
-      `,
-      iconSize: [24, 24],
-      iconAnchor: [12, 12],
-    });
-
-    const capitalMarker = L.marker(geo.coordinates, { icon: capitalIcon });
-    capitalMarker.on("click", () => {
-      setSelectedFeature({
-        title: `${geo.capital} (Sovereign Capital)`,
-        type: "CAPITAL & GOVERNANCE SEAT",
-        coordinates: geo.coordinates,
-        whyItMatters: `Political, administrative, and constitutional seat of power for ${country.name}.`,
-        strategicRelevance: `Houses supreme executive authority, ministry of defense, central command, and national foreign affairs ministries.`,
-        source: "Official Sovereign Gazette / United Nations",
-        confidence: "High",
-      });
-    });
-    capitalMarker.addTo(markersGroup);
-
-    // 2. Strategic Sites (Ports, Energy Hubs, Defense Facilities)
-    if (showSites) {
-      strategicSites.forEach((site) => {
-        let colorClass = "bg-emerald-500 border-emerald-200";
-        if (site.type === "ENERGY_HUB") colorClass = "bg-amber-500 border-amber-200";
-        if (site.type === "DEFENSE_FACILITY") colorClass = "bg-rose-500 border-rose-200";
-
-        const siteIcon = L.divIcon({
-          className: "custom-site-marker",
-          html: `
-            <div class="relative flex items-center justify-center cursor-pointer group">
-              <div class="relative size-4 rounded-full ${colorClass} border-2 flex items-center justify-center shadow-md">
-                <div class="size-1.5 rounded-full bg-black"></div>
-              </div>
-              <div class="absolute left-5 top-1/2 -translate-y-1/2 px-2 py-0.5 rounded bg-black/90 border border-neutral-700 text-white font-mono text-[9px] whitespace-nowrap shadow-md pointer-events-none group-hover:border-emerald-400">
-                ${site.name}
-              </div>
+    // 1. Geography Layer: Capital & Sovereignty Beacon
+    if (activeLayers.geography) {
+      const capitalIcon = L.divIcon({
+        className: "custom-capital-marker",
+        html: `
+          <div class="relative flex items-center justify-center cursor-pointer">
+            <div class="absolute -inset-2 rounded-full bg-amber-500/40 animate-ping"></div>
+            <div class="relative size-6 rounded-full bg-amber-500 border-2 border-white flex items-center justify-center shadow-lg">
+              <div class="size-2 rounded-full bg-black"></div>
             </div>
-          `,
-          iconSize: [16, 16],
-          iconAnchor: [8, 8],
-        });
-
-        const marker = L.marker(site.coordinates, { icon: siteIcon });
-        marker.on("click", () => {
-          setSelectedFeature({
-            title: site.name,
-            type: site.type.replace(/_/g, " "),
-            coordinates: site.coordinates,
-            whyItMatters: site.whyItMatters,
-            strategicRelevance: site.strategicRelevance,
-            source: site.source,
-            confidence: "High",
-          });
-        });
-        marker.addTo(markersGroup);
+            <div class="absolute left-7 top-1/2 -translate-y-1/2 px-2 py-0.5 rounded bg-black/90 border border-amber-500/50 text-amber-300 font-mono text-[10px] font-bold whitespace-nowrap shadow-md pointer-events-none">
+              ★ ${geo.capital.toUpperCase()}
+            </div>
+          </div>
+        `,
+        iconSize: [24, 24],
+        iconAnchor: [12, 12],
       });
+
+      const capitalMarker = L.marker(geo.coordinates, { icon: capitalIcon });
+      capitalMarker.on("click", () => {
+        setSelectedFeature({
+          title: `${geo.capital} (Sovereign Capital)`,
+          type: "CAPITAL & GOVERNANCE SEAT",
+          coordinates: geo.coordinates,
+          whyItMatters: `Political, administrative, and constitutional seat of power for ${country.name}.`,
+          strategicRelevance: `Houses supreme executive authority, ministry of defense, central command, and national foreign affairs ministries.`,
+          source: "Official Sovereign Gazette / United Nations",
+          confidence: "High",
+        });
+      });
+      capitalMarker.addTo(markersGroup);
     }
 
-    // 3. Chokepoint Markers
-    if (showChokepoints) {
+    // 2. Security, Trade, Energy Strategic Sites
+    strategicSites.forEach((site) => {
+      const isSecurity = site.type.includes("DEFENSE") || site.type.includes("NAVAL") || site.type.includes("AIR_BASE");
+      const isTrade = site.type.includes("PORT") || site.type.includes("CORRIDOR");
+      const isEnergy = site.type.includes("ENERGY") || site.type.includes("REFINERY");
+
+      if (
+        (isSecurity && !activeLayers.security) ||
+        (isTrade && !activeLayers.trade) ||
+        (isEnergy && !activeLayers.energy)
+      ) {
+        return;
+      }
+
+      let colorClass = "bg-emerald-500 border-emerald-200";
+      if (isEnergy) colorClass = "bg-amber-500 border-amber-200";
+      if (isSecurity) colorClass = "bg-rose-500 border-rose-200";
+
+      const siteIcon = L.divIcon({
+        className: "custom-site-marker",
+        html: `
+          <div class="relative flex items-center justify-center cursor-pointer group">
+            <div class="relative size-4 rounded-full ${colorClass} border-2 flex items-center justify-center shadow-md">
+              <div class="size-1.5 rounded-full bg-black"></div>
+            </div>
+            <div class="absolute left-5 top-1/2 -translate-y-1/2 px-2 py-0.5 rounded bg-black/90 border border-neutral-700 text-white font-mono text-[9px] whitespace-nowrap shadow-md pointer-events-none group-hover:border-emerald-400">
+              ${site.name}
+            </div>
+          </div>
+        `,
+        iconSize: [16, 16],
+        iconAnchor: [8, 8],
+      });
+
+      const marker = L.marker(site.coordinates, { icon: siteIcon });
+      marker.on("click", () => {
+        setSelectedFeature({
+          title: site.name,
+          type: site.type.replace(/_/g, " "),
+          coordinates: site.coordinates,
+          whyItMatters: site.whyItMatters,
+          strategicRelevance: site.strategicRelevance,
+          source: site.source,
+          confidence: "High",
+        });
+      });
+      marker.addTo(markersGroup);
+    });
+
+    // 3. Maritime Layer: Chokepoint Markers & Sea Lanes
+    if (activeLayers.maritime) {
       detailedChokepoints.forEach(({ profile, chokepoint }) => {
         const isCritical = profile.exposureLevel === "CRITICAL";
         const colorClass = isCritical ? "bg-rose-500 border-rose-200" : "bg-cyan-500 border-cyan-200";
@@ -288,10 +318,7 @@ export default function CountryGeospatialMap({
         });
         marker.addTo(markersGroup);
       });
-    }
 
-    // 4. Strategic Maritime Corridors
-    if (showRoutes) {
       MAP_STRATEGIC_ROUTES.forEach((route) => {
         L.polyline(route.coordinates, {
           color: route.color,
@@ -306,7 +333,7 @@ export default function CountryGeospatialMap({
           .addTo(routesGroup);
       });
     }
-  }, [country.id, geo, detailedChokepoints, strategicSites, showSites, showChokepoints, showRoutes]);
+  }, [country.id, geo, detailedChokepoints, strategicSites, activeLayers]);
 
   // Recenter map
   const handleRecenter = useCallback(() => {
@@ -361,40 +388,73 @@ export default function CountryGeospatialMap({
               ))}
             </div>
 
-            {/* Layer Toggles */}
-            <div className="flex items-center gap-1.5 text-xs font-mono">
+            {/* Strategic Operational Layer Toggles */}
+            <div className="flex flex-wrap items-center gap-1 text-xs font-mono">
               <button
-                onClick={() => setShowSites(!showSites)}
-                className={`px-2.5 py-1 rounded-lg border transition-colors text-[10px] flex items-center gap-1 ${
-                  showSites
-                    ? "bg-neutral-800 border-emerald-500/60 text-emerald-400"
+                onClick={() => toggleLayer("geography")}
+                className={`px-2 py-1 rounded-lg border transition-colors text-[10px] flex items-center gap-1 ${
+                  activeLayers.geography
+                    ? "bg-neutral-800 border-amber-500/60 text-amber-300 font-bold"
                     : "bg-neutral-900/60 border-neutral-800 text-neutral-500"
                 }`}
               >
-                <Anchor size={11} />
-                Sites
+                <MapPin size={10} />
+                Geography
               </button>
               <button
-                onClick={() => setShowChokepoints(!showChokepoints)}
-                className={`px-2.5 py-1 rounded-lg border transition-colors text-[10px] flex items-center gap-1 ${
-                  showChokepoints
-                    ? "bg-neutral-800 border-cyan-500/60 text-cyan-400"
+                onClick={() => toggleLayer("security")}
+                className={`px-2 py-1 rounded-lg border transition-colors text-[10px] flex items-center gap-1 ${
+                  activeLayers.security
+                    ? "bg-neutral-800 border-rose-500/60 text-rose-400 font-bold"
                     : "bg-neutral-900/60 border-neutral-800 text-neutral-500"
                 }`}
               >
-                <Ship size={11} />
-                Chokepoints
+                <Shield size={10} />
+                Security
               </button>
               <button
-                onClick={() => setShowRoutes(!showRoutes)}
-                className={`px-2.5 py-1 rounded-lg border transition-colors text-[10px] flex items-center gap-1 ${
-                  showRoutes
-                    ? "bg-neutral-800 border-amber-500/60 text-amber-400"
+                onClick={() => toggleLayer("trade")}
+                className={`px-2 py-1 rounded-lg border transition-colors text-[10px] flex items-center gap-1 ${
+                  activeLayers.trade
+                    ? "bg-neutral-800 border-emerald-500/60 text-emerald-400 font-bold"
                     : "bg-neutral-900/60 border-neutral-800 text-neutral-500"
                 }`}
               >
-                <Compass size={11} />
-                Routes
+                <Anchor size={10} />
+                Trade
+              </button>
+              <button
+                onClick={() => toggleLayer("energy")}
+                className={`px-2 py-1 rounded-lg border transition-colors text-[10px] flex items-center gap-1 ${
+                  activeLayers.energy
+                    ? "bg-neutral-800 border-amber-500/60 text-amber-400 font-bold"
+                    : "bg-neutral-900/60 border-neutral-800 text-neutral-500"
+                }`}
+              >
+                <Flame size={10} />
+                Energy
+              </button>
+              <button
+                onClick={() => toggleLayer("maritime")}
+                className={`px-2 py-1 rounded-lg border transition-colors text-[10px] flex items-center gap-1 ${
+                  activeLayers.maritime
+                    ? "bg-neutral-800 border-cyan-500/60 text-cyan-400 font-bold"
+                    : "bg-neutral-900/60 border-neutral-800 text-neutral-500"
+                }`}
+              >
+                <Ship size={10} />
+                Maritime
+              </button>
+              <button
+                onClick={() => toggleLayer("relationships")}
+                className={`px-2 py-1 rounded-lg border transition-colors text-[10px] flex items-center gap-1 ${
+                  activeLayers.relationships
+                    ? "bg-neutral-800 border-blue-500/60 text-blue-400 font-bold"
+                    : "bg-neutral-900/60 border-neutral-800 text-neutral-500"
+                }`}
+              >
+                <Compass size={10} />
+                Neighbors
               </button>
             </div>
           </div>

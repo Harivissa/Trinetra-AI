@@ -3,6 +3,12 @@ import { ChevronDown, ChevronRight, CheckCircle2, AlertTriangle, HelpCircle, Shi
 import type { RivalryAnalysis as RivalryAnalysisType } from "../../types";
 import Comparison3D from "../comparison/Comparison3D";
 import { getCountryFlag } from "../../utils/flags";
+import { BilateralCommandHeader } from "../comparison/BilateralCommandHeader";
+import { DualStrategicMap } from "../comparison/DualStrategicMap";
+import { StructuralComparisonMatrix } from "../comparison/StructuralComparisonMatrix";
+import { BilateralDependencyFlow } from "../comparison/BilateralDependencyFlow";
+import { StrategicAsymmetryVisual } from "../comparison/StrategicAsymmetryVisual";
+import { FlashpointRegisterVisual } from "../comparison/FlashpointRegisterVisual";
 
 type Props = { analysis: RivalryAnalysisType };
 
@@ -255,9 +261,28 @@ export default function AnalysisResults({ analysis }: Props) {
   const flagB = getCountryFlag(b.id);
 
   return (
-    <div className="overflow-hidden rounded border border-trinetra-border bg-trinetra-panel/20">
-      {/* Header comparison section */}
-      <div className="border-b border-trinetra-border p-5 md:p-8 bg-gradient-to-b from-trinetra-panel/40 to-transparent">
+    <div className="space-y-10">
+      {/* 01. BILATERAL COMMAND HEADER */}
+      <BilateralCommandHeader analysis={analysis} />
+
+      {/* 02. DUAL STRATEGIC MAP */}
+      <DualStrategicMap analysis={analysis} />
+
+      {/* 03. STRUCTURAL COMPARISON MATRIX */}
+      <StructuralComparisonMatrix analysis={analysis} />
+
+      {/* 04. BILATERAL DEPENDENCY FLOW */}
+      <BilateralDependencyFlow analysis={analysis} />
+
+      {/* 05. STRATEGIC ASYMMETRY BREAKDOWN */}
+      <StrategicAsymmetryVisual analysis={analysis} />
+
+      {/* 06. FLASHPOINT REGISTER */}
+      <FlashpointRegisterVisual analysis={analysis} />
+
+      <div className="overflow-hidden rounded-2xl border border-trinetra-border bg-trinetra-panel/20">
+        {/* Header comparison section */}
+        <div className="border-b border-trinetra-border p-5 md:p-8 bg-gradient-to-b from-trinetra-panel/40 to-transparent">
         {/* Intelligence Platform Subtitle Banner */}
         <div className="flex items-center justify-between border-b border-trinetra-border/60 pb-3 mb-6 font-mono text-[10px] tracking-[0.22em] text-neutral-500 uppercase">
           <span>REAL DATA · REAL CONTEXT · REAL INSIGHTS</span>
@@ -1222,6 +1247,7 @@ export default function AnalysisResults({ analysis }: Props) {
           <br />Each metric should be evaluated with its source institution and reference year.
         </p>
       </footer>
+      </div>
     </div>
   );
 }
