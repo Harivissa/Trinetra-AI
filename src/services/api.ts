@@ -62,6 +62,14 @@ export const api = {
   getChokepoints: (signal?: AbortSignal) => get<any[]>("/chokepoints", signal),
   getGroups: (signal?: AbortSignal) => get<any[]>("/groups", signal),
   getGroup: (id: string, signal?: AbortSignal) => get<any>(`/groups/${id}`, signal),
+  getEvents: (signal?: AbortSignal) => get<any[]>("/events", signal),
+  getEvent: (id: string, signal?: AbortSignal) => get<any>(`/events/${id}`, signal),
+  chatAiAnalyst: (query: string, history: any[] = [], signal?: AbortSignal) =>
+    request<any>("/ai-analyst/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query, history }),
+    }, signal),
   search: (query: string, topK = 5, signal?: AbortSignal) =>
     request<{ query: string; results: any[] }>("/search", {
       method: "POST",

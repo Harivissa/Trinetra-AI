@@ -9,18 +9,23 @@ import {
   Menu,
   X,
   MapPin,
+  Radio,
+  Sparkles,
+  Search,
 } from "lucide-react";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Clean navigation incorporating primary intelligence modules
+  // Top navigation strictly adhering to Section 13
   const navLinks = [
-    { to: "/", label: "Home", icon: Compass },
-    { to: "/live-map", label: "Live Map", icon: MapPin },
     { to: "/countries", label: "Countries", icon: Globe2 },
-    { to: "/compare", label: "Rivalries", icon: Shield },
+    { to: "/relationships", label: "Relationships", icon: Shield },
+    { to: "/live-map", label: "Live Map", icon: MapPin },
     { to: "/groups", label: "Groups", icon: Layers },
+    { to: "/events", label: "Events", icon: Radio },
+    { to: "/ai-analyst", label: "AI Analyst", icon: Sparkles },
+    { to: "/search", label: "Search", icon: Search },
   ];
 
   const handleReplayIntro = () => {

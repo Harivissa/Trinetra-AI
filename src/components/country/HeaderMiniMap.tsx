@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import L from "leaflet";
-import { Plus, Minus, Maximize2 } from "lucide-react";
+import { Plus, Minus, ExternalLink } from "lucide-react";
 import { COUNTRY_GEO_PROFILES } from "../../data/countryGeoData";
 
 interface HeaderMiniMapProps {
@@ -8,6 +9,41 @@ interface HeaderMiniMapProps {
   countryName: string;
   onOpenFullMap?: () => void;
 }
+
+interface StrategicNeighbor {
+  name: string;
+  id: string;
+  type: "Rival" | "Partner" | "Neutral" | "Contested";
+}
+
+const STRATEGIC_NEIGHBORHOODS: Record<string, StrategicNeighbor[]> = {
+  IND: [
+    { name: "China", id: "CHN", type: "Rival" },
+    { name: "Pakistan", id: "PAK", type: "Rival" },
+    { name: "Nepal", id: "NPL", type: "Partner" },
+    { name: "Bhutan", id: "BTN", type: "Partner" },
+    { name: "Bangladesh", id: "BGD", type: "Partner" },
+  ],
+  USA: [
+    { name: "Canada", id: "CAN", type: "Partner" },
+    { name: "Mexico", id: "MEX", type: "Partner" },
+    { name: "Cuba", id: "CUB", type: "Rival" },
+    { name: "Russia", id: "RUS", type: "Rival" },
+  ],
+  CHN: [
+    { name: "India", id: "IND", type: "Rival" },
+    { name: "Japan", id: "JPN", type: "Rival" },
+    { name: "Russia", id: "RUS", type: "Partner" },
+    { name: "Pakistan", id: "PAK", type: "Partner" },
+    { name: "Taiwan", id: "TWN", type: "Contested" },
+  ],
+  RUS: [
+    { name: "Ukraine", id: "UKR", type: "Rival" },
+    { name: "Belarus", id: "BLR", type: "Partner" },
+    { name: "China", id: "CHN", type: "Partner" },
+    { name: "Poland", id: "POL", type: "Rival" },
+  ],
+};
 
 export const HeaderMiniMap: React.FC<HeaderMiniMapProps> = ({
   countryId,
@@ -23,6 +59,11 @@ export const HeaderMiniMap: React.FC<HeaderMiniMapProps> = ({
     borderingCountries: [],
   };
 
+  const neighbors = STRATEGIC_NEIGHBORHOODS[countryId.toUpperCase()] || [
+    { name: "Border Zone", id: "REG", type: "Neutral" as const },
+    { name: "Regional Littoral", id: "MAR", type: "Partner" as const },
+  ];
+
   useEffect(() => {
     if (!mapContainerRef.current) return;
 
@@ -33,7 +74,7 @@ export const HeaderMiniMap: React.FC<HeaderMiniMapProps> = ({
 
     const map = L.map(mapContainerRef.current, {
       center: geoProfile.coordinates,
-      zoom: geoProfile.zoom || 4,
+      zoom: (geoProfile.zoom || 4) - 0.5,
       zoomControl: false,
       attributionControl: false,
       scrollWheelZoom: false,
@@ -56,7 +97,7 @@ export const HeaderMiniMap: React.FC<HeaderMiniMapProps> = ({
       {
         maxZoom: 10,
         minZoom: 2,
-        opacity: 0.8,
+        opacity: 0.85,
       }
     ).addTo(map);
 
@@ -85,70 +126,77 @@ export const HeaderMiniMap: React.FC<HeaderMiniMapProps> = ({
     };
   }, [countryId, geoProfile.coordinates[0], geoProfile.coordinates[1], geoProfile.zoom]);
 
-  const handleZoomIn = () => {
-    mapInstanceRef.current?.zoomIn();
-  };
-
-  const handleZoomOut = () => {
-    mapInstanceRef.current?.zoomOut();
-  };
-
   return (
-    <div className="relative w-full h-full min-h-[260px] md:min-h-[290px] rounded-xl overflow-hidden border border-white/10 bg-[#05070a]">
+    <div className="relative w-full h-full min-h-[260px] md:min-h-[290px] rounded-xl overflow-hidden border border-white/10 bg-[#05070a] flex flex-col justify-between">
       {/* Map canvas */}
-      <div ref={mapContainerRef} className="w-full h-full min-h-[260px] md:min-h-[290px] z-0" />
-
-      {/* Neighbor states tactical overlay tags */}
-      {geoProfile.borderingCountries && geoProfile.borderingCountries.length > 0 && (
-        <div className="absolute top-2.5 left-2.5 z-10 flex flex-wrap gap-1 max-w-[70%] pointer-events-none">
-          {geoProfile.borderingCountries.slice(0, 4).map((neighbor) => (
-            <span
-              key={neighbor}
-              className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-black/75 border border-white/10 text-neutral-400 backdrop-blur-xs"
-            >
-              {neighbor}
-            </span>
-          ))}
-        </div>
-      )}
-
-      {/* Controls: Zoom In / Out / Maximize */}
-      <div className="absolute top-2.5 right-2.5 z-10 flex flex-col gap-1.5">
-        {onOpenFullMap && (
+      <div className="relative w-full h-[180px] sm:h-[190px]">
+        <div ref={mapContainerRef} className="w-full h-full z-0" />
+        
+        {/* Zoom controls */}
+        <div className="absolute top-2 right-2 z-10 flex flex-col gap-1">
           <button
             type="button"
-            onClick={onOpenFullMap}
-            title="Expand Full Interactive Theater GIS Map"
-            className="p-1.5 rounded-md bg-black/80 hover:bg-neutral-800 border border-white/15 text-neutral-300 hover:text-white transition-colors cursor-pointer shadow-md"
+            onClick={() => mapInstanceRef.current?.zoomIn()}
+            title="Zoom In"
+            className="p-1 rounded bg-black/80 hover:bg-neutral-800 border border-white/15 text-neutral-300 hover:text-white transition-colors cursor-pointer"
           >
-            <Maximize2 className="size-3.5" />
+            <Plus className="size-3" />
           </button>
-        )}
-        <button
-          type="button"
-          onClick={handleZoomIn}
-          title="Zoom In"
-          className="p-1.5 rounded-md bg-black/80 hover:bg-neutral-800 border border-white/15 text-neutral-300 hover:text-white transition-colors cursor-pointer shadow-md"
-        >
-          <Plus className="size-3.5" />
-        </button>
-        <button
-          type="button"
-          onClick={handleZoomOut}
-          title="Zoom Out"
-          className="p-1.5 rounded-md bg-black/80 hover:bg-neutral-800 border border-white/15 text-neutral-300 hover:text-white transition-colors cursor-pointer shadow-md"
-        >
-          <Minus className="size-3.5" />
-        </button>
+          <button
+            type="button"
+            onClick={() => mapInstanceRef.current?.zoomOut()}
+            title="Zoom Out"
+            className="p-1 rounded bg-black/80 hover:bg-neutral-800 border border-white/15 text-neutral-300 hover:text-white transition-colors cursor-pointer"
+          >
+            <Minus className="size-3" />
+          </button>
+        </div>
+
+        {/* Map Label Overlay */}
+        <div className="absolute top-2 left-2 z-10 px-2 py-0.5 rounded bg-black/80 border border-white/10 text-[9px] font-mono text-neutral-300 backdrop-blur-xs">
+          THEATER MAP · {countryName.toUpperCase()}
+        </div>
       </div>
 
-      {/* Bottom map status HUD */}
-      <div className="absolute bottom-2 left-2 right-2 z-10 flex items-center justify-between px-2.5 py-1 rounded bg-black/85 border border-white/10 text-[10px] font-mono backdrop-blur-xs pointer-events-none">
-        <span className="text-neutral-400">THEATER GIS: <span className="text-white font-semibold">{countryName}</span></span>
-        <span className="text-trinetra-saffron flex items-center gap-1">
-          <span className="size-1.5 rounded-full bg-trinetra-saffron animate-ping" />
-          ACTIVE
-        </span>
+      {/* Strategic Neighborhood strip */}
+      <div className="p-2.5 bg-[#090c12] border-t border-white/10 flex flex-col justify-between flex-1">
+        <div className="flex items-center justify-between mb-1.5">
+          <span className="text-[10px] font-mono uppercase tracking-wider text-neutral-400">
+            Strategic Neighborhood
+          </span>
+          <Link
+            to="/live-map"
+            className="text-[10px] font-mono text-trinetra-saffron hover:underline flex items-center gap-1"
+          >
+            Open in Live Map
+            <ExternalLink className="size-2.5" />
+          </Link>
+        </div>
+
+        <div className="flex flex-wrap gap-1.5">
+          {neighbors.map((n) => {
+            const isRival = n.type === "Rival";
+            const isPartner = n.type === "Partner";
+            return (
+              <div
+                key={n.name}
+                className="flex items-center gap-1 px-2 py-0.5 rounded bg-white/[0.04] border border-white/5 text-[10px] font-mono"
+              >
+                <span
+                  className={`size-1.5 rounded-full ${
+                    isRival
+                      ? "bg-rose-500"
+                      : isPartner
+                      ? "bg-emerald-400"
+                      : "bg-amber-400"
+                  }`}
+                />
+                <span className="text-white">{n.name}</span>
+                <span className="text-neutral-500 text-[9px]">({n.type})</span>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

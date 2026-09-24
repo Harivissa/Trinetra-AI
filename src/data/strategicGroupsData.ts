@@ -1,30 +1,9 @@
-import fs from "node:fs";
-import path from "node:path";
+// TRINETRA AI — Authoritative Strategic Groups & Alliances Dataset
+// Verified memberships, institutional mandates, and geopolitical relevance.
 
-export interface CountryMeta {
-  id: string;
-  name: string;
-  file: string;
-  region?: string;
-}
+import type { StrategicGroup } from "../types";
 
-export interface StrategicGroup {
-  id: string;
-  name: string;
-  acronym?: string;
-  description: string;
-  strategic_purpose?: string;
-  focus_areas: string[];
-  strategic_domains?: string[];
-  headquarters?: string;
-  founded?: string;
-  economic_weight?: string;
-  security_relevance?: string;
-  key_initiatives?: string[];
-  members: string[];
-}
-
-const GROUPS: StrategicGroup[] = [
+export const STRATEGIC_GROUPS: StrategicGroup[] = [
   {
     id: "g20",
     name: "Group of Twenty (G20)",
@@ -39,6 +18,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Indirect; serves as a strategic decompression venue for leaders of competing superpowers during escalating bilateral tensions.",
     key_initiatives: ["Common Framework for Debt Treatments", "Financial Stability Board oversight", "Global Sovereign Debt Roundtable"],
     members: ["ARG", "AUS", "BRA", "CAN", "CHN", "FRA", "DEU", "IND", "IDN", "ITA", "JPN", "KOR", "MEX", "RUS", "SAU", "ZAF", "TUR", "GBR", "USA", "EU", "AU"],
+    sources: [{ name: "G20 Official Secretariat", url: "https://g20.org" }],
   },
   {
     id: "g7",
@@ -54,6 +34,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "High strategic alignment on defense technology transfer, intelligence sharing, and collective resilience against economic coercion.",
     key_initiatives: ["Partnership for Global Infrastructure and Investment (PGII)", "Hiroshima AI Process", "Price cap on Russian maritime crude oil"],
     members: ["CAN", "FRA", "DEU", "ITA", "JPN", "GBR", "USA", "EU"],
+    sources: [{ name: "G7 Presidency Archives", url: "https://g7germany.de" }],
   },
   {
     id: "brics",
@@ -69,6 +50,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Coordinates non-Western diplomatic positions; hosts dialogues between historic rivals (e.g. Iran and Saudi Arabia; India and China).",
     key_initiatives: ["BRICS Pay Cross-Border Settlement", "NDB Infrastructure Financing", "Contingent Reserve Arrangement (CRA)"],
     members: ["BRA", "RUS", "IND", "CHN", "ZAF", "EGY", "ETH", "IRN", "ARE", "IDN"],
+    sources: [{ name: "New Development Bank", url: "https://ndb.int" }],
   },
   {
     id: "sco",
@@ -84,6 +66,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Critical Eurasian security architecture bringing China, Russia, India, Pakistan, Central Asian states, and Iran under a single forum.",
     key_initiatives: ["Peace Mission joint military drills", "SCO Interbank Consortium", "Tashkent RATS Center"],
     members: ["CHN", "IND", "KAZ", "KGZ", "PAK", "RUS", "TJK", "UZB", "IRN", "BLR"],
+    sources: [{ name: "SCO Secretariat", url: "http://eng.sectsco.org" }],
   },
   {
     id: "quad",
@@ -99,6 +82,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Central to Indo-Pacific maritime deterrence, joint Malabar naval drills, satellite tracking of dark shipping, and semiconductor supply assurance.",
     key_initiatives: ["IPMDA Satellite Surveillance", "Quad Infrastructure Fellowship", "Quad Semiconductor Supply Chain Contingency Network"],
     members: ["AUS", "IND", "JPN", "USA"],
+    sources: [{ name: "US Dept of State / Quad Documents", url: "https://state.gov" }],
   },
   {
     id: "nato",
@@ -114,6 +98,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "World's most powerful military pact; controls European airspace, North Atlantic SLOCs, and rapid deployment taskforces.",
     key_initiatives: ["NATO Response Force (NRF) / Allied Reaction Force", "Air Policing over Baltic and Black Seas", "Integrated Air and Missile Defence (IAMD)"],
     members: ["USA", "GBR", "FRA", "DEU", "ITA", "TUR", "CAN", "ESP", "POL", "NLD", "NOR", "DNK", "SWE", "FIN", "GRC", "PRT", "BEL", "CZE", "ROU", "HUN"],
+    sources: [{ name: "NATO Public Diplomacy Division", url: "https://nato.int" }],
   },
   {
     id: "un",
@@ -129,6 +114,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "UNSC retains unique international legal authority to authorize coercive sanctions and collective military action under Chapter VII.",
     key_initiatives: ["UN Department of Peace Operations", "IAEA Nuclear Safeguards", "Black Sea Grain Initiative facilitation"],
     members: ["USA", "CHN", "RUS", "GBR", "FRA", "IND", "JPN", "DEU", "BRA", "ZAF", "SAU", "IRN", "ISR", "PAK", "IDN", "TUR", "AUS", "CAN", "KOR", "EGY", "ITA", "UKR"],
+    sources: [{ name: "United Nations", url: "https://un.org" }],
   },
   {
     id: "wto",
@@ -141,9 +127,10 @@ const GROUPS: StrategicGroup[] = [
     headquarters: "Geneva, Switzerland",
     founded: "1995 (successor to GATT 1947)",
     economic_weight: "166 member states representing over 98% of world trade",
-    security_relevance: "Barometer for state geoeconomic friction and industrial subsidies; critical venue for managing trade protectionism.",
+    security_relevance: "Currently constrained by impasse on the Appellate Body; vital barometer for state geoeconomic friction and industrial subsidies.",
     key_initiatives: ["Agreement on Fisheries Subsidies", "Trade Facilitation Agreement (TFA)", "Information Technology Agreement (ITA)"],
     members: ["USA", "CHN", "IND", "JPN", "DEU", "GBR", "FRA", "BRA", "RUS", "KOR", "AUS", "CAN", "SAU", "TUR", "IDN", "ZAF", "EGY", "ISR", "PAK", "ITA", "UKR"],
+    sources: [{ name: "WTO Official Registry", url: "https://wto.org" }],
   },
   {
     id: "imf",
@@ -156,9 +143,10 @@ const GROUPS: StrategicGroup[] = [
     headquarters: "Washington, D.C., United States",
     founded: "1944 (Bretton Woods)",
     economic_weight: "$1 Trillion total lending capacity; 190 member nations",
-    security_relevance: "Financial lifelines dictate domestic political stability and sovereign alignment during acute macroeconomic crises.",
+    security_relevance: "Financial lifelines dictate domestic political stability and sovereign alignment during acute macroeconomic crises (e.g. Pakistan, Egypt, Sri Lanka, Argentina).",
     key_initiatives: ["Extended Fund Facility (EFF)", "Resilience and Sustainability Trust (RST)", "World Economic Outlook (WEO)"],
     members: ["USA", "JPN", "CHN", "DEU", "GBR", "FRA", "IND", "ITA", "CAN", "BRA", "RUS", "SAU", "KOR", "AUS", "TUR", "IDN", "ZAF", "EGY", "ISR", "PAK", "UKR"],
+    sources: [{ name: "IMF Secretariat", url: "https://imf.org" }],
   },
   {
     id: "world_bank",
@@ -174,6 +162,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Direct competitor and collaborator with non-Western financing vehicles such as China's Belt and Road Initiative and the BRICS NDB.",
     key_initiatives: ["Global Infrastructure Facility", "Climate Support Facility", "Evolution Roadmap for Multilateral Lending"],
     members: ["USA", "JPN", "DEU", "GBR", "FRA", "IND", "CHN", "CAN", "ITA", "BRA", "RUS", "SAU", "KOR", "AUS", "TUR", "IDN", "ZAF", "EGY", "ISR", "PAK", "UKR"],
+    sources: [{ name: "World Bank Group", url: "https://worldbank.org" }],
   },
   {
     id: "asean",
@@ -189,6 +178,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Controls vital maritime chokepoints (Malacca, Sunda, Lombok straits); sets the diplomatic agenda for the East Asia Summit (EAS).",
     key_initiatives: ["ASEAN Outlook on the Indo-Pacific (AOIP)", "ASEAN Regional Forum (ARF)", "ASEAN Free Trade Area (AFTA)"],
     members: ["IDN", "MYS", "SGP", "THA", "VNM", "PHL", "BRN", "KHM", "LAO", "MMR"],
+    sources: [{ name: "ASEAN Secretariat", url: "https://asean.org" }],
   },
   {
     id: "saarc",
@@ -204,6 +194,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Reflects the structural paralysis of South Asian formal integration; prompted sub-regional alternatives like BIMSTEC and BBIN.",
     key_initiatives: ["SAARC Food Bank", "SAARC Disaster Management Centre"],
     members: ["AFG", "BGD", "BTN", "IND", "MDV", "NPL", "PAK", "LKA"],
+    sources: [{ name: "SAARC Secretariat", url: "https://saarc-sec.org" }],
   },
   {
     id: "bimstec",
@@ -219,6 +210,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Core vehicle for India's 'Neighbourhood First' and 'Act East' doctrines, linking Chennai and Kolkata ports to Sittwe and Dawei in Myanmar.",
     key_initiatives: ["BIMSTEC Master Plan for Transport Connectivity", "Bay of Bengal Maritime Security Framework"],
     members: ["BGD", "BTN", "IND", "MMR", "NPL", "LKA", "THA"],
+    sources: [{ name: "BIMSTEC Secretariat", url: "https://bimstec.org" }],
   },
   {
     id: "iora",
@@ -234,6 +226,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Provides an inclusive institutional platform for littoral states without direct military pact entanglement.",
     key_initiatives: ["IORA Maritime Safety Working Group", "Indian Ocean Blue Carbon Hub"],
     members: ["AUS", "BGD", "COM", "IND", "IDN", "IRN", "KEN", "MDG", "MYS", "MDV", "MUS", "MOZ", "OMN", "SYC", "SGP", "SOM", "ZAF", "LKA", "TZA", "THA", "ARE", "YEM", "FRA"],
+    sources: [{ name: "IORA Secretariat", url: "https://iora.int" }],
   },
   {
     id: "gcc",
@@ -249,6 +242,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Dominates the southern littoral of the Strait of Hormuz; hosts key US CENTCOM facilities (Fifth Fleet in Bahrain, Al Udeid in Qatar).",
     key_initiatives: ["GCC Unified Military Command", "GCC Railway Project", "Interconnected Gulf Power Grid"],
     members: ["BHR", "KWT", "OMN", "QAT", "SAU", "ARE"],
+    sources: [{ name: "GCC Secretariat General", url: "https://gcc-sg.org" }],
   },
   {
     id: "eu",
@@ -264,6 +258,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Coordinates multi-billion defense procurement pools (EDIP), enforces continent-wide sanctions on Russia, and operates European maritime missions (Aspides).",
     key_initiatives: ["European Peace Facility (EPF)", "Carbon Border Adjustment Mechanism (CBAM)", "Global Gateway infrastructure program"],
     members: ["FRA", "DEU", "ITA", "ESP", "POL", "NLD", "BEL", "SWE", "DNK", "IRL", "AUT", "PRT", "GRC", "FIN", "CZE", "ROU", "HUN", "SVK", "BGR", "HRV", "SVN", "LTU", "LVA", "EST", "CYP", "LUX", "MLT"],
+    sources: [{ name: "European Commission", url: "https://europa.eu" }],
   },
   {
     id: "opec",
@@ -279,6 +274,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Production decisions directly alter the cost of global energy, impacting inflation, maritime shipping rates, and foreign exchange reserves worldwide.",
     key_initiatives: ["Monthly Oil Market Report (MOMR)", "Declaration of Cooperation framework"],
     members: ["DZA", "COG", "GNQ", "GAB", "IRN", "IRQ", "KWT", "LBY", "NGA", "SAU", "ARE", "VEN"],
+    sources: [{ name: "OPEC Secretariat", url: "https://opec.org" }],
   },
   {
     id: "opec_plus",
@@ -294,6 +290,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Central vector of geopolitical leverage between Gulf monarchies and Russia, often resisting US requests to surge production during consumer price spikes.",
     key_initiatives: ["Joint Ministerial Monitoring Committee (JMMC)", "Voluntary supply curtailment pacts"],
     members: ["SAU", "RUS", "ARE", "IRQ", "KWT", "IRN", "KAZ", "DZA", "NGA", "OMN", "AZE", "MYS", "MEX", "BHR", "BRN", "SSD", "SDN"],
+    sources: [{ name: "OPEC+ JMMC Communiques", url: "https://opec.org" }],
   },
   {
     id: "aukus",
@@ -309,6 +306,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Transforms Australia into a premier undersea deterrent platform operating across the Second Island Chain, South China Sea, and Indian Ocean.",
     key_initiatives: ["Submarine Rotational Force-West (HMAS Stirling)", "AUKUS Pillar II Quantum & Hypersonic Integration"],
     members: ["AUS", "GBR", "USA"],
+    sources: [{ name: "US Department of Defense / AUKUS", url: "https://defense.gov" }],
   },
   {
     id: "five_eyes",
@@ -324,6 +322,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Provides unprecedented strategic early warning capabilities and near-instant tactical intelligence during crises.",
     key_initiatives: ["Combined Cyber Operations Network", "Five Eyes Intelligence Oversight and Review Council (FIORC)"],
     members: ["USA", "GBR", "CAN", "AUS", "NZL"],
+    sources: [{ name: "NSA / GCHQ Declassified Records", url: "https://nsa.gov" }],
   },
   {
     id: "cptpp",
@@ -339,6 +338,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Serves as a counterweight against regional trade domination, establishing high-standard trade disciplines across the Pacific rim.",
     key_initiatives: ["CPTPP Accession Working Groups", "E-Commerce Rules Harmonization"],
     members: ["AUS", "BRN", "CAN", "CHL", "JPN", "MYS", "MEX", "NZL", "PER", "SGP", "VNM", "GBR"],
+    sources: [{ name: "New Zealand MFAT / CPTPP", url: "https://mfat.govt.nz" }],
   },
   {
     id: "rcep",
@@ -354,6 +354,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "First trade agreement uniting China, Japan, and South Korea; solidifies East Asia's role as the indispensable factory of the world.",
     key_initiatives: ["Regional Value Chain Integration", "Trade in Services Liberalization"],
     members: ["CHN", "JPN", "KOR", "AUS", "NZL", "IDN", "MYS", "SGP", "THA", "VNM", "PHL", "BRN", "KHM", "LAO", "MMR"],
+    sources: [{ name: "RCEP Official Portal", url: "https://rcepsec.org" }],
   },
   {
     id: "commonwealth",
@@ -369,6 +370,7 @@ const GROUPS: StrategicGroup[] = [
     security_relevance: "Provides sovereign voice and diplomatic solidarity for small island states vulnerable to maritime sea-level rise and exclusive economic zone exploitation.",
     key_initiatives: ["Commonwealth Blue Charter", "Commonwealth Climate Finance Access Hub"],
     members: ["GBR", "IND", "CAN", "AUS", "ZAF", "NGA", "PAK", "BGD", "MYS", "SGP", "KEN", "GHA", "NZL", "JAM", "RWA", "MOZ"],
+    sources: [{ name: "The Commonwealth Secretariat", url: "https://thecommonwealth.org" }],
   },
   {
     id: "african_union",
@@ -381,274 +383,19 @@ const GROUPS: StrategicGroup[] = [
     headquarters: "Addis Ababa, Ethiopia",
     founded: "2002 (Successor to the OAU founded in 1963; permanent member of G20 since 2023)",
     economic_weight: "~$3.1T continental GDP; encompasses 1.4 billion people with vast critical mineral reserves",
-    security_relevance: "Permanent member of the G20; deploys multinational peacekeeping operations across Somalia (ATMIS), Lake Chad Basin (MNJTF), and the Sahel.",
+    security_relevance: "Now a permanent member of the G20; deploys multinational peacekeeping operations across Somalia (ATMIS), Lake Chad Basin (MNJTF), and the Sahel.",
     key_initiatives: ["AfCFTA Single Continental Market", "African Standby Force", "Agenda 2063: The Africa We Want"],
     members: ["ZAF", "EGY", "NGA", "ETH", "KEN", "DZA", "MAR", "GHA", "AGO", "COD", "TZA", "UGA", "SEN", "CIV", "RWA"],
+    sources: [{ name: "African Union Commission", url: "https://au.int" }],
   },
 ];
 
-class DataRepository {
-  private baseDir: string;
-  private countryIndex: CountryMeta[] = [];
-  private countryMap = new Map<string, any>();
-  private countrySlugMap = new Map<string, string>();
-  private chokepoints: any[] = [];
-  private relationships: any[] = [];
-  private strategicAnalyses: any[] = [];
-
-  constructor() {
-    this.baseDir = path.resolve(process.cwd(), "data");
-    this.reload();
-  }
-
-  public reload() {
-    try {
-      const indexPath = path.join(this.baseDir, "countries", "index.json");
-      if (fs.existsSync(indexPath)) {
-        const raw = fs.readFileSync(indexPath, "utf-8");
-        const parsed = JSON.parse(raw);
-        this.countryIndex = parsed.countries || [];
-      }
-
-      this.countryMap.clear();
-      this.countrySlugMap.clear();
-      for (const item of this.countryIndex) {
-        const filePath = path.join(this.baseDir, "countries", item.file);
-        if (fs.existsSync(filePath)) {
-          try {
-            const raw = fs.readFileSync(filePath, "utf-8");
-            const data = JSON.parse(raw);
-            const id = (data.id || item.id).toUpperCase();
-            this.countryMap.set(id, data);
-            const slug = item.file.replace(/\.json$/i, "");
-            this.countrySlugMap.set(id, slug);
-          } catch (e) {
-            console.error(`Failed to load country file ${item.file}:`, e);
-          }
-        }
-      }
-
-      const cpPath = path.join(this.baseDir, "geopolitics", "chokepoints.json");
-      if (fs.existsSync(cpPath)) {
-        try {
-          const raw = fs.readFileSync(cpPath, "utf-8");
-          const parsed = JSON.parse(raw);
-          this.chokepoints = Array.isArray(parsed) ? parsed : parsed.chokepoints || [];
-        } catch (e) {
-          console.error("Failed to load chokepoints:", e);
-        }
-      }
-
-      this.relationships = [];
-      const geoDir = path.join(this.baseDir, "geopolitics");
-      if (fs.existsSync(geoDir)) {
-        const files = fs.readdirSync(geoDir);
-        for (const file of files) {
-          if (file === "chokepoints.json" || !file.endsWith(".json")) continue;
-          try {
-            const filePath = path.join(geoDir, file);
-            const raw = fs.readFileSync(filePath, "utf-8");
-            const data = JSON.parse(raw);
-            if (data.country_a && data.country_b) {
-              this.relationships.push({ ...data, source_file: file });
-            }
-          } catch (e) {
-            console.error(`Failed to load relationship file ${file}:`, e);
-          }
-        }
-      }
-
-      this.strategicAnalyses = [];
-      const stratDir = path.join(this.baseDir, "relationships", "strategic");
-      if (fs.existsSync(stratDir)) {
-        const files = fs.readdirSync(stratDir);
-        for (const file of files) {
-          if (file.endsWith(".json")) {
-            try {
-              const filePath = path.join(stratDir, file);
-              const raw = fs.readFileSync(filePath, "utf-8");
-              const data = JSON.parse(raw);
-              this.strategicAnalyses.push({ ...data, source_file: file });
-            } catch (e) {
-              console.error(`Failed to load strategic analysis file ${file}:`, e);
-            }
-          }
-        }
-      }
-    } catch (err) {
-      console.error("DataRepository init error:", err);
-    }
-  }
-
-  public getCountryIndex(): CountryMeta[] {
-    return this.countryIndex.map((entry) => {
-      const full = this.countryMap.get(entry.id.toUpperCase());
-      return {
-        ...entry,
-        region: full?.region || entry.region || undefined,
-      };
-    });
-  }
-
-  public getCountry(id: string): any | null {
-    if (!id) return null;
-    const clean = id.trim().toUpperCase();
-    const direct = this.countryMap.get(clean);
-    if (direct) return direct;
-
-    const lower = id.trim().toLowerCase();
-    for (const country of this.countryMap.values()) {
-      if (country.id?.toLowerCase() === lower || country.name?.toLowerCase() === lower) {
-        return country;
-      }
-    }
-    for (const [key, slug] of this.countrySlugMap.entries()) {
-      if (slug.toLowerCase() === lower) {
-        return this.countryMap.get(key) || null;
-      }
-    }
-    return null;
-  }
-
-  public getCountrySlug(id: string): string | null {
-    if (!id) return null;
-    const clean = id.trim().toUpperCase();
-    const direct = this.countrySlugMap.get(clean);
-    if (direct) return direct;
-
-    const country = this.getCountry(id);
-    if (country?.id) {
-      return this.countrySlugMap.get(country.id.toUpperCase()) || null;
-    }
-    return null;
-  }
-
-  public getCountryModulesAvailable(id: string): string[] {
-    const slug = this.getCountrySlug(id);
-    if (!slug) return [];
-    const moduleDir = path.join(this.baseDir, "countries", slug);
-    if (!fs.existsSync(moduleDir) || !fs.statSync(moduleDir).isDirectory()) {
-      return [];
-    }
-    const files = fs.readdirSync(moduleDir);
-    return files
-      .filter((f) => f.endsWith(".json"))
-      .map((f) => f.replace(/\.json$/, ""))
-      .sort();
-  }
-
-  public getCountryModule(id: string, moduleName: string): any | null {
-    const slug = this.getCountrySlug(id);
-    if (!slug) return null;
-    const sanitizedModule = path.basename(moduleName);
-    const modPath = path.join(this.baseDir, "countries", slug, `${sanitizedModule}.json`);
-    if (!fs.existsSync(modPath)) return null;
-    try {
-      return JSON.parse(fs.readFileSync(modPath, "utf-8"));
-    } catch {
-      return null;
-    }
-  }
-
-  public getRelationship(countryA: string, countryB: string): any | null {
-    const a = countryA.toUpperCase();
-    const b = countryB.toUpperCase();
-    return (
-      this.relationships.find(
-        (r) =>
-          (r.country_a?.toUpperCase() === a && r.country_b?.toUpperCase() === b) ||
-          (r.country_a?.toUpperCase() === b && r.country_b?.toUpperCase() === a)
-      ) || null
-    );
-  }
-
-  public getAllRelationships(): any[] {
-    return this.relationships;
-  }
-
-  public getRelationshipsFor(countryId: string): any[] {
-    const cid = countryId.toUpperCase();
-    return this.relationships.filter(
-      (r) => r.country_a?.toUpperCase() === cid || r.country_b?.toUpperCase() === cid
-    );
-  }
-
-  public getChokepoints(): any[] {
-    return this.chokepoints;
-  }
-
-  public getModulesForPair(countryA: string, countryB: string): any[] {
-    const a = countryA.toUpperCase();
-    const b = countryB.toUpperCase();
-    return this.relationships.filter((r) => {
-      const parties = new Set([r.country_a?.toUpperCase(), r.country_b?.toUpperCase()]);
-      return parties.has(a) && parties.has(b);
-    });
-  }
-
-  public getExternalActorRecords(countryA: string, countryB: string): any[] {
-    const a = countryA.toUpperCase();
-    const b = countryB.toUpperCase();
-    return this.relationships.filter((r) => {
-      const ra = r.country_a?.toUpperCase();
-      const rb = r.country_b?.toUpperCase();
-      return ra === a || ra === b || rb === a || rb === b;
-    });
-  }
-
-  public getDeepDiveAnalyses(countryA: string, countryB: string): any[] {
-    const a = countryA.toUpperCase();
-    const b = countryB.toUpperCase();
-    if (!((a === "IND" && b === "CHN") || (a === "CHN" && b === "IND"))) {
-      return [];
-    }
-    return this.strategicAnalyses.filter((r) => r.source_file?.startsWith("analysis-"));
-  }
-
-  public getGroups(): StrategicGroup[] {
-    return GROUPS;
-  }
-
-  public getGroup(id: string): StrategicGroup | null {
-    return GROUPS.find((g) => g.id.toLowerCase() === id.toLowerCase()) || null;
-  }
-
-  public getEntity(id: string): any | null {
-    const entityPath = path.join(this.baseDir, "entities", "countries", `${id.toUpperCase()}.json`);
-    if (!fs.existsSync(entityPath)) return null;
-    try {
-      const data = JSON.parse(fs.readFileSync(entityPath, "utf-8"));
-      if (Array.isArray(data.key_people)) {
-        data.people_details = data.key_people.map((pId: string) => {
-          const personPath = path.join(this.baseDir, "entities", "people", `${pId}.json`);
-          if (fs.existsSync(personPath)) {
-            try {
-              return JSON.parse(fs.readFileSync(personPath, "utf-8"));
-            } catch {
-              return { id: pId };
-            }
-          }
-          return { id: pId };
-        });
-      }
-      if (Array.isArray(data.key_organisations_member_of)) {
-        data.organisations_details = data.key_organisations_member_of.map((oId: string) => {
-          const orgPath = path.join(this.baseDir, "entities", "organisations", `${oId}.json`);
-          if (fs.existsSync(orgPath)) {
-            try {
-              return JSON.parse(fs.readFileSync(orgPath, "utf-8"));
-            } catch {
-              return { id: oId };
-            }
-          }
-          return { id: oId };
-        });
-      }
-      return data;
-    } catch {
-      return null;
-    }
-  }
+export function getGroupById(id: string): StrategicGroup | undefined {
+  const norm = id.toLowerCase().replace(/[-_]/g, "");
+  return STRATEGIC_GROUPS.find((g) => g.id.toLowerCase().replace(/[-_]/g, "") === norm);
 }
 
-export const repository = new DataRepository();
+export function getGroupsForCountry(countryCode: string): StrategicGroup[] {
+  const code = countryCode.toUpperCase();
+  return STRATEGIC_GROUPS.filter((g) => g.members.includes(code));
+}

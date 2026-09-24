@@ -96,16 +96,16 @@ export const CountryCommandHeader: React.FC<CountryCommandHeaderProps> = ({
       <div className="rounded-2xl border border-white/10 bg-[#07090e] p-3 sm:p-4 lg:p-5 shadow-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-5 items-stretch">
           
-          {/* BOX 1: Left Country Visual & Flag (3 cols) */}
+          {/* BOX 1: Left Country Visual & Civilizational Identity (3 cols) */}
           <div className="lg:col-span-3 flex flex-col justify-center">
-            <div className="relative w-full h-[220px] sm:h-[260px] lg:h-full min-h-[220px] rounded-xl overflow-hidden border border-white/10 group shadow-inner">
+            <div className="relative w-full h-[230px] sm:h-[270px] lg:h-full min-h-[230px] rounded-xl overflow-hidden border border-white/10 group shadow-inner">
               <img
                 src={flashDossier.heroImage}
                 alt={country.name}
-                className="w-full h-full object-cover object-center filter brightness-[0.8] contrast-110 group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-center filter brightness-[0.75] contrast-115 group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
               
               {/* Flag Badge & Country ID in corner */}
               <div className="absolute top-3 left-3 flex items-center gap-2 px-2.5 py-1 rounded-md bg-black/80 border border-white/15 backdrop-blur-xs">
@@ -117,13 +117,20 @@ export const CountryCommandHeader: React.FC<CountryCommandHeaderProps> = ({
                 </span>
               </div>
 
-              {/* Bottom Image Tag */}
-              <div className="absolute bottom-2.5 left-3 right-3 text-left">
-                <span className="text-[10px] font-mono text-neutral-400 uppercase tracking-widest block">
-                  SOVEREIGN TERRITORY
+              {/* Civilizational & Sovereign Overlay in Box 1 */}
+              <div className="absolute bottom-3 left-3.5 right-3.5 text-left">
+                {country.id === "IND" && (
+                  <span className="font-serif italic text-amber-400 text-sm tracking-wide block mb-0.5">
+                    Bharat
+                  </span>
+                )}
+                <span className="font-display text-2xl font-bold text-white tracking-tight block">
+                  {country.name}
                 </span>
-                <span className="text-xs font-semibold text-white truncate block">
-                  {flashDossier.capital}, {country.name}
+                <span className="text-[10px] font-mono text-neutral-300 tracking-wide block mt-1">
+                  {country.id === "IND"
+                    ? "Civilization. Democracy. Strategic Autonomy."
+                    : `${flashDossier.capital} · ${flashDossier.region}`}
                 </span>
               </div>
             </div>
@@ -133,51 +140,59 @@ export const CountryCommandHeader: React.FC<CountryCommandHeaderProps> = ({
           <div className="lg:col-span-6 flex flex-col justify-between py-1">
             <div>
               {/* Title & ISO Badge */}
-              <div className="flex flex-wrap items-center gap-2.5 mb-1.5">
-                <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
-                  {country.name}
+              <div className="flex flex-wrap items-center gap-2.5 mb-1">
+                <span className="text-2xl" role="img" aria-label="Flag">
+                  {flashDossier.flag}
+                </span>
+                <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+                  {flashDossier.officialName || country.name}
                 </h1>
                 <span className="font-mono text-xs font-bold px-2.5 py-0.5 rounded bg-trinetra-saffron/15 border border-trinetra-saffron/40 text-trinetra-saffron uppercase">
                   {country.id}
                 </span>
               </div>
 
-              {/* Official Name */}
-              <p className="text-xs sm:text-sm font-mono text-neutral-400 mb-3">
-                {flashDossier.officialName}
-              </p>
-
-              {/* 4 Metadata Pills Row with Icons */}
-              <div className="flex flex-wrap items-center gap-2 mb-4">
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#0e121a] border border-white/8 text-xs text-neutral-300">
+              {/* 4 Metadata Pills Grid with Icons */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 my-3">
+                <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-[#0e121a] border border-white/8 text-xs text-neutral-300">
                   <MapPin className="size-3.5 text-trinetra-saffron shrink-0" />
-                  <span>{flashDossier.capital}</span>
-                </div>
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#0e121a] border border-white/8 text-xs text-neutral-300">
-                  <Globe2 className="size-3.5 text-sky-400 shrink-0" />
-                  <span>{flashDossier.region}</span>
-                </div>
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#0e121a] border border-white/8 text-xs text-neutral-300">
-                  <Landmark className="size-3.5 text-amber-400 shrink-0" />
-                  <span className="truncate max-w-[180px]">{deepProfile?.leadership?.systemType || (country as any)?.politics?.system || "Constitutional State"}</span>
-                </div>
-                {isNuclear && (
-                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-rose-950/40 border border-rose-500/30 text-xs text-rose-300">
-                    <Radiation className="size-3.5 text-rose-400 shrink-0 animate-pulse" />
-                    <span>Declared Nuclear Deterrent</span>
+                  <div className="truncate">
+                    <span className="text-[9px] font-mono text-neutral-500 uppercase block">Capital</span>
+                    <span className="truncate block font-medium">{flashDossier.capital}</span>
                   </div>
-                )}
+                </div>
+                <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-[#0e121a] border border-white/8 text-xs text-neutral-300">
+                  <Globe2 className="size-3.5 text-sky-400 shrink-0" />
+                  <div className="truncate">
+                    <span className="text-[9px] font-mono text-neutral-500 uppercase block">Region</span>
+                    <span className="truncate block font-medium">{flashDossier.region}</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-[#0e121a] border border-white/8 text-xs text-neutral-300">
+                  <Landmark className="size-3.5 text-amber-400 shrink-0" />
+                  <div className="truncate">
+                    <span className="text-[9px] font-mono text-neutral-500 uppercase block">Government</span>
+                    <span className="truncate block font-medium">{deepProfile?.leadership?.systemType || "Federal Parliamentary"}</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-[#0e121a] border border-white/8 text-xs text-neutral-300">
+                  <Radiation className="size-3.5 text-rose-400 shrink-0" />
+                  <div className="truncate">
+                    <span className="text-[9px] font-mono text-neutral-500 uppercase block">Nuclear Status</span>
+                    <span className="truncate block font-medium">{isNuclear ? "Declared Deterrent" : "Non-Nuclear State"}</span>
+                  </div>
+                </div>
               </div>
 
               {/* Doctrine Quote */}
-              <div className="mb-3 px-3 py-2 rounded-lg bg-white/[0.02] border-l-2 border-trinetra-saffron">
-                <p className="text-xs sm:text-sm font-serif italic text-white/90">
-                  {flashDossier.doctrineQuote}
+              <div className="mb-2.5 px-3 py-2 rounded-lg bg-white/[0.02] border-l-2 border-trinetra-saffron">
+                <p className="text-xs sm:text-sm font-serif italic text-white/95">
+                  "{flashDossier.doctrineQuote}"
                 </p>
               </div>
 
               {/* Narrative Summary */}
-              <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed line-clamp-3">
+              <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed line-clamp-2">
                 {flashDossier.narrativeSummary}
               </p>
             </div>

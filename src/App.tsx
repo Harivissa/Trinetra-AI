@@ -9,6 +9,9 @@ import Modules from "./pages/Modules";
 import NetworkView from "./pages/NetworkView";
 import Contact from "./pages/Contact";
 import Groups from "./pages/Groups";
+import Events from "./pages/Events";
+import AiAnalyst from "./pages/AiAnalyst";
+import SearchPage from "./pages/Search";
 import EntryExperience from "./components/entry/EntryExperience";
 
 export default function App() {
@@ -47,17 +50,20 @@ export default function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/live-map" element={<LiveMap />} />
         <Route path="/map" element={<LiveMap />} />
+        <Route path="/relationships" element={<RivalryAnalysis />} />
         <Route path="/analyze" element={<RivalryAnalysis />} />
         <Route path="/compare" element={<RivalryAnalysis />} />
         <Route path="/rivalries" element={<RivalryAnalysis />} />
         <Route path="/countries" element={<CountriesGrid />} />
         <Route path="/country" element={<CountryIntelligence />} />
-        <Route path="/about" element={<Navigate to="/" replace />} />
-        <Route path="/methodology" element={<Navigate to="/" replace />} />
+        <Route path="/groups" element={<Groups />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/ai-analyst" element={<AiAnalyst />} />
+        <Route path="/search" element={<SearchPage />} />
         <Route path="/modules" element={<Modules />} />
         <Route path="/network" element={<NetworkView />} />
-        <Route path="/search" element={<Navigate to="/" replace />} />
-        <Route path="/groups" element={<Groups />} />
+        <Route path="/about" element={<Navigate to="/" replace />} />
+        <Route path="/methodology" element={<Navigate to="/" replace />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

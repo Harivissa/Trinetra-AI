@@ -84,3 +84,80 @@ export interface RivalryAnalysis {
     availability: Record<string, boolean>;
   };
 }
+
+export interface StrategicGroup {
+  id: string;
+  name: string;
+  acronym?: string;
+  description: string;
+  strategic_purpose?: string;
+  focus_areas: string[];
+  strategic_domains: string[];
+  headquarters?: string;
+  founded?: string;
+  members: string[];
+  available_members?: string[];
+  economic_weight?: string;
+  security_relevance?: string;
+  key_initiatives?: string[];
+  sources?: { name: string; url?: string }[];
+}
+
+export type EventCategory =
+  | "Diplomatic"
+  | "Military"
+  | "Economic"
+  | "Energy"
+  | "Trade"
+  | "Technology"
+  | "Maritime"
+  | "Cyber"
+  | "Space"
+  | "Infrastructure"
+  | "Sanctions"
+  | "Treaties"
+  | "Humanitarian"
+  | "Political"
+  | "Security";
+
+export interface StrategicEvent {
+  id: string;
+  title: string;
+  date: string;
+  location: {
+    name: string;
+    lat: number;
+    lng: number;
+    region: string;
+  };
+  actors: string[];
+  type: EventCategory;
+  severity: "CRITICAL" | "HIGH" | "ELEVATED" | "MONITORED";
+  whatHappened: string;
+  whatChanged: string;
+  strategicSignificance: string;
+  affectedCountries: string[];
+  affectedRelationships: string[];
+  affectedFlows: string[];
+  source: {
+    name: string;
+    date: string;
+    url?: string;
+  };
+}
+
+export interface AiChatMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  timestamp: string;
+  structuredEntities?: {
+    countries?: string[];
+    groups?: string[];
+    events?: string[];
+    chokepoints?: string[];
+  };
+  followUps?: string[];
+  confidence?: "VERIFIED" | "HIGH" | "INSUFFICIENT_DATA";
+  evidence?: { source: string; verifiedAt: string }[];
+}

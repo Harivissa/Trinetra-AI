@@ -221,7 +221,7 @@ export default function CountryIntelligence() {
 
               return (
                 <>
-                  {/* 01. SOVEREIGN COMMAND HEADER (3-Box Architecture matching visual reference) */}
+                  {/* COUNTRY HEADER */}
                   <div id="sec-header">
                     <CountryCommandHeader
                       country={country}
@@ -233,11 +233,20 @@ export default function CountryIntelligence() {
                     />
                   </div>
 
-                  {/* 02. TOP METRICS FLASH CARDS (8 Compact Sovereign Indicators) */}
-                  <TopMetricFlashCards metrics={flashDossier.topMetrics} />
+                  {/* KEY METRICS */}
+                  <div id="sec-metrics">
+                    <TopMetricFlashCards metrics={flashDossier.topMetrics} />
+                  </div>
 
-                  {/* 03. UNIVERSAL FLASH-CARD INTELLIGENCE GRID (Modular Cards 01 to 16 with Interactive Modal) */}
-                  <div className="mb-12">
+                  {/* 9 CORE QUESTIONS (Interactive 3x3 Grid & 3-Layer Dossier) */}
+                  <div id="nine-questions" className="mb-10">
+                    <div id="sec-questions">
+                      <NineQuestionMatrix country={country} />
+                    </div>
+                  </div>
+
+                  {/* INTELLIGENCE MODULE BOARD (Modular Cards 01 to 16 with Interactive Modal) */}
+                  <div id="sec-module-board" className="mb-12">
                     <CountryFlashCardGrid
                       country={country}
                       deepProfile={deepProfile}
@@ -250,35 +259,8 @@ export default function CountryIntelligence() {
                   {/* STICKY WORKSTATION COMMAND NAVIGATOR */}
                   <CountryStickyNav />
 
-                  {/* 04. STRATEGIC GEOGRAPHY & THEATER GIS MAP */}
-                  <div id="interactive-geospatial-map" className="mb-10">
-                    <div id="sec-map">
-                      <CountryGeospatialMap country={country} />
-                    </div>
-                  </div>
-
-                  {/* 05. CURRENT COUNTRY STATUS — Factual sovereign metrics overview */}
-                  <div id="sec-status">
-                    <CountryOverviewVisual country={country} />
-                  </div>
-
-                  {/* 06. THE 9 CORE QUESTIONS MATRIX (Interactive 3x3 Grid & 3-Layer Dossier) */}
-                  <div id="nine-questions">
-                    <div id="sec-questions">
-                      <NineQuestionMatrix country={country} />
-                    </div>
-                  </div>
-
-                  {/* 07. NATIONAL SYSTEM GRAPH — Country -> Gov/Economy/Security -> Foreign Policy -> Global */}
-                  <div id="sec-system">
-                    <NationalSystemGraph
-                      country={country}
-                      deepProfile={deepProfile}
-                    />
-                  </div>
-
-                  {/* 08. GOVERNMENT STRUCTURE & EXECUTIVE LEADERSHIP */}
-                  <div id="leadership-section">
+                  {/* 01. GOVERNMENT & LEADERSHIP */}
+                  <div id="leadership-section" className="mb-12">
                     <div id="sec-leadership">
                       <GovernmentStructureVisual
                         leadership={deepProfile.leadership}
@@ -294,9 +276,12 @@ export default function CountryIntelligence() {
                     </div>
                   </div>
 
-                  {/* 09. CURRENT NATIONAL PROFILE — 12-category indicator matrix */}
-                  <div id="national-profile">
-                    <div id="sec-indicators">
+                  {/* 02. NATIONAL CONDITION */}
+                  <div id="national-profile" className="mb-12">
+                    <div id="sec-status">
+                      <CountryOverviewVisual country={country} />
+                    </div>
+                    <div id="sec-indicators" className="mt-8">
                       <NationalProfileVisual
                         profile={deepProfile.nationalProfile}
                         countryName={country.name}
@@ -304,21 +289,18 @@ export default function CountryIntelligence() {
                     </div>
                   </div>
 
-                  {/* 10. GEOPOLITICAL POSITION — Where does this country fit into the world? */}
-                  <div id="sec-position">
-                    <GeopoliticalPositionVisual
-                      position={deepProfile.geopoliticalPosition}
-                      countryName={country.name}
-                    />
+                  {/* 03. STRATEGIC GEOGRAPHY */}
+                  <div id="interactive-geospatial-map" className="mb-12">
+                    <div id="sec-map">
+                      <CountryGeospatialMap country={country} />
+                    </div>
+                    <div id="sec-geography" className="mt-8">
+                      <GeographicStrategyVisual country={country} />
+                    </div>
                   </div>
 
-                  {/* 11. NATIONAL CAPABILITIES — Deep assessment across 14 dimensions */}
-                  <div id="sec-capabilities">
-                    <StrategicCapabilitiesVisual country={country} />
-                  </div>
-
-                  {/* 12. ECONOMY & INDUSTRIAL POWER — GDP structure, critical industries */}
-                  <div id="economic-engine">
+                  {/* 04. ECONOMIC SYSTEM */}
+                  <div id="economic-engine" className="mb-12">
                     <div id="sec-economy">
                       <EconomicPowerVisual
                         economy={deepProfile.economyStructure}
@@ -327,113 +309,120 @@ export default function CountryIntelligence() {
                     </div>
                   </div>
 
-                  {/* 13. TRADE & GLOBAL ECONOMIC CONNECTIONS — Bilateral flows, top partners, commodities */}
-                  <div id="sec-trade">
-                    <TradeNetworkVisual
-                      trade={deepProfile.tradeFlows}
-                      countryName={country.name}
-                    />
+                  {/* 05. DEFENCE & SECURITY */}
+                  <div id="military-shield" className="mb-12">
+                    <div id="sec-military">
+                      <MilitarySecurityVisual
+                        military={deepProfile.militarySecurity}
+                        countryName={country.name}
+                      />
+                    </div>
                   </div>
 
-                  {/* 14. ENERGY FLOWS & RESILIENCE — Sankey flow visual for oil, gas, coal, nuclear, renewables */}
-                  <div id="energy-section">
+                  {/* 06. NUCLEAR / SPACE / CYBER */}
+                  <div id="strategic-domains" className="mb-12">
+                    <div id="sec-domains">
+                      <StrategicDomainsVisual
+                        nuclear={deepProfile.nuclear}
+                        space={deepProfile.space}
+                        cyber={deepProfile.cyber}
+                        countryName={country.name}
+                      />
+                    </div>
+                  </div>
+
+                  {/* 07. ENERGY & DEPENDENCIES */}
+                  <div id="energy-section" className="mb-12">
                     <div id="sec-energy-flow">
                       <EnergyDependencyFlowVisual
                         countryId={country.id}
                         countryName={country.name}
                       />
                     </div>
-                  </div>
-
-                  {/* 15. MILITARY & SECURITY — Order of battle, branches, platforms, defense industry */}
-                  <div id="military-shield">
-                    <div id="sec-military">
-                      <MilitarySecurityVisual
-                        military={deepProfile.militarySecurity}
-                        countryName={country.name}
-                      />
-                      <div id="strategic-domains" className="mt-8">
-                        <StrategicDomainsVisual
-                          nuclear={deepProfile.nuclear}
-                          space={deepProfile.space}
-                          cyber={deepProfile.cyber}
-                          countryName={country.name}
-                        />
-                      </div>
+                    <div id="sec-dependencies" className="mt-8">
+                      <DependencyFlowsVisual country={country} />
+                    </div>
+                    <div id="sec-chokepoints" className="mt-8">
+                      <ChokepointsIdentificationVisual country={country} />
                     </div>
                   </div>
 
-                  {/* 16. STRATEGIC ASSET RECONNAISSANCE MAP (Ports, Bases, Corridors) */}
-                  <div id="sec-assets">
-                    <StrategicAssetMapHybrid
-                      countryId={country.id}
-                      countryName={country.name}
-                    />
+                  {/* 08. TRADE & GEO-ECONOMICS */}
+                  <div id="trade-section" className="mb-12">
+                    <div id="sec-trade">
+                      <TradeNetworkVisual
+                        trade={deepProfile.tradeFlows}
+                        countryName={country.name}
+                      />
+                    </div>
                   </div>
 
-                  {/* 17. FOREIGN RELATIONS & ALIGNMENT NETWORK */}
-                  <div id="sec-diplomacy">
-                    <RelationshipNetworkVisual country={country} />
+                  {/* 09. FOREIGN RELATIONS */}
+                  <div id="foreign-relations-section" className="mb-12">
+                    <div id="sec-diplomacy">
+                      <RelationshipNetworkVisual country={country} />
+                    </div>
+                    <div id="sec-position" className="mt-8">
+                      <GeopoliticalPositionVisual
+                        position={deepProfile.geopoliticalPosition}
+                        countryName={country.name}
+                      />
+                    </div>
                   </div>
 
-                  {/* 18. MULTILATERAL INSTITUTIONAL NETWORK */}
-                  <div id="sec-multilateral">
-                    <MultilateralNetworkVisual
-                      country={country}
-                      deepProfile={deepProfile}
-                    />
+                  {/* 10. MULTILATERAL ALIGNMENT */}
+                  <div id="multilateral-section" className="mb-12">
+                    <div id="sec-multilateral">
+                      <MultilateralNetworkVisual
+                        country={country}
+                        deepProfile={deepProfile}
+                      />
+                    </div>
                   </div>
 
-                  {/* 19. STRATEGIC DEPENDENCIES — What keeps this country running */}
-                  <div id="sec-dependencies">
-                    <DependencyFlowsVisual country={country} />
+                  {/* 11. STRATEGIC ASSETS */}
+                  <div id="assets-section" className="mb-12">
+                    <div id="sec-assets">
+                      <StrategicAssetMapHybrid
+                        countryId={country.id}
+                        countryName={country.name}
+                      />
+                    </div>
                   </div>
 
-                  {/* 20. STRATEGIC COMPETITION — Rivals, flashpoints, active friction domains */}
-                  <div id="sec-competition">
-                    <StrategicCompetitionVisual
-                      competitions={deepProfile.competitions}
-                      countryName={country.name}
-                    />
+                  {/* 12. GEOPOLITICAL FRICTION */}
+                  <div id="competition-section" className="mb-12">
+                    <div id="sec-competition">
+                      <StrategicCompetitionVisual
+                        competitions={deepProfile.competitions}
+                        countryName={country.name}
+                      />
+                    </div>
                   </div>
 
-                  {/* 21. GEOGRAPHY & TERRITORIAL STRATEGY */}
-                  <div id="sec-geography">
-                    <GeographicStrategyVisual country={country} />
-                  </div>
-
-                  {/* 22. MARITIME GEOPOLITICS & CHOKEPOINTS */}
-                  <div id="sec-chokepoints">
-                    <ChokepointsIdentificationVisual country={country} />
-                  </div>
-
-                  {/* 23. STRATEGIC PRIORITIES — Grand strategic objectives by domain */}
-                  <div id="priorities-section">
+                  {/* 13. STRATEGIC PRIORITIES */}
+                  <div id="priorities-section" className="mb-12">
                     <div id="sec-priorities">
                       <StrategicPrioritiesVisual
                         priorities={deepProfile.priorities}
                         countryName={country.name}
                       />
                     </div>
-                  </div>
-
-                  {/* 24. STRENGTHS — What makes this country powerful or resilient */}
-                  <div id="sec-strengths">
-                    <StrategicStrengthsVisual country={country} />
-                  </div>
-
-                  {/* 25. CONSTRAINTS & VULNERABILITIES — Objective structural bottlenecks */}
-                  <div id="strategic-matrix">
-                    <div id="sec-constraints">
-                      <ConstraintsVulnerabilitiesVisual
-                        constraints={deepProfile.constraints}
-                        countryName={country.name}
-                      />
+                    <div id="sec-strengths" className="mt-8">
+                      <StrategicStrengthsVisual country={country} />
+                    </div>
+                    <div id="strategic-matrix" className="mt-8">
+                      <div id="sec-constraints">
+                        <ConstraintsVulnerabilitiesVisual
+                          constraints={deepProfile.constraints}
+                          countryName={country.name}
+                        />
+                      </div>
                     </div>
                   </div>
 
-                  {/* 26. HISTORICAL TIMELINE */}
-                  <div id="timeline-section">
+                  {/* 14. HISTORY */}
+                  <div id="timeline-section" className="mb-12">
                     <div id="sec-history">
                       <EnhancedTimelineVisual
                         events={history?.events || []}
@@ -442,8 +431,8 @@ export default function CountryIntelligence() {
                     </div>
                   </div>
 
-                  {/* 27. STRATEGIC SYNTHESIS — Executive summary */}
-                  <div id="developments-section">
+                  {/* 15. CURRENT DEVELOPMENTS */}
+                  <div id="developments-section" className="mb-12">
                     <div id="sec-synthesis">
                       <StrategicSynthesisVisual
                         synthesis={deepProfile.synthesis}
@@ -452,8 +441,8 @@ export default function CountryIntelligence() {
                     </div>
                   </div>
 
-                  {/* 28. SOURCES & EVIDENCE TRUST LAYER */}
-                  <div id="sources-section">
+                  {/* 16. CONTEXTUAL EVIDENCE */}
+                  <div id="sources-section" className="mb-12">
                     <div id="sec-sources">
                       <SourcesEvidencePanel
                         sources={deepProfile.sourcesRegistry}

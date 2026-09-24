@@ -4,8 +4,9 @@ import path from "node:path";
 import { createServer as createViteServer } from "vite";
 import { repository } from "./server/data";
 import { runRivalryAnalysis } from "./server/strategic";
-import { explainRivalry } from "./server/ai";
+import { explainRivalry, answerIntelligenceQuery } from "./server/ai";
 import { searchEngine } from "./server/search";
+import { STRATEGIC_EVENTS } from "./src/data/strategicEventsData";
 
 // Ensure any invalid VITE_API_BASE_URL pointing to port 8000 is sanitized
 if (process.env.VITE_API_BASE_URL && process.env.VITE_API_BASE_URL.includes("8000")) {
@@ -296,6 +297,32 @@ async function startServer() {
     const topK = Math.min(Math.max(Number(body.top_k) || 5, 1), 20);
     const results = searchEngine.search(query, topK);
     return res.json({ query, results });
+  });
+
+  app.get("/api/events", (_req, res) => {
+    return res.json(STRATEGIC_EVENTS);
+  });
+
+  app.get("/api/events/:id", (req, res) => {
+    const event = STRATEGIC_EVENTS.find((e) => e.id === req.params.id);
+    if (!event) {
+      return res.status(404).json({ error: `Event '${req.params.id}' not found` });
+    }
+    return res.json(event);
+  });
+
+  app.post("/api/ai-analyst/chat", async (req, res) => {
+    try {
+      const { query, history } = req.body || {};
+      if (!query || typeof query !== "string") {
+        return res.status(400).json({ error: "Query string is required" });
+      }
+      const response = await answerIntelligenceQuery(query, history || []);
+      return res.json(response);
+    } catch (err: any) {
+      console.error("AI analyst chat error:", err);
+      return res.status(500).json({ error: "AI Analyst service error", detail: err?.message || String(err) });
+    }
   });
 
   // --- Vite Dev Server Middleware or Static Production Serving ---
