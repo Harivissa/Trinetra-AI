@@ -42,7 +42,7 @@ export default function Header() {
           </div>
           <div className="flex flex-col">
             <span className="font-sans text-base sm:text-lg font-bold tracking-tight text-white flex items-center gap-1">
-              Trinetra AI
+              TRINETRA
             </span>
             <span className="text-[11px] text-neutral-400 font-normal leading-none tracking-normal">
               Third Eye of Global Intelligence
